@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, './views'))
 
 // MIDDLEWARE
 app.use(express.static('../public'));
-app.use(express.static('../public/design'));
+//app.use(express.static('../public/design'));
 
 
 
