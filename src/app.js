@@ -29,7 +29,7 @@ app.use('/aut', authRoutes);
 app.use('/producto', prodRoutes);
 app.use('/carrito', cartRoutes);
 app.use ('/admin',adminRoutes);
-app.use ('/admin',adminRoutes);
+
 
 
 app.listen(port, () => console.log(`http://localhost:${port}`))

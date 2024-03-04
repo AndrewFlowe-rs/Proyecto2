@@ -5,7 +5,7 @@ const authController = require('../controllers/authentications');
 // Desde app llega /auth
 
 
-router.get('/inicio', authController.login);
+router.get('/login', authController.login);
 router.get('/registro', authController.register);
 
 
