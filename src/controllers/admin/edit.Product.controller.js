@@ -1,3 +1,3 @@
 module.exports = (req,res)=>{
-res.render("edit-product")
+res.render("admin/edit-product")
 }

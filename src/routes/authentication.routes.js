@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authentications');
 
-// Desde app llega /auth
+// Desde app llega /aut
 
 
 router.get('/login', authController.login);
