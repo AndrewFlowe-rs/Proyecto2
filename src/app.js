@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3030;
+const port = 3031
+;
 
 // CONFIG
 
@@ -10,8 +11,10 @@ app.set('views', path.join(__dirname, './views'))
 
 
 // MIDDLEWARE
-app.use(express.static('../public'));
-//app.use(express.static('../public/design'));
+app.use(express.static(path.join(__dirname, '../public')));
+
+//app.use(express.static("../public"));
+app.use(express.static("../public/design"));
 
 
 
