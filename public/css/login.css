@@ -1,6 +1,6 @@
 @media screen and (max-width: 360px) {
     .main-login {
-        background-image: url("/design/imgHome/Publicidad-para-pizzas2.jpg");
+        background-image: url("../design/imgHome/publicity.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         padding: 13%;
@@ -71,8 +71,9 @@
     
     
         /*TABLET*/
-    @media screen and (min-width: 361px){.main-login {
-        background-image: url("../design/imgHome/Publicidad-para-pizzas2.jpg");
+    @media screen and (min-width: 361px){
+        .main-login {
+        background-image: url("../design/imgHome/publicity.jpg");
         background-size: 50% 100%;
         background-repeat: no-repeat;
     }
