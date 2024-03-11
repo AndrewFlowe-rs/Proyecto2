@@ -1,3 +1,3 @@
 module.exports = {
-    cart: require('./cart.Controller')
+    cart: require('./cart.controller')
 }
