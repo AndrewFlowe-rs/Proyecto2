@@ -1,4 +1,4 @@
-@media screen and (max-width: 360px) {
+
 
     .mainhome {
         height: 533px;
@@ -19,7 +19,10 @@
 
     .mainhome section .bannerhome {}
 
-    .mainhome section .bannerhome ul {}
+    .mainhome section .bannerhome ul {
+
+
+    }
 
     .mainhome section.bannerhome ul li {}
 
@@ -104,9 +107,9 @@
 
     .pizzas3 ul li a {}
 
-}
 
-@media screen and (min-width: 361px) {
+
+@media (min-width: 425px) {
 
     .mainhome {}
 
@@ -117,21 +120,18 @@
 
     .mainhome .pizzasbaner {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        width: 33%;
+        width: 32%;
         height: 88%;
-        position: absolute;
-        right: -77px;
-        top: 125px;
         background-color: var(--background-reg);
     }
 
     .mainhome .pizzasbaner h1 {
         font-family: var(--poppins);
-        /* left: 41px; */
-        margin-left: 55px;
         padding-top: 5px;
         font-size: 24px;
+        text-align: center;
     }
 
     .bannerhome {}
@@ -142,7 +142,9 @@
         padding-bottom: 13px;
     }
 
-    .bannerhome ul li {}
+    .bannerhome ul li {
+    width: 30px;
+}
 
     .bannerhome ul li a {}
 
@@ -247,4 +249,10 @@
     font-family: v;
 
     padding-top: 26px;
+}
+
+@media (min-width: 768px)
+
+{
+    
 }

@@ -55,13 +55,6 @@
     font-family: var(--Frijole);
     margin: 0px;
     color: var(--negro);
-    font-size: 11px;
-    /* display: flex; */
-    text-decoration: none;
-    /* padding: 10px; */
-    /* padding-bottom: 10px; */
-    /* width: 103px; */
-    /* display: none; */
 }
 
 
@@ -69,4 +62,5 @@ body{
     margin:0;
     padding:0;
     background-color: var(--background-reg);
+    box-sizing: border-box;
 }
