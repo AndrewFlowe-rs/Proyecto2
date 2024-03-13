@@ -1,6 +1,7 @@
 module.exports = {
-    editProdut: require('./edit.Product.controller'),
-    createProduct: require('./create.product.controller'),
+    editProdut: require('./editProduct.controller'),
+    createProduct: require('./createProduct.controller'),
     list : require ('./listProduct.controller')
+    
 
 }

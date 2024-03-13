@@ -7,6 +7,8 @@ router.get('/edit',adminController.editProdut);
 router.get('/create',adminController.createProduct);
 
 
+
+
 //router.post('/create')
 router.get('/' , adminController.list)
 
