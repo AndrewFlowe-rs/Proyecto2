@@ -4,7 +4,7 @@
 <body>
     <%-include("../partials/header")%>
     <main class="main-form-n">
-        <form class="form-new">
+        <form class="form-new" action="/admin/crear-producto" method="post" enctype="multipart/form-data">
             <div class="new-contentx">
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -12,27 +12,23 @@
                 <h1 class="titulo">Crear producto</h1>
             </div>
             <div class="new-title">
-                <input type="text" id="title-N" name="titulo-N" placeholder="Nuevo titulo">
+                <input type="text" id="nombre" name="nombre" placeholder="Nuevo titulo">
             </div>
             <div class="new-price">
-                <input type="text" id="price-N" name="precio-N" placeholder="Nuevo precio">
+                <input type="text" id="precio" name="precio" placeholder="Nuevo precio">
             </div>
             <div class="new-description">
-                <input type="text" id="description-N" name="descripcion-N" placeholder="Nueva descripcion">
+                <input type="text" id="descripcion" name="descripcion" placeholder="Nueva descripcion">
             </div>
             <div class="new-category">
                 <label for="category">Categoria</label>
-                <select name="category" id="category-N">
-                    <option value="margarita">Pizza Margarita</option>
-                    <option value="cuatro-q">Pizza Cuatro Quesos</option>
-                    <option value="peperoni">Pizza de pepperoni</option>
-                    <option value="cuatro-e">Pizza cuatro estaciones</option>
-                    <option value="chammpiñon">Pizza con champiñones</option>
-                    <option value="hawaiana">Pizza hawaiana</option>
-                    <option value="marinara">Pizza marinara</option>
-                    <option value="napolitana">Pizza napolitana</option>
-                    <option value="neoyorquina">Pizza neoyorquina</option>
-                    <option value="fugazza">Pizza fugazza </option>
+                <select name="categoria" id="categoria">
+                    <option value="margarita">Clásicas</option>
+                    <option value="cuatro-q">Pizza del mes</option>
+                    <option value="peperoni">Promo del mes</option>
+                    <option value="cuatro-e">Combo</option>
+                    <option value="chammpiñon">Individual</option>
+                    <option value="hawaiana">Bebida</option>
                 </select>
             </div>
 

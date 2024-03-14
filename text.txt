@@ -1,0 +1,133 @@
+{
+    "id": 7,
+    "nombre": "Pizza Diavola",
+    "tipo": "Carnívora",
+    "precio": 14.49,
+    "descripcion": "Con salami picante y aceitunas negras.",
+    "imagen": "image2.jpg"
+    
+  },
+  {
+    "id": 8,
+    "nombre": "Pizza Caprese",
+    "tipo": "Especial",
+    "precio": 13.99,
+    "descripcion": "Tomate fresco, mozzarella, albahaca y aceite de oliva.",
+    "imagen": "image2.jpg"
+   
+  },
+  {
+    "id": 9,
+    "nombre": "Pizza Marinara",
+    "tipo": "Vegetariana",
+    "precio": 10.99,
+    "descripcion": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva.",
+    "imagen": "image2.jpg"
+   
+  },
+  {
+    "id": 10,
+    "nombre": "Pizza Romana",
+    "tipo": "Especial",
+    "precio": 15.49,
+    "descripcion": "Con anchoas, aceitunas y alcaparras.",
+    "imagen": "image2.jpg"
+    
+  }
+
+  <!-- CUARTO-DIV -->
+       <div class="contenedor-div-cuarto">  
+        <div class="head">
+         <a href="/"> <img src="./design/icons/logo.png" alt="logo pizza"></a>
+     </div>
+     <div class="fourth-div">
+         <p class="horary">De 11:30 a 00:30 hs</p>
+         <p class="open">Abierto</p>
+         <p class="text"> Ingredientes frescos de cosecha, Tenemos variedad, excelentes
+             chefs, te ofrecemos lo primero en cuanto a calidad. Pedila y
+             llevala, o te la llevamos a tu casa por medio de nuestro
+             servicio de delivery. </p>
+         <i class="fa-solid fa-bag-shopping"></i>
+         <a class="adress" href="https://www.google.com.ar/maps/preview">A retirar en Av. Cabildo 230</a>
+         <i class="fa-solid fa-arrow-pointer"></i>
+     </div>
+     <div class="foot">
+         <i class="fa-solid fa-basket-shopping"></i>
+         <a href="">Mi cesta(0)</a>
+     </div>
+     </div>
+     <!-- CONTENEDOR-SEGUNDO-DIVS -->
+     <div class="contenedor-segundo">
+        <!-- QUINTO-DIV -->
+     <div class="fifth-div">
+         <div class="contenedor-img-fifth">
+             <img src="/design/imgCarrito/image5.jpg" alt="">
+         </div>
+         <div class="contenedor-descrip-fifth">
+             <p class="name-pizza-fifth">Ibérica Individual</p>
+         <p class="description-fifth">Huevos, aceite de oliva, parmesano, jamón ibérico</p>
+         <p class="price-fifth">$5,899,0</p>
+         </div>
+     </div>
+         <!-- SEXTO-DIV -->
+       <div class="sixth-div">
+         <div class="contenedor-img-sixth">
+             <img src="/design/imgCarrito/image6.jpg" alt="">
+         </div>
+         <div class="contenedor-descrip-sixth">
+             <p class="name-pizza-sixth">Fiesta Italiana 8P</p>
+         <p class="description-sixth">Cherrys, pesto de albahaca, orégano, mozzarella, aceite de oliva.</p>
+         <p class="price-sixth">$5,899,0</p>
+     
+        
+       </div>
+     
+     
+     </div></div>
+     
+
+      {
+    "id": 6,
+    "nombre": "Pizza Calzone",
+    "tipo": "Especial",
+    "precio": 5.900,
+    "descripcion": "Doblada y rellena de jamón, queso y otros ingredientes.",
+    "categoria": "Pizza del mes",
+    "imagen":"image"
+  },
+  {
+    "id": 7,
+    "nombre": "Pizza Diavola",
+    "tipo": "Carnívora",
+    "precio": 5.900,
+    "descripcion": "Con salami picante y aceitunas negras.",
+    "categoria": "Pizza del mes",
+    "imagen":"image"
+  },
+  {
+    "id": 8,
+    "nombre": "Pizza Caprese",
+    "tipo": "Especial",
+    "precio": 5.900,
+    "descripcion": "Tomate fresco, mozzarella, albahaca y aceite de oliva.",
+    "categoria": "Pizza del mes",
+    "imagen":"image"
+  },
+  {
+    "id": 9,
+    "nombre": "Pizza Marinara",
+    "tipo": "Vegetariana",
+    "precio": 5.900,
+    "descripcion": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva.",
+    "categoria": "Pizza del mes",
+    "imagen":"image"
+  },
+  {
+    "id": 10,
+    "nombre": "Pizza Romana",
+    "tipo": "Especial",
+    "precio": 5.900,
+    "descripcion": "Con anchoas, aceitunas y alcaparras.",
+    "categoria": "Pizza del mes",
+    "imagen":"image"
+  }
