@@ -1,5 +1,5 @@
        //Importando módulos:
-const { loadData, saveData } = require("../../data");
+const { loadData, saveData } = require("../../database");
 const path = require ('path');
 const fs = require ('fs');
                //función:
@@ -15,7 +15,7 @@ module.exports = (req,res) => {
   }
   saveData(productsLessOne)   // Actualizar los datos del producto
 
-  res.redirect("/productos")  //Redireccionar al usuario a la página de lista de productos
-}
+  res.redirect("/admin/productos")  //Redireccionar al usuario a la página de lista de productos
+};
 
 

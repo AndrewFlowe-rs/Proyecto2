@@ -1,14 +1,21 @@
 const express = require('express');
 const router = express.Router();
-const adminController = require('../controllers/admin');
-
+const adminController = require("../controllers/admin");
 // Desde el app.js viene /Admin  
-router.get('/edit',adminController.editProdut);
-router.get('/create',adminController.createProduct);
+router.get('/create',adminController.create);
+router.get('/edit',adminController.edit);
+
+//delete
+
+router.get("/eliminar-producto", adminController.delete);
+router.delete("/eliminar-producto/:id", adminController.remove);
+
+
+
 
 
 //router.post('/create')
-router.get('/' , adminController.list)
+router.get('/' ,adminController.list)
 
 
 

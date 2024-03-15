@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<%- include('../partials/head') %>
+
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <strong class="me-auto">Eliminar producto</strong>
+      </div>
+      <div class="card-body">
+        <h6 class="h3-card">
+          Estas seguro de eliminar el producto: <%= nombre %>
+        </h6>
+      </div>
+
+      <form action="<%= id %>" >
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a href="/admin/lista-productos" class="btn btn-dark">Cancelar</a>
+      </form>
+    </div>
+   <%- include('../partials/dashboard')  %>
+  </body>
+</html>

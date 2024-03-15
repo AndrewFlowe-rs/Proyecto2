@@ -1,3 +1,3 @@
 module.exports = (req,res)=>{
-    res.render("admin/productList")
+    res.render("product/List")
     }
