@@ -11,6 +11,8 @@ router.get('/edit', editProduct);
 router.get('/lista-productos', list)
 
 
+
+
 //router.post('/create')
 router.get('/' , list)
 // Crear producto
