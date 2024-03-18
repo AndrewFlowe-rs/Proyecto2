@@ -195,8 +195,9 @@
     }
 
     .headerPrincipal .burger-menu i {
-        font-size: 50px;
-        margin-right: 32px;
+        font-size: 49px;
+        -
+        top: auto;
     }
 
 

@@ -17,7 +17,7 @@
 }
 
 .barraVertical {
-    height: 62vh;
+    height: 102vh;
     background-color:red;
     width: 15%;
     transition: width 0.3s;
