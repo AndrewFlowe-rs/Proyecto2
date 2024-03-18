@@ -48,7 +48,7 @@
 
 
 
-/precio/
+/*//precio/*/
 
 .form-new .new-price {}
 
@@ -56,7 +56,7 @@
 
 
 
-/category/
+/*category*/
 
 .form-new .new-category {}
 
@@ -69,13 +69,13 @@
 
 
 
-/descripcion/
+/*descripcion*/
 
 .form-new .new-description {}
 
  .new-description input {}
 
-/imagen/
+/**imagen*/
 .form-new .new-image {
     /* background-color: var(--azul); */
 }
@@ -95,7 +95,7 @@
 
 
 
-/boton/
+/*boton*/
 
 
 .form-new .button {
@@ -110,7 +110,7 @@
 
 
 
-/dispositivos superiores/
+/*dispositivos superiores*/
 
 @media  (min-width: 361px){
     .main-form {
@@ -154,7 +154,7 @@
      position: relative;
      left: 47%;
      }
-    /titulo/
+    /*titulo*/
     .form-new .titulo {
         margin: 8px;
         border-bottom: solid;
@@ -168,7 +168,7 @@
 
 
 
-    /precio/
+    /*precio*/
 
     .form-new .new-price {}
 
@@ -176,7 +176,7 @@
 
 
 
-    /category/
+    /*category*/
 
     .form-new .new-category {
     width: 32%;
@@ -193,13 +193,13 @@
 
 
 
-    /descripcion/
+    /*descripcion*/
 
     .form-new .new-description {}
 
      .new-description input {}
 
-    /imagen/
+    /*imagen*/
     .form-new .new-image {
         /* background-color: var(--azul); */
         width: 38%;
@@ -222,7 +222,7 @@
 
 
 
-    /boton/
+    /*boton*/
 
 
     .form-new .button {
@@ -237,3 +237,4 @@
     .form-new .button button:hover{
         box-shadow:0px 0px 8px rgb(18, 16, 16) ; 
     }
+}
