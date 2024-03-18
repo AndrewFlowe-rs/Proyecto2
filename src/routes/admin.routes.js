@@ -13,6 +13,8 @@ router.post('/crear-producto', uploadProducts.single('img'), adminController.upd
 router.get('/edit',adminController.editProdut);
 
 
+
+
 //router.post('/create')
 router.get('/' , adminController.list)
 
