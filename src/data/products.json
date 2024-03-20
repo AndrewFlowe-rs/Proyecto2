@@ -1,72 +1,65 @@
 [
-  {
-    "id": 1,
-    "nombre": "Pizza Margarita",
-    "tipo": "Vegetariana",
-    "precio": 12.99,
-    "descripcion": "Deliciosa pizza con salsa de tomate, mozzarella y albahaca."
-  },
-  {
-    "id": 2,
-    "nombre": "Pizza Pepperoni",
-    "tipo": "Carnívora",
-    "precio": 14.99,
-    "descripcion": "Generosamente cubierta con pepperoni (salami picante) y queso fundido."
-  },
-  {
-    "id": 3,
-    "nombre": "Pizza Hawaiana",
-    "tipo": "Especial",
-    "precio": 15.99,
-    "descripcion": "Combinación de jamón, piña y queso derretido."
-  },
-  {
-    "id": 4,
-    "nombre": "Pizza Cuatro Quesos",
-    "tipo": "Especial",
-    "precio": 13.49,
-    "descripcion": "Con gorgonzola, parmesano, provolone y mozzarella."
-  },
-  {
-    "id": 5,
-    "nombre": "Pizza Vegetariana",
-    "tipo": "Vegetariana",
-    "precio": 11.99,
-    "descripcion": "Llena de verduras frescas: pimientos, cebolla, champiñones, aceitunas, espinacas."
-  },
-  {
-    "id": 6,
-    "nombre": "Pizza Calzone",
-    "tipo": "Especial",
-    "precio": 16.99,
-    "descripcion": "Doblada y rellena de jamón, queso y otros ingredientes."
-  },
-  {
-    "id": 7,
-    "nombre": "Pizza Diavola",
-    "tipo": "Carnívora",
-    "precio": 14.49,
-    "descripcion": "Con salami picante y aceitunas negras."
-  },
-  {
-    "id": 8,
-    "nombre": "Pizza Caprese",
-    "tipo": "Especial",
-    "precio": 13.99,
-    "descripcion": "Tomate fresco, mozzarella, albahaca y aceite de oliva."
-  },
-  {
-    "id": 9,
-    "nombre": "Pizza Marinara",
-    "tipo": "Vegetariana",
-    "precio": 10.99,
-    "descripcion": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva."
-  },
-  {
-    "id": 10,
-    "nombre": "Pizza Romana",
-    "tipo": "Especial",
-    "precio": 15.49,
-    "descripcion": "Con anchoas, aceitunas y alcaparras."
-  }
+   {
+      "id": 1,
+      "nombre": "Pizza Margarita",
+      "tipo": "Vegetariana",
+      "precio": 12.99,
+      "descripcion": "Deliciosa pizza con salsa de tomate, mozzarella y albahaca."
+   },
+   {
+      "id": 2,
+      "nombre": "Pizza Pepperoni",
+      "tipo": "Carnívora",
+      "precio": 14.99,
+      "descripcion": "Generosamente cubierta con pepperoni (salami picante) y queso fundido."
+   },
+   {
+      "id": 3,
+      "nombre": "Pizza Hawaiana",
+      "tipo": "Especial",
+      "precio": 15.99,
+      "descripcion": "Combinación de jamón, piña y queso derretido."
+   },
+   {
+      "id": 4,
+      "nombre": "Pizza Cuatro Quesos",
+      "tipo": "Especial",
+      "precio": 13.49,
+      "descripcion": "Con gorgonzola, parmesano, provolone y mozzarella."
+   },
+   {
+      "id": 5,
+      "nombre": "Pizza Vegetariana",
+      "tipo": "Vegetariana",
+      "precio": 11.99,
+      "descripcion": "Llena de verduras frescas: pimientos, cebolla, champiñones, aceitunas, espinacas."
+   },
+   {
+      "id": 6,
+      "nombre": "Pizza Calzone",
+      "tipo": "Especial",
+      "precio": 16.99,
+      "descripcion": "Doblada y rellena de jamón, queso y otros ingredientes."
+   },
+   {
+      "id": 7,
+      "nombre": "Pizza Diavola",
+      "tipo": "Carnívora",
+      "precio": 14.49,
+      "descripcion": "Con salami picante y aceitunas negras."
+   },
+   {
+      "id": 8,
+      "nombre": "Pizza Caprese",
+      "tipo": "Especial",
+      "precio": 13.99,
+      "descripcion": "Tomate fresco, mozzarella, albahaca y aceite de oliva."
+   },
+   {
+      "id": 9,
+      "nombre": "Pizza Marinara",
+      "tipo": "Vegetariana",
+      "precio": 10.99,
+      "descripcion": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva."
+   }
 ]

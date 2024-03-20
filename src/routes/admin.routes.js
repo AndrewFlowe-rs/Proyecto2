@@ -20,7 +20,7 @@ router.get('/' , adminController.list)
 
 
 //Borrar producto
- router.get("/eliminar-producto", adminController.delete);
+ router.get("/eliminar-producto/:id", adminController.delete);
  router.delete("/eliminar-producto/:id", adminController.remove);
 
 

@@ -15,5 +15,5 @@
          }
          saveData(productsLessOne)   // Actualizar los datos del producto
        
-         res.redirect("/admin/productos")  //Redireccionar al usuario a la página de lista de productos
+         res.redirect("/admin")  //Redireccionar al usuario a la página de lista de productos
        };

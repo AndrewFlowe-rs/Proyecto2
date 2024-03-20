@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3031
-;
+const port = 3031;
+const methodOverride =  require('method-override');
 
 // CONFIG
 
@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, './views'))
 // MIDDLEWARE
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static("../public/design"));
-
+app.use(methodOverride('_method'));
 
 
 // ROUTES
