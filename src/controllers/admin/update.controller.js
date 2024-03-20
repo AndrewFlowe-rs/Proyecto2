@@ -5,22 +5,22 @@ const path = require('path')
 
 module.exports = (req,res) => {
     const {id} = req.params;
-    const {nombre, precio, descripcion, categoria} = req.body;
-    const imagen = req.file
+    const {name, price, description, category} = req.body;
+    const image = req.file
     const products = readData();
     const productMp = products.map(p => {
         if(p.id === +id){
             const productsUp = {
                 ...p,
-                nombre: nombre.trim(), 
-                precio: +precio, 
-                descripcion: descripcion.trim(), 
-                categoria: categoria.trim(),
-                imagen: imagen ? imagen.filename : p.imagen
+                name: name.trim(), 
+                price: +price, 
+                description: description.trim(), 
+                category: category.trim(),
+                image: image ? image.filename : p.image
             }
          
           
-            if(imagen?.filename){
+            if(image?.filename){
   const pathBefore = path.join(__dirname, '../../../public/design/product' + p.imagen)
   const existF = fs.existsSync(pathBefore)
            if(existF){

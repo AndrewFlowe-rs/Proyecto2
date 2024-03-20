@@ -6,7 +6,7 @@ const {  uploadProducts } = require('../middlewares/upload.files')
 
 // Crear producto
 router.get('/crear-producto', adminController.createProduct);
-router.post('/crear-producto', uploadProducts.single('img'), adminController.update)
+router.post('/crear-producto', uploadProducts.single('img'), adminController.store)
 
 
 // Editar producto
@@ -16,11 +16,11 @@ router.get('/edit',adminController.editProdut);
 
 
 //router.post('/create')
-router.get('/' , adminController.list)
+router.post('/' , adminController.list)
 
 
 //Borrar producto
- router.get("/eliminar-producto", adminController.delete);
+ router.get("/eliminar-producto/:id", adminController.delete);
  router.delete("/eliminar-producto/:id", adminController.remove);
 
 

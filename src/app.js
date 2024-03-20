@@ -13,8 +13,8 @@ app.set('views', path.join(__dirname, './views'))
 // MIDDLEWARE
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static("../public/design"));
-
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')
