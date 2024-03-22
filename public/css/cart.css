@@ -1,7 +1,7 @@
 /* CELULAR */
 @media (max-width:360px) {
     main {
-        /* background-color: black; */
+    padding-bottom: 30px;
     }
 
     /* MAIN NAV- */
@@ -1785,23 +1785,7 @@
 
     /* Footer */
     footer {
-
-        background-color: var(--rojo);
-
-        display: flex;
-
-        /* height: 187px; */
-
-        flex-direction: column;
-
-        align-items: center;
-
-        /* width: 123px; */
-
-        position: relative;
-
-        bottom: -367px;
-    }
+}
 
     footer p.conditions {
 
@@ -2504,19 +2488,7 @@
 
     /* Footer */
     footer {
-
-        background-color: var(--rojo);
-
-        display: flex;
-
-        height: 40px;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        /* width: 123px; */
-    }
+}
 
     footer p.conditions {
 
