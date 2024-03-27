@@ -40,7 +40,7 @@
 }
 
 .descripcion-producto2 {
-    width: 50%;
+    width: 47%;
 }
 
 .pizza-provo {
@@ -143,8 +143,9 @@
 
     .descripcion-producto3 {
 
-        width: 50%;
-    }
+width: 48%;
+
+}
 
     .descripcion-producto3 h3 {
 
@@ -154,13 +155,14 @@
 
 @media (min-width: 768px) {
 
-    .div-categorias{
-    width: 25%;
+    .div-categorias {
+        width: 25%;
     }
 
     .pizzasinferior {
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
     }
 
     .mainhome .pizzasbaner {
@@ -179,12 +181,12 @@
         width: 100%;
     }
 
-    .anuncios-img{
-    display: flex;
+    .anuncios-img {
+        display: none;
     }
 
-    .img-logo{
-    width: 100%;
+    .img-logo {
+        width: 100%;
     }
 
     .pizzasbaner {
@@ -192,24 +194,48 @@
         display: flex;
     }
 
-    .pizzasbaner .anuncios-img img{
+    .pizzasbaner .anuncios-img img {
         width: 100%;
     }
 
-    .pizzasinferior article {width: 75%;}
-
-    .pizza-provo{
-    display: flex;
+    .pizzasinferior article {
+        width: 75%;
+        display: flex;
     }
 
-    .pizza-provo img{
+    .pizza-provo {
+    flex-direction: initial;
+}
+
+    .pizza-provo img {}
+
+    .div-padre {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .div-padre{
-    display: flex;
-    flex-wrap: wrap;
+    .pizza-cala {}
+
+    .home-div {
+
+        display: flex;
+
+        flex-direction: row-reverse;
     }
 
-    .pizza-cala{
+    .bannerhome ul li a{
+        
+font-size: 26px;
+    }
+
+    .div-categorias h1{
+    }
+
+    .carousel{
+        width: 100%;
+    }
+
+    .pizza-roquefort{
+    margin-bottom: 50px;
     }
 }
