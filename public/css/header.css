@@ -118,7 +118,13 @@
     }
 
     .headerPrincipal .burger-menu i {
+<<<<<<< HEAD
         display: none;
+=======
+        font-size: 49px;
+        -
+        top: auto;
+>>>>>>> 58c3765251d6b694a3686cbad462028375d5333a
     }
 
 

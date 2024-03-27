@@ -1,89 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%-include("../partials/head")%>
-<body>
-<main class="main-list">
-    <h1>Lista de productos</h1>
-    <table class="table">
-        <tr>
-            <th scope="row">1</th>
-            <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
-            <td>nombre</td>
-            <td>precio</td>
-            <td>decripción</td>
+<%-include("../partials/head")%>
 
-            <td>
-                <div class="btn-group" role="group">
-                    <a href="" class="btn btn-info d-inline-block">Info</a>
-                    <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
-                    <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
-                </div>
+    <body>
 
-            </td>
-        <tr>
-            <th scope="row">1</th>
-            <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
-            <td>nombre</td>
-            <td>precio</td>
-            <td>decripción</td>
+        <%-include("../partials/dashboard")%>
 
-            <td>
-                <div class="btn-group" role="group">
-                    <a href="" class="btn btn-info d-inline-block">Info</a>
-                    <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
-                    <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
-                </div>
+            <main class="main-list">
+                <a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
+                <h1>Lista de productos</h1>
+                <table class="table">
+                    <% products.forEach(p=> { %>
+                        <tr>
+                            <th scope="row"><%=p.id%></th>
+                            <!-- <td><img class="img-product" src="../../../images/<%= p.imagenes %>" alt=""></td> -->
+                            <td><%= p.nombre %></td>
+                            <td>$<%= toThousand(p.precio) %></td>
+                            <td><%= p.descripcion %></td>
 
-            </td>
-        <tr>
-            <th scope="row">1</th>
-            <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
-            <td>nombre</td>
-            <td>precio</td>
-            <td>decripción</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a href="" class="btn btn-info d-inline-block">Info</a>
+                                    <a href="/admin/edit" class="btn btn-warning d-inline-block">Editar</a>
+                                    <a href="/admin/eliminar-producto/<%= p.id%>"
+                                        class="btn btn-danger d-inline-block">Eliminar</a>
+                                </div>
 
-            <td>
-                <div class="btn-group" role="group">
-                    <a href="" class="btn btn-info d-inline-block">Info</a>
-                    <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
-                    <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
-                </div>
-
-            </td>
-        <tr>
-            <th scope="row">1</th>
-            <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
-            <td>nombre</td>
-            <td>precio</td>
-            <td>decripción</td>
-
-            <td>
-                <div class="btn-group" role="group">
-                    <a href="" class="btn btn-info d-inline-block">Info</a>
-                    <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
-                    <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
-                </div>
-
-            </td>
-        <tr>
-            <th scope="row">1</th>
-            <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
-            <td>nombre</td>
-            <td>precio</td>
-            <td>decripción</td>
-
-            <td>
-                <div class="btn-group" role="group">
-                    <a href="" class="btn btn-info d-inline-block">Info</a>
-                    <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
-                    <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
-                </div>
-
-            </td>
-        </tr>
-      </table>
-     
-</main>
+                            </td>
+                            <% }) %>
 
 
-</body>
+                </table>
+
+            </main>
+
+
+    </body>

@@ -4,7 +4,7 @@
 <body>
     <%-include("../partials/header")%>
     <main class="main-form-n">
-        <form class="form-new">
+        <form class="form-new" method="post" action="/admin/crear-producto">
             <div class="new-contentx">
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -12,42 +12,43 @@
                 <h1 class="titulo">Crear producto</h1>
             </div>
             <div class="new-title">
-                <input type="text" id="title-N" name="titulo-N" placeholder="Nuevo titulo">
+                <input type="text" id="name" name="name" placeholder="Nuevo titulo">
             </div>
             <div class="new-price">
-                <input type="text" id="price-N" name="precio-N" placeholder="Nuevo precio">
+                <input type="text" id="price" name="price" placeholder="Nuevo precio">
             </div>
             <div class="new-description">
-                <input type="text" id="description-N" name="descripcion-N" placeholder="Nueva descripcion">
+                <input type="text" id="description" name="description" placeholder="Nueva descripcion">
             </div>
             <div class="new-category">
                 <label for="category">Categoria</label>
-                <select name="category" id="category-N">
-                    <option value="margarita">Pizza Margarita</option>
-                    <option value="cuatro-q">Pizza Cuatro Quesos</option>
-                    <option value="peperoni">Pizza de pepperoni</option>
-                    <option value="cuatro-e">Pizza cuatro estaciones</option>
-                    <option value="chammpiñon">Pizza con champiñones</option>
-                    <option value="hawaiana">Pizza hawaiana</option>
-                    <option value="marinara">Pizza marinara</option>
-                    <option value="napolitana">Pizza napolitana</option>
-                    <option value="neoyorquina">Pizza neoyorquina</option>
-                    <option value="fugazza">Pizza fugazza </option>
+                <select name="category" id="category">
+                    <option value="margarita">Clásicas</option>
+                    <option value="cuatro-q">Pizza del mes</option>
+                    <option value="peperoni">Promo del mes</option>
+                    <option value="cuatro-e">Combos</option>
+                    <option value="chammpiñon">Individuales</option>
+                    <option value="hawaiana">Bebidas</option>
+                  
                 </select>
             </div>
 
             <div class="new-image">
                 <label class="label-titulo" for="image">Editar imagen del producto</label>
                 <br>
-                <input type="file" id="image-N" name="image-N">
+                <input type="file" id="image" name="image">
             </div>
             <div class="button">
                 <button type="submit" id="button-N" name="boton-N">Guardar cambios</button>
             </div>
         </form>
-        <%-include("../partials/footer")%>
-
+        
         
     </main>
+<%-include("../partials/footer")%>
+
+    
+<!-- <%-include("../partials/dashboard")%> -->
+
 </body>
 </html>

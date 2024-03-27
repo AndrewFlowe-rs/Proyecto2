@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("../partials/head")%>
+<body>
+    <div class="card p-5">
+        <div class="card-title">
+          <strong class="me-auto">Eliminar producto</strong>
+        </div>
+        <div class="card-body">
+          Estas seguro de eliminar el producto: <%= product.nombre%>
+        </div>
+        <form action="/admin/eliminar-producto/<%=product.id%>?_method=DELETE" method="POST">
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a href="/admin" class="btn btn-dark">Cancelar</a>
+          </form>
+      
+</body>
+</html>
+
+
+
+  </div>

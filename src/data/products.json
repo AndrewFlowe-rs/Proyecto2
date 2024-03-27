@@ -1,0 +1,98 @@
+[
+   {
+      "id": 1,
+      "name": "Pizza Margarita",
+      "price": 12.99,
+      "description": "Deliciosa pizza con salsa de tomate, mozzarella y albahaca.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 2,
+      "name": "Pizza Pepperoni",
+      "price": 14.99,
+      "description": "Generosamente cubierta con pepperoni (salami picante) y queso fundido.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 3,
+      "name": "Pizza Hawaiana",
+      "price": 15.99,
+      "description": "Combinación de jamón, piña y queso derretido.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 4,
+      "name": "Pizza Cuatro Quesos",
+      "price": 13.49,
+      "description": "Con gorgonzola, parmesano, provolone y mozzarella.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 5,
+      "name": "Pizza Vegetariana",
+      "price": 11.99,
+      "description": "Llena de verduras frescas: pimientos, cebolla, champiñones, aceitunas, espinacas.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 6,
+      "name": "Pizza Calzone",
+      "price": 16.99,
+      "description": "Doblada y rellena de jamón, queso y otros ingredientes.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 7,
+      "name": "Pizza Diavola",
+      "price": 14.49,
+      "description": "Con salami picante y aceitunas negras.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 8,
+      "name": "Pizza Caprese",
+      "price": 13.99,
+      "description": "Tomate fresco, mozzarella, albahaca y aceite de oliva.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 9,
+      "name": "Pizza Marinara",
+      "price": 10.99,
+      "description": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 10,
+      "name": "Pizza Romana",
+      "price": 15.49,
+      "description": "Con anchoas, aceitunas y alcaparras.",
+      "category": "Pizza del mes",
+      "image": "default-image.png"
+   },
+   {
+      "id": 11,
+      "name": "Pizza napolitana",
+      "price": 5000,
+      "description": "Pizza con tomate y albahaca",
+      "category": "margarita",
+      "image": "default-image.png"
+   },
+   {
+      "id": 12,
+      "name": "Pizza napolitana",
+      "price": 5000,
+      "description": "Pizza con tomate y albahaca",
+      "category": "margarita",
+      "image": "default-image.png"
+   }
+]

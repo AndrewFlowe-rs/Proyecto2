@@ -26,5 +26,13 @@
 @import "./login.css";
 @import "./headerCart.css";
 @import "./edit-product.css";
+<<<<<<< HEAD
 @import "./newProdruct.css";
 @import "./listProduct.css";
+=======
+@import "./newProduct.css";
+@import "./listProduct.css";
+@import "./dashboard.css";
+
+
+>>>>>>> 58c3765251d6b694a3686cbad462028375d5333a
