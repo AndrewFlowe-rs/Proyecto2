@@ -17,7 +17,6 @@
 
 
 @import "./general.css";
-@import "./main.css";
 @import "./footer.css";
 @import "./home.css";
 @import "./productDetail.css";
@@ -27,7 +26,5 @@
 @import "./login.css";
 @import "./headerCart.css";
 @import "./edit-product.css";
-@import "./newProduct.css";
+@import "./newProdruct.css";
 @import "./listProduct.css";
-
-

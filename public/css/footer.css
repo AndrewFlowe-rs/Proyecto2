@@ -137,7 +137,6 @@ font-weight: bold;
 @media screen and (min-width: 769px) {
 
     .footer {
-background: var(--rojo);
 }
 
     .footer .info-footer {

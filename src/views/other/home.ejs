@@ -11,87 +11,106 @@
     <%- include('../partials/header') %>
 
       <main>
-        <div class="home-main">
-          <div class="home-carousel">
-            <img src="/design/imgHome/logo-home.jpg" class="img-logo" alt="...">
-          </div>
 
-          <section class="pizzasbaner">
+          <div class="div-padre">
 
-            <h1>CATEGORIAS</h1>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/design/imgHome/logo-home.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/design/imgHome/logo-home.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/design/imgHome/logo-home.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
 
-            <div class="bannerhome">
+            <div class="div-categorias">
+
+              <h1>CATEGORIAS</h1>
+
+              <div class="bannerhome">
+                <ul>
+                  <li><a href="#">Pizzas</a></li>
+                  <li><a href="#">Calzones</a></li>
+                  <li><a href="#">Faina</a></li>
+                  <li><a href="#">Canasta</a></li>
+                  <li><a href="#">Empanadas</a></li>
+                  <li><a href="#">Sin TACC</a></li>
+                </ul>
+              </div>
+              <div class="anuncios-img">
+                <img src="/design/imgHome/CANA-008-380x2851.jpg" alt="Imagen de empanada canastita">
+                <img src="/design/imgHome/empanadas.jpg" alt="Empanadas">
+                <img src="/design/imgHome/qr.jpg" alt="QR">
+              </div>
+              </div>
+
+            <section class="pizzasinferior">
+              <article class="pizza-cala">
+                <img src="/design/imgHome/calabresa.jpg" alt="Calabresa">
+
+                <div class="descripcion-producto">
+                  <h3>CALABREZA</h3>
+
+                  <ul>
+                    <li>Salsa de tomate</li>
+                    <li>Mozzarella</li>
+                    <li>Longaniza</li>
+                    <li>Aji molido</li>
+                    <li>Aceitunas negras</li>
+                  </ul>
+                </div>
+              </article>
+              
+          <article class="pizza-provo">
+            <div class="descripcion-producto2">
+              <h3>PROVOLONE Y ANANÁ</h3>
               <ul>
-                <li><a href="#">Pizzas</a></li>
-                <li><a href="#">Calzones</a></li>
-                <li><a href="#">Faina</a></li>
-                <li><a href="#">Canasta</a></li>
-                <li><a href="#">Empanadas</a></li>
-                <li><a href="#">Sin TACC</a></li>
+                <li>Salsa de tomate</li>
+                <li>Mozzarella</li>
+                <li>Longaniza</li>
+                <li>Aji molido</li>
+                <li>Aceitunas negras</li>
               </ul>
             </div>
 
-            <img src="/design/imgHome/CANA-008-380x2851.jpg" alt="Imagen de empanada canastita">
-            <img src="/design/imgHome/empanadas.jpg" alt="Empanadas">
-            <img src="/design/imgHome/qr.jpg" alt="QR">
+            <img src="/design/imgHome/PROVOLENE1.jpg" alt="Provolone">
+          </article>
+
+          <article class="pizza-roquefort">
+            <img src="/design/imgHome/ROQUEFORT1.jpg" alt="Roquefort">
+            <div class="descripcion-producto3">
+              <h3>ROQUEFORT</h3>
+
+              <ul>
+                <li>Salsa de tomate</li>
+                <li>Mozzarella</li>
+                <li>Roquefort</li>
+                <li>Ananá</li>
+                <li>Queso provolone</li>
+              </ul>
+
+            </div>
+
+          </article>
+
           </section>
 
-          <section class= "pizzasinferior">
-
-            <article class= "pizza-cala">
-
-              <img src="/design/imgHome/calabresa.jpg" alt="Calabresa">
-
-              <div class="descripcion-producto">
-                <h3>CALABREZA</h3>
-
-                <ul>
-                  <li>Salsa de tomate</li>
-                  <li>Mozzarella</li>
-                  <li>Longaniza</li>
-                  <li>Aji molido</li>
-                  <li>Aceitunas negras</li>
-                </ul>
-            </article>
-        </div>
-        <article class="pizza-provo">
-
-          
-          <div class="descripcion-producto2">
-            <h3>PROVOLONE Y ANANÁ</h3>
-            <ul>
-              <li>Salsa de tomate</li>
-              <li>Mozzarella</li>
-              <li>Longaniza</li>
-              <li>Aji molido</li>
-              <li>Aceitunas negras</li>
-            </ul>
-            
-          </div>
-
-          <img src="/design/imgHome/PROVOLENE1.jpg" alt="Provolone">
-        </article>
-
-        <article class="pizza-roquefort">
-          <img src="/design/imgHome/ROQUEFORT1.jpg" alt="Roquefort">
-          <div class="descripcion-producto3">
-            <h3>ROQUEFORT</h3>
-
-            <ul>
-              <li>Salsa de tomate</li>
-              <li>Mozzarella</li>
-              <li>Roquefort</li>
-              <li>Ananá</li>
-              <li>Queso provolone</li>
-            </ul>
-
-          </div>
-
-        </article>
-        </section>
-
         </div>
 
+        </div>
         </div>
       </main>
 

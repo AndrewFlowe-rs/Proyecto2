@@ -1811,7 +1811,8 @@
 /* DESKTOP */
 @media (min-width:769px) {
     main {
-        /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
     }
 
     /* MAIN NAV- */
