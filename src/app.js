@@ -3,6 +3,8 @@ const app = express();
 const path = require("path");
 const port = 3031;
 const methodOverride =  require('method-override');
+const session = require('express-session')
+//const cookieParser = require('cookie-parser');
 
 // CONFIG
 
@@ -13,13 +15,11 @@ app.set('views', path.join(__dirname, './views'))
 // MIDDLEWARE
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static("../public/design"));
-<<<<<<< HEAD
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-=======
 app.use(methodOverride('_method'));
+app.use(session({secret:'palabra secreta'}));
 
->>>>>>> 858ef94226c8eedfe07be77217f6cbf2a186f646
 
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')

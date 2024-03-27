@@ -1,0 +1,21 @@
+[
+    {
+       "id": 1,
+       "name": "Andres",
+       "surname": "Flower",
+       "email": "andru@gmail.com",
+       "password": "$2a$10$/WAk9g1yqCehbvEh/8XXf.kmlYp8ws.NI9uQPmhrwKZCRE.5ZqP9.",
+       "avatar": "",
+       "role":"ADMIN",
+       "direccion": {
+          "address": "",
+          "city": "",
+          "province": "",
+          "cp": "",
+          "num": "",
+          "country": ""
+       }
+    }
+ 
+    
+ ]

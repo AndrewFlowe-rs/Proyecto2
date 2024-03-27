@@ -5,8 +5,11 @@ const authController = require('../controllers/authentications');
 // Desde app llega /aut
 
 
+
 router.get( '/login', authController.login);
+router.post( '/login', authController.processLogin);
 router.get('/registro', authController.register);
+
 
 
 
