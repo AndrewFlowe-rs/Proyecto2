@@ -8,12 +8,7 @@
        "avatar": "",
        "role":"ADMIN",
        "direccion": {
-          "address": "",
-          "city": "",
-          "province": "",
-          "cp": "",
-          "num": "",
-          "country": ""
+ 
        }
     }
  
