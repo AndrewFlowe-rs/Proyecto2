@@ -53,8 +53,10 @@
 }
 *{
     font-family: var(--Frijole);
-    margin: 0px;
+    margin: 0;
     color: var(--negro);
+    box-sizing: border-box;
+    padding: 0;
 }
 
 
