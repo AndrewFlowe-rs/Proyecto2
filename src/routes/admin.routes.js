@@ -16,7 +16,7 @@ router.get('/edit',adminController.editProdut);
 
 
 //router.post('/create')
-router.post('/' , adminController.list)
+router.get('/' , adminController.list)
 
 
 //Borrar producto

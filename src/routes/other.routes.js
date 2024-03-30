@@ -6,8 +6,7 @@ const homeController = require('../controllers/other');
 
 router.get('/', homeController.home)
 
-// Redirección desde '/home' a '/'
-router.get('/home',(req,res) => res.redirect('/'));
+
 
 
 

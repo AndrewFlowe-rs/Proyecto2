@@ -23,5 +23,9 @@ module.exports = (req, res) => {
       avatar: userFind.avatar,
       role: userFind.role,
     };
-    res.redirect("/")
-}
+    if(remember) res.cookie("userLogin", req.session.userLogin, {maxAge: 6000 * 30})
+  
+res.redirect("/")
+
+  }
+
