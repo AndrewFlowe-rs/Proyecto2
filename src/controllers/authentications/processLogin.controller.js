@@ -1,10 +1,11 @@
-/*const { readData } = require("../../data");
-const bcrypt = require("bcryptjs");// Importa la librería bcryptjs para el manejo seguro de contraseñas.*/
-
 const { readData } = require("../../data");
+const bcrypt = require("bcryptjs");// Importa la librería bcryptjs para el manejo seguro de contraseñas.
+
+
+
 
 module.exports = (req, res) => {
-    const { email, password} = req.body;
+    const { email, password , remember} = req.body;
     const users = readData("users");// Obtiene los datos de los usuarios,
   
 
@@ -20,7 +21,6 @@ module.exports = (req, res) => {
     req.session.userLogin = {//Crea una sesión para el usuario en la aplicación Express y almacena la información del usuario en la sesión.
       name: userFind.name,
       surname: userFind.surname,
-      avatar: userFind.avatar,
       role: userFind.role,
     };
     if(remember) res.cookie("userLogin", req.session.userLogin, {maxAge: 6000 * 30})
