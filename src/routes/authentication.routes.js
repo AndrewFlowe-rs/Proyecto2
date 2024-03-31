@@ -9,6 +9,7 @@ const authController = require('../controllers/authentications');
 router.get( '/login', authController.login);
 router.post( '/login', authController.processLogin);
 router.get('/registro', authController.register);
+router.post('/registro', authController.processRegister);
 
 
 
