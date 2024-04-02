@@ -5,7 +5,7 @@ module.exports = (req, res) => {
   const { name,surname, email, password, number, city } = req.body; // Extrae los valores name, surname, email, y password
   const users = readData("users"); // Obtiene los datos de los usuarios existentes
   const newUser = { //: Crea un objeto para representar al nuevo usuario
-    id: !users.length ? 1 : users[users.length - 1].id + 1, /*/*Si no hay usuarios (!users.length), se asigna el id 1.
+    id: !users.length ? 1 : users[users.length - 1].id + 1,  /*Si no hay usuarios (!users.length), se asigna el id 1.
     Si hay usuarios, se asigna el id del último usuario*/
     name: name?.trim(),
     surname: surname?.trim(),

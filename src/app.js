@@ -23,7 +23,7 @@ app.use(methodOverride('_method'));
 app.use(session({secret:'palabra secreta'}));
 
 app.use(checkSession);
-app.use(checkCookie);
+//app.use(checkCookie);
 
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')

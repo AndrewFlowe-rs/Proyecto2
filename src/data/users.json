@@ -9,13 +9,14 @@
       "role": "ADMIN",
       "city": ""
    },
+   
    {
       "id": 2,
-      "name": "tomate",
+      "name": "Andres",
       "surname": "SEG",
-      "email": "SDFD@GMAIL.COM",
-      "password": "$2a$10$w3ziXQQHwxYf.uKvch.pTuSZVFk20vU0z4rtlkzvbF4qelKQSU.9C",
-      "number": "38852144",
+      "email": "austincartermahone2@outlook.com",
+      "password": "$2a$10$lfZiMs6FGYxAagrXcyW76ekgrx.BFCTkFuxzxJhBytl8saJYGRXl2",
+      "number": "38846",
       "role": "REGULAR",
       "city": ""
    }
