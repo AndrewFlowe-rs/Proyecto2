@@ -3,19 +3,19 @@
       "id": 1,
       "name": "Andres",
       "surname": "Flower",
-      "email": "andru@gmail.com",
-      "password": "$2a$10$/WAk9g1yqCehbvEh/8XXf.kmlYp8ws.NI9uQPmhrwKZCRE.5ZqP9.",
-      "avatar": "",
+      "email": "austincartermahone@outlook.com",
+      "password": "$2a$10$eh9XLLbzeFGQivZ7bMm6KOuMoR7O0gAuHg9crf.AVuzihvDcH8Wda",
+      "number": "3884636451",
       "role": "ADMIN",
-      "city": {}
+      "city": ""
    },
    {
       "id": 2,
-      "name": "el caballo original de SANMARTIN",
-      "surname": "Flower",
-      "email": "austincartermahone2@outlook.com",
-      "password": "$2a$10$xc0Ut8GdpNVSA.N4zvwmOeldNs0AK/Sg7IbDkpow9XfWH5eeKy1F2",
-      "number": "388521",
+      "name": "tomate",
+      "surname": "SEG",
+      "email": "SDFD@GMAIL.COM",
+      "password": "$2a$10$w3ziXQQHwxYf.uKvch.pTuSZVFk20vU0z4rtlkzvbF4qelKQSU.9C",
+      "number": "38852144",
       "role": "REGULAR",
       "city": ""
    }

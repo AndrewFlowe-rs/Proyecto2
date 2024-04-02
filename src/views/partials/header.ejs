@@ -9,8 +9,14 @@
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="carrito/cart">Carrito</a></li>
-                <li><a href="/admin">Aministrador</a></li>
-                <li><a href="aut/registro">Registrate</a></li>
+              <% if (!locals.userLogin) {%> 
+                <li><a href="aut/registro">Registrate</a></li>   
+                <% } else if (locals.userLogin.role==="ADMIN"){ %>
+                    <li><a href="/admin">Aministrador🍕🎈</a></li>
+                   
+                    <% } else {%>
+                        <li><a href="/">bienvenido <%= locals.userLogin.name %> 😎</a></li>
+               <% } %>
             </ul>
         </div>
         </nav>
