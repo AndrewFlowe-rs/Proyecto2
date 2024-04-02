@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/admin');
-const {  uploadProducts } = require('../middlewares/upload.files')
+const {  uploadProducts } = require('../middlewares/validations/upload.files')
 // Desde el app.js viene /Admin  
 
 // Crear producto

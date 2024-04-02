@@ -4,9 +4,9 @@ const path = require("path");
 const port = 3031;
 const methodOverride =  require('method-override');
 const session = require('express-session')
-//const cookieParser = require('cookie-parser');
-const checkSession = require("./middlewares/autentication/checkSession")
-const checkCookie = require('./middlewares/autentication/checkCookie');
+const cookieParser = require('cookie-parser');
+const checkSession = require("./middlewares/validations/checkSession");
+const checkCookie = require('./middlewares/validations/checkCookie');
 
 // CONFIG
 
@@ -21,9 +21,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(session({secret:'palabra secreta'}));
+app.use(cookieParser());
 
+
+app.use(checkCookie);
 app.use(checkSession);
-//app.use(checkCookie);
 
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')
