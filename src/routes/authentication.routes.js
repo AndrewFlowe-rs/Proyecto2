@@ -12,6 +12,8 @@ const {login} =require('../controllers/authentications')
 router.get('/login', login);
 router.post('/login', loginValidation, authController.loginProcess);
 router.get('/registro', authController.register);
+router.post('/registro', authController.processRegister);
+
 
 
 

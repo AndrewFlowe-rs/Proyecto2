@@ -2,7 +2,11 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const port = 3031;
-const methodOverride = require('method-override');
+const methodOverride =  require('method-override');
+const session = require('express-session')
+const cookieParser = require('cookie-parser');
+const checkSession = require("./middlewares/validations/checkSession");
+const checkCookie = require('./middlewares/validations/checkCookie');
 
 // CONFIG
 
@@ -15,9 +19,14 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static("../public/design"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
+app.use(session({secret:'palabra secreta'}));
+app.use(cookieParser());
 
 
+
+app.use(checkCookie);
+app.use(checkSession);
 
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')

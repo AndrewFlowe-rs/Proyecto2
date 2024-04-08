@@ -1,0 +1,23 @@
+[
+   {
+      "id": 1,
+      "name": "Andres",
+      "surname": "Flower",
+      "email": "austincartermahone@outlook.com",
+      "password": "$2a$10$eh9XLLbzeFGQivZ7bMm6KOuMoR7O0gAuHg9crf.AVuzihvDcH8Wda",
+      "number": "3884636451",
+      "role": "ADMIN",
+      "city": ""
+   },
+   
+   {
+      "id": 2,
+      "name": "Andres",
+      "surname": "SEG",
+      "email": "austincartermahone2@outlook.com",
+      "password": "$2a$10$lfZiMs6FGYxAagrXcyW76ekgrx.BFCTkFuxzxJhBytl8saJYGRXl2",
+      "number": "38846",
+      "role": "REGULAR",
+      "city": ""
+   }
+]

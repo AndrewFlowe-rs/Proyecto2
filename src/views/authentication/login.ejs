@@ -14,13 +14,26 @@
 
                                 <!--LOGIN-->
 
-                                <form action="">
+                                <form action="/aut/login" method="post">
 
+<<<<<<< HEAD
                                         <input type="email" id="login" placeholder="Email" name="email"
                                                 value="<%= locals.email? email : "" %>">
                                                 <p class="error-alert">
                                                         <%= locals.errors?.email?.msg%>
                                                 </p>
+=======
+                                        <input type="email" id="email" placeholder="Email" type="email" name="email"
+                                                value="">
+                                        <input type="password" placeholder="contraseña" name="password">
+                                        <div>
+                                                <label for="remember">Recordarme</label>
+
+                                                <input type="checkbox" name="remember " id="remember">
+                                        </div>
+                                        <button type="submit">Ingresar</button>
+                                        <a href="">¿Olvidaste tu contraseña?</a>
+>>>>>>> 0557a46ae2583fe7b176b792f84686e5087d29ff
 
                                                 <input type="password" placeholder="contraseña" name="password">
 
