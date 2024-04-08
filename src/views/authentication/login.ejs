@@ -16,27 +16,42 @@
 
                                 <form action="">
 
-                                        <input type="email" id="login" placeholder="Email">
-                                        <input type="password" placeholder="contraseña">
-                                        <button type="submit">Ingresar</button>
-                                        <a href="">¿Olvidaste tu contraseña?</a>
+                                        <input type="email" id="login" placeholder="Email" name="email"
+                                                value="<%= locals.email? email : "" %>">
+                                                <p class="error-alert">
+                                                        <%= locals.errors?.email?.msg%>
+                                                </p>
 
-                                        <ol class="conteiner-red">
+                                                <input type="password" placeholder="contraseña" name="password">
 
-                                                <li class="google-login"><img src="/design/iconsLogin/klipartz.png"
-                                                                alt=""><a href="http://www.google.com">Continuar con
-                                                                Google</a></li>
-                                                <li class="face-login"><img src="/design/icons/face.png" alt=""><a
-                                                                href="http://www.facebook.com">Continuar Facebook</a>
-                                                </li>
-                                                <li class="insta-login"> <img src="/design/icons/insta.png" alt=""><a
-                                                                href="http://www.instagram.com">Continuar con
-                                                                Instagram</a></li>
-                                                <li class="whats-login"> <img src="/design/icons/what.png" alt=""><a
-                                                                href="http://www.instagram.com">Continuar con
-                                                                Whatsapp</a></li>
+                                                <p class="error-alert">
+                                                        <%= locals.errors?.password?.msg%>
+                                                </p>
 
-                                        </ol>
+                                                <button type="submit">Ingresar</button>
+                                                <a href="">¿Olvidaste tu contraseña?</a>
+
+                                                <ol class="conteiner-red">
+
+                                                        <li class="google-login"><img
+                                                                        src="/design/iconsLogin/klipartz.png" alt=""><a
+                                                                        href="http://www.google.com">Continuar con
+                                                                        Google</a></li>
+                                                        <li class="face-login"><img src="/design/icons/face.png"
+                                                                        alt=""><a
+                                                                        href="http://www.facebook.com">Continuar
+                                                                        Facebook</a>
+                                                        </li>
+                                                        <li class="insta-login"> <img src="/design/icons/insta.png"
+                                                                        alt=""><a
+                                                                        href="http://www.instagram.com">Continuar con
+                                                                        Instagram</a></li>
+                                                        <li class="whats-login"> <img src="/design/icons/what.png"
+                                                                        alt=""><a
+                                                                        href="http://www.instagram.com">Continuar con
+                                                                        Whatsapp</a></li>
+
+                                                </ol>
                                 </form>
 
 

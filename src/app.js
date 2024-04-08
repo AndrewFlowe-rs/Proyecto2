@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
 
 
+
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')
 const otherRoutes = require('./routes/other.routes');

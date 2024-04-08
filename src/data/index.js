@@ -3,7 +3,7 @@ const fs = require('fs');
 
 
 module.exports = {
-    readData: (filenameJson = 'products') => {
+    loadData: (filenameJson = 'products') => {
         const pathJson = path.join(__dirname, `${filenameJson}.json`)
         const dataJsn = fs.readFileSync(pathJson, 'utf-8')
         const dataJS = JSON.parse(dataJsn)
