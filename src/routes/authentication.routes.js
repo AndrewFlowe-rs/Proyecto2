@@ -3,7 +3,7 @@ const router = express.Router();
 const authController = require('../controllers/authentications');
 // const {loginValidation} = require('../controllers/authentications')
 const loginValidation = require('../middlewares/validation/loginValidation')
-const {login} =require('../controllers/authentications')
+const {login} = require('../controllers/authentications')
 
 
 // Desde app llega /au

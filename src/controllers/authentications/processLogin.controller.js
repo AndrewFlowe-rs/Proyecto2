@@ -1,4 +1,4 @@
-const { readData } = require("../../data");
+const { loadData } = require("../../data");
 const bcrypt = require("bcryptjs");// Importa la librería bcryptjs para el manejo seguro de contraseñas.
 
 
@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");// Importa la librería bcryptjs para el mane
 
 module.exports = (req, res) => {
   const { email, password, remember } = req.body;
-  const users = readData("users");// Obtiene los datos de los usuarios,
+  const users = loadData("users");// Obtiene los datos de los usuarios,
 
 
   const userFind = users.find((u) => u.email === email);// Busca un usuario
