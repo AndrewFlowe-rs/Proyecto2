@@ -4,70 +4,75 @@
 <!-- Head -->
 <%- include('../partials/head') %>
 
-<body>
+    <body>
 
 
-   <!-- Header -->
-   <%- include('../partials/header') %>
+        <!-- Header -->
+        <%- include('../partials/header') %>
 
-    <main class="main-register">
+            <main class="main-register">
 
-        <form class="form-register" action="/aut/registro" method="post">
-            <div class="conteiner-x">
-                <a href="/"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-            <div class="conteiner-t-r">
-                <h4>CREA TU CUENTA</h4>
-            </div>
-            <div class="conteiner-form">
-                <div>
-                
-                    <input type="text" placeholder="Nombre" id="nombre" name="name">
-                </div>
-                <div>
-                    
-                    <input type="text" placeholder="Email" id="email" name="email">
-                </div>
-                <div>
-                    
-                    <input type="text" placeholder="Email" id="email" name="email">
-                </div>
-                
-                <div>
-                    
-                    <input type="password" placeholder="contraseña" id="password" name="password">
-                </div>
+                <form class="form-register" action="/aut/registro" method="post">
+                    <div class="conteiner-x">
+                        <a href="/"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="conteiner-t-r">
+                        <h4>CREA TU CUENTA</h4>
+                    </div>
+                    <div class="conteiner-form">
+                        <div>
 
-                <!-- <div>
-                    
-                    <input type="password" placeholder="confirm your password" id="confirm" name="confirmp">
-                </div> -->
-                <div>
-                    
-                    <input type="number" placeholder="Numero de Tel." id="num" name="number" >
-                </div>
-                <div>
-                    
-                    <input type="text" placeholder="ciudad" id="direction" name="city">
-                </div>
-            </div>
-            <div class="container-butons">
-                
-                <button type="submit">Crear Cuenta</button>
-                
-            </div>
-            <div class="c-register">
-                <h3>¿ya tienes una cuenta?/</h3><a href="/aut/login">Ingresa</a>
-            </div>
-        </form>
+                            <input type="text" placeholder="Nombre" id="nombre" name="name"
+                            value="<%= locals.nombre?nombre :"" %>">
+                        </div>
+                        <div>
 
-           
-
-    </main>
+                            <input type="text" placeholder="Email" id="email" name="email">
+                            <%= locals.email?.email?.msg%>
+                        </div>
 
 
-    <!-- Footer -->
-<%- include('../partials/footer') %>
-</body>
+                        <div>
+
+                            <input type="password" placeholder="contraseña" id="password" name="password">
+                            <%= locals.error?.password?.msg%>
+                        </div>
+
+                        <div>
+
+                            <input type="number" placeholder="Numero de Tel." id="num" name="number">
+                            <%= locals.error?.number?.msg%>
+                        </div>
+                        <div>
+
+                            <input type="text" placeholder="ciudad" id="direction" name="city">
+                            <%= locals.error?.city?.msg%>
+                        </div>
+
+                        <div>
+                            <input type="file" placeholder="avatar" id="avatar" name="avatar">
+                            <%= locals.errors?.avatar?.msg%>
+                        </div>
+                    </div>
+
+
+                    <div class="container-butons">
+
+                        <button type="submit">Crear Cuenta</button>
+
+                    </div>
+                    <div class="c-register">
+                        <h3>¿ya tienes una cuenta?/</h3><a href="/aut/login">Ingresa</a>
+                    </div>
+                </form>
+
+
+
+            </main>
+
+
+            <!-- Footer -->
+            <%- include('../partials/footer') %>
+    </body>
 
 </html>

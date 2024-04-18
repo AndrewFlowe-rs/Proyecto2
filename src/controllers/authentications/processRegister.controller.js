@@ -1,9 +1,10 @@
 const bcrypt = require('bcryptjs');
-const { readData, saveData } = require('../../data');
+const { loadData, saveData } = require('../../data');
+const { validationResult } = require("express-validator");
 
 module.exports = (req, res) => {
   const { name,surname, email, password, number, city } = req.body; // Extrae los valores name, surname, email, y password
-  const users = readData("users"); // Obtiene los datos de los usuarios existentes
+  const users = loadData("users"); // Obtiene los datos de los usuarios existentes
   const newUser = { //: Crea un objeto para representar al nuevo usuario
     id: !users.length ? 1 : users[users.length - 1].id + 1,  /*Si no hay usuarios (!users.length), se asigna el id 1.
     Si hay usuarios, se asigna el id del último usuario*/
@@ -20,7 +21,7 @@ module.exports = (req, res) => {
 
   saveData(users, "users"); //guarda los datos actualizados del arreglo 
 
-  res.redirect("/"); // Redirige al cliente a la página raíz despus de registrarse correctamente
+  //res.redirect("/"); // Redirige al cliente a la página raíz despus de registrarse correctamente
 };
 
 

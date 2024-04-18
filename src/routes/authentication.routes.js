@@ -3,8 +3,8 @@ const router = express.Router();
 const authController = require('../controllers/authentications');
 // const {loginValidation} = require('../controllers/authentications')
 const loginValidation = require('../middlewares/validation/loginValidation')
-const {login} =require('../controllers/authentications')
-
+const { login } = require('../controllers/authentications')
+const registerValidation = require('../middlewares/validation/registerValidation')
 
 // Desde app llega /au
 
@@ -12,7 +12,7 @@ const {login} =require('../controllers/authentications')
 router.get('/login', login);
 router.post('/login', loginValidation, authController.loginProcess);
 router.get('/registro', authController.register);
-router.post('/registro', authController.processRegister);
+router.post('/registro', registerValidation, authController.processRegister);
 
 
 
