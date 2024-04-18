@@ -1,4 +1,4 @@
-const { readData, saveData } = require("../../data");
+const {   saveData, loadData } = require("../../data");
 const fs = require('fs')
 const path = require('path')
 
@@ -7,7 +7,7 @@ module.exports = (req,res) => {
     const {id} = req.params;
     const {name, price, description, category} = req.body;
     const image = req.file
-    const products = readData();
+    const products = loadData();
     const productMp = products.map(p => {
         if(p.id === +id){
             const productsUp = {

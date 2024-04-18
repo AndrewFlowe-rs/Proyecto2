@@ -1,6 +1,6 @@
 const {check} =require("express-validator")
 const {loadData} =require("../../data")
-const {compareSync} =require
+const {compareSync} = require('bcryptjs')
 
 const loginDatesValidation = [
     check("email")

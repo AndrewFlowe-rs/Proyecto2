@@ -1,11 +1,10 @@
-const { readData, saveData } = require('../../data')
+const { saveData, loadData } = require('../../data')
 
 
 module.exports = (req,res) => {
     const {name, price, description, category} = req.body
 
-    const image = req.file
-    const products = readData();
+    const image = loadData();
  
     const nuevoID = products[products.length - 1].id + 1
 

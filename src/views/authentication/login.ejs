@@ -15,14 +15,18 @@
                                 <!--LOGIN-->
 
                                 <form action="/aut/login" method="post">
-                                        </div>
-                                        <input type="email" id="email" placeholder="Email" type="email" name="email"
-                                                value="<%= locals.email?email :""%>">
 
-                                        <input type="password" placeholder="contraseña" name="password">
-                                        <p class="error-alert">
-                                                <%= locals.errors?.password?.msg%>
-                                        </p>
+                                        <input type="email" id="login" placeholder="Email" name="email"
+                                                value="<%= locals.email? email : "" %>">
+                                                <p class="error-alert">
+                                                        <%= locals.errors?.email?.msg%>
+                                                </p>
+
+                                                <input type="password" placeholder="contraseña" name="password">
+
+                                                <p class="error-alert">
+                                                        <%= locals.errors?.password?.msg%>
+                                                </p>
 
                                         <button type="submit">Ingresar</button>
                                         <a href="">¿Olvidaste tu contraseña?</a>

@@ -1,8 +1,8 @@
-const { readData } = require("../../data");
+const { loadData } = require("../../data");
 
 module.exports = (req, res) => {
     const { id } = req.params;
-    const products = readData()
+    const products = loadData()
 
     const productFind = products.find(p => p.id === +id)
     

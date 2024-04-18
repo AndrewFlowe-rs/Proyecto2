@@ -34,6 +34,7 @@ const otherRoutes = require('./routes/other.routes');
 const authRoutes = require('./routes/authentication.routes');
 const cartRoutes = require('./routes/cart.routes');
 const prodRoutes = require('./routes/product.routes');
+const userRoutes = require('./routes/users.routes')
 
 // ROUTERS
 app.use('/', otherRoutes);
@@ -41,6 +42,7 @@ app.use('/aut', authRoutes);
 app.use('/producto', prodRoutes);
 app.use('/carrito', cartRoutes);
 app.use ('/admin',adminRoutes);
+app.use('/perfil', userRoutes)
 
 
 
