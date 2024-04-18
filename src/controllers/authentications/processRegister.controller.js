@@ -1,5 +1,6 @@
 const bcrypt = require('bcryptjs');
-const { saveData, loadData } = require('../../data');
+const { loadData, saveData } = require('../../data');
+const { validationResult } = require("express-validator");
 
 module.exports = (req, res) => {
   const { name,surname, email, password, number, city } = req.body; // Extrae los valores name, surname, email, y password
@@ -20,7 +21,7 @@ module.exports = (req, res) => {
 
   saveData(users, "users"); //guarda los datos actualizados del arreglo 
 
-  res.redirect("/"); // Redirige al cliente a la página raíz despus de registrarse correctamente
+  //res.redirect("/"); // Redirige al cliente a la página raíz despus de registrarse correctamente
 };
 
 
