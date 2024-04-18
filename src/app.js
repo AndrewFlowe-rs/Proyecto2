@@ -42,7 +42,7 @@ app.use('/aut', authRoutes);
 app.use('/producto', prodRoutes);
 app.use('/carrito', cartRoutes);
 app.use ('/admin',adminRoutes);
-app.use('/perfil', userRoutes)
+app.use('/iniciar-sesion', userRoutes)
 
 
 

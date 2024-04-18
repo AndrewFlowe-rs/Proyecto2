@@ -1,7 +1,8 @@
 const { check, body } = require('express-validator');
 const path = require('path');
 
-const validacionesEditProfile = [
+module.exports = (req,res) => {        
+   const validacionesEditProfile = [
     check('name')
     .notEmpty().withMessage('El nombre es obligatorio').bail()
     .isAlphanumeric('es-ES',{ignore:" "}).withMessage('Los caracteres especiales no están permitidos').bail()
@@ -54,5 +55,6 @@ const validacionesEditProfile = [
     }
     })
 ];
+ 
+}
 
-module.exports = validacionesEditProfile;

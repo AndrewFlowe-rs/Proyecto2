@@ -2,6 +2,10 @@ const {check} =require("express-validator")
 const {loadData} =require("../../data")
 const {compareSync} = require('bcryptjs')
 
+
+
+module.exports = (req,res) => {
+    
 const loginDatesValidation = [
     check("email")
         .notEmpty().withMessage("Ingresa un email").bail()
@@ -29,4 +33,4 @@ const loginDatesValidation = [
         })
 ]
 
-module.exports = loginDatesValidation
+}

@@ -935,44 +935,27 @@
 
     /* MAIN NAV- */
     main nav.nav-bar {
-
-        display: flex;
-
-        /* width: 563px; */
-
-        margin-bottom: 10px;
-    }
+display: flex;
+/* width: 563px; */
+/* margin-bottom: 10px; */
+}
 
     main nav.nav-bar ul.list-bar {
-
-        list-style: none;
-
-        display: flex;
-
-        padding: 5px;
-
-        width: 537px;
-
-        background-color: var(--frío);
-
-        /* font-size: 54px; */
-
-        border-radius: 18px;
-
-        border-top-left-radius: 0px;
-
-        border-bottom-left-radius: 0px;
-
-        /* margin-top: 8px; */
-
-        height: 18px;
-
-        justify-content: space-around;
-
-        /* border-bottom: solid; */
-
-        padding-right: 28px;
-    }
+list-style: none;
+display: flex;
+padding: 0px;
+width: 537px;
+background-color: var(--frío);
+/* font-size: 54px; */
+border-radius: 18px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+/* margin-top: 8px; */
+height: 28px;
+justify-content: space-around;
+/* border-bottom: solid; */
+padding-right: 28px;
+}
 
     main nav.nav-bar ul.list-bar li {
 
@@ -1018,60 +1001,36 @@
     }
 
     main h2 {
-
-        background-color: var(--rojo);
-
-        height: 54px;
-
-        position: relative;
-
-        /* left: 30px; */
-
-        text-align: center;
-
-        /* padding-top: 0px; */
-
-        font-family: var(--damion);
-
-        font-size: 45px;
-
-        font-weight: lighter;
-
-        color: var(--blanco);
-
-        /* align-items: stretch; */
-
-        letter-spacing: 18px;
-
-        padding-bottom: 16px;
-
-        width: 670px;
-    }
+background-color: var(--rojo);
+height: 55px;
+position: relative;
+/* left: 30px; */
+text-align: center;
+/* padding-top: 0px; */
+font-family: var(--damion);
+font-size: 45px;
+font-weight: lighter;
+color: var(--blanco);
+/* align-items: stretch; */
+letter-spacing: 18px;
+padding-bottom: 16px;
+width: 670px;
+margin: 0;
+}
 
     main p.caption {
-
-        background-color: var(--registro-bar);
-
-        /* color: #364f5e; */
-
-        height: 20px;
-
-        /* text-align: center; */
-
-        padding-top: 2px;
-
-        font-family: var(--comic);
-
-        font-weight: bold;
-
-        color: var(--blanco);
-
-        letter-spacing: 11px;
-
-        font-size: 16px;
-
-        width: 670px;
-    }
+background-color: var(--registro-bar);
+/* color: #364f5e; */
+height: 25px;
+/* text-align: center; */
+padding-top: 5px;
+font-family: var(--comic);
+font-weight: bold;
+color: var(--blanco);
+letter-spacing: 11px;
+font-si;
+padding-top: 2px; 670px;
+}
 
     /* TÍTULO DOS */
     main h2.second-h2 {
@@ -1136,15 +1095,11 @@
     }
 
     main a.arrow-right {
-
-        position: relative;
-
-        top: -122px;
-
-        /* color: var(--blanco); */
-
-        left: 550px;
-    }
+position: relative;
+top: -138px;
+/* color: var(--blanco); */
+left: 521px;
+}
 
     main i.fa-solid.fa-angle-right {
 
@@ -1175,29 +1130,18 @@
 
     /* PRIMER DIV*/
     main div.first-div {
-
-        /* display: flex; */
-
-        flex-direction: row-reverse;
-
-        background-color: var(--crudo);
-
-        padding: 10px;
-
-        width: 170px;
-
-        border-radius: 23px;
-
-        /* position: relative; */
-
-        left: -35px;
-
-        top: -8px;
-
-        height: 200px;
-
-        margin-right: 36px;
-    }
+/* display: flex; */
+flex-direction: row-reverse;
+background-color: var(--crudo);
+padding: 10px;
+width: 190px;
+border-radius: 23px;
+/* position: relative; */
+left: -35px;
+top: -8px;
+height: 215px;
+margin-right: 36px;
+}
 
     main div.contenedor-img {}
 
@@ -1206,19 +1150,13 @@
     main div.contenedor-descrip {}
 
     main div.first-div p.name-pizza {
-
-        /* padding-bottom: 0px; */
-
-        font-size: 15px;
-
-        font-family: var(--comic);
-
-        font-weight: bold;
-
-        position: relative;
-
-        top: -13px;
-    }
+/* padding-bottom: 0px; */
+font-size: 15px;
+font-family: var(--comic);
+font-weight: bold;
+position: relative;
+top: -9px;
+}
 
     main div.first-div p.description {
 
@@ -1234,23 +1172,15 @@
     }
 
     main div.first-div p.price {
-
-        background-color: var(--registro-bar);
-
-        width: 57px;
-
-        font-size: 13px;
-
-        padding-left: 6px;
-
-        padding-top: 2px;
-
-        padding-bottom: 1px;
-
-        position: relative;
-
-        top: 7px;
-    }
+background-color: var(--registro-bar);
+width: 57px;
+font-size: 13px;
+padding-left: 6px;
+padding-top: 2px;
+padding-bottom: 1px;
+position: relative;
+top: -20px;
+}
 
     /* SEGUNDO DIV */
 
@@ -1365,7 +1295,7 @@
     }
 
     main div.contenedor-img img {
-        width: 191px;
+        width: 190px;
         /* border-radius: 22px; */
         height: 102px;
         margin-left: 0px;
