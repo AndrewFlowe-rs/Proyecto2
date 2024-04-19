@@ -1,4 +1,7 @@
 @media screen and (max-width: 360px) {
+    .main-login a { 
+        color: azure;
+    }
     .main-login {
         background-image: url("../design/imgHome/publicity.jpg");
         background-size: cover;
@@ -72,6 +75,9 @@
     
         /*TABLET*/
     @media screen and (min-width: 361px){
+        .main-login a { 
+            color: azure;
+        }
         .main-login {
         background-image: url("../design/imgHome/publicity.jpg");
         background-size: 50% 100%;
@@ -81,7 +87,7 @@
         justify-content: center;
         align-items: center;
         /* border: solid; */
-        id; */
+        
         display: flex;
         flex-direction: column;
         /* background-color: var(--gri); */
