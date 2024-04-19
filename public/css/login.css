@@ -81,11 +81,13 @@
         justify-content: center;
         align-items: center;
         /* border: solid; */
+        id; */
         display: flex;
         flex-direction: column;
         /* background-color: var(--gri); */
         border-radius: 18px;
-        margin-left: 50%;
+        margin-left: 63%;
+        display: flex;
         }
         .main-login form input{
         border: solid;
