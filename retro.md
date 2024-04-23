@@ -44,3 +44,28 @@ Comentario sobre el trabajo del equipo  :
 En general, el equipo ha estado trabajando bien este sprint. Hemos logrado avanzar en los objetivos y hemos completado la mayoría de las tareas planificadas.
 
 Sin embargo, también hemos encontrado algunos problemas en el camino. Hubo algunos pequeños conflictos entre algunos miembros del equipo, pero nada que no se haya podido solucionar con una buena comunicación y comprensión.
+
+
+
+# Retrospectiva del Sprint Anterior
+
+## Lo que hicimos bien:
+- Identificamos y resolvimos varios obstáculos rápidamente.
+
+## Lo que hicimos mal:
+- Nos faltó priorizar adecuadamente algunas tareas, lo que llevó a retrasos en entregables importantes.
+
+- Hubo cierta falta de claridad en las expectativas en algunos aspectos del proyecto.
+
+## Qué deberíamos empezar a hacer:
+- Implementar sesiones de revisión de prioridades al inicio de cada sprint.
+- Incorporar pruebas de calidad más rigurosas durante el desarrollo.
+- Establecer reuniones breves de seguimiento diario para mantenernos alineados.
+
+## Qué deberíamos dejar de hacer:
+- Postergar resolver los problemas que surgen durante el sprint.
+- Subestimar la importancia de la documentación y la claridad en las tareas asignadas.
+- Deberian dejar de perderse mis compañeros 
+
+
+## en rresumen este equipo no esta funcionando del todo bien y nos falta mucha comunicacion , en particular me ubiera gustado estar en otro equuipo sin desmerecer al mio pero esque siento que no estoy del todo comodo 
