@@ -1,11 +1,11 @@
-.main-form {
+.main-forme {
     background-color: var(--gris);
     padding: 12%;
 }
 
-.main-form form {}
+.main-forme form {}
 
-.main-form .form-edit {
+.main-forme .form-edit {
     justify-content: center;
     display: flex;
     flex-direction: column;
