@@ -207,14 +207,14 @@ position: absolute;
     .direction-f {
     /* position: relative; */
     /* margin-block-start: 0px; */
-    position: absolute;
-    left: 8%;
+    position: relative;
+    left: 13%;
     padding: 13px;
     border: solid var(--blanco);
     border-radius: 13px;
-    font-size: 15px;
+    font-size: 18px;
     color: var(--blanco);
-    top: 9px;
+    top: 43px;
     }
 
     .conteiner-location {
@@ -271,7 +271,7 @@ position: absolute;
     display: flex;
     top: 2px;
     position: relative;
-    left: 46%;
+    left: 61%;
     /* padding: 13px; */
     border: solid var(--blanco);
     border-radius: 13px;
@@ -279,11 +279,11 @@ position: absolute;
     color: var(--blanco);
     /* top: 9px; */
     margin: 0;
-    width: 178px;
+    width: 160px;
     font-size: 18px;
     height: 55px;
     padding-top: 13px;
-    padding-left: 21px;
+    padding-left: 11px;
     }
 
     .contenedor-copy p {
