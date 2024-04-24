@@ -14,13 +14,13 @@
                 <h1 class="titulo">Editar producto</h1>
             </div>
             <div class="edit-title">
-                <input type="text" id="title" name="titulo" placeholder="Editar nombre" value="<%= p.name %>">
+                <input type="text" id="title" name="titulo" placeholder="Editar nombre" value="<%= findId.name %>">
             </div>
             <div class="edit-price">
-                <input type="text" id="price" name="precio" placeholder="Editar precio" value="<%= p.price %>">
+                <input type="text" id="price" name="precio" placeholder="Editar precio" value="<%= findId.price %>">
             </div>
             <div class="edit-description">
-                <input type="text" id="description" name="descripcion" placeholder="Editar descripción" value="<%= p.descripcion %>">
+                <input type="text" id="description" name="descripcion" placeholder="Editar descripción" value="<%= findId.descripcion %>">
             </div>
             <div class="edit-category">
                 <label for="category">Categoría</label>
@@ -35,6 +35,7 @@
                     <option value="Promo del mes">Combos</option>
                     <option value="Individuales">Individuales</option>
                     <option value="Bebidas">Bebidas</option>
+                  
                 </select>
             </div>
 
