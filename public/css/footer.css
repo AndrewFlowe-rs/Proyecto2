@@ -98,12 +98,17 @@
     .footer {
         display: flex;
         background: var(--rojo);
-        height: 175px;
+        height: 240px;
     }
 
     .footer .info-footer {}
 
-    .footer .info-footer ul {}
+    .footer .info-footer ul {
+    position: relative;
+    /* right: 260px; */
+    left: 28px;
+    top: 10px;
+}
 
     .footer .info-footer .conteiner-phone {}
 
@@ -114,9 +119,9 @@
 
     .direction-f {
         position: relative;
-        left: 50%;
+        left: 110px;
         display: inline;
-        top: -34%;
+        /* top: -1%; */
     }
 
     .conteiner-location {}
@@ -135,8 +140,8 @@
     }
 
     .conteiner-iconos {
-        position: relative;
-        display: inline;
+        /* position: relative; */
+        /* display: inline; */
         left: 90%;
     }
 
@@ -252,8 +257,8 @@ position: absolute;
         padding-bottom: 11px;
         display: flex;
         position: absolute;
-        left: 80%;
-        margin-top: 17px;
+        left: 73%;
+        /* margin-top: 17px; */
     }
 
     .conteiner-iconos a {}
@@ -264,23 +269,28 @@ position: absolute;
     position: absolute;
     /* justify-content: center; */
     display: flex;
-    /* top: 25px; */
-    position: absolute;
+    top: 2px;
+    position: relative;
     left: 46%;
-    padding: 13px;
+    /* padding: 13px; */
     border: solid var(--blanco);
     border-radius: 13px;
     font-size: 15px;
     color: var(--blanco);
     /* top: 9px; */
-    bottom: -48%;
+    margin: 0;
+    width: 178px;
+    font-size: 18px;
+    height: 55px;
+    padding-top: 13px;
+    padding-left: 21px;
     }
 
     .contenedor-copy p {
         font-size: 10px;
-        position: absolute;
-        /* top: 95px; */
-        left: 36%;
+        position: relative;
+        top: 29px;
+        left: 12%;
         font-family: var(--poppins);
         font-size: 9px;
     }

@@ -66,8 +66,8 @@
 
               <% products.forEach(p => { %>
                 <% if (p.category === 'Promo del mes') { %>
-
-                    <section class="pizzasinferior">
+             <div class="container-product">
+              <section class="pizzasinferior">
                         <article class="pizza-cala">
                             <img src="/design/imgProducts/<%= p.image %>" alt="">
                             <div class="descripcion-producto">
@@ -78,7 +78,11 @@
                                 <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>
                             </div>
                         </article>
-                    </section>
+                    </section> 
+                  </div>
+              </div>
+                
+                 
                 <% } %>
             <% }) %>
             
