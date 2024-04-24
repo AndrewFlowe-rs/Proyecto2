@@ -17,13 +17,13 @@
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/design/imgHome/logo-home.jpg" class="d-block w-100" alt="...">
+                  <img src="/design/imgProducts/logo-home.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/design/imgHome/logo-home.jpg" class="d-block w-100" alt="...">
+                  <img src="/design/imgProducts/logo-home.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/design/imgHome/logo-home.jpg" class="d-block w-100" alt="...">
+                  <img src="/design/imgProducts/logo-home.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -49,64 +49,45 @@
                   <li><a href="#">Canasta</a></li>
                   <li><a href="#">Empanadas</a></li>
                   <li><a href="#">Sin TACC</a></li>
+                  <li><a href="#">Clásicas</a></li>
+                  <li><a href="#">Pizzas del mes</a></li>
+                  <li><a href="#">Promo del mes</a></li>
+                  <li><a href="#">Combos</a></li>
+                  <li><a href="#">Individuales</a></li>
+                  <li><a href="#">Bebidas</a></li>
                 </ul>
               </div>
               <div class="anuncios-img">
-                <img src="/design/imgHome/CANA-008-380x2851.jpg" alt="Imagen de empanada canastita">
-                <img src="/design/imgHome/empanadas.jpg" alt="Empanadas">
-                <img src="/design/imgHome/qr.jpg" alt="QR">
+                <img src="/design/imgProducts/CANA-008-380x2851.jpg" alt="Imagen de empanada canastita">
+                <img src="/design/imgProducts/empanadas.jpg" alt="Empanadas">
+                <img src="/design/imgProducts/qr.jpg" alt="QR">
               </div>
               </div>
 
-            <section class="pizzasinferior">
-              <article class="pizza-cala">
-                <img src="/design/imgHome/calabresa.jpg" alt="Calabresa">
-                <div class="descripcion-producto">
+              <% products.forEach(p => { %>
+                <% if (p.category === 'Promo del mes') { %>
 
-                  <h3>CALABREZA</h3>
+                    <section class="pizzasinferior">
+                        <article class="pizza-cala">
+                            <img src="/design/imgProducts/<%= p.image %>" alt="">
+                            <div class="descripcion-producto">
+                                <h3><%= p.name %></h3>
+                                <ul>
+                                    <p><%= p.description %></p>
+                                </ul>
+                                <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>
+                            </div>
+                        </article>
+                    </section>
+                <% } %>
+            <% }) %>
+            
+             
+ 
 
-                  <ul>
-                    <li>Salsa de tomate</li>
-                    <li>Mozzarella</li>
-                    <li>Longaniza</li>
-                    <li>Aji molido</li>
-                    <li>Aceitunas negras</li>
-                  </ul>
-                </div>
-              </article>
-              
-          <article class="pizza-provo">
-            <img src="/design/imgHome/PROVOLENE1.jpg" alt="Provolone">
-            <div class="descripcion-producto2">
+   
+          
 
-              <h3>PROVOLONE Y ANANÁ</h3>
-
-              <ul>
-                <li>Salsa de tomate</li>
-                <li>Mozzarella</li>
-                <li>Longaniza</li>
-                <li>Aji molido</li>
-                <li>Aceitunas negras</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="pizza-roquefort">
-            <img src="/design/imgHome/ROQUEFORT1.jpg" alt="Roquefort">
-            <div class="descripcion-producto3">
-
-              <h3>ROQUEFORT</h3>
-
-              <ul>
-                <li>Salsa de tomate</li>
-                <li>Mozzarella</li>
-                <li>Roquefort</li>
-                <li>Ananá</li>
-                <li>Queso provolone</li>
-              </ul>
-            </div>
-          </article>
-          </section>
           
         </div>
 

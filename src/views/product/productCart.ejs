@@ -12,38 +12,43 @@
 
 
     <main>
-        <nav class="nav-bar">
+    
+     <nav class="nav-bar">
              <ul class="list-bar">
-                 <li><a href="">Clásicas</a></li>
-                 <li><a href="">Pizzas del mes</a></li>
-                 <li class="list-none"><a href="">Promo del mes</a></li>
-                 <li class="list-none"><a href="">Combos</a></li>
-                 <li class="list-none"><a href="">Individuales</a></li>
-                 <li class="drinks"><a href="">Bebidas</a></li>
+                 <li><a href="#Clásicas">Clásicas</a></li> 
+                 <li><a href="#Pizzasdelmes">Pizzas del mes</a></li>
+                 <li class="list-none"><a href="#promodelmes">Promo del mes</a></li>
+                 <li class="list-none"><a href="#combos">Combos</a></li>
+                 <li class="list-none"><a href="#individuales">Individuales</a></li>
+                 <li class="drinks"><a href="#bebidas">Bebidas</a></li>
      
                 
              </ul>
        </nav>
-       <!-- TÍTULOS -->
-       <h2><%= p.category %></h2>
-       <p class="caption"><%= p.category %></p>
-       <a class="arrow-right" href=""><i class="fa-solid fa-angle-right"></i></a>
-    <!-- CONTENEDOR DIVS -->
-     <div class="contenedor-primero">
-         <!-- PRIMER DIV -->
-        
+  <!-- TÍTULOS -->
+  
+  <% products.filter(p => p.category.toLowerCase() === 'Pizzasdelmes').forEach(p => {%>
+     <div class="contenedor-primero" id="Pizzasdelmes">        
          <div class="first-div">
          <div class="contenedor-img">
-             <img src="/design/imgCarrito/<%= p.image %>" alt="">
+             <img src="/design/imgProducts/<%= p.image %>" alt="">
          </div>
          <div class="contenedor-descrip">
              <p class="name-pizza"><%= p.name %></p>
      <p class="description"><%= p.description %></p>
      <p class="price"><%= p.price %></p>
+  <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>
      </div>
        </div>
-     
+  <%  }); %> 
+
+ 
+ 
+ 
+ 
   
+   
+
      
          </main>
 

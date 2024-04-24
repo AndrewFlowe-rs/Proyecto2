@@ -87,3 +87,11 @@
          <p class="order">Mi pedido</p>
        </div>
                 
+
+
+
+
+
+
+                 <h2><%= p.category %></h2>
+       <p class="caption"><%= p.category %></p>

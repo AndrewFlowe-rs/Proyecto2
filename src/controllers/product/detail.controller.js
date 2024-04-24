@@ -1,4 +1,8 @@
-
+const { loadData } = require('../../data')
 module.exports =  (req, res) => {
-    res.render('product/productDetail')
+    const {id} = req.params
+    const products = loadData('products')
+    const productFind = products.find(p => p.id === +id)
+
+    res.render('product/productDetail', {p : productFind} )
 };

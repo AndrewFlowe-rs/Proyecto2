@@ -1,19 +1,27 @@
 [
    {
+      "id": 1,
+      "name": "Pizza Pepperoni",
+      "price": 14.99,
+      "description": "Generosamente cubierta con pepperoni (salami picante) y queso fundido.",
+      "category": "Clásicas",
+      "image": "image2.jpg"
+   },
+   {
       "id": 2,
       "name": "Pizza Pepperoni",
       "price": 14.99,
       "description": "Generosamente cubierta con pepperoni (salami picante) y queso fundido.",
-      "category": "Pizza del mes",
-      "image": "default-image.png"
+      "category": "Clásicas",
+      "image": "image2.jpg"
    },
    {
       "id": 3,
       "name": "Pizza Hawaiana",
       "price": 15.99,
       "description": "Combinación de jamón, piña y queso derretido.",
-      "category": "Pizza del mes",
-      "image": "default-image.png"
+      "category": "Clásicas",
+      "image":"image3.jpg"
    },
    {
       "id": 4,
@@ -21,7 +29,7 @@
       "price": 13.49,
       "description": "Con gorgonzola, parmesano, provolone y mozzarella.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image": "image4.jpg"
    },
    {
       "id": 5,
@@ -29,7 +37,7 @@
       "price": 11.99,
       "description": "Llena de verduras frescas: pimientos, cebolla, champiñones, aceitunas, espinacas.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image": "image5.jpg"
    },
    {
       "id": 6,
@@ -37,7 +45,7 @@
       "price": 16.99,
       "description": "Doblada y rellena de jamón, queso y otros ingredientes.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image":"image6.jpg"
    },
    {
       "id": 7,
@@ -76,15 +84,33 @@
       "name": "Pizza napolitana",
       "price": 5000,
       "description": "Pizza con tomate y albahaca",
-      "category": "margarita",
+      "category": "Individuales",
       "image": "default-image.png"
    },
    {
       "id": 12,
-      "name": "el caballo original de SANMARTIN",
-      "price": 10008976,
-      "description": "holaaaaaaaaaaaaaa",
-      "category": "cuatro-q",
-      "image": "default-image.png"
+      "name": "Calabreza",
+      "price": 5000,
+      "description": "Salsa de tomate, mozzarella ,longaniza, ají molido, aceitunas negras",
+      "category": "Promo del mes",
+      "image": "calabresa.jpg"
+   },
+   {
+      "id": 13,
+      "name": "Provolone y Ananá",
+      "price": 5000,
+      "description": "Salsa de tomate, mozzarella, ají molido",
+      "category": "Promo del mes",
+      "image": "PROVOLENE1.jpg"
+   },
+   {
+      "id": 14,
+      "name": "Roquefort",
+      "price": 5000,
+      "description": "Salsa de tomate, mozzarella ,roquefort, ananá, queso provolone",
+      "category": "Promo del mes",
+      "image": "ROQUEFORT1.jpg"
    }
+  
+  
 ]
