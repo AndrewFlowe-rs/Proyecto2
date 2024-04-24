@@ -1,3 +1,7 @@
+const { loadData } = require('../../data')
+
 module.exports = (req,res)=>{
-res.render("admin/edit-product")
+    const {id} = req.params;
+    const products = loadData('products')
+res.render("admin/edit-product", {p : products})
 }
