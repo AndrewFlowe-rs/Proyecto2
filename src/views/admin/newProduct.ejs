@@ -4,7 +4,7 @@
 <body>
     <%-include("../partials/header")%>
     <main class="main-form-n">
-        <form class="form-new" method="post" action="/admin/crear-producto">
+        <form class="form-new" method="post" action="/admin/crear-producto" enctype="multipart/form-data">
             <div class="new-contentx">
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -23,12 +23,16 @@
             <div class="new-category">
                 <label   for="category">Categoria</label>
                 <select name="category" id="category">
-                    <option value="margarita">Clásicas</option>
-                    <option value="cuatro-q">Pizza del mes</option>
+                    <option value="Sin TACC">Sin TACC</option>
+                    <option value="Empanadas">Empanadas</option>
+                    <option value="Fainá">Fainá</option>
+                    <option value="Calzones">Calzones</option>
+                    <option value="Clásicas">Clásicas</option>
+                    <option value="Pizza del mes">Pizza del mes</option>
                     <option value="peperoni">Promo del mes</option>
-                    <option value="cuatro-e">Combos</option>
-                    <option value="chammpiñon">Individuales</option>
-                    <option value="hawaiana">Bebidas</option>
+                    <option value="Promo del mes">Combos</option>
+                    <option value="Individuales">Individuales</option>
+                    <option value="Bebidas">Bebidas</option>
                   
                 </select>
             </div>

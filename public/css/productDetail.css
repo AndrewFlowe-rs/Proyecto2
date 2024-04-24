@@ -111,7 +111,9 @@ width: 166px;
     .main-product .article .articulo-producto img {
         width: 70%;
         border-radius: 103px;
-        margin: 26px 0px 5px 117px;
+        /* margin: 26px 0px 5px 117px; */
+        position: relative;
+        left: 52px;
     }
 
     .main-product .article .articulo-producto h3 {
@@ -200,17 +202,21 @@ width: 166px;
 
     .main-product .article .articulo-producto {
         background-color: var(--cajaproduct);
+        height: 76vh;
     }
 
     .main-product .article .articulo-producto img {
         width: 100%;
         border-radius: 103px;
         margin: 25px 0px 5px 0px;
+        position: relative;
+        left: -4px;
+        padding: 20px;
     }
 
     .main-product .article .articulo-producto h3 {
         font-family: var(--ingrid);
-        font-size: 32px;
+        font-size: 117px;
         text-align: center;
     }
 
@@ -219,7 +225,7 @@ width: 166px;
     .main-product .article .articulo-producto .ingredientes {
         text-align: center;
         font-family: var(--antiqua);
-        font-size: 10px;
+        font-size: 25px;
     }
 
     .main-product .article .articulo-producto hr {

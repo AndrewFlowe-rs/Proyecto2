@@ -15,7 +15,7 @@
     
      <nav class="nav-bar">
              <ul class="list-bar">
-                 <li><a href="#Clásicas">Clásicas</a></li> 
+                 <li><a href="">Clásicas</a></li> 
                  <li><a href="#Pizzasdelmes">Pizzas del mes</a></li>
                  <li class="list-none"><a href="#promodelmes">Promo del mes</a></li>
                  <li class="list-none"><a href="#combos">Combos</a></li>
@@ -26,9 +26,9 @@
              </ul>
        </nav>
   <!-- TÍTULOS -->
-  
-  <% products.filter(p => p.category.toLowerCase() === 'Pizzasdelmes').forEach(p => {%>
-     <div class="contenedor-primero" id="Pizzasdelmes">        
+
+  <% products.forEach(p => {%>
+     
          <div class="first-div">
          <div class="contenedor-img">
              <img src="/design/imgProducts/<%= p.image %>" alt="">
@@ -36,10 +36,13 @@
          <div class="contenedor-descrip">
              <p class="name-pizza"><%= p.name %></p>
      <p class="description"><%= p.description %></p>
+     <div class="container-butoms">
      <p class="price"><%= p.price %></p>
-  <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>
+  <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>    
      </div>
-       </div>
+    
+     </div>
+     </div>
   <%  }); %> 
 
  

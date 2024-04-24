@@ -1,8 +1,14 @@
+const { loadData } = require('../../data');
 
-const { loadData } = require('../../data')
-module.exports = (req, res) => {
-    const products = loadData('products');
-
-    res.render("product/productCart", { products})
+function filterByCategory(product, category) {
+    return product.category.toLowerCase().replace(/\s/g, '') === category.toLowerCase();
 }
 
+module.exports = (req, res) => {
+    const category = req.params.category.replace(/\s/g, '').toLowerCase();
+    const products = loadData('products');
+
+    const categoryProducts = products.filter(product => filterByCategory(product, category));
+
+    res.render('product/productCart', { category, products: categoryProducts });
+};

@@ -21,7 +21,7 @@
       "price": 15.99,
       "description": "Combinación de jamón, piña y queso derretido.",
       "category": "Clásicas",
-      "image":"image3.jpg"
+      "image": "image3.jpg"
    },
    {
       "id": 4,
@@ -45,7 +45,7 @@
       "price": 16.99,
       "description": "Doblada y rellena de jamón, queso y otros ingredientes.",
       "category": "Pizza del mes",
-      "image":"image6.jpg"
+      "image": "image6.jpg"
    },
    {
       "id": 7,
@@ -53,7 +53,7 @@
       "price": 14.49,
       "description": "Con salami picante y aceitunas negras.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image": "pizza-diavola.jpg"
    },
    {
       "id": 8,
@@ -61,7 +61,7 @@
       "price": 13.99,
       "description": "Tomate fresco, mozzarella, albahaca y aceite de oliva.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image": "caprese.jpeg"
    },
    {
       "id": 9,
@@ -69,7 +69,7 @@
       "price": 10.99,
       "description": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image": "marinara.jpeg"
    },
    {
       "id": 10,
@@ -77,7 +77,7 @@
       "price": 15.49,
       "description": "Con anchoas, aceitunas y alcaparras.",
       "category": "Pizza del mes",
-      "image": "default-image.png"
+      "image": "pizza-romana.jpg"
    },
    {
       "id": 11,
@@ -85,7 +85,7 @@
       "price": 5000,
       "description": "Pizza con tomate y albahaca",
       "category": "Individuales",
-      "image": "default-image.png"
+      "image": "xqwJySBdj_930x525__1.jpg"
    },
    {
       "id": 12,
@@ -110,7 +110,61 @@
       "description": "Salsa de tomate, mozzarella ,roquefort, ananá, queso provolone",
       "category": "Promo del mes",
       "image": "ROQUEFORT1.jpg"
+   },
+   {
+      "id": 15,
+      "name": "Calzone",
+      "price": 5000,
+      "description": "Calzone de jamón y queso",
+      "category": "Calzones",
+      "image": "calzone.jpeg"
+   },
+   {
+      "id": 16,
+      "name": "Fainá a la provenzal",
+      "price": 1000,
+      "description": "Harina de garbanzos, aceite de oliva, provenzal fresco.",
+      "category": "Fainá",
+      "image": "faina.jpg"
+   },
+   {
+      "id": 17,
+      "name": "Empanadas de choclo",
+      "price": 4500,
+      "description": "Empanadas de choclo y queso gruyere.",
+      "category": "Empanadas",
+      "image": "empanadas.jpg"
+   },
+   {
+      "id": 18,
+      "name": "Canastas party",
+      "price": 10000,
+      "description": "Canastas con aceitunas, morrón, queso sardo.",
+      "category": "Empanadas",
+      "image": "CANA-008-380x2851.jpg"
+   },
+   {
+      "id": 19,
+      "name": "Pizza trigo sarraceno",
+      "price": 1139999,
+      "description": "Trigo sarraceno, queso Cremón, aceite de oliva, y salami vegano.",
+      "category": "Sin TACC",
+      "image": "pizza-sin-tacc-para-celiacos-1024x683.webp"
+   },
+   {
+      "id": 20,
+      "name": "Coca-Cola",
+      "price": 900,
+      "description": "Coca-Cola mini de vidrio",
+      "category": "Bebidas",
+      "image": "coca.jpg"
+   },
+   {
+      "id": 21,
+      "name": "Coca-Cola retornable",
+      "price": 5000,
+      "description": "2 litros, sin azúcar",
+      "category": "Bebidas",
+      "image": "retoSinazucar.jpg"
    }
-  
-  
 ]
