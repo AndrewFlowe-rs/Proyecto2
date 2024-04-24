@@ -1,7 +1,9 @@
 const { check, body } = require('express-validator');
 const path = require('path');
 
-const validaciones = [
+
+module.exports = (req,res) => { 
+    const validaciones = [
     check('name')
         .isLength({ min: 3, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres')
         .notEmpty().withMessage('El nombre es requerido').bail(),
@@ -40,4 +42,6 @@ const validaciones = [
         })
 ];
 
-module.exports = validaciones;
+
+}
+

@@ -2,44 +2,40 @@
 <html lang="es">
 
 <!-- Head -->
-<%- include('./partials/head') %>
-
+<%- include('../partials/head') %>
 <body>
 
 
      <!-- Header -->
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 
 
 
-
-    <main class="main-product">
-
+ <main class="main-product">
         <div class="article">
-
+        
             <article class="articulo-producto">
 
-                <img src="/design/product/pizza.png" alt="Imagen de pizza">
+                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
 
-                <h3>Caprese 8 Pociones</h3>
+                <h3><%= p.name %></h3>
 
-                <p class="ingredientes">Muzzarrella - Tomates Frescos - Albahaca - Aceite de Albahaca</p>
+                <p class="ingredientes"><%= p.description %></p>
                 <hr>
                 <P class="subtotal">Subtotal</P>
                 <hr>
-                <p class="total">$7200</p>
+                <p class="total"><%= p.price %></p>
 
                 <div class="confirmacion">
 
-                    <button class="botonno" type="button">
-                        <p>Cancelar<i class="fa-solid fa-xmark"></i></p>
+                    <button class="botonno" type="button">Cancelar<i class="fa-solid fa-xmark"></i>
                     </button>
 
-                    <button class="botonok" type="button">
-                        <p>Agregar<i class="fa-solid fa-check"></i></p>
+                    <button class="botonok" type="button">Agregar<i class="fa-solid fa-check"></i>
                     </button>
 
+                    
                 </div>
             </article>
 
@@ -49,9 +45,11 @@
 
     </main>
 
+    
+
 
    <!-- Footer -->
-   <%- include('./partials/footer') %>
+   <%- include('../partials/footer') %>
 
    
 </body>

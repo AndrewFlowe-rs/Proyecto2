@@ -1,3 +1,4 @@
 module.exports = {
-    profile : require('./user.controller')
+    sesion : require('./user.controller'),
+    profile: require('./profile.controller')
 }

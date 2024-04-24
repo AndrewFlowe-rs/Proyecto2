@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
 .mainhome {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +18,8 @@
 .mainhome .imagena {
     display: none;
 }
+div.container-product{}
+
 
 .pizzasinferior article {
 
@@ -71,7 +77,7 @@
     text-align: center;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 768px) {
 
     .home-main {
         display: flex;
@@ -99,6 +105,7 @@
 
     .bannerhome ul {
         font-family: var(--poppins);
+        list-style: none;
     }
 
     .bannerhome ul li a {
@@ -106,7 +113,7 @@
         color: black;
         text-decoration: none;
     }
-
+    div.container-product{}
     .pizzasinferior article {
         font-family: var(--poppins);
         width: 100%;
@@ -114,11 +121,22 @@
     }
 
     .pizzasinferior article h3 {
-        text-align: center;
+        /* text-align: center; */
     }
+    .pizzasinferior p{width: 320px;margin: 0;}
+    .pizzasinferior ul{
+    /* display: flex; */
+    margin: 11px;
+    /* padding: 65px; */
+}
+
+
 
     .pizzasinferior article img {
-        margin-left: 10px;
+        /* margin-left: 10px; */
+        width: 200px;
+        position: relative;
+        left: 163px;
     }
 
     .pizza-roquefort {
@@ -141,13 +159,12 @@
         border-radius: 20px;
     }
 
-    .descripcion-producto3 {
-
-width: 48%;
-
+    .descripcion-producto {
+/* width: 82%; */
+display: flex;
 }
 
-    .descripcion-producto3 h3 {
+    .descripcion-producto h3 {
 
         text-align: center;
     }
@@ -162,7 +179,9 @@ width: 48%;
     .pizzasinferior {
         display: flex;
         flex-wrap: wrap;
-        width: 75%;
+        width: 20%;
+        position: relative;
+        right: 150px;
     }
 
     .mainhome .pizzasbaner {
@@ -197,10 +216,14 @@ width: 48%;
     .pizzasbaner .anuncios-img img {
         width: 100%;
     }
+    div.container-product{
+    display: flex;
+    /* flex-direction: column-reverse; */
+}
 
     .pizzasinferior article {
-        width: 75%;
-        display: flex;
+        /* width: 50%; */
+        /* display: flex; */
     }
 
     .pizza-provo {
@@ -217,11 +240,9 @@ width: 48%;
     .pizza-cala {}
 
     .home-div {
-
-        display: flex;
-
-        flex-direction: row-reverse;
-    }
+/* display: flex; */
+flex-direction: row-reverse;
+}
 
     .bannerhome ul li a{
         
@@ -229,6 +250,8 @@ font-size: 26px;
     }
 
     .div-categorias h1{
+    font-size: 30px;
+    padding: 20px;
     }
 
     .carousel{

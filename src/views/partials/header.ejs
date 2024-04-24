@@ -8,7 +8,7 @@
             <div class="home-nav">
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="carrito/cart">Carrito</a></li>
+                <li><a href="/carrito">Carrito</a></li>
               <% if (!locals.userLogin) {%> 
                 <li><a href="aut/registro">Registrate</a></li>   
                 <% } else if (locals.userLogin.role==="ADMIN"){ %>

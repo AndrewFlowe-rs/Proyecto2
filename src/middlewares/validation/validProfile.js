@@ -1,9 +1,10 @@
 const { body, validationResult} = require('express-validator')
-const { loadData } = require('./database');
+const { loadData } = require('../../data');
 
 
 // Middleware de validación de perfil
-const existEmail = (value) => {
+module.exports = (req,res) => { 
+   const existEmail = (value) => {
    const users = loadData('users')
    return users.filter(u => u.email === value)
 }
@@ -23,5 +24,5 @@ return true;
 body('password').notEmpty().withMessage('Campo obligatorio').isLength({min:5, max:20}),
 
 ]
+}
 
-module.exports = isValidProfile
