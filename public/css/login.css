@@ -80,7 +80,11 @@
         }
         .main-login {
         background-image: url("../design/imgProducts/publicity.jpg");
+<<<<<<< HEAD
+        background-size: 100% 100%;
+=======
         background-size: 50% 100%;
+>>>>>>> 9e208d882feeb5a08a0e3fa0d77d5c5778c2d834
         background-repeat: no-repeat;
     }
     .main-login form{

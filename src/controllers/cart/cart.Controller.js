@@ -6,9 +6,10 @@ function filterByCategory(product, category) {
 
 module.exports = (req, res) => {
     const category = req.params.category.replace(/\s/g, '').toLowerCase();
+    const categoryWithSpaces = req.params.category; // Mantiene la categoría con espacios en la vista
     const products = loadData('products');
 
     const categoryProducts = products.filter(product => filterByCategory(product, category));
 
-    res.render('product/productCart', { category, products: categoryProducts });
+    res.render('product/productCart', { category: categoryWithSpaces, products: categoryProducts });
 };
