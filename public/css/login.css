@@ -3,7 +3,7 @@
         color: azure;
     }
     .main-login {
-        background-image: url("../design/imgHome/publicity.jpg");
+        background-image: url("../design/imgProducts/publicity.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         padding: 13%;
@@ -79,7 +79,7 @@
             color: azure;
         }
         .main-login {
-        background-image: url("../design/imgHome/publicity.jpg");
+        background-image: url("../design/imgProducts/publicity.jpg");
         background-size: 50% 100%;
         background-repeat: no-repeat;
     }
