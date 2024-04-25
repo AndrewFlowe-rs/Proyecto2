@@ -166,5 +166,21 @@
       "description": "2 litros, sin azúcar",
       "category": "Bebidas",
       "image": "retoSinazucar.jpg"
+   },
+   {
+      "id": 22,
+      "name": "Romana individual más Coca 200 ml Zero",
+      "price": 4500,
+      "description": "Pizza romana con champiñones y Coca-Zero 200ml o a elección.",
+      "category": "Combos",
+      "image": "combo.webp"
+   },
+   {
+      "id": 23,
+      "name": "Pizza familiar más Coca 1 litro.",
+      "price": 9050,
+      "description": "Pizza clásica familiar más una gaseosa de litro. Consultar bebidas disponibles.",
+      "category": "Combos",
+      "image": "combo2.jpg"
    }
 ]
