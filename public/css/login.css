@@ -1,4 +1,4 @@
-@media screen and (max-width: 360px) {
+@media  (max-width: 360px) {
     .main-login a { 
         color: azure;
     }
@@ -74,7 +74,7 @@
     
     
         /*TABLET*/
-    @media screen and (min-width: 361px){
+    @media  (min-width: 361px){
         .main-login a { 
             color: azure;
         }

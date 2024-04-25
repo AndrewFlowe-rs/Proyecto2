@@ -14,27 +14,28 @@
                 <h1 class="titulo">Editar producto</h1>
             </div>
             <div class="edit-title">
-                <input type="text" id="title" name="titulo" placeholder="Editar titulo">
+                <input type="text" id="title" name="titulo" placeholder="Editar nombre" value="<%= findId.name %>">
             </div>
             <div class="edit-price">
-                <input type="text" id="price" name="precio" placeholder="Editar precio">
+                <input type="text" id="price" name="precio" placeholder="Editar precio" value="<%= findId.price %>">
             </div>
             <div class="edit-description">
-                <input type="text" id="description" name="descripcion" placeholder="Editar descripcion">
+                <input type="text" id="description" name="descripcion" placeholder="Editar descripción" value="<%= findId.descripcion %>">
             </div>
             <div class="edit-category">
-                <label for="category">Categoria</label>
+                <label for="category">Categoría</label>
                 <select name="category" id="category">
-                    <option value="margarita">Pizza Margarita</option>
-                    <option value="cuatro-q">Pizza Cuatro Quesos</option>
-                    <option value="peperoni">Pizza de pepperoni</option>
-                    <option value="cuatro-e">Pizza cuatro estaciones</option>
-                    <option value="chammpiñon">Pizza con champiñones</option>
-                    <option value="hawaiana">Pizza hawaiana</option>
-                    <option value="marinara">Pizza marinara</option>
-                    <option value="napolitana">Pizza napolitana</option>
-                    <option value="neoyorquina">Pizza neoyorquina</option>
-                    <option value="fugazza">Pizza fugazza </option>
+                    <option value="Sin TACC">Sin TACC</option>
+                    <option value="Empanadas">Empanadas</option>
+                    <option value="Fainá">Fainá</option>
+                    <option value="Calzones">Calzones</option>
+                    <option value="Clásicas">Clásicas</option>
+                    <option value="Pizza del mes">Pizza del mes</option>
+                    <option value="peperoni">Promo del mes</option>
+                    <option value="Promo del mes">Combos</option>
+                    <option value="Individuales">Individuales</option>
+                    <option value="Bebidas">Bebidas</option>
+                  
                 </select>
             </div>
 
