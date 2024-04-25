@@ -26,7 +26,12 @@
              </ul>
        </nav>
   <!-- TÍTULOS -->
-
+  <div class="titles-category"> 
+    <h2><%= category %></h2>
+  <p class="caption"><%= category %></p>
+ </div>
+ 
+ 
   <% products.forEach(p => {%>
      
          <div class="first-div">
@@ -57,6 +62,7 @@
 
    <!-- Footer -->
 <%- include('../partials/footer') %>
+
 </body>
 
 </html>

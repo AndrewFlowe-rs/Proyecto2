@@ -11,29 +11,20 @@
     <%- include('../partials/header') %>
 
       <main>
-
           <div class="div-padre">
 
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/design/imgProducts/logo-home.jpg" class="d-block w-100" alt="...">
+                  <img src="/design/imgProducts/logo-home.jpg"  class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/design/imgProducts/logo-home.jpg" class="d-block w-100" alt="...">
+                  <img src="/design/imgProducts/bannerPizza.jpg"class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/design/imgProducts/logo-home.jpg" class="d-block w-100" alt="...">
+                  <img src="/design/imgProducts/bannerPizza3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
 
             <div class="home-div">
@@ -43,16 +34,16 @@
 
               <div class="bannerhome">
                 <ul>
-                  <li><a href="#">Calzones</a></li>
-                  <li><a href="#">Fainá</a></li>
-                  <li><a href="#">Empanadas</a></li>
-                  <li><a href="#">Sin TACC</a></li>
-                  <li><a href="#">Clásicas</a></li>
-                  <li><a href="#">Pizzas del mes</a></li>
-                  <li><a href="#">Promo del mes</a></li>
-                  <li><a href="#">Combos</a></li>
-                  <li><a href="#">Individuales</a></li>
-                  <li><a href="#">Bebidas</a></li>
+                  <li><a href="/carrito/calzones">Calzones</a></li>
+                  <li><a href="/carrito/fainá">Fainá</a></li>
+                  <li><a href="/carrito/Empanadas">Empanadas</a></li>
+                  <li><a href="/carrito/Sin%20tacc">Sin TACC</a></li>
+                  <li><a href="/carrito/clásicas">Clásicas</a></li>
+                  <li><a href="/carrito/Pizza%20del%20mes">Pizzas del mes</a></li>
+                  <li><a href="/carrito/promo%20del%20mes">Promo del mes</a></li>
+                  <li><a href="/carrito/combos">Combos</a></li>
+                  <li><a href="/carrito/individuales">Individuales</a></li>
+                  <li><a href="/carrito/bebidas">Bebidas</a></li>
                 </ul>
               </div>
               <div class="anuncios-img">
@@ -96,11 +87,17 @@
         </div>
         </div>
       </div>
+     
+      
       </main>
 
 
       <!-- Footer -->
       <%- include('../partials/footer') %>
+       <!-- Bootstrap scrip -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+crossorigin="anonymous"></script>
   </body>
 
 </html>
