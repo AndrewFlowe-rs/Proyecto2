@@ -101,7 +101,10 @@ div.container-product{}
     .pizzas-detalle {
         width: 75%;
     }
-
+    .bannerhome {
+        position: absolute;
+        left: 311%;
+    }
 
     .bannerhome ul {
         font-family: var(--poppins);
@@ -160,8 +163,10 @@ div.container-product{}
     }
 
     .descripcion-producto {
-/* width: 82%; */
-display: flex;
+
+/* width: 82%; */
+
+display: flex;
 }
 
     .descripcion-producto h3 {
@@ -174,6 +179,7 @@ div.container-product{}
 
     .div-categorias {
         width: 25%;
+        position: absolute;
     }
 
     .pizzasinferior {
@@ -240,8 +246,10 @@ div.container-product{}
     .pizza-cala {}
 
     .home-div {
-/* display: flex; */
-flex-direction: row-reverse;
+
+/* display: flex; */
+
+flex-direction: row-reverse;
 }
 
     .bannerhome ul li a{
@@ -252,6 +260,9 @@ font-size: 26px;
     .div-categorias h1{
     font-size: 30px;
     padding: 20px;
+    position: relative;
+    left: 299%;
+    border-bottom: solid;
     }
 
     .carousel{

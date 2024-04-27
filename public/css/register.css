@@ -283,7 +283,9 @@ padding: 10px;
 
     .main-register .c-register {}
 
-    .main-register .c-register h3 {}
+    .main-register .c-register h3 {
+    font-size: medium;
+}
 
     .main-register .c-register a {
         color: var(--blanco);
