@@ -1,8 +1,8 @@
 module.exports = {
   development: {
     username: "root",
-   password :"root",
-    database: "database_development",
+    password: "root",
+    database: "pizzeriaGit_db",
     host: "127.0.0.1",
     dialect: "mysql"
   },
@@ -17,7 +17,7 @@ module.exports = {
     username: "root",
     password: null,
     database: "database_production",
-    host :"127.0.0.1",
+    host: "127.0.0.1",
     dialect: "mysql"
   }
 }
