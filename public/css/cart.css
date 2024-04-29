@@ -1007,7 +1007,7 @@ display: none;
 }
 
     main nav.nav-bar ul.list-bar li.drinks {
-        display: none;
+        /* display: none; */
     }
 
     main nav.nav-bar ul.list-bar li a {
@@ -1853,8 +1853,8 @@ top: -20px;
 
     /* MAIN NAV- */
     main nav.nav-bar {
-
-/* display: flex; */
+/* display: flex; */
+width: 100%;
 }
 
     main nav.nav-bar ul.list-bar {
