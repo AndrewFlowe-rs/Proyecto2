@@ -1,4 +1,6 @@
-main.main-home{}
+main.main-home{
+    min-height: 100vh;
+}
 a{
     text-decoration: none;
     color: var(--negro);
@@ -82,7 +84,7 @@ flex-direction: column;
 .pizza-provo img {
     width: 50%;
 }
-main div.contenedor-descrip-home{}
+div.contenedor-descrip-home{}
 
 .descripcion-producto2 h3 {
     text-align: center;
@@ -179,7 +181,7 @@ left: 311%;
         display: flex;
         flex-direction: column;
     }
-    main div.contenedor-descrip-home{
+    div.contenedor-descrip-home{
     /* background-color: var(--background-reg); */
 }
 
@@ -264,6 +266,8 @@ main.main-home{
     display: flex;
     /* position: relative; */
     top: 41px;
+    /* min-width: 27vh; */
+    width: 100%;
 }
 
 
@@ -395,5 +399,7 @@ background-color: var(--background-reg);
 }
         
 }
-main div.contenedor-descrip-home{}
+div.contenedor-descrip-home{
+    width: 20%;
+}
 
