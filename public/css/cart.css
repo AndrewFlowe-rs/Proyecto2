@@ -1849,6 +1849,8 @@ top: -20px;
 @media (min-width:768px) {
     main.main-cart {
     /* display: flex; */
+    /* height: 123vh; */
+    min-height: 100vh;
     }
 
     /* MAIN NAV- */
@@ -2062,6 +2064,7 @@ main div.titles-category{}
     div.container-cart-product{
     display: flex;
     flex-wrap: wrap;
+    /* height: 100vh; */
 }
 
     main div.contenedor-primero {

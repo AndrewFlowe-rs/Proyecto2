@@ -76,6 +76,9 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    /* height: 100vh; */
+    /* display: table; */
+    clear: both;
 }
   .footer .conteiner-phone {
     display: none;
