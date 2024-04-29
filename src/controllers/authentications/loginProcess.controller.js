@@ -24,8 +24,8 @@ module.exports = (req, res) => {
     } else {
         const errorsMapped = errors.mapped()
         const { email } = req.body
-        res.render("login", { errors: errorsMapped, email })
-    }
+        res.render("authentication/login", { errors: errorsMapped, email })
+ }
 
 
 
