@@ -75,7 +75,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
 }
   .footer .conteiner-phone {
     display: none;
