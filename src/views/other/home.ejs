@@ -30,7 +30,8 @@
               </div>
             </div>
 
-           
+            <div class="home-div">
+            <div class="div-categorias">
 
               <h1>CATEGORIAS</h1>
 
@@ -48,41 +49,52 @@
                   <li><a href="/carrito/bebidas">Bebidas</a></li>
                 </ul>
               </div>
+              <div class="anuncios-img">
+                <img src="/design/imgProducts/CANA-008-380x2851.jpg" alt="Imagen de empanada canastita">
+                <img src="/design/imgProducts/empanadas.jpg" alt="Empanadas">
+                <img src="/design/imgProducts/qr.jpg" alt="QR">
+              </div>
+              </div>
 
-           <div class="product-container"> 
-            <% products.forEach(p => { %>
+              <% products.forEach(p => { %>
                 <% if (p.category === 'Promo del mes') { %>
-                  <div class="first-div-home">
-                    <div class="contenedor-img-home">
-                    <img src="/design/imgProducts/<%= p.image %>" alt="">
-                    </div>
-                    <div class="contenedor-descrip-home">
+             <div class="container-product">
+              <section class="pizzasinferior">
+                        <article class="pizza-cala">
+                            <img src="/design/imgProducts/<%= p.image %>" alt="">
+                            <div class="descripcion-producto">
                                 <h3><%= p.name %></h3>
+                                <ul>
                                     <p><%= p.description %></p>
-                                <a href="/detalle/<%= p.id %>" class="btn btn-outline-danger" >Ver más</a>
-                                </div>
-                    </div> 
-                       
-            
+                                </ul>
+                                <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>
+                            </div>
+                        </article>
+                    </section> 
+                  </div>
+              </div>
                 
                  
                 <% } %>
-            <% }) %></div>
-              
+            <% }) %>
    
         </div>
 
+        </div>
+        </div>
+      </div>
      
       
       </main>
 
 
-      <!-- Footer -->
+     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+          integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+          crossorigin="anonymous"></script>
+           <!-- Footer -->
       <%- include('../partials/footer') %>
-       <!-- Bootstrap scrip -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
-crossorigin="anonymous"></script>
+      <!-- Bootstrap scrip -->
   </body>
 
 </html>

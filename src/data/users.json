@@ -7,7 +7,7 @@
       "password": "$2a$10$eh9XLLbzeFGQivZ7bMm6KOuMoR7O0gAuHg9crf.AVuzihvDcH8Wda",
       "number": "3884636451",
       "role": "ADMIN",
-      "city": ""
+      "adress": ""
      
    },
    {
@@ -18,150 +18,9 @@
       "password": "$2a$10$lfZiMs6FGYxAagrXcyW76ekgrx.BFCTkFuxzxJhBytl8saJYGRXl2",
       "number": "38846",
       "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 3,
-      "name": "",
-      "email": "@",
-      "password": "$2a$10$nJrcmtCDxT/EuHHaD3AumOQE35COSK3OWS3c6fGFs.yHrpS0d5hsi",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 4,
-      "name": "11",
-      "email": "@1",
-      "password": "$2a$10$2b7kf5ha2keDr5rKVeEahuRK8svWhAJg7riCnInxR7zfWdHr09FcK",
-      "number": "1",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 5,
-      "name": "1",
-      "email": "@1",
-      "password": "$2a$10$9r1ZU.icUUpV6Q7RmzPgtOP1.A4qJYOkYGJ1ZwzQUQrsKxhH6HbV6",
-      "number": "1",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 6,
-      "name": "1",
-      "email": "@1",
-      "password": "$2a$10$zq92WSaScQG5mdBNaULfa.Tc5akCY143pZw6d9s9pGjDz8ljTsm7W",
-      "number": "1",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 7,
-      "name": "1",
-      "email": "@1",
-      "password": "$2a$10$gZf1d917pnmwUHtSPDr58.3qOvDx4mF7C8q8AmeOq2uprsPiHujmW",
-      "number": "1",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 8,
-      "name": "1",
-      "email": "@1",
-      "password": "$2a$10$xIPJX4AimSUZn7sTDxS9GeGG8ncUkDFu3m2fX6IteKA13MqZomH/W",
-      "number": "1",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 9,
-      "name": "",
-      "email": "@",
-      "password": "$2a$10$6heQBj/aRlA13eI8VHe.I.H2rvS0aNCHl5o/qbYFaUYABnzZKD2Wu",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 10,
-      "name": "",
-      "email": "@",
-      "password": "$2a$10$wvmITrbZE4vVNaPnvm2ILOP1Wp1SfKZ.c1VHCzUgVV3n9px4XKjtu",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 11,
-      "name": "1111",
-      "email": "@222",
-      "password": "$2a$10$ssOw5lHTRetmgBjrJXjNveInOyceL6TuzZ7.ztsZ19Ad6e.gF4.Ki",
-      "number": "333",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 12,
-      "name": "1111",
-      "email": "@222",
-      "password": "$2a$10$BaIwTcheGszkdZSAl2ZXkOIC0fWtPThrsH9ddhKhJKtRSEf1ZujDa",
-      "number": "333",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 13,
-      "name": "11111",
-      "email": "@",
-      "password": "$2a$10$/uI9fpA1oL3eQFJhIekyyuT4Mg9YaAdp9VBgQH85/JTop4jbN0LnG",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 14,
-      "name": "11111",
-      "email": "@",
-      "password": "$2a$10$1d52BWB6L7HUugreg3J.Q.yvXJpMF9oOb/SsIDhb3Zi4Q7naswbBa",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 15,
-      "name": "1111",
-      "email": "@",
-      "password": "$2a$10$kJ1LjIyD9suf9QjRsHWb0OtEHuR6chnA58VAn0rS4b.lfo7yT8nti",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 16,
-      "name": "1111",
-      "email": "@",
-      "password": "$2a$10$DUl25O0RMlwQiRd1Q5LFr.E5heRXOZ0MXmg2IOnH2xigzf.becCL2",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 17,
-      "name": "eeee",
-      "email": "@",
-      "password": "$2a$10$ar8dZ.HhNMtHEuOevrHV6eHgzIh/4oy3O1vMIGxf/jFRrhIEK434u",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
-   },
-   {
-      "id": 18,
-      "name": "eeee",
-      "email": "@",
-      "password": "$2a$10$Gr/RTA1a4jLZm54Xf3/duuf3jLTb4eIqL8V52cmIzdODKMckTh7cK",
-      "number": "",
-      "role": "REGULAR",
-      "city": ""
+      "adress": ""
    }
+
+ 
+  
 ]
