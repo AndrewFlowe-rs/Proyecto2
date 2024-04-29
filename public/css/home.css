@@ -259,7 +259,7 @@ font-size: 26px;
 
     .div-categorias h1{
     font-size: 30px;
-    padding: 20px;
+    padding: -7px;
     position: relative;
     left: 299%;
     border-bottom: solid;
