@@ -2,6 +2,7 @@
 @media (max-width:360px) {
     main.main-cart{
     /* padding-bottom: 30px; */
+    min-height: 100vh;
     }
 
     /* MAIN NAV- */
@@ -948,6 +949,7 @@ padding-bottom: 10px;
 @media (min-width:361px) {
     main.main-cart {
         /* background-color: black; */
+        min-height: 100vh;
     }
 
     /* MAIN NAV- */

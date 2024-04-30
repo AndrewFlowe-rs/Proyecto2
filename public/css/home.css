@@ -5,6 +5,11 @@ a{
     text-decoration: none;
     color: var(--negro);
 }
+div.card{
+    background-color: var(--background-reg);
+    /* border-top-left-radius: 36px; */
+    border: none;
+}
 .mainhome {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +28,10 @@ a{
 }
 div.container-product{
     display: flex;
+    flex-direction: column;
+    background-color: var(--background-reg);
+    align-items: center;
+    margin: 15px;
 }
 
 h1{
@@ -68,6 +77,15 @@ a.btn.btn-outline-danger{}
 .descripcion-producto2 {
     width: 47%;
 }
+div.card-body{
+    background-color: var(--background-reg);
+}
+
+
+
+h5.card-title{
+    color: var(--bs-black);
+}
 
 .pizza-provo {
     display: flex;
@@ -87,9 +105,11 @@ a.btn.btn-outline-danger{}
     display: none;
 }
 
-.pizza-provo img {
-    width: 50%;
+img.card-img-top {
+    /* width: 50%; */
+    border-radius: 31px;
 }
+
 div.contenedor-descrip-home{}
 
 .descripcion-producto2 h3 {
@@ -121,6 +141,10 @@ main div.first-div-home{
     width: 170px;
     border-radius: 18px;
     }
+    
+    p.card-text{
+    color: var(--bs-black);
+}
     div.contenedor-descrip-home{
     /* width: 82px; */
     /* padding: 10px; */
@@ -284,7 +308,10 @@ main.main-home{
     /* min-width: 27vh; */
     width: 100%;
 }
-
+div.card{
+    padding: 18px;
+    height: 345px;
+}
 
     .pizzasinferior {
         display: flex;
@@ -293,6 +320,9 @@ main.main-home{
         position: relative;
         right: 150px;
     }
+    img.card-img-top{
+    height: 200px;
+}
     .pizzasinferior img{
     width: 265px;
 }
@@ -349,7 +379,9 @@ h1{
     }
     div.container-product{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
+    flex-direction: row;
+    align-items: flex-start;
 }
 
     .pizzasinferior  {

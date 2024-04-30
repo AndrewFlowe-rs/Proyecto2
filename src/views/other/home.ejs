@@ -49,30 +49,25 @@
                 </ul>
               </div>
               
-
+           <div class="container-product">         
               <% products.forEach(p => { %>
                 <% if (p.category === 'Promo del mes') { %>
-             <div class="container-product">
-              <section class="pizzasinferior">
-                        <article class="pizza-cala">
-                            <img src="/design/imgProducts/<%= p.image %>" alt="">
-                            <div class="descripcion-producto">
-                                <h3><%= p.name %></h3>
-                                <ul>
-                                    <p><%= p.description %></p>
-                                </ul>
-                                <a href="/detalle/<%= p.id %>" class="btn btn-outline-danger">Ver más</a>
-                            </div>
-                        </article>
-                    </section> 
-                  </div>
+            
+
+              <div class="card" style="width: 18rem;">
+                <img src="/design/imgProducts/<%= p.image %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= p.name %></h5>
+                  <p class="card-text"><%= p.description %></p>
+                  <a href="/detalle/<%= p.id %>" class="btn btn-outline-danger">Ver más</a>
+                </div>
               </div>
                 
                  
                 <% } %>
             <% }) %>
    
-
+        </div>
      
       
       </main>

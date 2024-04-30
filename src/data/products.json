@@ -182,5 +182,13 @@
       "description": "Pizza clásica familiar más una gaseosa de litro. Consultar bebidas disponibles.",
       "category": "Combos",
       "image": "combo2.jpg"
+   },
+   {
+      "id": 24,
+      "name": "Manaos",
+      "price": 1500,
+      "description": "Gaseosa Manaos de 2,25L. Todos los gustos.",
+      "category": "Bebidas",
+      "image": "manaos.webp"
    }
 ]

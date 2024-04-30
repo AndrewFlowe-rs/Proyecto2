@@ -17,15 +17,15 @@ module.exports = (req,res) => {
         .notEmpty().withMessage('La contraseña es requerida')
         .isStrongPassword({ minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 0 }).withMessage('La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número').bail(),
 
-    check('Telefono')
+    check('number')
         .isLength({ min: 11, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres')
         .notEmpty().withMessage('El telefono es requerido').bail(),
 
-    check('Ciudad')
+    check('city')
         .isLength({ min: 8, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres')
         .notEmpty().withMessage('La Ciudad es requerido').bail(),
 
-    body('imageProfile')
+    body('avatar')
         .custom((value, { req }) => {
             const reqFile = req.file;
 
