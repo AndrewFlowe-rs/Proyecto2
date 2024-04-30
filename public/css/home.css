@@ -295,7 +295,7 @@ height: 18vh;
 main.main-home{
     /* display: flex !important; */
     /* flex-direction: column-reverse; */
-    min-height: 100vh;
+    min-height: 120vh;
 }
     .div-categorias {
         width: 25%;
@@ -402,7 +402,7 @@ h1.home{
     }
     div.container-product{
     display: flex;
-    /* width: 100%; */
+    width: 98%;
     flex-direction: row;
     align-items: flex-start;
     /* position: relative; */
