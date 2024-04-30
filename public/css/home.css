@@ -339,18 +339,40 @@ p.card-text{}
     height: 40vh;
     /* width: 249vw; */
 }
-h1{
-    color: var(--negro);
+h1.home{
+    /* color: #020304; */
     display: block;
     width: 196px;
     /* position: relative; */
     /* top: 11px; */
     padding: 10px;
     margin: 20px;
+    /* color: var(--bs-black); */
+    /* color: var(--bs-code-color); */
+    backdrop-filter: blur(1px);
 }
-.bannerhome{/* display: block; */position: relative;left: -16px;/* right: 270px; *//* top: 20px; *//* display: flex; */display: block;}
+.bannerhome{
+    /* display: block; */
+    position: relative;
+    left: -16px;
+    /* right: 270px; */
+    /* top: 20px; */
+    display: flex;
+    /* display: block; */
+    background-image: url("../design/imgProducts/bannerCategory.avif");
+    background-size: 60vw;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+ }
 .bannerhome ul{
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+    display: flex;
+    background-color: #a60d0d;
+    align-items: stretch;
+    padding: 10px;
+    width: 20vh;
+    flex-direction: column;
 }
     .home-carousel {
         width: 75%;
@@ -417,8 +439,11 @@ flex-direction: row-reverse;
 }
 
     .bannerhome ul li a{
-        
-font-size: 26px;
+        font-size: 32px;
+        font-family: var(--corporant);
+        display: flex;
+        justify-content: center;
+        /* color: var(--bs-danger); */
     }
 
     .div-categorias h1{
