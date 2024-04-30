@@ -295,7 +295,7 @@ height: 18vh;
 main.main-home{
     /* display: flex !important; */
     /* flex-direction: column-reverse; */
-    height: 100vh;
+    min-height: 100vh;
 }
     .div-categorias {
         width: 25%;
@@ -312,7 +312,7 @@ div.card{
     padding: 18px;
     height: 345px;
 }
-
+p.card-text{}
     .pizzasinferior {
         display: flex;
         flex-wrap: wrap;
@@ -321,7 +321,7 @@ div.card{
         right: 150px;
     }
     img.card-img-top{
-    height: 200px;
+    /* height: 156px; */
 }
     .pizzasinferior img{
     width: 265px;
@@ -343,11 +343,12 @@ h1{
     color: var(--negro);
     display: block;
     width: 196px;
-    position: relative;
-    top: 11px;
+    /* position: relative; */
+    /* top: 11px; */
     padding: 10px;
+    margin: 20px;
 }
-.bannerhome{/* display: block; *//* position: relative; *//* left: -16px; *//* right: 270px; *//* top: 20px; *//* display: flex; */}
+.bannerhome{/* display: block; */position: relative;left: -16px;/* right: 270px; *//* top: 20px; *//* display: flex; */display: block;}
 .bannerhome ul{
     margin-bottom: 70px;
 }
@@ -382,6 +383,8 @@ h1{
     /* width: 100%; */
     flex-direction: row;
     align-items: flex-start;
+    /* position: relative; */
+    top: 571px;
 }
 
     .pizzasinferior  {
