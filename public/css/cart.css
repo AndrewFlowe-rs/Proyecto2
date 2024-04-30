@@ -235,12 +235,13 @@ padding-bottom: 10px;
     /* Botón detalle "Ver más" */
     .btn.btn-danger{
     position: relative;
-    top: -17px;
-    left: 193px;
+    /* top: -17px; */
+    left: 83px;
     font-size: 12px;
     /* font-size: var(--comic); */
     font-family: var(--comic);
     padding: 5px;
+    width: 55px;
 }
 
     /* SEGUNDO DIV */
@@ -2257,7 +2258,7 @@ border-radius: 7px;
     main div.contenedor-img img {
         width: 220px;
         /* border-radius: 22px; */
-        height: 183px;
+        height: 340px;
         /* margin-left: 0px; */
     }
 

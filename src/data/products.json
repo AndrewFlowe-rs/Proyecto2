@@ -91,7 +91,7 @@
       "id": 12,
       "name": "Calabreza",
       "price": 5000,
-      "description": "Salsa de tomate, mozzarella ,longaniza, ají molido, aceitunas negras",
+      "description": "Salsa de tomate, mozzarella, longaniza, ají molido, aceitunas negras",
       "category": "Promo del mes",
       "image": "calabresa.jpg"
    },
@@ -107,7 +107,7 @@
       "id": 14,
       "name": "Roquefort",
       "price": 5000,
-      "description": "Salsa de tomate, mozzarella ,roquefort, ananá, queso provolone",
+      "description": "Salsa de tomate, mozzarella, roquefort, ananá, queso provolone",
       "category": "Promo del mes",
       "image": "ROQUEFORT1.jpg"
    },

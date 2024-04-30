@@ -29,9 +29,8 @@
                 </div>
               </div>
             </div>
+            </div>
 
-            <div class="home-div">
-            <div class="div-categorias">
 
               <h1>CATEGORIAS</h1>
 
@@ -49,12 +48,7 @@
                   <li><a href="/carrito/bebidas">Bebidas</a></li>
                 </ul>
               </div>
-              <div class="anuncios-img">
-                <img src="/design/imgProducts/CANA-008-380x2851.jpg" alt="Imagen de empanada canastita">
-                <img src="/design/imgProducts/empanadas.jpg" alt="Empanadas">
-                <img src="/design/imgProducts/qr.jpg" alt="QR">
-              </div>
-              </div>
+              
 
               <% products.forEach(p => { %>
                 <% if (p.category === 'Promo del mes') { %>
@@ -67,7 +61,7 @@
                                 <ul>
                                     <p><%= p.description %></p>
                                 </ul>
-                                <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>
+                                <a href="/detalle/<%= p.id %>" class="btn btn-outline-danger">Ver más</a>
                             </div>
                         </article>
                     </section> 
@@ -78,11 +72,7 @@
                 <% } %>
             <% }) %>
    
-        </div>
 
-        </div>
-        </div>
-      </div>
      
       
       </main>
