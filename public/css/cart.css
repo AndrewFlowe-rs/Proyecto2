@@ -2083,22 +2083,14 @@ main div.titles-category{}
 
     /* PRIMER DIV*/
     main div.first-div {
-
-display: flex;
-
-background-color: var(--crudo);
-
-/* padding: 15px; */
-
-height: 340px;
-
-width: 315px;
-
-/* padding: 16px; */
-
-margin: 10px;
-
-border-radius: 20px;
+display: flex;
+background-color: var(--crudo);
+/* padding: 15px; */
+height: 340px;
+width: 350px;
+/* padding: 16px; */
+margin: 10px;
+border-radius: 20px;
 }
 
     main div.contenedor-img {}
@@ -2256,7 +2248,7 @@ border-radius: 7px;
     }
 
     main div.contenedor-img img {
-        width: 220px;
+        width: 260px;
         /* border-radius: 22px; */
         height: 340px;
         /* margin-left: 0px; */
