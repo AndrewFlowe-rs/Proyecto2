@@ -1,4 +1,4 @@
-const { check, body } = require('express-validator');
+const { check } = require('express-validator');
 const path = require('path');
 
 
@@ -25,7 +25,7 @@ module.exports = (req,res) => {
         .isLength({ min: 8, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres')
         .notEmpty().withMessage('La Ciudad es requerido').bail(),
 
-    body('avatar')
+    check('avatar')
         .custom((value, { req }) => {
             const reqFile = req.file;
 

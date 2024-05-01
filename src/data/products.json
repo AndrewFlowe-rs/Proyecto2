@@ -190,5 +190,13 @@
       "description": "Gaseosa Manaos de 2,25L. Todos los gustos.",
       "category": "Bebidas",
       "image": "manaos.webp"
+   },
+   {
+      "id": 25,
+      "name": "Empanadas de carne",
+      "price": 12500,
+      "description": "Empanadas de carne cortada a cuchilla.",
+      "category": "Empanadas",
+      "image": "image-1714577773381-.jpg"
    }
 ]
