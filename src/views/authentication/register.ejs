@@ -12,7 +12,7 @@
 
             <main class="main-register">
 
-                <form class="form-register" action="/aut/registro" method="post">
+                <form class="form-register" action="/registro" method="POST">
                     <div class="conteiner-x">
                         <a href="/"><i class="fa-solid fa-xmark"></i></a>
                     </div>
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="archivos">
-                            <input type="file" placeholder="avatar" id="avatar" name="avatar">
+                            <input type="file" placeholder="avatar" id="avatar" name="image">
                             <%= locals.errors?.avatar?.msg%>
                         </div>
                     </div>

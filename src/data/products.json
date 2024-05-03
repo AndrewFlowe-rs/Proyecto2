@@ -91,7 +91,7 @@
       "id": 12,
       "name": "Calabreza",
       "price": 5000,
-      "description": "Salsa de tomate, mozzarella ,longaniza, ají molido, aceitunas negras",
+      "description": "Salsa de tomate, mozzarella, longaniza, ají molido, aceitunas negras",
       "category": "Promo del mes",
       "image": "calabresa.jpg"
    },
@@ -107,7 +107,7 @@
       "id": 14,
       "name": "Roquefort",
       "price": 5000,
-      "description": "Salsa de tomate, mozzarella ,roquefort, ananá, queso provolone",
+      "description": "Salsa de tomate, mozzarella, roquefort, ananá, queso provolone",
       "category": "Promo del mes",
       "image": "ROQUEFORT1.jpg"
    },
@@ -182,5 +182,13 @@
       "description": "Pizza clásica familiar más una gaseosa de litro. Consultar bebidas disponibles.",
       "category": "Combos",
       "image": "combo2.jpg"
+   },
+   {
+      "id": 24,
+      "name": "Manaos",
+      "price": 1500,
+      "description": "Gaseosa Manaos de 2,25L. Todos los gustos.",
+      "category": "Bebidas",
+      "image": "manaos.webp"
    }
 ]

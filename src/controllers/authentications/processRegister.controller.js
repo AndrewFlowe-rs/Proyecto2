@@ -3,7 +3,7 @@ const { loadData, saveData } = require('../../data');
 const { validationResult } = require("express-validator");
 
 module.exports = (req, res) => {
-  const { name,surname, email, password, number, city } = req.body; // Extrae los valores name, surname, email, y password
+  const { name,surname, email, password, number } = req.body; // Extrae los valores name, surname, email, y password
   const users = loadData("users"); // Obtiene los datos de los usuarios existentes
   const newUser = { //: Crea un objeto para representar al nuevo usuario
     id: !users.length ? 1 : users[users.length - 1].id + 1,  /*Si no hay usuarios (!users.length), se asigna el id 1.
@@ -12,7 +12,7 @@ module.exports = (req, res) => {
     surname: surname?.trim(),
     email: email?.trim(),
     password: bcrypt.hashSync(password?.trim(), 10), // La contraseña del usuario hasheada usando bcrypt.hashSync(password?.trim(), 10).
-   number: number.trim(),
+    number: number.trim(),
     role: "REGULAR",
     city:""
   };

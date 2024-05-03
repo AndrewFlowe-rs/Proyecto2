@@ -110,10 +110,10 @@ width: 166px;
     }
 
     .main-product .article .articulo-producto img {
-        width: 70%;
-        border-radius: 103px;
+        width: 100%;
+        /* border-radius: 103px; */
         /* margin: 26px 0px 5px 117px; */
-        position: relative;
+        /* position: relative; */
         left: 52px;
     }
 
@@ -189,6 +189,7 @@ width: 166px;
         background-color: var(--colorproducto);
         padding-top: 33px;
         /* padding-bottom: 95px; */
+        min-height: 100vh;
     }
 
     .main-product .caja {
@@ -203,17 +204,21 @@ width: 166px;
 
     .main-product .article .articulo-producto {
         background-color: var(--cajaproduct);
-        height: 76vh;
+        /* height: 98vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-size: contain; */
     }
 
     .main-product .article .articulo-producto img {
-        width: 50%;
+        width: 75%;
         border-radius: 103px;
         margin: 25px 0px 5px 0px;
-        position: relative;
+        /* position: relative; */
         left: -4px;
         padding: 20px;
-        height: 65%;
+        /* height: 70%; */
     }
 
     .main-product .article .articulo-producto h3 {
@@ -247,7 +252,6 @@ width: 166px;
 
     .confirmacion {
         display: flex;
-        justify-content: space-around;
     }
 
     .confirmacion .botonno {
@@ -256,7 +260,8 @@ width: 166px;
         padding: 7px 6px;
         border: none;
         background-color: var(--rojo);
-        width: 202px;
+        width: 200px;
+        margin: 20px;
     }
 
 
@@ -269,10 +274,11 @@ width: 166px;
     .confirmacion .botonok {
         font-family: var(--antiqua);
         border-radius: 35px;
-        padding: 7px 6px;
+        padding: 15px 8px;
         border: none;
         background-color: var(--verde);
-        width: 202px;
+        width: 200px;
+        margin: 20px;
     }
 
     .confirmacion .botonok p {}

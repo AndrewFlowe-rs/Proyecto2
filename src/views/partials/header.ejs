@@ -10,9 +10,9 @@
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/carrito">Carrito</a></li>
               <% if (!locals.userLogin) {%> 
-                <li><a href="aut/registro">Registrate</a></li>   
+                <li><a href="/aut/registro">Registrate</a></li>   
                 <% } else if (locals.userLogin.role==="ADMIN"){ %>
-                    <li><a href="/admin">Aministrador🍕🎈</a></li>
+                    <li><a href="/admin">Administrador🍕🎈</a></li>
                    
                     <% } else {%>
                         <li>bienvenido <%= locals.userLogin.name %> 😎</li>
