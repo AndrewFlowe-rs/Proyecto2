@@ -11,10 +11,10 @@ module.exports = async (req, res) => {
         const product = await db.Product.findByPk(id);
 
 
-        product.name = name ? name.trim() : '';
+        product.name = name ? name.trim() : name;
         product.price = +price;
-        product.description = description ? description.trim() : '';
-        product.categoryName = categoryName ? categoryName.trim() : '';
+        product.description = description ? description.trim() : description;
+        product.categoryName = categoryName ? categoryName.trim() : categoryName;
         product.image = image ? image.filename : product.image;
        
 

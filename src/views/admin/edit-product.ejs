@@ -14,17 +14,17 @@
                 <h1 class="titulo">Editar producto</h1>
             </div>
             <div class="edit-title">
-                <input type="text" id="title" name="titulo" placeholder="Editar nombre" value="<%= p.name %>">
+                <input type="text" id="title" name="name" placeholder="Editar nombre" value="<%= p.name %>">
             </div>
             <div class="edit-price">
-                <input type="text" id="price" name="precio" placeholder="Editar precio" value="<%= p.price %>">
+                <input type="text" id="price" name="price" placeholder="Editar precio" value="<%= p.price %>">
             </div>
             <div class="edit-description">
-                <input type="text" id="description" name="descripcion" placeholder="Editar descripción" value="<%= p.description %>">
+                <input type="text" id="description" name="description" placeholder="Editar descripción" value="<%= p.description %>">
             </div>
             <div class="edit-category">
                 <label for="category">Categoría actual</label>
-                <select name="category" id="category">
+                <select name="categoryName" id="category">
                     <option value="Sin TACC"><%= p.categoryName %></option>
                     <option value="Empanadas">Empanadas</option>
                     <option value="Fainá">Fainá</option>
@@ -38,13 +38,12 @@
                   
                 </select>
             </div>
-            <div>  
-                 <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" ></div>
+            <div>   <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" ></div>
           
             <div class="edit-image">
                 <label class="label-titulo" for="image">Editar imagen del producto</label>
                 <br>
-                <input type="file" id="image" name="imagen">
+                <input type="file" id="image" name="image">
             </div>
             <div class="button">
                 <button type="submit" id="button" name="boton">Guardar cambios</button>
