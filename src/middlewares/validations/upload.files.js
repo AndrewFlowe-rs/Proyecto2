@@ -1,6 +1,6 @@
 const path = require('path');
 const multer = require('multer');
-const formato = ["images/jpeg", "images/jpg" ,"images/png"]
+const formato = ["images/jpeg", "images/jpg" ,"images/png", "images/webp"]
 
 
 

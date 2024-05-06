@@ -7,7 +7,6 @@
       "number": "3884636451",
       "role": "ADMIN",
       "adress": ""
-     
    },
    {
       "id": 2,
@@ -17,8 +16,14 @@
       "number": "38846",
       "role": "REGULAR",
       "adress": ""
+   },
+   {
+      "id": 3,
+      "name": "Aldana Nuñez",
+      "email": "aldananunez663@gmail.com",
+      "password": "$2a$12$r0bjz54/kXOw5kkRrO/RruvAE3B6oydmd4pgtssJedLU.Xm7qPEBa",
+      "role": "REGULAR",
+      "avatar": "avatar-1714932684009-.webp",
+      "number": ""
    }
-
- 
-  
 ]

@@ -1,7 +1,6 @@
 const { check, body } = require('express-validator');
 const path = require('path');
-
-module.exports = (req,res) => {        
+       
    const validacionesEditProfile = [
     check('name')
     .notEmpty().withMessage('El nombre es obligatorio').bail()
@@ -56,5 +55,6 @@ module.exports = (req,res) => {
     })
 ];
  
-}
+
+module.exports = validacionesEditProfile
 

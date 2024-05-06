@@ -1,23 +1,19 @@
-const { saveData, loadData } = require('../../data')
+const db = require('../../database/models')
 
 
 module.exports = (req,res) => {
     const {name, price, description, category} = req.body
     const image = req.file
-    const products = loadData('products');
+    // const products = loadData('products');
  
-    const nuevoID = products[products.length - 1].id + 1
+   db.Product.create({
+    name:name.trim(),
+    price:+price,
+    description:description.trim(),
+    categoryId: +category,
+    image: image ? image.filename : ''
 
-    const nuevoProducto = {
-        id: nuevoID,
-        name: name.trim(),
-        price: +price,  
-        description: description.trim(),
-        category: category.trim(),
-        image: image ? image.filename : "default-image.png"
-        
-    };
-    products.push(nuevoProducto);
-    saveData(products)
-    res.redirect(`/detalle/${nuevoID}`); 
+   })
+
+   .then((p=>{return res.redirect('products')}))
     }

@@ -9,93 +9,86 @@
 
         <!-- Header -->
         <%- include('../partials/header') %>
-
             <main class="main-register">
 
                 <form class="form-register" action="/aut/registro" method="POST" enctype="multipart/form-data">
-                    <div class="conteiner-x">
-                        <a href="/"><i class="fa-solid fa-xmark"></i></a>
+                <div class="conteiner-x">
+                    <a href="/"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="conteiner-t-r">
+                    <h4>CREA TU CUENTA</h4>
+                </div>
+                <div class="conteiner-form">
+                    <div> <!-- Campo nombre -->
+                        <input type="text" placeholder="Nombre" id="nombre" name="name" value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
+                        <div class="error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>">
+                            <%= locals.errors?.name?.msg %>
+                        </div>
+                                
+                      
                     </div>
-                    <div class="conteiner-t-r">
-                        <h4>CREA TU CUENTA</h4>
-                    </div>
-                    <div class="conteiner-form">
-                        <div>  <!-- Campo nombre -->
-                             <input type="text" placeholder="Nombre" id="nombre" name="name"
-                            value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
-                           
-                            <% if (locals.errors) { %>
-                                <div class="form-text fs-5 text-danger">
-                                    <%= errors?.name?.msg %>
-                                </div>    <% } %>
-                          
-                        </div>
-                        <div>
-                             <!-- Campo email --> 
-                              <input type="text" placeholder="Email" id="email" name="email"
-                              value="<%= locals.old && locals.old.email ? locals.old.email : '' %>">
-                            <% if (locals.errors) { %>
-                                <div class="form-text fs-5 text-danger">
-                                    <%= errors?.email?.msg %>
-                                </div> <% } %>
-                           
-                        </div>
-
-                                 <!-- Campo contraseña -->
-                        <div> 
-                            <input type="password" placeholder="contraseña" id="password" name="password"
-                            value="<%= locals.old && locals.old.password ? locals.old.password : '' %>">
-                            <% if (locals.errors) { %>
-                                <div class="form-text fs-5 text-danger">
-                                    <%= errors?.password?.msg %>
-                                </div> <% } %>
-                           
-                        </div>
-                                  <!-- Campo número-teléfono -->
-                        <div>
-                            <input type="number" placeholder="Numero de Tel." id="num" name="number"
-                            value="<%= locals.old && locals.old.number ? locals.old.number : '' %>">
-                            <% if (locals.errors) { %>
-                                <div class="form-text fs-5 text-danger">
-                                    <%= errors?.number?.msg %>
-                                </div>     <% } %>
-                            
-                        </div>
-                         <!-- Campo ciudad -->
-                        <div>  
-                            <input type="text" placeholder="ciudad" id="direction" name="city"
-                            value="<%= locals.old && locals.old.city ? locals.old.city : '' %>">
-                            <% if (locals.errors) { %>
-                                <div class="form-text fs-5 text-danger">
-                                    <%= errors?.city?.msg %>
-                                </div>   <% } %>
-                          
-                        </div>
-                         <!-- Campo imagen de perfil -->
+                    <div>
+                         <!-- Campo email --> 
+                          <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.name : '' %>">
+                          <div class="error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>">
                        
-                        <div class="archivos">
-                            <input type="file" placeholder="avatar" id="avatar" name="avatar">
-                           
-                     
-                             <% if (locals.errors) { %>
-                            <p>  <%= locals.errors.msg %></p>     <% } %>
+                            <%= locals.errors?.email?.msg %>
                         </div>
+                             
+                       
                     </div>
 
-
-                    <div class="container-butons">
-
-                        <button type="submit">Crear Cuenta</button>
-
+                             <!-- Campo contraseña -->
+                    <div> 
+                        <input type="password" placeholder="contraseña" id="password" name="password"  value="<%= locals.old && locals.old.password ? locals.old.password : '' %>">
+                        <div class="error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>">         
+                            <%= locals.errors?.password?.msg %>
+                        </div>
+                       
                     </div>
-                    <div class="c-register">
-                        <h3>¿ya tienes una cuenta?/</h3><a href="/aut/login">Ingresa</a>
+                              <!-- Campo número-teléfono -->
+                    <div>
+                        <input type="number" placeholder="Numero de Tel." id="num" name="number" value="<%= locals.old && locals.old.number ? locals.old.number : '' %>">
+                            <div class="error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>">      
+                           
+                                <%= locals.errors?.number?.msg %>
+                        </div>
+                        
                     </div>
-                </form>
+                     <!-- Campo ciudad -->
+                    <div>  
+                        <input type="text" placeholder="ciudad" id="direction" name="city" value="<%= locals.old && locals.old.city ? locals.old.city : '' %>">
+                            <div class="error-msg <%=locals.errors && locals.errors.city ? 'visible' : 'hidden' %>">    
+                                <%= locals.errors?.city?.msg %>
+                      </div>
+                    </div>
+                     <!-- Campo imagen de perfil -->
+                   
+                    <div class="archivos">
+                        <input type="file" placeholder="avatar" id="avatar" name="avatar">
+                       
+                 
+                        <div class="error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>">    
+                            <%= locals.errors?.avatar?.msg %>
+                                </div>
+                               
+                    </div>
+                </div>
+
+
+                <div class="container-butons">
+
+                    <button type="submit">Crear Cuenta</button>
+
+                </div>
+                <div class="c-register">
+                    <h3>¿ya tienes una cuenta?/</h3><a href="/aut/login">Ingresa</a>
+                </div>
+            </form>
 
 
 
-            </main>
+        </main>  
 
 
             <!-- Footer -->

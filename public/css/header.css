@@ -13,6 +13,23 @@
     align-items: center;
     gap: 125px;
 }
+div.cart-logo{
+    display: flex;
+    align-items: center;
+}
+i.fa-solid.fa-cart-shopping{
+     transition: 300ms;
+     color: var(--bs-form-valid-color);
+     font-size: 25px;
+     margin: 10px;
+     }
+i.fa-solid.fa-cart-shopping:hover {
+   
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+    font-size: 23px;
+    color: var(--bs-form-valid-border-color);
+}
 
 .headerPrincipal img {
     width: 75px;
@@ -35,6 +52,7 @@
 .headerPrincipal .burger-menu i {
     font-size: 40px;
     margin-left: 30px;
+    display: none;
 }
 
 
@@ -56,6 +74,18 @@
     .headerPrincipal .cajaHeader {
         padding: 10px 0px;
     }
+    div.cart-logo{}
+    i.fa-solid.fa-cart-shopping{ 
+        transition: 300ms;
+       ;}
+   i.fa-solid.fa-cart-shopping:hover {
+      
+       transform: rotate(360deg);
+       box-shadow: 0 0 5px var(--green);
+       font-size: 23px;
+       color: var(--bs-form-valid-border-color);
+   }
+
 
     .headerPrincipal h5 {
         display: none;
@@ -75,7 +105,8 @@
 
     .headerPrincipal .opcionPrincipal ul li {
         border: solid 2px var(--gris);
-        border-radius: 14px;
+        /* border-radius: 14px; */
+        border: none;
     }
 
     .headerPrincipal .opcionPrincipal ul li a {
@@ -118,13 +149,7 @@
     }
 
     .headerPrincipal .burger-menu i {
-<<<<<<< HEAD
         display: none;
-=======
-        font-size: 49px;
-        -
-        top: auto;
->>>>>>> 58c3765251d6b694a3686cbad462028375d5333a
     }
 
 
@@ -135,10 +160,23 @@
     .headerPrincipal .opcionPrincipal ul li {
         padding: 5px;
         margin-left: 21px;
+        border: none;
     }
 
     .headerPrincipal .opcionPrincipal ul li a {
         text-decoration: none;
     }
+    div.cart-logo{}
+    i.fa-solid.fa-cart-shopping{ 
+        transition: 300ms;
+       ;}
+   i.fa-solid.fa-cart-shopping:hover {
+      
+       transform: rotate(360deg);
+       box-shadow: 0 0 5px var(--green);
+       font-size: 23px;
+       color: var(--bs-form-valid-border-color);
+   }
+
 
 }

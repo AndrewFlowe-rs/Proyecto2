@@ -13,7 +13,7 @@ const { upload } = require("../middlewares/validations/upload.files");
 router.get('/login', login);
 router.post('/login', loginValidation, authController.loginProcess);
 router.get('/registro', authController.register);
-router.post('/registro', validaciones, upload.single('avatar'), authController.processRegister);
+router.post('/registro', upload.single('avatar'),validaciones, authController.processRegister);
 
 
 

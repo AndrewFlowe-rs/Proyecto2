@@ -8,7 +8,7 @@ module.exports = (req,res) => {
    const users = loadData('users')
    return users.filter(u => u.email === value)
 }
-const isValidProfile = [
+ [
 body('name').notEmpty().isAlpha().withMessage('Campo obligatorio'),
 body('surname').notEmpty().isAlpha().withMessage('Campo obligatorio'),
 

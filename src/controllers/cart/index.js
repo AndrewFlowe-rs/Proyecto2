@@ -1,5 +1,4 @@
 module.exports = {
-    
-    cartView: require('./cartView.controller'),
-    cart: require('./cart.Controller')
+    cart: require('./cart.controller'),
+    add: require('./cartAdd.controller'),
 }

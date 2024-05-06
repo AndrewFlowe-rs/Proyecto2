@@ -13,12 +13,12 @@
 
 
  <main class="main-product">
-        <div class="article">
+    
+        <div class="article"  data-aos="flip-left">
         
-            <article class="articulo-producto">
+            <article class="articulo-producto" >
                 
-
-                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
+                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" >
 
                 <h3><%= p.name %></h3>
 
@@ -26,7 +26,7 @@
                 <hr>
                 <P class="subtotal">Subtotal</P>
                 <hr>
-                <p class="total"><%= p.price %></p>
+                <p class="total"><%= toThousand(p.price) %></p>
 
                 <div class="confirmacion">
 
@@ -43,10 +43,14 @@
         </div>
 
 
-
     </main>
 
     
+ <!-- AOS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
 
 
    <!-- Footer -->

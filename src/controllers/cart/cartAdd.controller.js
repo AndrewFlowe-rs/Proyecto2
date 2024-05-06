@@ -6,5 +6,5 @@ module.exports =  (req, res) => {
     const products = loadData('products')
     const productFind = products.find(p => p.id === +id)
 
-    res.render('product/productDetail', {p : productFind, toThousand} )
+    res.render('product/cartAdd', {p : productFind,toThousand} )
 };

@@ -6,7 +6,7 @@ const { upload } = require("../middlewares/validations/upload.files");
 
 // Crear producto
 router.get('/crear-producto', adminController.createProduct);
-router.post('/crear-producto', upload.single('image'), adminController.store)
+router.post('/crear-producto', upload.single('image'),adminController.store)
 
 
 // Editar producto

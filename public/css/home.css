@@ -200,7 +200,7 @@ left: 311%;
         color: black;
         text-decoration: none;
     }
-    div.container-product{/* width: 4%; */}
+    div.container-product{/* width: 4%; */display: flex;align-items: stretch;}
 .product-container{}
 
     .pizzasinferior  {

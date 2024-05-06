@@ -4,7 +4,7 @@ const {compareSync} = require('bcryptjs')
 
 
 
-module.exports = (req,res) => {
+
     
 const loginDatesValidation = [
     check("email")
@@ -32,5 +32,4 @@ const loginDatesValidation = [
             return true
         })
 ]
-
-}
+module.exports = loginDatesValidation

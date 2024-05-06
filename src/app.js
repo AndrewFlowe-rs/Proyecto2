@@ -39,8 +39,9 @@ const userRoutes = require('./routes/users.routes')
 // ROUTERS
 app.use('/', otherRoutes);
 app.use('/aut', authRoutes);
+app.use('/productos', prodRoutes)
 app.use('/detalle', prodRoutes);
-app.use('/carrito', cartRoutes);
+ app.use('/carrito', cartRoutes);
 app.use ('/admin',adminRoutes);
 app.use('/iniciar-sesion', userRoutes)
 

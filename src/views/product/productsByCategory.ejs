@@ -15,13 +15,13 @@
     
      <nav class="nav-bar">
              <ul class="list-bar">
-                 <li><a href="/carrito/clásicas">Clásicas</a></li> 
-                 <li><a href="/carrito/Pizza%20del%20mes">Pizzas del mes</a></li>
-                 <li class="list-none"><a href="/carrito/promo%20del%20mes">Promo del mes</a></li>
-                 <li class="list-none"><a href="/carrito/combos">Combos</a></li>
-                 <li class="list-none"><a href="/carrito/individuales">Individuales</a></li>
-                 <li class="drinks"><a href="/carrito/bebidas">Bebidas</a></li>
-     
+              <li><a href="/productos/categoria/clásicas">Clásicas</a></li> 
+              <li><a href="/productos/categoria/Pizza%20del%20mes">Pizzas del mes</a></li>
+              <li class="list-none"><a href="/productos/categoria/promo%20del%20mes">Promo del mes</a></li>
+              <li class="list-none"><a href="/productos/categoria/combos">Combos</a></li>
+              <li class="list-none"><a href="/productos/categoria/individuales">Individuales</a></li>
+              <li class="drinks"><a href="/productos/categoria/bebidas">Bebidas</a></li>
+              
                 
              </ul>
        </nav>
@@ -34,7 +34,7 @@
  <div class="container-cart-product">
   <% products.forEach(p => {%>
      
-         <div class="first-div">
+         <div class="first-div"data-aos="zoom-out-up">
          <div class="contenedor-img">
              <img src="/design/imgProducts/<%= p.image %>" alt="">
          </div>
@@ -42,8 +42,10 @@
              <p class="name-pizza"><%= p.name %></p>
      <p class="description"><%= p.description %></p>
      <div class="container-butoms">
-     <p class="price"><%= p.price %></p>
-  <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>    
+     <p class="price"><%= toThousand(p.price) %></p>
+  <a href="/detalle/<%= p.id %>" class="btn btn-danger">Ver más</a>   
+  <a href="/carrito/agregar/<%= p.id %>"><i class="fa-solid fa-cart-shopping"></i></a>   
+
      </div>
     
      </div>
@@ -53,7 +55,11 @@
  
  
          </main>
-
+ <!-- AOS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
    <!-- Footer -->
 <%- include('../partials/footer') %>
 
