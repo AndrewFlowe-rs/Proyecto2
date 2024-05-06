@@ -11,7 +11,7 @@
 //     })
 // }
 
-const Product = require("../../models/Product");
+const Product = require("../../database/models");
 
 module.exports = (req, res) => {
     const { id } = req.params;     //Esto extrae el id del producto de los parámetros de la ruta de la solicitud HTTP.
