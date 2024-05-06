@@ -153,6 +153,8 @@ div.container-a{
     div.img-container img{
     position: relative;
     left: 6px;
+    height: 25vh;
+    width: 30vh;
 }
 
     div.descrip-container{}
