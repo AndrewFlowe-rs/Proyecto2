@@ -10,10 +10,11 @@ module.exports = (req,res) => {
     name:name.trim(),
     price:+price,
     description:description.trim(),
+    categoryName: category.trim(),
     categoryId: +category,
     image: image ? image.filename : ''
 
    })
 
-   .then((p=>{return res.redirect('products')}))
+   .then((p=>{return res.redirect('/admin')}))
     }

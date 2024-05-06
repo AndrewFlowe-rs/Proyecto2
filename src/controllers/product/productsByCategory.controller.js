@@ -1,16 +1,22 @@
-const { loadData } = require('../../data');
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const db = require('../../database/models');
 
-function filterByCategory(product, category) {
-    return product.category.toLowerCase().replace(/\s/g, '') === category.toLowerCase();
-}
+module.exports = async (req, res) => {
+    try {
+        // Obtener el nombre de la categoría de los parámetros de la solicitud
+        const categoryName = req.params.categoryName;
 
-module.exports = (req, res) => {
-    const category = req.params.category.replace(/\s/g, '').toLowerCase();
-    const categoryWithSpaces = req.params.category; // Mantiene la categoría con espacios en la vista
-    const products = loadData('products');
+        // Consulta a la base de datos para obtener los productos de la categoría especificada
+        const categoryProducts = await db.Product.findAll({
+            where: {
+                categoryName: categoryName
+            }
+        });
 
-    const categoryProducts = products.filter(product => filterByCategory(product, category));
-
-    res.render('product/productsByCategory', { category: categoryWithSpaces, products: categoryProducts, toThousand });
+        // Renderizar la vista con los productos y el nombre de la categoría
+        res.render('product/productsByCategory', { category: categoryName, products: categoryProducts });
+    } catch (error) {
+        // Manejo de errores
+        console.error('Error al obtener productos por categoría:', error);
+        res.status(500).send('Error al obtener productos por categoría');
+    }
 };
