@@ -6,7 +6,7 @@
     <%-include("../partials/header")%>
     <main class="main-forme">
 
-        <form class="form-edit" >
+        <form class="form-edit" method="POST" action="/admin/edit/<%= p.id %>?_method=PUT">
             <div class="conteiner-x-edit">
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -14,18 +14,18 @@
                 <h1 class="titulo">Editar producto</h1>
             </div>
             <div class="edit-title">
-                <input type="text" id="title" name="titulo" placeholder="Editar nombre" value="<%= findId.name %>">
+                <input type="text" id="title" name="titulo" placeholder="Editar nombre" value="<%= p.name %>">
             </div>
             <div class="edit-price">
-                <input type="text" id="price" name="precio" placeholder="Editar precio" value="<%= findId.price %>">
+                <input type="text" id="price" name="precio" placeholder="Editar precio" value="<%= p.price %>">
             </div>
             <div class="edit-description">
-                <input type="text" id="description" name="descripcion" placeholder="Editar descripción" value="<%= findId.descripcion %>">
+                <input type="text" id="description" name="descripcion" placeholder="Editar descripción" value="<%= p.description %>">
             </div>
             <div class="edit-category">
-                <label for="category">Categoría</label>
+                <label for="category">Categoría actual</label>
                 <select name="category" id="category">
-                    <option value="Sin TACC">Sin TACC</option>
+                    <option value="Sin TACC"><%= p.categoryName %></option>
                     <option value="Empanadas">Empanadas</option>
                     <option value="Fainá">Fainá</option>
                     <option value="Calzones">Calzones</option>
@@ -38,7 +38,9 @@
                   
                 </select>
             </div>
-
+            <div>  
+                 <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" ></div>
+          
             <div class="edit-image">
                 <label class="label-titulo" for="image">Editar imagen del producto</label>
                 <br>

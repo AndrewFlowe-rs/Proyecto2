@@ -10,7 +10,8 @@ router.post('/crear-producto', upload.single('image'),adminController.store)
 
 
 // Editar producto
-router.get('/edit',adminController.editProdut);
+router.get('/edit/:id',adminController.editProdut);
+router.put('/edit/:id',adminController.update);
 
 
 
@@ -21,7 +22,7 @@ router.get('/' , adminController.list)
 
 //Borrar producto
  router.get("/eliminar-producto/:id", adminController.delete);
- router.delete("/eliminar-producto/:id", adminController.remove);
+ router.delete("/eliminar-producto/:id",upload.single('image'), adminController.remove);
 
 
 
