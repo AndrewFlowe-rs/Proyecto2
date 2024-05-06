@@ -1,19 +1,37 @@
-       //Importando módulos:
-       const {    saveData, loadData } = require("../../data");
-       const path = require ('path');
-       const fs = require ('fs');
-                      //función:
-       module.exports = (req,res) => {
-           const {id} = req.params   // Extrayendo el ID del producto ; Extrae el parámetro id de la propiedad params del objeto de solicitud
-           const products = loadData()   //Cargando productos : Llama a la función readData importada para recuperar los datos del producto
-           const productsLessOne = products.filter(p => p.id !== +id)   //Filtrando productos:
-           const productDestroy = products.find(p => p.id === +id)    // Encontrando producto eliminado:
-           const pathFile = path.join(__dirname,"../../../public/desing/products/" + productDestroy.image)  // Construyendo la ruta del archivo:
-           const existFile = fs.existsSync(pathFile)    // Comprobando la existencia del archivo:
-           if(existFile) {
-           fs.unlinkSync(pathFile)   // Eliminar el archivo de imagen si existe.
-         }
-         saveData(productsLessOne)   // Actualizar los datos del producto
-       
-         res.redirect("/admin")  //Redireccionar al usuario a la página de lista de productos
-       };
+//  //Importando módulos:
+//  const {    saveData, loadData } = require("../../data");
+//  const path = require ('path');
+//  const fs = require ('fs');
+//                 //función:
+//  module.exports = (req,res) => {
+//      const {id} = req.params   // Extrayendo el ID del producto ; Extrae el parámetro id de la propiedad params del objeto de solicitud
+//      const products = loadData()   //Cargando productos : Llama a la función readData importada para recuperar los datos del producto
+//      const productsLessOne = products.filter(p => p.id !== +id)   //Filtrando productos:
+//      const productDestroy = products.find(p => p.id === +id)    // Encontrando producto eliminado:
+//      const pathFile = path.join(__dirname,"../../../public/desing/products/" + productDestroy.image)  // Construyendo la ruta del archivo:
+//      const existFile = fs.existsSync(pathFile)    // Comprobando la existencia del archivo:
+//      if(existFile) {
+//      fs.unlinkSync(pathFile)   // Eliminar el archivo de imagen si existe.
+//    }
+//    saveData(productsLessOne)   // Actualizar los datos del producto
+
+//    res.redirect("/admin")  //Redireccionar al usuario a la página de lista de productos
+//  };
+
+const db = require("../../database/models");
+module.exports = (req, res) => {
+  const { id } = req.params;
+  db.Product.destroy({
+    where: {
+      id
+    }
+  })
+    .then(() => {
+      res.redirect("/admin/productos");
+    })
+    .catch((error) => {
+      console.error("Error al eliminar el producto:", error);
+      res.status(500).send("Error al eliminar el producto");
+    });
+
+      }
