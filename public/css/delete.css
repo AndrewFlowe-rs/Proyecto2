@@ -1,0 +1,129 @@
+main.main-delete{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #72c59e;
+}
+div.card-p-5{
+    background-color: #72c59e;
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+}
+p.card-body{
+    font-size: 20px;
+    background-color: #72c59e;
+    padding: 20px;
+    font-family: var(--fahkwang);
+}
+div.image-delete{
+    /* border: solid 1px #9ab3a7; */
+    height: 25vh;
+    margin: 4px;
+    border-radius: 10px;
+}
+img{
+    padding: 9px;
+    border-radius: 35px;
+}
+div.container-b{}
+div.descrip-delete{
+    color: black;
+    font-family: var(--fa-font-regular);
+}
+div.price-delete{
+    color: black;
+    /* border: solid; */
+    font-size: 20px;
+}
+div.category-delete{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+form{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 200;
+}
+button.btn.btn-danger{}
+a.btn.btn-dark{
+    font-size: 12px;
+    padding: 6px;
+    font-family: var(--comic);
+}
+
+
+@media(min-width:361px){
+    main.main-delete{}
+div.card-p-5{
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+p.card-body{}
+div.image-delete{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+img{
+}
+div.container-b{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+div.descrip-delete{
+    font-size: 20px;
+}
+div.price-delete{
+    font-size: 21px;
+    margin: 20px;
+}
+div.category-delete{}
+form{}
+button.btn.btn-danger{}
+
+a.btn.btn-dark{
+    padding: 5px;
+    font-size: 15px;
+    font-family: var(--comic);
+}
+
+}
+
+@media(min-width:768px){
+    main.main-delete{}
+div.card-p-5{
+    /* min-height: 53vh; */
+}
+p.card-body{}
+div.image-delete{}
+img{}
+div.container-b{}
+
+div.descrip-delete{
+    font-size: 30px;
+}
+div.price-delete{
+    font-size: 30px;
+}
+div.category-delete{
+    font-size: 30px;
+}
+form{
+}
+button.btn.btn-danger{
+    font-size: 28px;
+    height: 50px;
+}
+
+a.btn.btn-dark{
+    font-size: 28px;
+}
+
+}

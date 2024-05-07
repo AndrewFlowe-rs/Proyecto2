@@ -27,7 +27,7 @@ module.exports = (req, res) => {
     }
   })
     .then(() => {
-      res.redirect("/admin/productos");
+      res.redirect("/admin");
     })
     .catch((error) => {
       console.error("Error al eliminar el producto:", error);

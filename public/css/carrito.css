@@ -89,7 +89,7 @@ div.container-a{}
     /* border: solid #beeaf3; */
     margin: 10px;
 }
-    div.img-container img{border-radius: 19px;/* border-top-right-radius: 0; *//* border-top-left-radius: 0; *//* margin: 10px; *//* background-color: beige; */position: relative;right: 50px;}
+    div.img-container img{border-radius: 19px;/* border-top-right-radius: 0; *//* border-top-left-radius: 0; *//* margin: 10px; *//* background-color: beige; */position: relative;/* right: 1px; */width: 27vh;}
 
     div.descrip-container{
     /* font-size: 25px; */

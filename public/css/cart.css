@@ -243,7 +243,7 @@ i.fa-solid.fa-cart-shopping{
     .btn.btn-danger{
     position: relative;
     /* top: -17px; */
-    left: 83px;
+    /* left: 83px; */
     font-size: 12px;
     /* font-size: var(--comic); */
     font-family: var(--comic);
