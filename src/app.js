@@ -47,4 +47,25 @@ app.use('/perfil', userRoutes)
 
 
 
+
+// // ROUTES Apis
+// const adminRoutesApi = require('./routes/api/adminRoutes.api')
+// const otherRoutesApi = require('./routes/api/otherRoutes.api');
+// const authRoutesApi = require('./routes/api/authenticathionRoutes.api');
+// const cartRoutesApi = require('./routes/api/cartRoutes.api');
+// const prodRoutesApi = require('./routes/api/productRoutes.api');
+// const userRoutesApi = require('./routes/api/userRoutes.api')
+
+// // ROUTEOS API
+// app.use('/', otherRoutesApi);
+// app.use('/aut', authRoutesApi);
+// app.use('/productos', prodRoutesApi)
+// app.use('/detalle', prodRoutesApi);
+//  app.use('/carrito', cartRoutesApi);
+// app.use ('/admin',adminRoutesApi);
+// app.use('/iniciar-sesion', userRoutesApi)
+
+
+
+
 app.listen(port, () => console.log(`http://localhost:${port}`))
