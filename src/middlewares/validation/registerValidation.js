@@ -27,10 +27,12 @@ const path = require('path');
     check('avatar')
         .custom((value, { req }) => {
             const reqFile = req.file;
-
+        
             const extensionesAceptadas = ['.jpg', '.jpeg', '.png', '.webp'];
             if (!reqFile) {
-                throw new Error('La imagen de perfil es requerida');
+                req.file = {
+                    originalname: 'defaultImg.webp' 
+                };
             } else {
                 let extension = path.extname(reqFile.originalname);
                 if (!extensionesAceptadas.includes(extension)) {
@@ -39,6 +41,7 @@ const path = require('path');
             }
             return true;
         })
+        
 ];
 
 module.exports = validaciones

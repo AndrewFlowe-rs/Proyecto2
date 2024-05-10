@@ -27,9 +27,10 @@
                                 
                       
                     </div>
+                   
                     <div>
                          <!-- Campo email --> 
-                          <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.name : '' %>">
+                          <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.email : '' %>">
                           <div class="error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>">
                        
                             <%= locals.errors?.email?.msg %>
@@ -72,6 +73,14 @@
                             <%= locals.errors?.avatar?.msg %>
                                 </div>
                                
+                    </div> 
+                    <div> <!-- Campo role -->
+                       
+                        <select name="name_role" id="name_role">
+                          
+                            <option value="Regular">Regular</option> 
+                            <option value="Admin">Admin</option>
+                      </select>
                     </div>
                 </div>
 

@@ -18,13 +18,16 @@ CREATE SCHEMA IF NOT EXISTS `pizzeriaGit` DEFAULT CHARACTER SET utf8 COLLATE utf
 USE `pizzeriaGit` ;
 
 -- -----------------------------------------------------
--- Table `pizzeriaGit`.`rols`
+-- Table `pizzeriaGit`.`role`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `pizzeriaGit`.`rols` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`))
+CREATE TABLE IF NOT EXISTS `pizzeriaGit`.`role` (
+  `role_id`  INT NOT NULL,
+  `name_role` VARCHAR(45) NULL,
+ )
 ENGINE = InnoDB;
+INSERT INTO `pizzeriaGit`.`role` (`role_id`, `name_role`) VALUES
+(1, 'Admin'),
+(2, 'Regular');
 
 
 -- -----------------------------------------------------
@@ -40,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `pizzeriaGit`.`Addresses` (
 ENGINE = InnoDB;
 
 
+
 -- -----------------------------------------------------
 -- Table `pizzeriaGit`.`users`
 -- -----------------------------------------------------
@@ -48,16 +52,17 @@ CREATE TABLE IF NOT EXISTS `pizzeriaGit`.`users` (
   `name` VARCHAR(45) NOT NULL,
   `last_name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(50) NOT NULL,
-  `password` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
   `number_phone` VARCHAR(45) NULL,
-  `rol_id` INT NOT NULL,
+  `roleId` INT NOT NULL,
+  `name_role` VARCHAR(45) NOT NULL,
   `adress_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `rol_users_idx` (`rol_id` ASC) VISIBLE,
+  INDEX `rol_users_idx` (`roleId` ASC) VISIBLE,
   INDEX `addres_user_idx` (`adress_id` ASC) VISIBLE,
   CONSTRAINT `rol_users`
-    FOREIGN KEY (`rol_id`)
-    REFERENCES `pizzeriaGit`.`rols` (`id`)
+    FOREIGN KEY (`roleId`)
+    REFERENCES `pizzeriaGit`.`role` (`role_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `addres_user`

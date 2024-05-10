@@ -1,32 +1,43 @@
-const { validationResult } = require('express-validator')
-const { loadData } = require('../../data')
+const { validationResult, body} = require('express-validator');
+const db = require('../../database/models'); // Importa el modelo de base de datos
 
-module.exports = (req, res) => {
-    const users = loadData("users")
+module.exports = async (req, res) => {
+    try {
+        const errors = validationResult(req);
 
-    const errors = validationResult(req)
+        if (errors.isEmpty()) {
+            const { email, password } = req.body;
 
-    if (errors.isEmpty()) {
+            const user = await db.User.findOne({ where: { email } });
 
-        const userFind = users.find((u)=> u.email === req.body.email)
-
-        const { name, email, role, avatar} = userFind
-        
-        req.session.userLogin = {
-            name,
-            email,
-            role,
-            avatar
+            if (user) {
+                if (compareSync(password, user.password)) {
+                    req.session.userLogin = {
+                        name: user.name,
+                        email: user.email,
+                        role: user.role,
+                        avatar: user.avatar
+                    };
+                    return res.redirect("/");
+                } else {
+                    return res.render("authentication/login", {
+                        errors: { password: { msg: "Contraseña incorrecta" } },
+                        email
+                    });
+                }
+            } else {
+                return res.render("authentication/login", {
+                    errors: { email: { msg: "Usuario no encontrado" } },
+                    email
+                });
+            }
+        } else {
+            const errorsMapped = errors.mapped();
+            const { email } = req.body;
+            return res.render("authentication/login", { errors: errorsMapped, email });
         }
-
-        res.redirect("/")
-
-    } else {
-        const errorsMapped = errors.mapped()
-        const { email } = req.body
-        res.render("authentication/login", { errors: errorsMapped, email })
- }
-
-
-
-}
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send("Error del servidor");
+    }
+};

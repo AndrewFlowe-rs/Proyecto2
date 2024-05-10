@@ -1,35 +1,30 @@
-const {check} =require("express-validator")
-const {loadData} =require("../../data")
-const {compareSync} = require('bcryptjs')
+const { check } = require("express-validator");
+const { compareSync } = require('bcryptjs');
+const db = require("../../database/models"); 
 
-
-
-
-    
 const loginDatesValidation = [
     check("email")
         .notEmpty().withMessage("Ingresa un email").bail()
         .isEmail().withMessage("Debe ingresar un email valido").bail()
-        .custom((value, { req }) => {
-            const users = loadData("users")
-            const existUser = users.find((u) => u.email === value.trim())
-
-            if (!existUser) {
-                throw new Error("Email no registrado")
+        .custom(async (value, { req }) => {
+            const user = await db.User.findOne({ where: { email: value.trim() } });
+            if (!user) {
+                throw new Error("Email no registrado");
             }
-            return true
+            req.user = user;
+            return true;
         }),
 
     check("password")
         .notEmpty().withMessage("Ingresar contraseña").bail()
         .custom((value, { req }) => {
-            const users = loadData("users")
-            const userFind = users.find((u) => u.email === req.body.email)
-            const passHash = userFind.password
-            if (!compareSync(value, passHash)) {
-                throw new Error("Contraseña incorrecta")
+         
+            const user = req.user;
+            if (!compareSync(value, user.password)) {
+                throw new Error("Contraseña incorrecta");
             }
-            return true
+            return true;
         })
-]
-module.exports = loginDatesValidation
+];
+
+module.exports = loginDatesValidation;

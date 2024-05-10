@@ -43,7 +43,7 @@ app.use('/productos', prodRoutes)
 app.use('/detalle', prodRoutes);
  app.use('/carrito', cartRoutes);
 app.use ('/admin',adminRoutes);
-app.use('/iniciar-sesion', userRoutes)
+app.use('/perfil', userRoutes)
 
 
 
