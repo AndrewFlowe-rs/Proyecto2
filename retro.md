@@ -69,3 +69,27 @@ Sin embargo, también hemos encontrado algunos problemas en el camino. Hubo algu
 
 
 ## en resumen este equipo no esta funcionando del todo bien y nos falta mucha comunicacion , en particular me hubiera gustado estar en otro equipo sin desmerecer al mio pero es que siento que no estoy del todo cómodo 
+
+
+
+
+# Retrospectiva del Sprint Anterior . (sprint actual 8)
+
+## Lo que hicimos bien:
+- Identificamos y resolvimos varios obstáculos rápidamente.
+
+## Lo que hicimos mal:
+- Nos faltó priorizar adecuadamente algunas tareas, lo que llevó a retrasos en entregables importantes.
+
+-Hubo poca partisipacion departe de compañeros del  proyecto
+
+## Qué deberíamos empezar a hacer:
+- Implementar sesiones de revisión de prioridades al inicio de cada sprint.
+- Algunos compasñeros no estan comprometidos con el trabajo.
+- Establecer reuniones breves de seguimiento diario para mantenernos alineados.
+
+## Qué deberíamos dejar de hacer:
+- Postergar resolver los problemas que surgen durante el sprint.
+- Subestimar la importancia de la documentación y la claridad en las tareas asignadas.
+- Deberian dejar de perderse mis compañeros y comunicarse mas 
+
