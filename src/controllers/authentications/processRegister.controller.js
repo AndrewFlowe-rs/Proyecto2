@@ -1,29 +1,37 @@
-const bcrypt = require('bcryptjs');
 const { loadData, saveData } = require('../../data');
-const { validationResult } = require("express-validator");
+const { validationResult } = require('express-validator');
+const bcrypt = require('bcryptjs');
 
 module.exports = (req, res) => {
-  const { name,surname, email, password, number, city } = req.body; // Extrae los valores name, surname, email, y password
-  const users = loadData("users"); // Obtiene los datos de los usuarios existentes
-  const newUser = { //: Crea un objeto para representar al nuevo usuario
-    id: !users.length ? 1 : users[users.length - 1].id + 1,  /*Si no hay usuarios (!users.length), se asigna el id 1.
-    Si hay usuarios, se asigna el id del último usuario*/
-    name: name?.trim(),
-    surname: surname?.trim(),
-    email: email?.trim(),
-    password: bcrypt.hashSync(password?.trim(), 10), // La contraseña del usuario hasheada usando bcrypt.hashSync(password?.trim(), 10).
-   number: number.trim(),
-    role: "REGULAR",
-    city:""
+  const errors = validationResult(req);
+  const old = req.body;
+
+ 
+
+  if (errors.isEmpty()) {
+    const imageAvatar = req.file
+    const users = loadData('users');
+    const { name, email, password} = req.body;
+    const newUser = {
+      id: !users.length ? 1 : users[users.length - 1].id + 1,
+      name: name?.trim(),
+      email: email?.trim().toLowerCase(),
+      password: bcrypt.hashSync(password?.trim(), 12),
+      role: "REGULAR",
+      avatar: imageAvatar ? imageAvatar.filename : "defaultImg.webp",
+      number: ""
+    };
+
+    users.push(newUser)
+
+    saveData(users, 'users')
+
+    res.redirect('/')
+    return
   };
 
-  users.push(newUser);  //: Agrega el objeto newUser que representa al nuevo usuario al final del arreglo users.
-
-  saveData(users, "users"); //guarda los datos actualizados del arreglo 
-
-  //res.redirect("/"); // Redirige al cliente a la página raíz despus de registrarse correctamente
+  res.render('authentication/register', {
+    old: old, 
+    errors: errors.mapped(),
+  });
 };
-
-
-/*NOTAS :.trim() elimina espacios iniciales y finales.
-bcrypt.hashSync genera un hash seguro de la contraseña con un costo de 10 (puede ajustarse).*/

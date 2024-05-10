@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<%- include('../partials/head') %>
+
+<body>
+
+
+   <!-- Header -->
+<%- include('../partials/header') %>
+
+
+<main class="cart-shop"> 
+     
+   <form action="/agregar">
+   <div class="container-cart">
+      <section>
+         <div class="container-a"  data-aos="flip-right">
+            
+             <div class="img-container">
+            <img src="/design/imgProducts/faina.jpg" alt="">
+         </div>
+         <div class="descrip-container">
+         </div>
+         <div class="container-b-a-p">
+            <div class="price">
+           
+         </div>
+         <div class="buttoms">
+           <button class="less"><i class="fa-solid fa-minus"></i></button>
+            <span class="">1</span>
+             <button class="plus"><i class="fa-solid fa-plus"></i></button>
+
+         </div> <div class="confirm">
+               <div class="confirm-b">
+                  <a href="">Confirmar</a>
+            </div>
+      </div>
+   </div>
+        
+         
+      </section>
+</div>
+ 
+
+</form>
+
+
+  
+      </main>
+      <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init();
+ </script>
+
+   <!-- Footer -->
+<%- include('../partials/footer') %>
+
+</body>
+
+</html>

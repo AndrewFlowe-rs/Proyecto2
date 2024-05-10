@@ -68,4 +68,4 @@ Sin embargo, también hemos encontrado algunos problemas en el camino. Hubo algu
 - Deberian dejar de perderse mis compañeros 
 
 
-## en rresumen este equipo no esta funcionando del todo bien y nos falta mucha comunicacion , en particular me ubiera gustado estar en otro equuipo sin desmerecer al mio pero esque siento que no estoy del todo comodo 
+## en resumen este equipo no esta funcionando del todo bien y nos falta mucha comunicacion , en particular me hubiera gustado estar en otro equipo sin desmerecer al mio pero es que siento que no estoy del todo cómodo 

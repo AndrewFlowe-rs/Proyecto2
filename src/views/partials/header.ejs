@@ -1,25 +1,30 @@
 <header class="headerPrincipal">
     <div class="cajaHeader">
-        <div class="burger-menu">
+        <div class="burger-menu" >  
+            <a href="/"> <img src="../../../design/icons/logo.png" alt="logo pizza"></a>   
             <i class="fas fa-bars"></i>
         </div>
         <h5>LA PIZZA QUE TE GUSTA</h5>
         <nav class="opcionPrincipal">
-            <div class="home-nav">
+            <div class="home-nav" >
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/carrito">Carrito</a></li>
+                <li><a href="/productos">Productos</a></li>
               <% if (!locals.userLogin) {%> 
-                <li><a href="aut/registro">Registrate</a></li>   
+                <li><a href="/aut/registro">Registrate</a></li>   
                 <% } else if (locals.userLogin.role==="ADMIN"){ %>
-                    <li><a href="/admin">Aministrador🍕🎈</a></li>
+                    <li><a href="/admin">Administrador🍕🎈</a></li>
                    
                     <% } else {%>
-                        <li>bienvenido <%= locals.userLogin.name %> 😎</li>
+                        <li> Bienvenid@ <%= locals.userLogin.name %> 😎</li>
                <% } %>
             </ul>
         </div>
         </nav>
-        <a href="/"> <img src="../../../design/icons/logo.png" alt="logo pizza"></a>
+        <div class="cart-logo" > 
+         <a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+      
+        </div>
+        
     </div>
 </header>

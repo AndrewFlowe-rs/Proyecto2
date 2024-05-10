@@ -4,7 +4,8 @@ const authController = require('../controllers/authentications');
 // const {loginValidation} = require('../controllers/authentications')
 const loginValidation = require('../middlewares/validation/loginValidation');
 const { login } = require('../controllers/authentications');
-const registerValidation = require('../middlewares/validation/registerValidation')
+const validaciones = require('../middlewares/validation/registerValidation')
+const { upload } = require("../middlewares/validations/upload.files");
 
 // Desde app llega /aut
 
@@ -12,26 +13,7 @@ const registerValidation = require('../middlewares/validation/registerValidation
 router.get('/login', login);
 router.post('/login', loginValidation, authController.loginProcess);
 router.get('/registro', authController.register);
-router.post('/registro', registerValidation, authController.processRegister);
-
-
-
-
-
-
-
-
-// // Redirección desde '/login' a '/'
-// router.get('/login',(req,res) => res.redirect('http://localhost:3030/aut/inicio'));
-
-// // Redirección desde '/register' a '/'
-// router.get('/register',(req,res) => res.redirect('http://localhost:3030/aut/registro'))
-
-
-
-
-
-
+router.post('/registro', upload.single('avatar'),validaciones, authController.processRegister);
 
 
 

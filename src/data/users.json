@@ -2,25 +2,28 @@
    {
       "id": 1,
       "name": "Andres",
-      "surname": "Flower",
       "email": "austincartermahone@outlook.com",
       "password": "$2a$10$eh9XLLbzeFGQivZ7bMm6KOuMoR7O0gAuHg9crf.AVuzihvDcH8Wda",
       "number": "3884636451",
       "role": "ADMIN",
       "adress": ""
-     
    },
    {
       "id": 2,
       "name": "Andres",
-      "surname": "SEG",
       "email": "austincartermahone2@outlook.com",
       "password": "$2a$10$lfZiMs6FGYxAagrXcyW76ekgrx.BFCTkFuxzxJhBytl8saJYGRXl2",
       "number": "38846",
       "role": "REGULAR",
       "adress": ""
+   },
+   {
+      "id": 3,
+      "name": "Aldana Nuñez",
+      "email": "aldananunez663@gmail.com",
+      "password": "$2a$12$r0bjz54/kXOw5kkRrO/RruvAE3B6oydmd4pgtssJedLU.Xm7qPEBa",
+      "role": "ADMIN",
+      "avatar": "avatar-1714932684009-.webp",
+      "number": ""
    }
-
- 
-  
 ]

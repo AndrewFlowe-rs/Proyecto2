@@ -1,8 +1,11 @@
-const { loadData } = require('../../data')
-module.exports =  (req, res) => {
-    const {id} = req.params
-    const products = loadData('products')
-    const productFind = products.find(p => p.id === +id)
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const db = require("../../database/models")
+module.exports= (req,res) => {
+   
+   db.Product.findByPk(req.params.id)
+   .then(productos =>{
+    res.render('product/productDetail',{p:productos,toThousand})
+   })
+    
 
-    res.render('product/productDetail', {p : productFind} )
-};
+}

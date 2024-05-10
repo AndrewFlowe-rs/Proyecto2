@@ -1,11 +1,10 @@
 const path = require('path');
 const multer = require('multer');
-const formato = ["images/jpeg", "images/jpg" ,"images/png"]
+const formato = ["images/jpeg", "images/jpg" ,"images/png", "images/webp"]
 
 
 
-
-const storage = multer.diskStorage({
+  const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, './public/design/imgProducts')
     },
@@ -15,8 +14,10 @@ const storage = multer.diskStorage({
     }
   })
   
-  const uploadProducts = multer({ storage })
+  const upload = multer({ storage })
 
-  module.exports ={
-    uploadProducts
-  }
+  module.exports = {
+    upload
+}
+    
+  

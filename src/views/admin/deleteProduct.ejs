@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <%-include("../partials/head")%>
+    <%-include("../partials/header")%>
 <body>
-    <div class="card p-5">
-        <div class="card-title">
-          <strong class="me-auto">Eliminar producto</strong>
+  <main class="main-delete">
+       <div class="card-p-5">
+        <p class="card-body">
+          Estas seguro de eliminar el producto: <%= p.name%>
+        </p>
+        <div class="image-delete">
+          <img src="/design/imgProducts/<%= p.image %>" %>
         </div>
-        <div class="card-body">
-          Estas seguro de eliminar el producto: <%= product.nombre%>
+        <div class="container-b">
+          <div class="descrip-delete">
+          <%= p.description %>
         </div>
-        <form action="/admin/eliminar-producto/<%=product.id%>?_method=DELETE" method="POST">
+        <div class="price-delete">
+         <%=p.price  %> 
+        </div>
+        
+        <div class="category-delete">
+          <%= p.categoryName %>
+        </div>
+        <form action="/admin/eliminar-producto/<%=p.id%>?_method=DELETE" method="POST">
             <button type="submit" class="btn btn-danger">Eliminar</button>
             <a href="/admin" class="btn btn-dark">Cancelar</a>
-          </form>
-      
+          </form></div>
+        
+      </div> 
+  </main>
+  <%-include("../partials/footer")%>
+
 </body>
 </html>
 
 
-
-  </div>

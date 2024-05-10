@@ -1,16 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/admin');
-const {  uploadProducts } = require('../middlewares/validations/upload.files')
+const { upload } = require("../middlewares/validations/upload.files");
 // Desde el app.js viene /Admin  
 
 // Crear producto
 router.get('/crear-producto', adminController.createProduct);
-router.post('/crear-producto', uploadProducts.single('img'), adminController.store)
+router.post('/crear-producto', upload.single('image'),adminController.store)
 
 
 // Editar producto
-router.get('/edit',adminController.editProdut);
+router.get('/edit/:id',adminController.editProdut);
+router.put('/edit/:id',adminController.update);
 
 
 
@@ -21,7 +22,7 @@ router.get('/' , adminController.list)
 
 //Borrar producto
  router.get("/eliminar-producto/:id", adminController.delete);
- router.delete("/eliminar-producto/:id", adminController.remove);
+ router.delete("/eliminar-producto/:id",upload.single('image'), adminController.remove);
 
 
 

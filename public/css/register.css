@@ -64,7 +64,15 @@
     }
 
 
-
+    .error-msg {
+        display: none;
+        color: red;
+    }
+    
+    .error-msg.visible {
+        display: block;
+    }
+    
     .main-register .form-register label {
 
         display: inline-block;
@@ -75,15 +83,24 @@
 
 
     .main-register .form-register input {
-border-radius: 10px;
-border: none;
-padding: 10px;
-width: 168px;
-}
+
+border-radius: 10px;
+
+border: none;
+
+padding: 10px;
+
+width: 168px;
+
+}
+input#avatar{}
     .main-register .conteiner-form .archivos {
-width: 199px;
-/* margin-left: 52px; */
-}
+
+width: 199px;
+
+/* margin-left: 52px; */
+
+}
 
     .form-register .conteiner-x {
         right: 7px;
@@ -130,7 +147,15 @@
 
     .main-register .c-register {
         display: flex;
+    }.error-msg {
+        display: none;
+        color: red;
     }
+    
+    .error-msg.visible {
+        display: block;
+    }
+    
 
     .main-register .c-register h3 {font-size: small;}
 
@@ -145,17 +170,19 @@
 @media (min-width: 361px) {
     .main-register {
 
-        display: flex;
+display: flex;
 
-        padding: 5%;
+padding: 5%;
 
-        justify-content: center;
+justify-content: center;
 
-        align-items: center;
+align-items: center;
 
-        background-color: #dfceb6;
+background-color: #dfceb6;
 
-    }
+min-height: 100vh;
+
+}
 
 
     .main-register .form-register {
@@ -189,7 +216,15 @@
 
     .conteiner-t-r h4 {
         color: white;
+    }.error-msg {
+        display: none;
+        color: red;
     }
+    
+    .error-msg.visible {
+        display: block;
+    }
+    
 
     .conteiner-form {}
 
@@ -201,16 +236,18 @@
 
     .main-register .form-register div {
 
-        margin: 10px;
+margin: 10px;
 
-        padding-bottom: 13px;
+padding-bottom: 13px;
 
-        display: flex;
+display: flex;
 
-        flex-wrap: wrap;
+flex-wrap: wrap;
 
-        justify-content: space-evenly;
-    }
+justify-content: space-evenly;
+
+flex-direction: column;
+}
     .main-register .conteiner-form .archivos {
 
 width: 168px;
@@ -251,6 +288,13 @@ border-radius: 10px;
 border: none;
 
 padding: 10px;
+
+/* display: flex; */
+}
+input#avatar{
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    width: 169%;
 }
 
     .form-register .conteiner-x {
