@@ -2,7 +2,8 @@ const express = require('express');
 const userControllerApi = require('../../controllers/api/authenticathion/user.controller.api');
 const router = express.Router();
 
-router.get('/', userControllerApi.list);
+//Desde app llega API
+router.get('/user', userControllerApi.list);
 router.get('/detail/:id', userControllerApi.detail);
 
 module.exports = router

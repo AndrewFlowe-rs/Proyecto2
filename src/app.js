@@ -63,7 +63,7 @@ app.use('/iniciar-sesion', userRoutes)
 // app.use('/detalle', prodRoutesApi);
 //  app.use('/carrito', cartRoutesApi);
 // app.use ('/admin',adminRoutesApi);
-// app.use('/api/user', userRoutesApi)
+// app.use('/api', userRoutesApi)
 
 
 
