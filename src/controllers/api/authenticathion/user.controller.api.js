@@ -1,4 +1,4 @@
-const { name } = require("ejs");
+
 const db = require("../../../database/models");
 
 module.exports = {
@@ -17,7 +17,9 @@ module.exports = {
                             detail: `api/users/${user.id}`
                         }
                     }),
+                    
                 }
+                res.json(userList);  // Envía userList como respuesta
             })
             .catch((error) => {
                 res.status(500).json({ error: error.toString() });
@@ -35,4 +37,4 @@ module.exports = {
         });
     },
     
-}
+} 
