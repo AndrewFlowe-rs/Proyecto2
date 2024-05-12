@@ -92,6 +92,7 @@ CREATE TABLE IF NOT EXISTS `pizzeriaGit`.`products` (
   `price` DECIMAL(10,5) NOT NULL,
   `description` TEXT(100) NOT NULL,
   `category_id` INT NOT NULL,
+ `categoryName` VARCHAR(45) NOT NULL,
   `image` VARCHAR(45) NULL,
   PRIMARY KEY (`id`),
   INDEX `products_categories_idx` (`category_id` ASC) VISIBLE,
