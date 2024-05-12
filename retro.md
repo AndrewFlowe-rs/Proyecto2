@@ -69,3 +69,27 @@ Sin embargo, también hemos encontrado algunos problemas en el camino. Hubo algu
 
 
 ## en resumen este equipo no esta funcionando del todo bien y nos falta mucha comunicacion , en particular me hubiera gustado estar en otro equipo sin desmerecer al mio pero es que siento que no estoy del todo cómodo 
+
+# Retrospectiva del Sprint 6:
+
+- Comenzar a hacer:
+
+Comunicarnos más entre todos los miembros del grupo, deberíamos implementar las reuniones que al principio hacíamos y ahora ya no, pero faltando poco para culminar la cursada, dudo que se le de importancia. Debido a esa falta de comunicación, tuvimos problemas a la hora de corregir los errores en el proyecto, identificar qué estaba terminado, a eso sumo que no se le dio importancia al tablero de trabajo en Jira, por ende, particularmente me llevó más tiempo arreglar e identificar los problemas, quién era el autor del código, entre otras cosas. Mala organización como grupo.
+Algunos miembros del grupo dieron tarde el aviso de que no podían concluir con sus incidencias. Eso retrasó bastante el proyecto. 
+
+- Hacer más: 
+
+Personalmente, recibí las palabras de nuestros profesores y no quise dejar hundido el proyecto. Hice la mayoría de las correcciones de los sprint anteriores, creo que debería hacer más hincapié en mantener ese espíritu de tomar la iniciativa, el cual me llevó a sacar a flote el proyecto. Felicito a mi compañero Andrés, el cual también del mismo espíritu, estuvo a la par conmigo, si el cual no hubiera podido avanzar con el trabajo. Él con las tareas de los sprint actuales, y yo con las incidencias de sprint anteriores. Hubo mucha comunicación, entre ambos, a seguir manteniendo esa actitud, no sólo hasta finalizar este proyecto, sino los que vengan.
+
+- Continuar haciendo:
+
+Tener presente qué nos trajo hasta acá, habiendo llegado tan lejos, creo que sería un error grave dejarlo todo en la nada. Mantener el objetivo de terminar con el proyecto.
+
+- Hacer menos:
+
+Noté actitudes de resignación por parte de algunos miembros, también de conformismo y falta de empatía. Sugiero eliminarlas completamente, tales actitudes son palos en la rueda, tanto a nivel grupal como personal. Estamos ingresando en un mundo donde las habilidades blandas que destacan son la competencia, resiliencia y proactivismo. La idea es superarnos, y el conformismo, no nos permitirá crecer, dejemos tales actitudes, y no nos privemos del progreso.
+
+- Dejar de hacer: 
+
+Puedo ser muy específica respecto a esto, pero seré breve: LA FALTA DE EMPATÍA fue lo que más retrasó el proyecto y hay que suprimir tal actitud de inmediato. Al trabajar en grupo es algo fundamental el respeto hacia el compañero. No tengo problemas con ningún miembro de mi grupo, pero no estoy contenta con algunas actitudes que he visto respecto al trabajo.
+
