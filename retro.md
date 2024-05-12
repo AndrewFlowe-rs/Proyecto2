@@ -70,6 +70,9 @@ Sin embargo, también hemos encontrado algunos problemas en el camino. Hubo algu
 
 ## en resumen este equipo no esta funcionando del todo bien y nos falta mucha comunicacion , en particular me hubiera gustado estar en otro equipo sin desmerecer al mio pero es que siento que no estoy del todo cómodo 
 
+
+#################################################################################################################
+
 # Retrospectiva del Sprint 6:
 
 - Comenzar a hacer:
@@ -79,7 +82,7 @@ Algunos miembros del grupo dieron tarde el aviso de que no podían concluir con 
 
 - Hacer más: 
 
-Personalmente, recibí las palabras de nuestros profesores y no quise dejar hundido el proyecto. Hice la mayoría de las correcciones de los sprint anteriores, creo que debería hacer más hincapié en mantener ese espíritu de tomar la iniciativa, el cual me llevó a sacar a flote el proyecto. Felicito a mi compañero Andrés, el cual también del mismo espíritu, estuvo a la par conmigo, si el cual no hubiera podido avanzar con el trabajo. Él con las tareas de los sprint actuales, y yo con las incidencias de sprint anteriores. Hubo mucha comunicación, entre ambos, a seguir manteniendo esa actitud, no sólo hasta finalizar este proyecto, sino los que vengan.
+Personalmente, recibí las palabras de nuestros profesores y no quise dejar hundido el proyecto. Hice la mayoría de las correcciones de los sprints anteriores, creo que debería hacer más hincapié en mantener ese espíritu de tomar la iniciativa, el cual me llevó a sacar a flote el proyecto. Felicito a mi compañero Andrés, el cual también del mismo espíritu, estuvo a la par conmigo, si el cual no hubiera podido avanzar con el trabajo. Él con las tareas de los sprint actuales, y yo con las incidencias de sprint anteriores. Hubo mucha comunicación, entre ambos, a seguir manteniendo esa actitud, no sólo hasta finalizar este proyecto, sino con los que vengan.
 
 - Continuar haciendo:
 
@@ -87,7 +90,7 @@ Tener presente qué nos trajo hasta acá, habiendo llegado tan lejos, creo que s
 
 - Hacer menos:
 
-Noté actitudes de resignación por parte de algunos miembros, también de conformismo y falta de empatía. Sugiero eliminarlas completamente, tales actitudes son palos en la rueda, tanto a nivel grupal como personal. Estamos ingresando en un mundo donde las habilidades blandas que destacan son la competencia, resiliencia y proactivismo. La idea es superarnos, y el conformismo, no nos permitirá crecer, dejemos tales actitudes, y no nos privemos del progreso.
+Noté actitudes de resignación por parte de algunos miembros, también de conformismo y falta de empatía. Sugiero eliminarlas completamente, tales actitudes son palos en la rueda, tanto a nivel grupal como personal. Estamos ingresando en un mundo donde las habilidades blandas que destacan son la competencia, resiliencia y proactivismo. La idea es superarnos, y el conformismo, no nos permitirá crecer, dejemos tales actitudes, y no nos privemos del progreso. No me jacto de nada ni me dejó afuera de todo esto, cometí errores también, pero creo firmemente en la idea de avanzar y no postergar.
 
 - Dejar de hacer: 
 
