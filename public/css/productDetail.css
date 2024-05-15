@@ -55,7 +55,13 @@
         /* display: none; */
     }
 
-
+a.cart-b{
+    font-family: var(--comic);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
     .confirmacion .botonno p {}
 
     .confirmacion .botonno p i {
@@ -145,6 +151,14 @@ width: 166px;
         text-align: center;
         color: var(--azul);
     }
+    a.cart-b{
+    font-family: var(--corporant);
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 20px;
+}
 
     .confirmacion {
         display: flex;
@@ -249,6 +263,12 @@ width: 166px;
         text-align: center;
         color: var(--azul);
     }
+    a.cart-b{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
     .confirmacion {
         display: flex;

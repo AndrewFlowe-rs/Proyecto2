@@ -202,7 +202,10 @@ padding-bottom: 10px;
 
         font-weight: bold;
     }
-    main div.container-butoms{}
+    main div.container-butoms{
+    /* display: flex; */
+    /* align-items: center; */
+}
 
     main div.first-div p.description {
 
@@ -243,7 +246,7 @@ i.fa-solid.fa-cart-shopping{
     .btn.btn-danger{
     position: relative;
     /* top: -17px; */
-    /* left: 83px; */
+    left: 190px;
     font-size: 12px;
     /* font-size: var(--comic); */
     font-family: var(--comic);
