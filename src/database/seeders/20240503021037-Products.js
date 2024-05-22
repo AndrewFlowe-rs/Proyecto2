@@ -5,7 +5,7 @@ const proMaped = jsondb.map(p => {
     name: p.name,
     price: p.price,
     description: p.description,
-    categoryId: p.id,
+    categoryName: p.category,
     image: p.image,
 
 
