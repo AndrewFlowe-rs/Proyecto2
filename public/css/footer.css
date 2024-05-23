@@ -225,8 +225,8 @@ margin: 0px;
     }
 p.text{
     position: relative;
-    /* right: 100%; */
-    left: -90%;
+    right: 130%;
+    /* left: -90%; */
 }
     .conteiner-location {
 
