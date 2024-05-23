@@ -11,7 +11,7 @@ router.post('/crear-producto', upload.single('image'),adminController.store)
 
 // Editar producto
 router.get('/edit/:id',adminController.editProdut);
-router.put('/edit/:id',adminController.update);
+router.put('/edit/:id',upload.single('image'),adminController.update);
 
 
 

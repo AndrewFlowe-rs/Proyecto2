@@ -9,22 +9,29 @@ module.exports = async (req, res) => {
 
     try {
         const product = await db.Product.findByPk(id);
-
-
-        product.name = name ? name.trim() : name;
-        product.price = +price;
-        product.description = description ? description.trim() : description;
-        product.categoryName = categoryName ? categoryName.trim() : categoryName;
-        product.image = image ? image.filename : product.image;
+        const imageFirst= image;
+        await db.Product.update(
+            {
+             name : name ? name.trim() : name,
+             price : +price,
+             description : description ? description.trim() : description,
+             categoryName : categoryName ? categoryName.trim() : categoryName,
+             image : image ? image.filename : product.image,
        
-
-        if (image && product.image) {
-            await fs.unlink(path.join(__dirname, '../../../public/design/ImgProducts', product.image));
+            },
+             {
+                where: { id },
+              }
+        )
+        if (image && imageFirst) {
+            const pathBefore = path.join(__dirname, `../../../public/design/ImgProducts/${imageFirst}`);
+            const existFile = fs.existsSync(pathBefore);
+            if (existFile) {
+                fs.unlinkSync(pathBefore);
+              }
         }
+        res.redirect(`/detalle/${id}`);      
 
-        await product.save();
-
-        res.redirect(`/detalle/${id}`);
     } catch (error) {
         console.error('Error al actualizar el producto:', error);
         res.status(500).send('Error interno del servidor al actualizar el producto');

@@ -4,6 +4,7 @@ module.exports = async (req, res) => {
   try {
     const { id } = req.params;
     const userLogin = req.session.user;
+  
 
     const user = await db.User.findByPk(id);
 

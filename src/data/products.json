@@ -93,15 +93,15 @@
       "price": 5000,
       "description": "Salsa de tomate, mozzarella, longaniza, ají molido, aceitunas negras",
       "category": "Promo del mes",
-      "image": "calabresa.jpg"
+      "image": "image116493783371.jpg"
    },
    {
       "id": 13,
       "name": "Provolone y Ananá",
       "price": 5000,
-      "description": "Salsa de tomate, mozzarella, ají molido",
+      "description": "Salsa de tomate, mozzarella, ají molido, ananá fresco cortado en trozos y jamón.",
       "category": "Promo del mes",
-      "image": "PROVOLENE1.jpg"
+      "image": "anana3.jpg"
    },
    {
       "id": 14,
@@ -109,7 +109,7 @@
       "price": 5000,
       "description": "Salsa de tomate, mozzarella, roquefort, ananá, queso provolone",
       "category": "Promo del mes",
-      "image": "ROQUEFORT1.jpg"
+      "image": "pizza-roquefort.jpg"
    },
    {
       "id": 15,

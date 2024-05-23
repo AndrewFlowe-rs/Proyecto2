@@ -2,7 +2,10 @@
    @media(max-width: 360px) {
 
        .footer {
-           background: var(--rojo)
+           background: var(--rojo);
+           min-height: 19vh;
+           /* display: flex; */
+           /* justify-content: space-around; */
        }
 
        .footer .info-footer {}
@@ -11,7 +14,9 @@
    
        }
 
-       .footer .conteiner-phone {}
+       .footer .conteiner-phone {
+    /* margin: 76px; */
+}
 
        .conteiner-phone i {}
 
@@ -30,14 +35,14 @@
     margin-top: auto;
 }
 
-       .conteiner-location i {}
+      i {}
 
 
-       .conteiner-location h3 {
+       h3 {
     font-size: small;
 }
 
-       .conteiner-location h2 {}
+       h2 {}
 
        .Redes {
            display: none;
@@ -45,6 +50,18 @@
        .conteiner-iconos{
        display: none;
        }
+       div.sobre-n{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+       h2.sobre-nos{
+    /* margin: 87px; */
+    /* position: relative; */
+    left: 74px;
+    font-size: 20px;
+    /* padding: 61px; */
+}
 
        .conteiner-iconos ul {}
 
@@ -56,13 +73,15 @@
        .contenedor-copy p {}
    }
 
-   .footer .sobre-n {
+   .footer.sobre-n {
     
 /* display: none; */
     
 /* position: absolute; */
     
 /* left: 34%; */
+    
+/* display: flex; */
    }
 
 
@@ -72,13 +91,14 @@
 
        .footer {
     background-color: var(--rojo);
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
-    position: relative;
+    /* position: relative; */
     /* height: 100vh; */
     /* display: table; */
-    clear: both;
+    /* clear: both; */
+    /* min-height: 4vh; */
+    flex-direction: column;
 }
   .footer .conteiner-phone {
     display: none;
@@ -91,14 +111,16 @@
       
 
        .footer  ul {
-    display: flex;
+    /* display: flex; */
     /* position: relative; */
     /* padding-top: 74px; */
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     /* height: 113px; */
     display: inline-flex;
     top: 118%;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
        .footer  .conteiner-phone {}
@@ -108,19 +130,21 @@
        .conteiner-phone a {}
 
 
-       .direction-f {}
-
-       .conteiner-location {}
-
-       .conteiner-location i {}
-
-
-       .conteiner-location h3 {
-    font-size: medium;
-    margin-bottom: 0px;
+       .direction-f {
+    margin: 20px;
 }
 
-       .conteiner-location h2 {
+       .conteiner-location {}
+ i {}
+
+ h3 {
+    font-size: medium;
+    /* margin-bottom: 0px; */
+    position: relative;
+    left: 10px;
+}
+
+        h2 {
     margin-bottom: 31px;
     color: wheat;
     margin-top: 7px;
@@ -128,14 +152,21 @@
     margin-top: 0px;
 }
 
-       .Redes {/* display: inline-flex; */color: wheat;margin-bottom: 18px;text-align: center;/* top: 150%; */border-bottom: solid wheat;}
+       .Redes {/* display: inline-flex; */color: wheat;/* margin-bottom: 18px; *//* text-align: center; *//* top: 150%; *//* border-bottom: solid wheat; */margin: 15px;flex-direction: column;}
 
        .conteiner-iconos {
     display: inline-flex;
     flex-direction: column;
-    margin-left: -1%;
+    /* margin-left: -1%; */
     text-align: center;
+    align-items: center;
 }
+div.sobre-n{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h2.sobre-nos{}
 
        .conteiner-iconos a {}
 
@@ -146,22 +177,94 @@
        .contenedor-copy p {}
 
 
-   .sobre-n {
-    position: absolute;
-    left: 34%;
-   }
    .sobre-n .sobre-nos {
     color: wheat;
-    margin-bottom: 29px;
+    /* margin-bottom: 29px; */
     border-bottom: solid wheat;
-    width: 79%;
+    /* width: 79%; */
+    margin: 20px;
 }
  .sobre-n p {
-margin-left: -42px;
-margin-bottom: 0px;
+
+/* margin-left: -42px; */
+
+/* margin-bottom: 0px; */
+
+margin: 0px;
 }
 }
 
+
+@media (min-width: 768px) {
+    .footer {
+        background: var(--rojo);
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    .footer .info-footer {}
+
+    .footer .info-footer ul {
+
+    }
+
+    .footer .conteiner-phone {}
+
+    .conteiner-phone i {}
+
+    .conteiner-phone a {
+
+    
+    }
+
+
+    .direction-f {
+        display: none;
+    }
+p.text{
+    position: relative;
+    /* right: 100%; */
+    left: -90%;
+}
+    .conteiner-location {
+
+}
+
+    .conteiner-location i {}
+
+
+   h3 {
+ 
+}
+
+   h2 {}
+
+    .Redes {
+    }
+    .conteiner-iconos{
+    }
+    h2.sobre-nos{
+}
+
+    .conteiner-iconos ul {
+}
+
+    .conteiner-iconos ul li a {}
+
+
+    .contenedor-copy h2 {}
+
+    .contenedor-copy p {}
+
+
+.footer .sobre-n {
+    display: flex;
+    align-items: center;
+}
+
+}
 
 
    

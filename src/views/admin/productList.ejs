@@ -7,7 +7,11 @@
         <%-include("../partials/dashboard")%>
 
             <main class="main-list">
+                <% if (isAdmin) { %>
                 <a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
+                <% } else if (isRegular) { %>
+                    <a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
+                    <% } %>
                 <h1>Lista de productos</h1>
                 <table class="table">
                     <% products.forEach(p=> { %>
@@ -21,7 +25,12 @@
                             <td>
                                 <div class="btn-group" role="group">
                                     <a href="/detalle/<%= p.id %>" class="btn btn-info d-inline-block">Info</a>
-                                    <a href="/admin/edit/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
+                                    <% if (isRegular) { %>
+                                     <a href="/admin/edit/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
+                                    <% } else if(isAdmin) {%>
+                                        <a href="/admin/edit/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
+                                        <% } %>
+                                    
                                      <% if (isAdmin) { %>
                                       <a href="/admin/eliminar-producto/<%= p.id%>"
                                         class="btn btn-danger d-inline-block">Eliminar</a>

@@ -1,7 +1,9 @@
 const { validationResult, body} = require('express-validator');
 const db = require('../../database/models'); // Importa el modelo de base de datos
+const bcrypt = require('bcryptjs');
 
 module.exports = async (req, res) => {
+    
     try {
         const errors = validationResult(req);
 
@@ -11,11 +13,11 @@ module.exports = async (req, res) => {
             const user = await db.User.findOne({ where: { email } });
 
             if (user) {
-                if (compareSync(password, user.password)) {
+                if (bcrypt.compareSync(password, user.password)) {
                     req.session.userLogin = {
                         name: user.name,
                         email: user.email,
-                        role: user.role,
+                        role: user.name_role,
                         avatar: user.avatar
                     };
                     return res.redirect("/");

@@ -106,9 +106,12 @@ h5.card-title{
 }
 
 img.card-img-top {
-    /* width: 50%; */
+    width: 100%;
     border-radius: 31px;
+    height: 100%;
 }
+div.card.aos-init.aos-animate{}
+
 
 div.contenedor-descrip-home{}
 
@@ -149,7 +152,6 @@ main div.first-div-home{
     /* width: 82px; */
     /* padding: 10px; */
     }
-
 
 @media (min-width: 361px) {
 main.mainhome{}
@@ -202,7 +204,8 @@ left: 311%;
     }
     div.container-product{/* width: 4%; */display: flex;align-items: stretch;}
 .product-container{}
-
+div.card.aos-init.aos-animate{}
+div.card-body{}
     .pizzasinferior  {
         font-family: var(--poppins);
         /* width: 100%; */
@@ -289,7 +292,8 @@ width: 100vw;
 
 height: 18vh;
 }
-    
+
+
 
 @media (min-width: 768px) {
 main.main-home{
@@ -313,6 +317,10 @@ div.card{
     height: 345px;
     width: 30rem;
 }
+div.card-body{
+    margin: 10%;
+}
+
 p.card-text{}
     .pizzasinferior {
         display: flex;
@@ -322,7 +330,8 @@ p.card-text{}
         right: 150px;
     }
     img.card-img-top{
-    /* height: 156px; */
+    height: 15vh;
+    /* width: 440px; */
 }
     .pizzasinferior img{
     width: 265px;
@@ -337,8 +346,10 @@ p.card-text{}
         width: 25%;
     }
     .d-block{
-    height: 40vh;
-    /* width: 249vw; */
+    height: 50vh;
+    width: 90vw;
+    position: relative;
+    left: 5%;
 }
 h1.home{
     /* color: #020304; */
@@ -404,10 +415,11 @@ h1.home{
     div.container-product{
     display: flex;
     width: 98%;
-    flex-direction: row;
-    align-items: flex-start;
     /* position: relative; */
     top: 571px;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
 }
 
     .pizzasinferior  {
@@ -425,7 +437,9 @@ h1.home{
         /* display: flex; */
         /* height: 71vh; */
     }
-
+div.card.aos-init.aos-animate{
+    height: 100%;
+}
     main div.contenedor-img-home{
     height: 102px;
 }
@@ -440,11 +454,16 @@ flex-direction: row-reverse;
 }
 
     .bannerhome ul li a{
-        font-size: 32px;
-        font-family: var(--corporant);
-        display: flex;
-        justify-content: center;
-        /* color: var(--bs-danger); */
+        
+font-size: 32px;
+        
+font-family: var(--corporant);
+        
+display: flex;
+        
+justify-content: center;
+        
+/* color: var(--bs-danger); */
     }
 
     .div-categorias h1{
@@ -484,4 +503,5 @@ background-color: var(--background-reg);
 div.contenedor-descrip-home{
     width: 20%;
 }
+
 
