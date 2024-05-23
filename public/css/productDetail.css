@@ -116,11 +116,12 @@ width: 166px;
     }
 
     .main-product .article .articulo-producto img {
-        width: 100%;
+        width: 70%;
         /* border-radius: 103px; */
         /* margin: 26px 0px 5px 117px; */
-        /* position: relative; */
-        left: 52px;
+        position: relative;
+        left: 110px;
+        height: -17%;
     }
 
     .main-product .article .articulo-producto h3 {
