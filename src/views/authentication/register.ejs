@@ -20,10 +20,11 @@
                 </div>
                 <div class="conteiner-form">
                     <div> <!-- Campo nombre -->
-                        <input type="text" placeholder="Nombre" id="nombre" name="name" value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
+                        <input class="name" type="text" placeholder="Nombre" id="nombre" name="name" value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
                         <div class="error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.name?.msg %>
                         </div>
+                        <p class=" text-danger msg-err"></p>
 
 
                     </div>
