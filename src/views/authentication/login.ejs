@@ -22,7 +22,7 @@
                                                         <%= locals.errors?.email?.msg%>
                                                 </p>
 
-                                                <input type="password" placeholder="contraseña" name="password" value="">
+                                                <input type="password" id="passwordL" placeholder="contraseña" name="password" value="">
 
                                                 <p class="text-danger">
                                                         <%= locals.errors?.password?.msg%>
@@ -58,6 +58,6 @@
 
                         <!-- Footer -->
                         <%- include('../partials/footer') %>
+                        <script src="../../../js/validations/validationLogin.js"></script> 
         </body>
-          <!-- <script src="../../../public/js/validations/validationLogin.js"></script> --> 
 </html>

@@ -63,17 +63,7 @@
                                 <%= locals.errors?.city?.msg %>
                       </div>
                     </div>
-                     <!-- Campo imagen de perfil -->
-
-                    <div class="archivos">
-                        <input type="file" placeholder="avatar" id="avatar" name="avatar">
-
-
-                        <div class="error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>">
-                            <%= locals.errors?.avatar?.msg %>
-                                </div>
-
-                    </div>
+                   
 
                 </div>
 
@@ -95,7 +85,7 @@
 
             <!-- Footer -->
             <%- include('../partials/footer') %>
-    </body>
-    <!-- <script src="../../../public/js/validations/validationRegister.js"></script> -->
+             <script src="../../../js/validations/validationRegister.js"></script> 
 
+        </body>
 </html>
