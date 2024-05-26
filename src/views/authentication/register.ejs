@@ -24,57 +24,57 @@
                         <div class="error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.name?.msg %>
                         </div>
-                                
-                      
+
+
                     </div>
-                   
+
                     <div>
-                         <!-- Campo email --> 
+                         <!-- Campo email -->
                           <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.email : '' %>">
                           <div class="error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>">
-                       
+
                             <%= locals.errors?.email?.msg %>
                         </div>
-                             
-                       
+
+
                     </div>
 
                              <!-- Campo contraseña -->
-                    <div> 
+                    <div>
                         <input type="password" placeholder="contraseña" id="password" name="password"  value="<%= locals.old && locals.old.password ? locals.old.password : '' %>">
-                        <div class="error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>">         
+                        <div class="error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.password?.msg %>
                         </div>
-                       
+
                     </div>
                               <!-- Campo número-teléfono -->
                     <div>
                         <input type="number" placeholder="Numero de Tel." id="num" name="number" value="<%= locals.old && locals.old.number ? locals.old.number : '' %>">
-                            <div class="error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>">      
-                           
+                            <div class="error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>">
+
                                 <%= locals.errors?.number?.msg %>
                         </div>
-                        
+
                     </div>
                      <!-- Campo ciudad -->
-                    <div>  
+                    <div>
                         <input type="text" placeholder="ciudad" id="direction" name="city" value="<%= locals.old && locals.old.city ? locals.old.city : '' %>">
-                            <div class="error-msg <%=locals.errors && locals.errors.city ? 'visible' : 'hidden' %>">    
+                            <div class="error-msg <%=locals.errors && locals.errors.city ? 'visible' : 'hidden' %>">
                                 <%= locals.errors?.city?.msg %>
                       </div>
                     </div>
                      <!-- Campo imagen de perfil -->
-                   
+
                     <div class="archivos">
                         <input type="file" placeholder="avatar" id="avatar" name="avatar">
-                       
-                 
-                        <div class="error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>">    
+
+
+                        <div class="error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.avatar?.msg %>
                                 </div>
-                               
-                    </div> 
-                   
+
+                    </div>
+
                 </div>
 
 
@@ -90,11 +90,12 @@
 
 
 
-        </main>  
+        </main>
 
 
             <!-- Footer -->
             <%- include('../partials/footer') %>
     </body>
+    <!-- <script src="../../../public/js/validations/validationRegister.js"></script> -->
 
 </html>
