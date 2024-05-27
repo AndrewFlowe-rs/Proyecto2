@@ -106,7 +106,7 @@ h5.card-title{
 }
 
 img.card-img-top {
-    width: 100%;
+    width: 80%;
     border-radius: 31px;
     height: 100%;
 }
@@ -172,7 +172,10 @@ main.mainhome{}
     .main-carousel {
         width: 75%;
     }
-    .d-block{}
+    .d-block{
+    width: 90%;
+    margin-left: 35px;
+}
 
 
 
