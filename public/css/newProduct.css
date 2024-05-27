@@ -31,6 +31,14 @@ margin-left: 88%;
     padding: 4px;
     background-color: var(--gris);
 }
+.input-error {
+    border: 2px solid red;
+}
+
+.input-success {
+    border: 2px solid green;
+}
+
 .form-new.conteiner-x-edit{
     right: 0px;
     display: inline-block;
@@ -150,6 +158,14 @@ margin-left: 88%;
         padding: 4px;
         background-color: var(--gris);
     }
+.input-error {
+    border: 2px solid red;
+}
+
+.input-success {
+    border: 2px solid green;
+}
+
     .form-new .conteiner-x-edit{
         right: 0px;
         display: inline-block;
