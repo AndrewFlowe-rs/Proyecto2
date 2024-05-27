@@ -58,21 +58,69 @@ window.addEventListener("load", () => {
 
     let errpasword = document.querySelector(".err-p");
     switch (existerr) {
+      
       case value.length === 0:
         errpasword.innerHTML = "La contraseña es requerida";
 
         break;
 
-        case regex.test(value)  :
-            errpasword.innerHTML = 'La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número'
+      case regex.test(value):
+        errpasword.innerHTML =
+          "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número";
 
       default:
         errpasword.innerHTML = null;
         existerr = false;
         break;
-        
     }
-    password.addEventListener
+    password.addEventListener("focus", function () {
+      errpasword.innerHTML = "";
+    });
+  });
+
+  number.addEventListener("blur", function () {
+    let value = this.value.trim;
+    let existerr = true;
+    let errnumber = document.querySelector(".err-n");
+    switch (existerr) {
+      case value.length === 0:
+        errnumber.innerHTML = "El número es requerido";
+        break;
+      case value.length < 10:
+        errnumber.innerHTML = "El número debe tener al menos 10 dígitos";
+        break;
+      default:
+        errnumber.innerHTML = null;
+        existerr = false;
+        break;
+    }
+    
+    number.addEventListener("focus", function () {
+      errnumber.innerHTML = "";
+    });
+
+  });
+
+  ciudad.addEventListener("blur", function () {
+    let value = this.value.trim;
+    let existerr = true;
+    let errciudad = document.querySelector(".err-c");
+    switch (existerr) { 
+      case value.length === 0:
+        errciudad.innerHTML = "La ciudad es requerida";
+        break;
+        case value.length < 5 || value.length > 10:
+          errciudad.innerHTML = "El texto debe tener entre 5 y 10 caracteres";
+          break;
+      default:
+        errciudad.innerHTML = null;
+        existerr = false;
+        break;
+    }
+
+    ciudad.addEventListener("focus", function () {
+      errciudad.innerHTML = "";
+    });
   });
 
   //formulario
