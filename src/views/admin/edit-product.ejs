@@ -6,7 +6,7 @@
     <%-include("../partials/header")%>
     <main class="main-forme">
 
-        <form class="form-edit" method="POST" action="/admin/edit/<%= p.id %>?_method=PUT" enctype="multipart/form-data">
+        <form class="form-edit" method="POST" action="/admin/edit/<%= p.id %>?_method=PUT" enctype="multipart/form-data" id="editProductForm">
             <div class="conteiner-x-edit">
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -15,12 +15,15 @@
             </div>
             <div class="edit-title">
                 <input type="text" id="title" name="name" placeholder="Editar nombre" value="<%= p.name %>">
+                <p class="text-danger msg-err" id="titleError"></p>
             </div>
             <div class="edit-price">
                 <input type="text" id="price" name="price" placeholder="Editar precio" value="<%= p.price %>">
+                <p class="text-danger msg-err" id="priceError"></p>
             </div>
             <div class="edit-description">
                 <input type="text" id="description" name="description" placeholder="Editar descripción" value="<%= p.description %>">
+                <p class="text-danger msg-err" id="descriptionError"></p>
             </div>
             <div class="edit-category">
                 <label for="category">Categoría actual</label>
@@ -35,19 +38,20 @@
                     <option value="Promo del mes">Combos</option>
                     <option value="Individuales">Individuales</option>
                     <option value="Bebidas">Bebidas</option>
-                  
                 </select>
+                <p class="text-danger msg-err" id="categoryError"></p>
             </div>
-
-            <div>   
-                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" >
+    
+            <div>
+                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
             </div>
             <div class="new-image">
                 <label class="label-titulo" for="image"></label>
                 <br>
                 <input type="file" id="image" name="image">
+                <p class="text-danger msg-err" id="imageError"></p>
             </div>
-
+    
             <div class="button">
                 <button type="submit" id="button" name="boton">Guardar cambios</button>
             </div>
@@ -55,6 +59,8 @@
 
     </main>
     <%-include("../partials/footer")%>
+    <script src="../../../js/validations/validationEditProduct.js"></script> 
+
 </body>
 <!-- <%-include("../partials/dashboard")%> -->
 

@@ -25,16 +25,11 @@
                             <td>
                                 <div class="btn-group" role="group">
                                     <a href="/detalle/<%= p.id %>" class="btn btn-info d-inline-block">Info</a>
-                                    <% if (isRegular) { %>
                                      <a href="/admin/edit/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
-                                    <% } else if(isAdmin) {%>
                                         <a href="/admin/edit/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
-                                        <% } %>
                                     
-                                     <% if (isAdmin) { %>
                                       <a href="/admin/eliminar-producto/<%= p.id%>"
                                         class="btn btn-danger d-inline-block">Eliminar</a>
-                                     <% } %>
                                      
                                  
                                 </div>

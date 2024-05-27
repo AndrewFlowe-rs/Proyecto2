@@ -261,14 +261,14 @@ i.fa-solid.fa-cart-shopping{
 
     /* Botón detalle "Ver más" */
     .btn.btn-danger{
-    position: relative;
+    /* position: relative; */
     /* top: -17px; */
-    left: 190px;
-    font-size: 12px;
+    /* left: 190px; */
+    font-size: 18px;
     /* font-size: var(--comic); */
     font-family: var(--comic);
-    padding: 5px;
-    width: 55px;
+    padding: 0px;
+    width: 100px;
 }
 
     /* SEGUNDO DIV */
