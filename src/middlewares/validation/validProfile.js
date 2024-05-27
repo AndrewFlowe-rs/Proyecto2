@@ -1,27 +1,7 @@
-const { body, validationResult} = require('express-validator')
-const { loadData } = require('../../data');
-
-const  validProfile = [  
-  existEmail = (value) => {
-   const users = loadData('users')
-   return users.filter(u => u.email === value)
-},
- [
-body('name').notEmpty().isAlpha().withMessage('Campo obligatorio'),
-body('surname').notEmpty().isAlpha().withMessage('Campo obligatorio'),
-
-
-body('email').notEmpty().isEmail().withMessage('Campo obligatorio').custom( value => {
-const existUser = existEmail(value)
-if (existUser.length > 0) {
-    throw new Error('Correo electrónico ya en uso');
-}
-return true;
-}),
-
-body('password').notEmpty().withMessage('Campo obligatorio').isLength({min:5, max:20}),
-
-]
-]
- module.exports = validProfile
+module.exports = (req, res, next) => {
+  if (!req.session.userLogin) {
+    return res.redirect('/login'); 
+  }
+  next();
+};
 

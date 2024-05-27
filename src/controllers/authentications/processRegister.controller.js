@@ -14,7 +14,7 @@ module.exports = (req, res) => {
       name: name?.trim(),
       email: email?.trim().toLowerCase(),
       password: bcrypt.hashSync(password?.trim(), 12),
-      avatar: imageAvatar ? imageAvatar.filename : "defaultImg.webp",
+      avatar: imageAvatar ? imageAvatar.filename : "avatarDefault.webp",
       roleId: +role,
       name_role: name_role ? name_role.trim() : 'Regular', 
       number: number ? number : ''

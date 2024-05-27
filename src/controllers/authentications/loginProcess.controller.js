@@ -15,12 +15,13 @@ module.exports = async (req, res) => {
             if (user) {
                 if (bcrypt.compareSync(password, user.password)) {
                     req.session.userLogin = {
+                        id: user.id,
                         name: user.name,
                         email: user.email,
                         role: user.name_role,
                         avatar: user.avatar
                     };
-                    return res.redirect("/");
+                    return res.redirect("/perfil");
                 } else {
                     return res.render("authentication/login", {
                         errors: { password: { msg: "Contraseña incorrecta" } },

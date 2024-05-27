@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<!-- Head -->
 <%- include('../partials/head') %>
-
-  <body>
-
-
-    <!-- Header -->
-    <%- include('../partials/header') %>
-
 <body>
-    <main>
-<%= userLogin %>
- <h1>Hola, este es tu perfil</h1>
- <form class="form-register" action="/perfil" method="POST" enctype="multipart/form-data">
-  <div>
-
-    <div class="mb-3 row">
-      <label for="staticEmail" class="col-sm-2 col-form-label">Nombre:</label>
-      <div class="col-sm-10">
-        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="">
+  <%- include('../partials/header') %>
+  <main class="main-profile">
+    
+    <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
+    <form class="form-profile" action="/perfil" method="POST" enctype="multipart/form-data">
+      <div class="user-img"> <img src="/design/users/<%=user.avatar %>" alt="">
       </div>
-    </div>
-
-    <div class="mb-3 row">
-      <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
-      <div class="col-sm-10">
-        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="">
+      <div class="">
+        <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="name" value="<%= user.name %>">
+        </div>
       </div>
-    </div>
-
-
-
-  </div> 
-</form>
- 
-        
-      <!-- Footer -->
-      <%- include('../partials/footer') %>
- 
-    </main>
+      <div class="">
+        <label for="email" class="col-sm-2 col-form-label">Email:</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="email" value="<%= user.email %>">
+        </div>
+      </div>
+      <div class="">
+        <label for="email" class="col-sm-2 col-form-label">Número:</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="email" value="<%= user.number %>">
+        </div>
+      </div>
+    </form>
+  </main>
+  <%- include('../partials/footer') %>
 </body>
 </html>

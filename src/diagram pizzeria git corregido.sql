@@ -57,6 +57,8 @@ CREATE TABLE IF NOT EXISTS `pizzeriaGit`.`users` (
   `roleId` INT NOT NULL,
   `name_role` VARCHAR(45) NOT NULL,
   `adress_id` INT NOT NULL,
+   `avatar` VARCHAR(45),
+
   PRIMARY KEY (`id`),
   INDEX `rol_users_idx` (`roleId` ASC) VISIBLE,
   INDEX `addres_user_idx` (`adress_id` ASC) VISIBLE,

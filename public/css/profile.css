@@ -1,0 +1,26 @@
+.main-profile{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+p.title-profile{
+    font-size: 23px;
+    font-family: var(--comic);
+}
+form.form-profile{
+    background-color: #364f5e;
+    /* padding: 200px; */
+}
+input#name.form-control-plaintext{
+    background-color: white;
+    border-radius: 12px;
+    margin: 20px;
+    width: 200px;
+}
+input#email.form-control-plaintext{
+    background-color: white;
+    border-radius: 12px;
+    margin: 20px;
+    width: 200px;
+}
