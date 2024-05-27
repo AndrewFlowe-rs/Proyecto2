@@ -21,10 +21,11 @@
                 <div class="conteiner-form">
                     <div> <!-- Campo nombre -->
                         <input class="name" type="text" placeholder="Nombre" id="nombre" name="name" value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
+                        <p class=" text-danger msg-err"></p>
                         <div class="error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.name?.msg %>
                         </div>
-                        <p class=" text-danger msg-err"></p>
+                       
 
 
                     </div>
@@ -32,6 +33,8 @@
                     <div>
                          <!-- Campo email -->
                           <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.email : '' %>">
+                          <p class=" text-danger msge-err"></p>
+
                           <div class="error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>">
 
                             <%= locals.errors?.email?.msg %>
@@ -43,6 +46,8 @@
                              <!-- Campo contraseña -->
                     <div>
                         <input type="password" placeholder="contraseña" id="password" name="password"  value="<%= locals.old && locals.old.password ? locals.old.password : '' %>">
+                        <p class=" text-danger err-p"></p>
+
                         <div class="error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.password?.msg %>
                         </div>
