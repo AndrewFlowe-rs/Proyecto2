@@ -7,6 +7,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         padding: 13%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
     }
     .main-login form{
         justify-content: center;
@@ -83,18 +86,19 @@
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
+        /* min-width: 100vh; */
     }
     .main-login form{
-        justify-content: center;
         align-items: center;
         /* border: solid; */
         display: flex;
         flex-direction: column;
         background-color: var(--gri);
         border-radius: 18px;
-        margin-left: 55%;
+        /* margin-left: 47%; */
         display: flex;
-        width: 600px;
+        width: 480px;
+        margin-left: 26px;
         }
         .main-login form input{
         border: solid;
@@ -150,3 +154,46 @@
     .conteiner-red .whats-login{
         background-color: var(--gri);
     }}
+
+    @media  (min-width: 768px){
+
+
+        .main-login a { 
+        }
+        .main-login {
+        
+    }
+    .main-login form{
+      margin-left: 70%;
+      }
+        .main-login form input{
+        }
+    .main-login form button {
+    }
+        .main-login form label{}
+    
+    
+    .main-login .conteiner-red {
+        
+    }    
+    
+    .main-login .conteiner-red{}
+    .main-login .conteiner-red li{
+      
+     
+    }    
+    .main-login .conteiner-red li img{
+    
+    }
+    .main-login .conteiner-red li a{
+     
+    }
+    .conteiner-red .google-login{}
+    .conteiner-red .face-login{}
+    .conteiner-red .insta-login{
+        
+
+    }
+    .conteiner-red .whats-login{
+    }
+    }
