@@ -11,6 +11,21 @@
         /* display: flex; */
 
     }
+    a.bottom-cart{
+    position: relative;
+    bottom: 13px;
+    background-color: #dc3545;
+    color: white;
+    font-family: var(--comic);
+    left: 90px;
+    display: block;
+    width: 120px;
+    height: 26px;
+    margin: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
 
     main nav.nav-bar ul.list-bar {
 
@@ -243,6 +258,7 @@ i.fa-solid.fa-cart-shopping{
     /* left: 165px; */
     top: 7px;
 }
+
     /* Botón detalle "Ver más" */
     .btn.btn-danger{
     position: relative;
@@ -971,6 +987,7 @@ display: flex;
 
 /* margin-bottom: 10px; */
 }
+a.bottom-cart{}
 
     main nav.nav-bar ul.list-bar {
 
@@ -1875,6 +1892,7 @@ i.fa-solid.fa-cart-shopping{}
 
 width: 100%;
 }
+a.bottom-cart{}
 
     main nav.nav-bar ul.list-bar {
 

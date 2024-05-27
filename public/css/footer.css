@@ -84,7 +84,10 @@
 /* display: flex; */
    }
 
-
+div.container-copy{
+    /* display: block; */
+    text-align: center;
+}
 
    /*Tablet*/
    @media (min-width: 361px) {
@@ -97,7 +100,7 @@
     /* height: 100vh; */
     /* display: table; */
     /* clear: both; */
-    /* min-height: 4vh; */
+    min-height: 29vh;
     flex-direction: column;
 }
   .footer .conteiner-phone {
@@ -131,7 +134,8 @@
 
 
        .direction-f {
-    margin: 20px;
+    margin: 10px;
+    margin-top: 28px;
 }
 
        .conteiner-location {}
@@ -139,26 +143,27 @@
 
  h3 {
     font-size: medium;
-    /* margin-bottom: 0px; */
+    margin-bottom: 0px;
     position: relative;
     left: 10px;
 }
 
         h2 {
-    margin-bottom: 31px;
+    /* margin-bottom: 31px; */
     color: wheat;
-    margin-top: 7px;
+    /* margin-top: 7px; */
     border-bottom: solid wheat;
-    margin-top: 0px;
+    /* margin-top: 0px; */
+    /* margin: 0px; */
 }
 
-       .Redes {/* display: inline-flex; */color: wheat;/* margin-bottom: 18px; *//* text-align: center; *//* top: 150%; *//* border-bottom: solid wheat; */margin: 15px;flex-direction: column;}
+       .Redes {/* display: inline-flex; */color: wheat;/* margin-bottom: 18px; *//* text-align: center; *//* top: 150%; *//* border-bottom: solid wheat; */margin: 0px;flex-direction: column;}
 
        .conteiner-iconos {
     display: inline-flex;
     flex-direction: column;
     /* margin-left: -1%; */
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
 }
 div.sobre-n{
@@ -182,7 +187,7 @@ h2.sobre-nos{}
     /* margin-bottom: 29px; */
     border-bottom: solid wheat;
     /* width: 79%; */
-    margin: 20px;
+    margin: 10px;
 }
  .sobre-n p {
 
@@ -192,6 +197,16 @@ h2.sobre-nos{}
 
 margin: 0px;
 }
+div.container-copy{
+    /* text-align: center; */
+    /* margin-top: 30px; */
+    position: relative;
+    top: 110px;
+}
+p.text{
+    margin: 0px;
+}
+
 }
 
 
@@ -199,9 +214,9 @@ margin: 0px;
     .footer {
         background: var(--rojo);
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start;
-        flex-direction: row-reverse;
+        min-height: 15vh;
     }
 
     .footer .info-footer {}
@@ -225,8 +240,10 @@ margin: 0px;
     }
 p.text{
     position: relative;
-    right: 130%;
+    /* right: 150%; */
     /* left: -90%; */
+    margin: 0;
+    top: 40px;
 }
     .conteiner-location {
 
@@ -244,6 +261,8 @@ p.text{
     .Redes {
     }
     .conteiner-iconos{
+    /* position: relative; */
+    left: 39%;
     }
     h2.sobre-nos{
 }
@@ -261,8 +280,19 @@ p.text{
 
 .footer .sobre-n {
     display: flex;
-    align-items: center;
+    /* position: relative; */
+    right: 12%;
 }
+div.container-copy{
+    /* position: relative; */
+    /* right: 90%; */
+    /* text-align: center; */
+    /* top: 105px; */
+    /* left: 0px; */
+    /* margin-top: 0px; */
+    height: 0;
+}
+
 
 }
 

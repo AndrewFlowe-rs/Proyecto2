@@ -4,7 +4,7 @@
 <body>
     <%-include("../partials/header")%>
     <main class="main-form-n">
-        <form class="form-new" method="post" action="/admin/crear-producto" enctype="multipart/form-data">
+        <form class="form-new" method="post" action="/admin/crear-producto" enctype="multipart/form-data" id="productForm">
             <div class="new-contentx">
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -13,16 +13,20 @@
             </div>
             <div class="new-title">
                 <input type="text" id="name" name="name" placeholder="Nuevo titulo">
+                <p class="text-danger msg-err" id="nameError"></p>
             </div>
             <div class="new-price">
                 <input type="text" id="price" name="price" placeholder="Nuevo precio">
+                <p class="text-danger msg-err" id="priceError"></p>
             </div>
             <div class="new-description">
                 <input type="text" id="description" name="description" placeholder="Nueva descripcion">
+                <p class="text-danger msg-err" id="descriptionError"></p>
             </div>
             <div class="new-category">
                 <label for="category">Categoria</label>
                 <select name="category" id="category">
+                    <option value="">Seleccione una categoría</option>
                     <option value="Sin TACC">Sin TACC</option>
                     <option value="Empanadas">Empanadas</option>
                     <option value="Fainá">Fainá</option>
@@ -33,19 +37,20 @@
                     <option value="Promo del mes">Combos</option>
                     <option value="Individuales">Individuales</option>
                     <option value="Bebidas">Bebidas</option>
-                  
                 </select>
+                <p class="text-danger msg-err" id="categoryError"></p>
             </div>
-
             <div class="new-image">
-                <label class="label-titulo" for="image">Editar imagen del producto</label>
+                <label class="label-titulo" for="image">Ingresa una imagen</label>
                 <br>
                 <input type="file" id="image" name="image">
+                <p class="text-danger msg-err" id="imageError"></p>
             </div>
             <div class="button">
                 <button type="submit" id="button-N" name="boton-N">Guardar cambios</button>
             </div>
         </form>
+    
         
         
     </main>
@@ -53,6 +58,6 @@
 
     
 <!-- <%-include("../partials/dashboard")%> -->
-
+<script src="../../../js/validations/validationCreateProduct.js"></script> 
 </body>
 </html>

@@ -89,6 +89,7 @@ font-weight: 336px;
 width: 166px;
 
 }
+a.botonok{}
 
     .confirmacion .botonok p {
         font-size: 13px;
@@ -185,11 +186,12 @@ width: 166px;
     .confirmacion .botonok {
         font-family: var(--antiqua);
         border-radius: 35px;
-        padding: 7px 6px;
+        padding: 7px 6px 12px;
         border: none;
         background-color: var(--verde);
         width: 202px;
     }
+    a.botonok{}
 
     .confirmacion .botonok p {}
 
@@ -301,6 +303,7 @@ width: 166px;
         width: 200px;
         margin: 20px;
     }
+    a.botonok{}
 
     .confirmacion .botonok p {}
 

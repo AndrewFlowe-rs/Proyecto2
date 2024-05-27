@@ -80,8 +80,7 @@
         }
         .main-login {
         background-image: url("../design/imgProducts/publicity.jpg");
-        
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
     }
