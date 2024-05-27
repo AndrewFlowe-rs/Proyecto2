@@ -6,7 +6,7 @@
 
 
 
-.main-form-n .form-new {
+.main-form-n.form-new {
     justify-content: center;
     display: flex;
     flex-direction: column;

@@ -14,27 +14,18 @@
 
 
     .main-register .form-register {
-
-        justify-content: center;
-
-        align-items: center;
-
-        flex-direction: column;
-
-        border: solid 5px #364f5d;
-
-        border-radius: 10px;
-
-        /* border-right: inset; */
-
-        background-color: #364f5d;
-
-        margin: 0 auto;
-
-        padding: 13%;
-
-        position: relative;
-    }
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: solid 5px #364f5d;
+border-radius: 10px;
+/* border-right: inset; */
+background-color: #364f5d;
+margin: 0 auto;
+padding: 13%;
+position: relative;
+width: 335%;
+}
 
     .conteiner-t-r {
         /* padding-bottom: 0px; */
