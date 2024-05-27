@@ -129,7 +129,7 @@ p.card-body{
 div.image-delete{
     width: 40%;
 }
-img{border-radius: 80px;margin: 20px;width: 600px;}
+img{border-radius: 80px;/* margin: 20px; *//* width: 600px; */}
 div.container-b{
     /* display: flex; */
 }

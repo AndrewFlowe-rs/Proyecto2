@@ -161,10 +161,10 @@ div.container-copy{
 
        .conteiner-iconos {
     display: inline-flex;
-    flex-direction: column;
     /* margin-left: -1%; */
     /* text-align: center; */
     align-items: center;
+    flex-direction: column;
 }
 div.sobre-n{
     display: flex;
@@ -214,9 +214,9 @@ p.text{
     .footer {
         background: var(--rojo);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        min-height: 15vh;
+        min-height: 27vh;
     }
 
     .footer .info-footer {}
@@ -239,11 +239,12 @@ p.text{
         display: none;
     }
 p.text{
-    position: relative;
+    /* position: relative; */
     /* right: 150%; */
     /* left: -90%; */
     margin: 0;
     top: 40px;
+    margin-top: 10px;
 }
     .conteiner-location {
 
@@ -282,6 +283,7 @@ p.text{
     display: flex;
     /* position: relative; */
     right: 12%;
+    align-items: center;
 }
 div.container-copy{
     /* position: relative; */
