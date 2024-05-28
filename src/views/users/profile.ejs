@@ -29,21 +29,13 @@
         </div>
       </div>
     </form>
-    <button id="backButton">Volver</button>
-    <form action="" method="GET">
-      <button type="submit">Cerrar Sesión</button>
+   
+    <form class="but-form" action="" method="GET">
+      <button class="but-out" type="submit">Cerrar Sesión</button> 
+      <button id="backButton">Volver</button>
     </form>
   </main>
   <%- include('../partials/footer') %>
-  <script>
-    document.getElementById('backButton').addEventListener('click', function() {
-      history.back();
-    });
-  </script>
-  <script>
-    document.getElementById('backButton').addEventListener('click', function() {
-      history.back();
-    });
-  </script>
+  <script src="../../../js/buttonLogout.js"></script> 
 </body>
 </html>

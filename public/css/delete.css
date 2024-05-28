@@ -59,6 +59,7 @@ form{
     width: 100%;
     background-color: #11232d;
     border-radius: 10px;
+    /* height: 0; */
 }
 button.btn.btn-danger{}
 a.btn.btn-dark{
@@ -145,7 +146,7 @@ div.price-delete{
 div.category-delete{
     font-size: 30px;
 }
-form{display: flex;flex-direction: row;align-items: center;}
+form{display: flex;flex-direction: column;}
 button.btn.btn-danger{
     font-size: 28px;
     height: 50px;
