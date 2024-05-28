@@ -24,3 +24,7 @@ input#email.form-control-plaintext{
     margin: 20px;
     width: 200px;
 }
+div.user-img{}
+img.user-im{
+    border-radius: 100px;
+}

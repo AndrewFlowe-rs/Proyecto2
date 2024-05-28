@@ -6,8 +6,9 @@
   <main class="main-profile">
     
     <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
+    <a href="/">Volver</a>
     <form class="form-profile" action="/perfil" method="POST" enctype="multipart/form-data">
-      <div class="user-img"> <img src="/design/users/<%=user.avatar %>" alt="">
+      <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="">
       </div>
       <div class="">
         <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
