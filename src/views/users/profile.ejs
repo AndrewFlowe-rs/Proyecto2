@@ -6,7 +6,7 @@
   <main class="main-profile">
     
     <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
-    <a href="/">Volver</a>
+    
     <form class="form-profile" action="/perfil" method="POST" enctype="multipart/form-data">
       <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="">
       </div>
@@ -29,7 +29,21 @@
         </div>
       </div>
     </form>
+    <button id="backButton">Volver</button>
+    <form action="" method="GET">
+      <button type="submit">Cerrar Sesión</button>
+    </form>
   </main>
   <%- include('../partials/footer') %>
+  <script>
+    document.getElementById('backButton').addEventListener('click', function() {
+      history.back();
+    });
+  </script>
+  <script>
+    document.getElementById('backButton').addEventListener('click', function() {
+      history.back();
+    });
+  </script>
 </body>
 </html>

@@ -26,5 +26,22 @@ input#email.form-control-plaintext{
 }
 div.user-img{}
 img.user-im{
-    border-radius: 100px;
+    border-radius: 312px;
 }
+button {
+    background-color: #f44336; /* Rojo */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  button:hover {
+    background-color: #d32f2f;
+  }
