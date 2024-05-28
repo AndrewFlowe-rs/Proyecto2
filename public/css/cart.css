@@ -3,7 +3,37 @@
     main.main-cart{
     /* padding-bottom: 30px; */
     min-height: 100vh;
+    font-family: var(--comic);
     }
+    button.carousel-control-prev{
+        /* color: red; */
+        background-color: red;
+        width: 16px;
+        height: 33px;
+    }
+        span.carousel-control-prev-icon{
+        color: red;
+    }
+    button.carousel-control-next{
+        /* color: red; */
+        background-color: red;
+        width: 16px;
+        height: 33px;
+    }
+        span.carousel-control-next-icon{
+        color: red;
+    }
+div.carousel-item.active{
+    /* margin: 10px; */
+    /* display: flex; */
+    /* align-content: center; */
+}
+li.list-inline-item{
+    margin-left: 10px;
+}
+
+
+
 
     /* MAIN NAV- */
     main nav.nav-bar {
@@ -57,6 +87,7 @@ justify-content: space-around;
 
 padding-right: 9px;
 
+overflow: hidden;
 }
 
     main nav.nav-bar ul.list-bar li {
@@ -68,6 +99,7 @@ padding-right: 9px;
     li.drinks {
         display: none;
     }
+   
 
 
 
@@ -79,24 +111,23 @@ padding-right: 9px;
 
     main nav.nav-bar ul.list-bar li a {
 
-        font-size: 18px;
+font-size: 18px;
 
-        color: var(--blanco);
+color: var(--blanco);
 
-        /* display: flex; */
+/* display: flex; */
 
-        position: relative;
+/* position: relative; */
 
-        left: -3px;
+/* left: -3px; */
 
-        font-family: var(--inria);
+font-family: var(--inria);
 
+/* font-weight: lighter; */
 
+/* letter-spacing: 3px; */
 
-        /* font-weight: lighter; */
-
-        letter-spacing: 3px;
-    }
+}
     main div.titles-category{display: none;}
     main h2 {
 
@@ -226,23 +257,38 @@ padding-bottom: 10px;
 }
 
     main div.first-div p.description {
-font-size: 12px;
-font-weight: bold;
-font-family: var(--comic);
-display: none;
-}
+
+font-size: 12px;
+
+font-weight: bold;
+
+font-family: var(--comic);
+
+display: none;
+
+}
 
     main div.first-div p.price {
-background-color: var(--registro-bar);
-width: 60px;
-font-size: 14px;
-padding-left: 6px;
-padding-top: 3px;
-padding-bottom: 2px;
-position: relative;
-top: 27px;
-display: none;
-}
+
+background-color: var(--registro-bar);
+
+width: 60px;
+
+font-size: 14px;
+
+padding-left: 6px;
+
+padding-top: 3px;
+
+padding-bottom: 2px;
+
+position: relative;
+
+top: 27px;
+
+display: none;
+
+}
     
 i.fa-solid.fa-cart-shopping{
     position: relative;
@@ -967,8 +1013,37 @@ i.fa-solid.fa-cart-shopping{
     main.main-cart {
         /* background-color: black; */
         min-height: 100vh;
+        font-family: var(--comic);
     }
+    button.carousel-control-prev{
+        /* color: red; */
+        background-color: red;
+        width: 16px;
+    }
+        span.carousel-control-prev-icon{
+        color: red;
+    }
+    button.carousel-control-next{
+        /* color: red; */
+        background-color: red;
+        width: 16px;
+    }
+        span.carousel-control-next-icon{
+        color: red;
+    }
+    div.carousel-item.active{
+        margin: 22px;
+        /* display: flex; */
+        /* align-content: center; */
+        font-size: 20px;
+    }
+    li.list-inline-item{
+        margin-left: 10px;
+    }
+    
 
+
+        
     /* MAIN NAV- */
     main nav.nav-bar {
 
@@ -977,6 +1052,8 @@ display: flex;
 /* width: 178px; */
 
 /* margin-bottom: 10px; */
+
+/* overflow: hidden; */
 }
 a.bottom-cart{
     background-color: #7b0510;
@@ -995,7 +1072,7 @@ display: flex;
 
 padding: 0px;
 
-width: 537px;
+/* width: 537px; */
 
 background-color: var(--frío);
 
@@ -1009,13 +1086,21 @@ border-bottom-left-radius: 0px;
 
 /* margin-top: 8px; */
 
-height: 28px;
+height: 30px;
 
 justify-content: space-around;
 
 /* border-bottom: solid; */
 
 padding-right: 0px;
+
+margin: 0;
+
+padding: 0;
+
+/* overflow: hidden; */
+
+width: 100%;
 }
 
     main nav.nav-bar ul.list-bar li {
@@ -1023,7 +1108,10 @@ padding-right: 0px;
 font-size: -9px;
 
 /* letter-spacing: 91px; */
+
+/* overflow: hidden; */
 }
+
 
     main nav.nav-bar ul.list-bar li.list-none {
 
@@ -1271,17 +1359,23 @@ top: -9px;
 
     main div.first-div p.description {
 
-        font-size: 12px;
+font-size: 12px;
 
-        font-weight: bold;
+font-weight: bold;
 
-        font-family: var(--comic);
+font-family: var(--comic);
 
-        position: relative;
+position: relative;
 
-        top: -8px;
-    }
-main div.container-butoms{}
+top: -8px;
+
+display: none;
+
+}
+main div.container-butoms{
+    display: flex;
+    flex-direction: column;
+}
     main div.first-div p.price {
 
 background-color: var(--registro-bar);
@@ -1298,8 +1392,15 @@ padding-bottom: 1px;
 
 position: relative;
 
-top: -20px;}
-i.fa-solid.fa-cart-shopping{}
+top: -20px;
+
+display: none;
+
+}
+i.fa-solid.fa-cart-shopping{
+    position: relative;
+    bottom: 4px;
+}
 
 
 /* Botón detalle "Ver más" */
@@ -1882,6 +1983,36 @@ i.fa-solid.fa-cart-shopping{}
     /* height: 123vh; */
     min-height: 100vh;
     }
+    button.carousel-control-prev{
+        /* color: red; */
+        background-color: red;
+        width: 16px;
+    }
+        span.carousel-control-prev-icon{
+        color: red;
+    }
+    button.carousel-control-next{
+        /* color: red; */
+        background-color: red;
+        width: 16px;
+    }
+        span.carousel-control-next-icon{
+        color: red;
+    }
+    div.carousel-item.active{
+        margin: 22px;
+        /* display: flex; */
+        /* align-content: center; */
+        font-size: 20px;
+    }
+    li.list-inline-item{
+        margin-left: 10px;
+    }
+    
+
+
+
+
 
     /* MAIN NAV- */
     main nav.nav-bar {
@@ -1889,6 +2020,12 @@ i.fa-solid.fa-cart-shopping{}
 /* display: flex; */
 
 width: 100%;
+
+overflow: hidden;
+
+/* font-family: 'Comic Neue'; */
+
+margin: 10px;
 }
 a.bottom-cart{}
 
@@ -1900,7 +2037,7 @@ list-style: none;
 
 /* padding: 2px; */
 
-width: 952px;
+/* width: 300%; */
 
 background-color: var(--frío);
 
@@ -1914,19 +2051,26 @@ border-bottom-left-radius: 0px;
 
 margin-top: 12px;
 
-height: 36px;
-
-/* justify-content: space-around; */
+height: 62px;
 
 /* border-bottom: solid; */
 
-padding-right: 28px;
+/* padding-right: 28px; */
+
+/* transition: transform 0.5s ease; */
+
+margin: 0;
+
+/* display: flex; */
 }
 
     main nav.nav-bar ul.list-bar li {
 
 font-size: -45px;
 
+float: left;
+
+overflow: hidden;
 }
 
     main nav.nav-bar ul.list-bar li.list-none {
@@ -1942,7 +2086,7 @@ display: inline-block;
 
     main nav.nav-bar ul.list-bar li a {
 
-font-size: 19px;
+font-size: 16px;
 
 color: var(--blanco);
 
@@ -1952,12 +2096,13 @@ color: var(--blanco);
 
 /* left: -3px; */
 
-font-family: var(--inria);
+/* font-family: var(--inria); */
 
 /* font-weight: lighter; */
 
 /* letter-spacing: 3px; */
 
+font-family: 'Comic Neue';
 }
 main div.titles-category{}
 
@@ -2163,23 +2308,38 @@ border-radius: 20px;
 
 
     main div.first-div p.description {
-font-size: 12px;
-font-weight: bold;
-font-family: var(--comic);
-display: none;
-}
+
+font-size: 12px;
+
+font-weight: bold;
+
+font-family: var(--comic);
+
+display: none;
+
+}
 
     main div.first-div p.price {
-background-color: var(--registro-bar);
-width: 60px;
-font-size: 16px;
-/* padding-left: 6px; */
-/* padding-top: 7px; */
-/* padding-bottom: 1px; */
-position: relative;
-top: -6px;
-border-radius: 7px;
-display: none;
+
+background-color: var(--registro-bar);
+
+width: 60px;
+
+font-size: 16px;
+
+/* padding-left: 6px; */
+
+/* padding-top: 7px; */
+
+/* padding-bottom: 1px; */
+
+position: relative;
+
+top: -6px;
+
+border-radius: 7px;
+
+display: none;
 }
 i.fa-solid.fa-cart-shopping{
     position: relative;

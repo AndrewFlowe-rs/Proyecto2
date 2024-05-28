@@ -6,17 +6,15 @@
         background-image: url("../design/imgProducts/publicity.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 13%;
+        padding: 5%;
         min-height: 100vh;
         display: flex;
         align-items: center;
+        flex-direction: column;
     }
     .main-login form{
-        justify-content: center;
-        align-items: center;
         /* border: solid; */
         display: flex;
-        flex-direction: column;
         background-color: var(--gri);
         border-radius: 18px;
         }
@@ -42,18 +40,13 @@
     
     .main-login .conteiner-red{list-style: none;padding: 0px;display: inline-flex;flex-direction: column;}
     .main-login .conteiner-red li{
-      
-    border: 0.5px black solid;
-      
-    display: inline-flex;
-      
-    border-radius: 18px;
-      
-    padding: 2px;
-      
-    margin-bottom: 9px;
-      
-    box-shadow: 1px 1px 1px 1px;
+      border: 0.5px black solid;
+      display: inline-flex;
+      border-radius: 18px;
+      padding: 4px;
+      margin-bottom: 9px;
+      box-shadow: 1px 1px 1px 1px;
+      height: 58px;
     }    
     .main-login .conteiner-red li img{
      
