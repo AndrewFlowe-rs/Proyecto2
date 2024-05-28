@@ -96,3 +96,35 @@ Noté actitudes de resignación por parte de algunos miembros, también de confo
 
 Puedo ser muy específica respecto a esto, pero seré breve: LA FALTA DE EMPATÍA fue lo que más retrasó el proyecto y hay que suprimir tal actitud de inmediato. Al trabajar en grupo es algo fundamental el respeto hacia el compañero. No tengo problemas con ningún miembro de mi grupo, pero no estoy contenta con algunas actitudes que he visto respecto al trabajo.
 
+------------------------------------------------------------------------------------------------------------------
+# Retrospectiva:
+
+- Comenzar a hacer:
+
+Comunicarnos de forma fluída entre todos. Iniciar las retrospectivas al principio del sprint y no al final.
+
+
+
+- Hacer más: 
+
+Tomar la iniciativa en las tareas, motivarnos.
+
+
+
+- Continuar haciendo:
+
+Pedir ayuda a otros miembros del grupo, cuando crea que no se pueda con la tarea asignada, ha funcionado bien.
+
+
+- Hacer menos:
+
+No darle importancia al tablero de trabajo, así nace la desorganización.
+
+
+- Dejar de hacer: 
+
+
+Procrastinación en las actividades.
+
+
+
