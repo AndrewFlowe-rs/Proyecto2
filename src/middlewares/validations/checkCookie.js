@@ -1,7 +1,12 @@
 module.exports = (req, res, next) => {
-    if (req.cookies.userLogin) {    //Esta línea comprueba si existe una cookie llamada userLogin en la solicitud del cliente usando req.cookies
-      req.session.userLogin = req.cookies.userLogin; //Si la cookie userLogin existe, esta línea copia los datos almacenados en la cookie a la sesión del usuario en la aplicación Express.
+    if (req.cookies.userLogin) {  
+      const userLoginData = req.cookies.userLogin; 
+      req.session.userLogin = userLoginData;   
+      const maxAgeInMilliseconds = 7 * 24 * 60 * 60 * 1000;
+      res.cookie('userLogin', userLoginData, {
+        maxAge: maxAgeInMilliseconds,
+        httpOnly: true, 
+      });
     }
-  
     next();
   };

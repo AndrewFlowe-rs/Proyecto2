@@ -14,10 +14,23 @@ const formato = ["image/jpeg", "image/jpg" ,"image/png", "image/webp"]
     }
   })
   
+
+  const storageUser = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './public/design/users')
+    },
+    filename: function (req, file, cb) {
+      const filenameFormat = file.fieldname + '-' + Date.now() + '-' + path.extname(file.originalname)
+      cb(null, filenameFormat)
+    }
+  })
+  
   const upload = multer({ storage })
+  const uploadUser = multer({ storageUser })
 
   module.exports = {
-    upload
+    upload,
+    uploadUser
 }
     
   

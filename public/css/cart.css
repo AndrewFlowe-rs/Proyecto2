@@ -184,7 +184,9 @@ padding-bottom: 10px;
 
     /* PRIMER DIV*/
     div.container-cart-product{}
-    div.first-div.aos-init.aos-animate{}
+    div.first-div.aos-init.aos-animate{
+    height: 200px;
+}
     main div.first-div {
 
         display: flex;
@@ -224,34 +226,23 @@ padding-bottom: 10px;
 }
 
     main div.first-div p.description {
-
-        font-size: 12px;
-
-        font-weight: bold;
-
-        font-family: var(--comic);
-
-
-    }
+font-size: 12px;
+font-weight: bold;
+font-family: var(--comic);
+display: none;
+}
 
     main div.first-div p.price {
-
-        background-color: var(--registro-bar);
-
-        width: 60px;
-
-        font-size: 14px;
-
-        padding-left: 6px;
-
-        padding-top: 3px;
-
-        padding-bottom: 2px;
-
-        position: relative;
-
-        top: 27px;
-    }
+background-color: var(--registro-bar);
+width: 60px;
+font-size: 14px;
+padding-left: 6px;
+padding-top: 3px;
+padding-bottom: 2px;
+position: relative;
+top: 27px;
+display: none;
+}
     
 i.fa-solid.fa-cart-shopping{
     position: relative;
@@ -371,7 +362,7 @@ i.fa-solid.fa-cart-shopping{
         width: 126px;
         border-radius: 22px;
         height: 103px;
-        margin-left: 0px;
+        margin-left: 39px;
     }
 
     main div.contenedor-descrip {}
@@ -2125,6 +2116,8 @@ main div.titles-category{}
     /* PRIMER DIV*/
     div.first-div.aos-init.aos-animate{
     height: 425px;
+    display: flex;
+    flex-direction: column;
 }
 
     main div.first-div {
@@ -2170,37 +2163,28 @@ border-radius: 20px;
 
 
     main div.first-div p.description {
-
-        font-size: 12px;
-
-        font-weight: bold;
-
-        font-family: var(--comic);
-
-
-    }
+font-size: 12px;
+font-weight: bold;
+font-family: var(--comic);
+display: none;
+}
 
     main div.first-div p.price {
-
-background-color: var(--registro-bar);
-
-width: 60px;
-
-font-size: 16px;
-
-/* padding-left: 6px; */
-
-/* padding-top: 7px; */
-
-/* padding-bottom: 1px; */
-
-position: relative;
-
-top: -6px;
-
-border-radius: 7px;
+background-color: var(--registro-bar);
+width: 60px;
+font-size: 16px;
+/* padding-left: 6px; */
+/* padding-top: 7px; */
+/* padding-bottom: 1px; */
+position: relative;
+top: -6px;
+border-radius: 7px;
+display: none;
 }
-i.fa-solid.fa-cart-shopping{}
+i.fa-solid.fa-cart-shopping{
+    position: relative;
+    top: 3px;
+}
 
     /* Botón detalle "Ver más" */
     .btn.btn-danger{
@@ -2303,9 +2287,9 @@ i.fa-solid.fa-cart-shopping{}
     }
 
     main div.contenedor-img img {
-        width: 260px;
+        width: 360px;
         /* border-radius: 22px; */
-        height: 360px;
+        height: 250px;
         /* margin-left: 0px; */
     }
 
@@ -2314,7 +2298,8 @@ i.fa-solid.fa-cart-shopping{}
     /* position: relative; */
     top: 66px;
     /* right: 7px; */
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
 }
 
     main div.third-div p.name-pizza {

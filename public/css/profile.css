@@ -93,6 +93,8 @@ button {
     .main-profile{
     text-align: center;
     font-family: var(--comic);
+    display: flex;
+    align-items: center;
     }
     p.title-profile{
      

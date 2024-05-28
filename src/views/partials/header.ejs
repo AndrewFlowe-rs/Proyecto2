@@ -11,12 +11,14 @@
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/productos">Productos</a></li>
               <% if (!locals.userLogin) {%> 
-                <li><a href="/aut/registro">Registrate</a></li>   
+                <li><a href="/aut/registro">Registrate</a></li>
+                <li><a href="/aut/login">Ingresa</a></li>   
                 <% } else if (locals.userLogin.role==="ADMIN"){ %>
                     <li><a href="/admin">Administrador🍕🎈</a></li>
                    
                     <% } else {%>
                         <li><a href="/admin/crear-producto">Crear producto</a></li>
+                        <li><a href="/perfil">Mi perfil</a></li>
                <% } %>
             </ul>
         </div>
