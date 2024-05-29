@@ -66,4 +66,5 @@ body{
     background-color: var(--background-reg);
     box-sizing: border-box;
     background-color: #dfceb6;
+    font-family: var(--comic);
 }

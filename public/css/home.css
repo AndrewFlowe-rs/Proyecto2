@@ -387,6 +387,7 @@ h1.home{
     flex-direction: row-reverse;
     justify-content: center;
     width: 100%;
+    /* font-family: var(--comic); */
  }
 .bannerhome ul{
     /* margin-bottom: 70px; */
@@ -394,8 +395,9 @@ h1.home{
     background-color: #a60d0d;
     align-items: stretch;
     padding: 10px;
-    width: 20vh;
+    width: 30vh;
     flex-direction: column;
+    /* font-family: var(--comic); */
 }
     .home-carousel {
         width: 75%;
@@ -465,16 +467,15 @@ flex-direction: row-reverse;
 }
 
     .bannerhome ul li a{
-        
-font-size: 32px;
-        
-font-family: var(--corporant);
-        
-display: flex;
-        
-justify-content: center;
-        
-/* color: var(--bs-danger); */
+        font-size: 32px;
+        font-family: var(--corporant);
+        display: flex;
+        justify-content: center;
+        /* color: var(--bs-danger); */
+        font-family: var(--comic);
+        /* width: max-content; */
+        flex-direction: column;
+        align-items: center;
     }
 
     .div-categorias h1{

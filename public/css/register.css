@@ -47,7 +47,9 @@
 
 
 
-    .main-register .form-register div {}
+    .main-register .form-register div {
+    font-family: var(--comic);
+}
 
     .main-register .form-register .form-register div h4 {
         color: #dfceb6;
@@ -177,29 +179,19 @@ min-height: 100vh;
 
 
     .main-register .form-register {
-
-        align-items: center;
-
-        flex-direction: column;
-
-        display: flex;
-
-        border: solid 5px #364f5d;
-
-        border-radius: 10px;
-
-        /* border-right: inset; */
-
-        background-color: #364f5d;
-
-        margin: 0 auto;
-
-        padding: 10px;
-
-        position: relative;
-
-        width: 691.22px;
-    }
+align-items: center;
+flex-direction: column;
+display: flex;
+border: solid 5px #364f5d;
+border-radius: 10px;
+/* border-right: inset; */
+background-color: #364f5d;
+margin: 0 auto;
+padding: 10px;
+position: relative;
+width: 691.22px;
+font-family: var(--comic);
+}
 
     .conteiner-t-r {
         /* padding-bottom: 0px; */

@@ -4,6 +4,7 @@ let campoEmail = document.getElementById("email");
 let password = document.getElementById("password");
 let number = document.getElementById("num");
 let ciudad = document.getElementById("direction");
+let avatar = document.getElementById("image")
 
 window.addEventListener("load", () => {
   nombre.addEventListener("blur", function () {
@@ -122,6 +123,29 @@ window.addEventListener("load", () => {
       errciudad.innerHTML = "";
     });
   });
+  avatar.addEventListener("change", function () {
+    let errImage = document.getElementById("imageError");
+    const file = this.files[0];
+    
+    if (!file) {
+        errImage.innerHTML = "Debes seleccionar una imagen";
+        return;
+    }
+    
+    const allowedTypes = ["image/jpeg", "image/png", "image/jpg", "image/webp"];
+    if (!allowedTypes.includes(file.type)) {
+        errImage.innerHTML = "Solo se permiten archivos: JPG, PNG, WEBP y JPEG";
+        return;
+    }
+    
+    const maxSize = 5 * 1024 * 1024; 
+    if (file.size > maxSize) {
+        errImage.innerHTML = "La imagen es demasiado grande. El tamaño máximo es de 5MB";
+        return;
+    }
+    
+    errImage.innerHTML = null;
+});
 
   //formulario
   form.addEventListener("submit", function (event) {

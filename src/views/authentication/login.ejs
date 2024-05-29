@@ -16,16 +16,16 @@
 
                                 <!--LOGIN-->
 
-                                <form action="/aut/login" method="post">
+                                <form class="form-login" action="/aut/login" method="post">
 
-                                        <input type="email" id="login" placeholder="Email" name="email"
+                                        <input type="email" id="login" placeholder="Email" name="email" class="is-invalid"
                                                 value="<%= locals.email? email : "" %>">
                                                 <p class="text-danger error-alert">
                                                         <%= locals.errors?.email?.msg%>
                                                 </p>
                                                 <p class="text-danger alert-email"></p>
 
-                                                <input type="password" id="passwordL" placeholder="contraseña" name="password" value="">
+                                                <input type="password" id="passwordL" placeholder="contraseña" name="password" class="is-valid" value="">
 
                                                 <p class="text-danger error-password">
                                                         <%= locals.errors?.password?.msg%>

@@ -40,13 +40,20 @@
     
     .main-login .conteiner-red{list-style: none;padding: 0px;display: inline-flex;flex-direction: column;}
     .main-login .conteiner-red li{
-      border: 0.5px black solid;
-      display: inline-flex;
-      border-radius: 18px;
-      padding: 4px;
-      margin-bottom: 9px;
-      box-shadow: 1px 1px 1px 1px;
-      height: 58px;
+      
+border: 0.5px black solid;
+      
+display: inline-flex;
+      
+border-radius: 18px;
+      
+padding: 4px;
+      
+margin-bottom: 9px;
+      
+box-shadow: 1px 1px 1px 1px;
+      
+height: 58px;
     }    
     .main-login .conteiner-red li img{
      
@@ -66,7 +73,15 @@
     }
     .conteiner-red .whats-login{
         background-color: var(--gri);
-    }}
+    }
+    .is-valid {
+        border-color: green;
+      }
+      
+      .is-invalid {
+        border-color: red;
+      }
+      }
     
     
         /*TABLET*/
@@ -93,6 +108,7 @@
         width: 470px;
         margin-left: 26px;
         margin: 0;
+        font-family: var(--comic);
         }
         .main-login form input{
         border: solid;
@@ -147,7 +163,15 @@
     }
     .conteiner-red .whats-login{
         background-color: var(--gri);
-    }}
+    }
+    .is-valid {
+        border-color: green;
+      }
+      
+      .is-invalid {
+        border-color: red;
+      }
+      }
 
     @media  (min-width: 768px){
 
@@ -158,8 +182,10 @@
         
     }
     .main-login form{
-      margin-left: 70%;
-      }
+      
+margin-left: 70%;
+      
+}
         .main-login form input{
         }
     .main-login form button {
@@ -190,4 +216,12 @@
     }
     .conteiner-red .whats-login{
     }
+    .is-valid {
+        border-color: green;
+      }
+      
+      .is-invalid {
+        border-color: red;
+      }
+      
     }
