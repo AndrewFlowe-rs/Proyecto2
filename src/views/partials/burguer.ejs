@@ -1,0 +1,21 @@
+
+<div class="hamburger" id="hamburger"onclick="toggleMenu()" >
+    &#9776;
+</div>
+<nav class="nav-menu" id="nav-menu">
+    <ul>
+        <li><a href="/">Inicio<i class="fa-solid fa-house-chimney"></i></a></li>
+        <% if (!locals.userLogin) {%> 
+        <li><a href="/productos">Productos<i class="fa-solid fa-pizza-slice"></i></a></li>
+        <li><a href="/aut/registro">Registrate<i class="fa-regular fa-address-card"></i></a></li>
+        <li><a href="/aut/login">Ingresa<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+        <% } else if (locals.userLogin.role==="ADMIN"){ %>
+            <li><a href="/admin">Administrador</a></li>
+            <% } else {%>
+                <li><a href="/admin/crear-producto">Crear producto<i class="fa-regular fa-square-plus"></i></a></li>
+                <li><a href="/perfil">Mi perfil<i class="fa-regular fa-user"></i></a></li>
+       <% } %>
+    </ul>
+</nav>
+</header>fff
+<script src="../../../js/burguer.js"></script> 
