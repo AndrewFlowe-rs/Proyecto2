@@ -4,6 +4,8 @@
 <body>
 
     <%-include("../partials/header")%>
+    <%- include('../partials/burguer') %>
+
     <main class="main-forme">
 
         <form class="form-edit" method="POST" action="/admin/edit/<%= p.id %>?_method=PUT" enctype="multipart/form-data" id="editProductForm">

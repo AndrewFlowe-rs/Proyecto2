@@ -59,6 +59,8 @@ i.fa-solid.fa-cart-shopping:hover {
 .headerPrincipal nav.opcionPrincipal {
     display: none;
 }
+div.div{}
+
 
 
 /*Tablet*/
@@ -122,6 +124,7 @@ i.fa-solid.fa-cart-shopping:hover {
     .headerPrincipal .opcionPrincipal .opcion1 {
         padding: 9px;
     }
+    div.div{}
 
 }
 
@@ -182,6 +185,9 @@ i.fa-solid.fa-cart-shopping:hover {
        font-size: 23px;
        color: var(--bs-form-valid-border-color);
    }
+   div.div{
+    margin-left: 9%;
+}
 
 
 }
