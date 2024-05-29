@@ -92,6 +92,7 @@
         display: flex;
         width: 470px;
         margin-left: 26px;
+        margin: 0;
         }
         .main-login form input{
         border: solid;

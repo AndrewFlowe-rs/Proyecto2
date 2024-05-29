@@ -57,7 +57,7 @@ form{
     height: 200;
     flex-direction: column;
     width: 100%;
-    background-color: #11232d;
+    /* background-color: #11232d; */
     border-radius: 10px;
     /* height: 0; */
 }
@@ -101,7 +101,9 @@ div.price-delete{
     margin: 20px;
 }
 div.category-delete{}
-form{}
+form{
+    margin: 10px;
+}
 button.btn.btn-danger{
     width: 100px;
 }

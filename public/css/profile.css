@@ -9,7 +9,7 @@ p.title-profile{
     font-family: var(--comic);
 }
 form.form-profile{
-    background-color: #364f5e;
+    background-color: #89a798;
     /* padding: 200px; */
 }
 input#name.form-control-plaintext{
@@ -53,21 +53,28 @@ button {
 
   @media(min-width: 361px){
     .main-profile{
+    display: flex;
+    align-items: center;
     }
     p.title-profile{
      
     }
     form.form-profile{
-    
+    /* display: flex; */
+    text-align: center;
+    min-height: 55vh;
     }
     input#name.form-control-plaintext{
-      
+      text-align: center;
+      width: 300px;
     }
     input#email.form-control-plaintext{
-      
+      text-align: center;
+      width: 300px;
     }
     div.user-img{}
     img.user-im{
+    width: 200px;
     }
     .but-form{
     /* width: 160px; */
