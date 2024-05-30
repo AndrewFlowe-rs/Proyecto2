@@ -1,16 +1,11 @@
 @media (max-width: 360px) {
     .main-register {
-
-        display: flex;
-
-        padding: 39%;
-
-        justify-content: center;
-
-        align-items: center;
-
-        background-color: #dfceb6;
-    }
+display: flex;
+padding: 4%;
+justify-content: center;
+align-items: center;
+background-color: #dfceb6;
+}
 
 
     .main-register .form-register {
@@ -24,7 +19,9 @@
 margin: 0 auto;
 padding: 13%;
 position: relative;
-width: 335%;
+/* width: 335%; */
+height: auto;
+width: max-content;
 }
 
     .conteiner-t-r {
@@ -162,19 +159,12 @@ width: 199px;
 
 @media (min-width: 361px) {
     .main-register {
-
-display: flex;
-
-padding: 5%;
-
-justify-content: center;
-
-align-items: center;
-
-background-color: #dfceb6;
-
-min-height: 100vh;
-
+display: flex;
+padding: 2% 5% 5% 5%;
+justify-content: center;
+align-items: flex-start;
+background-color: #dfceb6;
+min-height: 100vh;
 }
 
 
@@ -189,8 +179,9 @@ min-height: 100vh;
 margin: 0 auto;
 padding: 10px;
 position: relative;
-width: 691.22px;
+width: max-content;
 font-family: var(--comic);
+height: auto;
 }
 
     .conteiner-t-r {
@@ -218,18 +209,12 @@ min-height: 100vh;
     }
 
     .main-register .form-register div {
-
-margin: 10px;
-
-padding-bottom: 13px;
-
-display: flex;
-
-flex-wrap: wrap;
-
-justify-content: space-evenly;
-
-flex-direction: column;
+margin: 10px;
+padding-bottom: 13px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+flex-direction: column;
 }
     .main-register .conteiner-form .archivos {
 
@@ -265,14 +250,11 @@ margin-left: 52px;
 
 
     .main-register .form-register input {
-
-border-radius: 10px;
-
-border: none;
-
-padding: 10px;
-
-/* display: flex; */
+border-radius: 10px;
+border: none;
+padding: 10px;
+/* display: flex; */
+width: 100%;
 }
 input#avatar{
     /* display: flex; */

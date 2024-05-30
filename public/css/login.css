@@ -182,9 +182,8 @@ height: 58px;
         
     }
     .main-login form{
-      
-margin-left: 70%;
-      
+      margin-left: 70%;
+      height: 50%;
 }
         .main-login form input{
         }
