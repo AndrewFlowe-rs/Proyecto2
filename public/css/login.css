@@ -76,6 +76,7 @@ height: 58px;
     }
     .is-valid {
         border-color: green;
+        width: 100%;
       }
       
       .is-invalid {
