@@ -25,14 +25,16 @@
         </div>
       </div>
       <div class="">
-        <label for="email" class="col-sm-2 col-form-label">Número:</label>
+        <label for="number" class="col-sm-2 col-form-label">Número:</label>
         <div class="col-sm-10">
-          <input type="text" readonly class="form-control-plaintext" id="email" value="<%= user.number %>">
+          <input type="text" readonly class="form-control-plaintext" id="number" value="<%= user.number %>">
         </div>
       </div>
+      <button class="but-out">Cerrar Sesión</button> 
+      <button class="but-edit">Editar</button> 
     </form>
     
-      <button class="but-out">Cerrar Sesión</button> 
+      
       
   </main>
   <%- include('../partials/footer') %>

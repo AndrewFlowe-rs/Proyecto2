@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (logoutButton) {
     logoutButton.addEventListener('click', function() {
-      fetch('perfil/cerrar', {
+      fetch('/perfil/cerrar', {
         method: 'GET',
         credentials: 'include' 
       }).then(response => {

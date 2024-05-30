@@ -398,6 +398,7 @@ h1.home{
     width: 30vh;
     flex-direction: column;
     /* font-family: var(--comic); */
+    opacity: 0.8;
 }
     .home-carousel {
         width: 75%;

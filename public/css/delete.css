@@ -53,13 +53,14 @@ div.category-delete{
 }
 form{
     display: flex;
-    align-items: center;
     height: 200;
     flex-direction: column;
-    width: 100%;
+    width: 22vh;
     background-color: #364f5e;
     border-radius: 10px;
-    /* height: 0; */
+    height: 45vh;
+    opacity: 0.8;
+    align-items: center;
 }
 button.btn.btn-danger{}
 a.btn.btn-dark{

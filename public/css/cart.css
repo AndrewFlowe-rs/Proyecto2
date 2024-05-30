@@ -306,6 +306,7 @@ i.fa-solid.fa-cart-shopping{
     font-family: var(--comic);
     padding: 0px;
     width: 100px;
+    opacity: .5;
 }
 
     /* SEGUNDO DIV */
@@ -1419,6 +1420,7 @@ i.fa-solid.fa-cart-shopping{
     padding-right: 3px;
     left: 146px;
     padding-bottom: -48px;
+    opacity: .5;
 }
     /* SEGUNDO DIV */
 

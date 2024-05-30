@@ -10,8 +10,9 @@ p.title-profile{
     font-family: var(--comic);
 }
 form.form-profile{
-    background-color: #89a798;
+    background-color: #364f5e;
     /* padding: 200px; */
+    height: 49vh;
 }
 input#name.form-control-plaintext{
     background-color: white;
@@ -25,6 +26,13 @@ input#email.form-control-plaintext{
     margin: 20px;
     width: 200px;
 }
+input#number.form-control-plaintext{
+  background-color: white;
+  border-radius: 12px;
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+}
 div.user-img{}
 img.user-im{
     
@@ -32,12 +40,14 @@ img.user-im{
 }
 .but-form{}
 
-.but-out{}
+.but-out{
+    display: none;
+}
 button {
-    background-color: #0d6efd; /* Rojo */
+    background-color: #dc354594; /* Rojo */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -64,6 +74,7 @@ button {
     /* display: flex; */
     text-align: center;
     min-height: 55vh;
+    width: 80%;
     }
     input#name.form-control-plaintext{
       text-align: center;
@@ -73,6 +84,12 @@ button {
       text-align: center;
       width: 300px;
     }
+    input#number.form-control-plaintext{
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+      width: 300px;
+  }
     div.user-img{}
     img.user-im{
     width: 200px;
@@ -87,6 +104,7 @@ button {
 }
     .but-out{
     width: 160px;
+    display: none;
 }
 
     button {
@@ -108,7 +126,7 @@ button {
      
     }
     form.form-profile{
-    border-radius: 300px;
+    /* border-radius: 300px; */
     width: 50%;
     align-content: center;
     align-self: center;
@@ -121,6 +139,12 @@ button {
       text-align: center;
       width: 300px;
     }
+    input#number.form-control-plaintext{
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+      width: 300px;
+  }
     div.user-img{}
     img.user-im{
     width: 200px;
@@ -135,6 +159,7 @@ button {
 }
     .but-out{
     width: 160px;
+    display: flex;
 }
 
     button {

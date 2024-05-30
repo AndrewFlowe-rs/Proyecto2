@@ -1,13 +1,17 @@
 @media screen and (max-width: 360px) {
     
 
-    .main-product {}
+    .main-product {
+    min-height: 100vh;
+    /* font-family: var(--comic); */
+}
 
     .main-product .article {}
 
     .main-product .article .articulo-producto {
         text-align: center;
         background-color: var(--colorproducto);
+        /* font-family: var(--comic); */
     }
 
     .main-product .article .articulo-producto img {
@@ -16,37 +20,41 @@
     }
 
     .main-product .article .articulo-producto h3 {
-        font-family: var(--ingrid);
+        font-family: var(--comic);
         font-size: 41px;
     }
 
     .main-product .article .articulo-producto .ingredientes {
-        font-family: var(--antiqua);
+        /* font-family: var(--antiqua); */
         color: var(--negro);
-        font-size: 9px;
+        font-size: 15px;
         margin: 6px;
+        font-family: var(--comic);
     }
 
     .main-product .article .articulo-producto .subtotal {
         font-size: 31px;
-        font-family: var(--antiqua);
+        /* font-family: var(--antiqua); */
+        font-family: var(--comic);
     }
 
 
     .main-product .article .articulo-producto .total {
         color: var(--azul);
         font-size: 33px;
-        font-family: var(--antiqua);
+        /* font-family: var(--antiqua); */
+        font-family: var(--cajaproduct);
     }
 
 
     .confirmacion {
         display: flex;
-        justify-content: space-around;
+        align-items: stretch;
+        /* font-family: var(--comic); */
     }
 
     .confirmacion .botonno {
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         border-radius: 35px;
         padding: 4px 5px;
         border: none;
@@ -71,25 +79,18 @@ a.cart-b{
 
 
     .confirmacion .botonok {
-
-font-family: var(--antiqua);
-
-margin: 0 0px 5px 85px;
-
-border-radius: 35px;
-
-padding: 7px 6px;
-
-border: none;
-
-background-color: var(--verde);
-
-font-weight: 336px;
-
-width: 166px;
-
+font-family: var(--comic);
+margin: 0 0px 5px 85px;
+border-radius: 35px;
+padding: 7px 6px;
+border: none;
+background-color: var(--verde);
+font-weight: 336px;
+width: 166px;
 }
-a.botonok{}
+a.botonok{
+    /* font-family: var(--comic); */
+}
 
     .confirmacion .botonok p {
         font-size: 13px;
@@ -121,7 +122,7 @@ a.botonok{}
         /* border-radius: 103px; */
         /* margin: 26px 0px 5px 117px; */
         position: relative;
-        left: 110px;
+        left: 60px;
         height: -17%;
     }
 
@@ -131,12 +132,14 @@ a.botonok{}
         text-align: center;
     }
 
-    .main-product .article .articulo-producto h3 {}
+    .main-product .article .articulo-producto h3 {
+    font-family: var(--comic);
+}
 
     .main-product .article .articulo-producto .ingredientes {
         text-align: center;
-        font-family: var(--antiqua);
-        font-size: 10px;
+        font-family: var(--comic);
+        font-size: 20px;
     }
 
     .main-product .article .articulo-producto hr {
@@ -148,7 +151,7 @@ a.botonok{}
     }
 
     .main-product .article .articulo-producto .total {
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         font-size: 40px;
         text-align: center;
         color: var(--azul);
@@ -165,12 +168,14 @@ a.botonok{}
     .confirmacion {
         display: flex;
         justify-content: space-around;
+        text-align: center;
+        align-items: center;
     }
 
     .confirmacion .botonno {
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         border-radius: 35px;
-        padding: 7px 6px;
+        padding: 15px 6px;
         border: none;
         background-color: var(--rojo);
         width: 202px;
@@ -184,12 +189,13 @@ a.botonok{}
     }
 
     .confirmacion .botonok {
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         border-radius: 35px;
-        padding: 7px 6px 12px;
+        padding: 13px 1px 1px;
         border: none;
         background-color: var(--verde);
         width: 202px;
+        height: 52px;
     }
     a.botonok{}
 
@@ -226,6 +232,7 @@ a.botonok{}
         flex-direction: column;
         align-items: center;
         /* background-size: contain; */
+        opacity: 0.8;
     }
 
     .main-product .article .articulo-producto img {
@@ -235,7 +242,7 @@ a.botonok{}
         /* position: relative; */
         left: -4px;
         padding: 20px;
-        /* height: 70%; */
+        height: 20%;
     }
 
     .main-product .article .articulo-producto h3 {
@@ -244,11 +251,14 @@ a.botonok{}
         text-align: center;
     }
 
-    .main-product .article .articulo-producto h3 {}
+    .main-product .article .articulo-producto h3 {
+    font-family: var(--colorproducto);
+    font-size: 65px;
+}
 
     .main-product .article .articulo-producto .ingredientes {
         text-align: center;
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         font-size: 25px;
     }
 
@@ -261,7 +271,7 @@ a.botonok{}
     }
 
     .main-product .article .articulo-producto .total {
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         font-size: 40px;
         text-align: center;
         color: var(--azul);
@@ -278,13 +288,14 @@ a.botonok{}
     }
 
     .confirmacion .botonno {
-        font-family: var(--antiqua);
+        /* font-family: var(--antiqua); */
         border-radius: 35px;
-        padding: 7px 6px;
+        padding: 14px 6px;
         border: none;
         background-color: var(--rojo);
         width: 200px;
         margin: 20px;
+        font-family: var(--colorproducto);
     }
 
 
@@ -295,7 +306,7 @@ a.botonok{}
     }
 
     .confirmacion .botonok {
-        font-family: var(--antiqua);
+        font-family: var(--comic);
         border-radius: 35px;
         padding: 15px 8px;
         border: none;
