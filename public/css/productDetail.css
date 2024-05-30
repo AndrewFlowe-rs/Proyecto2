@@ -108,6 +108,12 @@ a.botonok{
     .main-product {
         /* height: 659px; */
         min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        padding: 10%;
     }
 
 
@@ -115,15 +121,17 @@ a.botonok{
 
     .main-product .article .articulo-producto {
         background-color: var(--colorproducto);
+        width: min-content;
     }
 
     .main-product .article .articulo-producto img {
-        width: 70%;
+        width: 100%;
         /* border-radius: 103px; */
         /* margin: 26px 0px 5px 117px; */
-        position: relative;
+        /* position: relative; */
         left: 60px;
         height: -17%;
+        margin: 0;
     }
 
     .main-product .article .articulo-producto h3 {
