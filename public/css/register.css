@@ -14,31 +14,44 @@ background-color: #dfceb6;
 }
 
 
-    .main-register .form-register {
-justify-content: center;
-align-items: center;
-flex-direction: column;
-border: solid 5px #364f5d;
-border-radius: 10px;
-/* border-right: inset; */
-background-color: #364f5d;
-margin: 0 auto;
-padding: 0%;
-/* position: absolute; */
-/* width: 335%; */
-height: auto;
-width: max-content;
+.main-register .form-register {
+
+justify-content: center;
+
+align-items: center;
+
+flex-direction: column;
+
+border: solid 5px #364f5d;
+
+border-radius: 10px;
+
+/* border-right: inset; */
+
+background-color: #364f5d;
+
+margin: 0 auto;
+
+padding: 0%;
+
+/* position: absolute; */
+
+/* width: 335%; */
+
+height: auto;
+
+width: max-content;
 }
 
-    .conteiner-t-r {
+.conteiner-t-r {
         /* padding-bottom: 0px; */
     }
 
-    .conteiner-t-r h4 {
+.conteiner-t-r h4 {
         color: white;
     }
 
-    .main-register .form-register div {
+.main-register .form-register div {
 
         margin: 10px;
 
@@ -50,11 +63,11 @@ background-color: #dfceb6;
 
 
 
-    .main-register .form-register div {
+.main-register .form-register div {
     /* font-family: var(--comic); */
 }
 
-    .main-register .form-register .form-register div h4 {
+.main-register .form-register .form-register div h4 {
         color: #dfceb6;
 
     }
@@ -62,16 +75,16 @@ select#state{
     width: 100%;
 }
 
-    .error-msg {
+.error-msg {
         display: none;
         color: red;
     }
     
-    .error-msg.visible {
+.error-msg.visible {
         display: block;
     }
     
-    .main-register .form-register label {
+.main-register .form-register label {
 
         display: inline-block;
     }
@@ -80,14 +93,18 @@ select#state{
 
 
 
-    .main-register .form-register input {
-border-radius: 10px;
-border: none;
-padding: 10px;
-width: 100%;
+.main-register .form-register input {
+
+border-radius: 10px;
+
+border: none;
+
+padding: 10px;
+
+width: 100%;
 }
 input#avatar{}
-    .main-register .conteiner-form .archivos {
+.main-register .conteiner-form .archivos {
 
 width: 199px;
 
@@ -95,43 +112,43 @@ width: 199px;
 
 }
 
-    .form-register .conteiner-x {
+.form-register .conteiner-x {
         right: 7px;
         display: inline-block;
         position: absolute;
         top: 0px;
     }
 
-    .form-register .conteiner-x i {
+.form-register .conteiner-x i {
         color: black;
         position: relative;
         top: 99px;
         left: -4px;
     }
 
-    .main-register .form-register .conteiner-p-f {
+.main-register .form-register .conteiner-p-f {
 
         /* display: inline-flex; */
 
         flex-direction: column;
     }
 
-    .form-register .conteiner-p-f label {
+.form-register .conteiner-p-f label {
 
         /* display: inline; */
     }
 
-    .form-register .conteiner-p-f input {
+.form-register .conteiner-p-f input {
 
         /* display: inline-block; */
     }
 
-    .container-butons {
+.container-butons {
         display: flex;
         flex-direction: column;
     }
 
-    .container-butons button {
+.container-butons button {
         background-color: var(--verde);
         border-radius: 35px;
         /* border: dashed; */
@@ -141,7 +158,7 @@ width: 199px;
 
     }
 
-    .main-register .c-register {
+.main-register .c-register {
         display: flex;
     }.error-msg {
         display: none;
