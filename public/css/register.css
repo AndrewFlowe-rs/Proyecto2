@@ -1,11 +1,17 @@
 @media (max-width: 360px) {
     .main-register {
-display: flex;
-padding: 4%;
-justify-content: center;
-align-items: center;
-background-color: #dfceb6;
-}
+
+display: flex;
+
+padding: 4%;
+
+justify-content: center;
+
+align-items: center;
+
+background-color: #dfceb6;
+
+}
 
 
     .main-register .form-register {
@@ -17,12 +23,12 @@
 /* border-right: inset; */
 background-color: #364f5d;
 margin: 0 auto;
-padding: 13%;
-position: relative;
+padding: 0%;
+/* position: absolute; */
 /* width: 335%; */
 height: auto;
 width: max-content;
-}
+}
 
     .conteiner-t-r {
         /* padding-bottom: 0px; */
@@ -45,14 +51,16 @@
 
 
     .main-register .form-register div {
-    font-family: var(--comic);
+    /* font-family: var(--comic); */
 }
 
     .main-register .form-register .form-register div h4 {
         color: #dfceb6;
 
     }
-
+select#state{
+    width: 100%;
+}
 
     .error-msg {
         display: none;
@@ -73,15 +81,10 @@
 
 
     .main-register .form-register input {
-
-border-radius: 10px;
-
-border: none;
-
-padding: 10px;
-
-width: 168px;
-
+border-radius: 10px;
+border: none;
+padding: 10px;
+width: 100%;
 }
 input#avatar{}
     .main-register .conteiner-form .archivos {
@@ -101,6 +104,9 @@ width: 199px;
 
     .form-register .conteiner-x i {
         color: black;
+        position: relative;
+        top: 99px;
+        left: -4px;
     }
 
     .main-register .form-register .conteiner-p-f {
@@ -159,30 +165,50 @@ width: 199px;
 
 @media (min-width: 361px) {
     .main-register {
-display: flex;
-padding: 2% 5% 5% 5%;
-justify-content: center;
-align-items: flex-start;
-background-color: #dfceb6;
-min-height: 100vh;
+
+display: flex;
+
+padding: 2% 5% 5% 5%;
+
+justify-content: center;
+
+align-items: flex-start;
+
+background-color: #dfceb6;
+
+min-height: 100vh;
 }
 
 
     .main-register .form-register {
-align-items: center;
-flex-direction: column;
-display: flex;
-border: solid 5px #364f5d;
-border-radius: 10px;
-/* border-right: inset; */
-background-color: #364f5d;
-margin: 0 auto;
-padding: 10px;
-position: relative;
-width: max-content;
-font-family: var(--comic);
-height: auto;
-}
+
+align-items: center;
+
+flex-direction: column;
+
+display: flex;
+
+border: solid 5px #364f5d;
+
+border-radius: 10px;
+
+/* border-right: inset; */
+
+background-color: #364f5d;
+
+margin: 0 auto;
+
+padding: 10px;
+
+position: relative;
+
+width: max-content;
+
+font-family: var(--comic);
+
+height: auto;
+
+}
 
     .conteiner-t-r {
         /* padding-bottom: 0px; */
@@ -209,12 +235,18 @@ width: 199px;
     }
 
     .main-register .form-register div {
-margin: 10px;
-padding-bottom: 13px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-flex-direction: column;
+
+margin: 10px;
+
+padding-bottom: 13px;
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-evenly;
+
+flex-direction: column;
 }
     .main-register .conteiner-form .archivos {
 
@@ -250,11 +282,16 @@ margin-left: 52px;
 
 
     .main-register .form-register input {
-border-radius: 10px;
-border: none;
-padding: 10px;
-/* display: flex; */
-width: 100%;
+
+border-radius: 10px;
+
+border: none;
+
+padding: 10px;
+
+/* display: flex; */
+
+width: 100%;
 }
 input#avatar{
     /* display: flex; */
