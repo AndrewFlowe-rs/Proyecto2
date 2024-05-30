@@ -230,19 +230,21 @@ a.botonok{
         /* height: 98vh; */
         display: flex;
         flex-direction: column;
-        align-items: center;
         /* background-size: contain; */
         opacity: 0.8;
+        padding: 0% 10% 10%;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-product .article .articulo-producto img {
-        width: 50%;
+        width: max-content;
         border-radius: 103px;
         margin: 25px 0px 5px 0px;
         /* position: relative; */
         left: -4px;
         padding: 20px;
-        height: 20%;
+        height: 40vh;
     }
 
     .main-product .article .articulo-producto h3 {
