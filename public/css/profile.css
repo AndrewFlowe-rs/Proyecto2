@@ -12,7 +12,7 @@ p.title-profile{
 form.form-profile{
     background-color: #364f5e;
     /* padding: 200px; */
-    height: 49vh;
+    height: max-content;
 }
 input#name.form-control-plaintext{
     background-color: white;
@@ -25,6 +25,20 @@ input#email.form-control-plaintext{
     border-radius: 12px;
     margin: 20px;
     width: 200px;
+}
+input#state.form-control-plaintext{
+  background-color: white;
+  border-radius: 12px;
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+}
+input#city.form-control-plaintext{
+  background-color: white;
+  border-radius: 12px;
+  margin: 20px;
+  width: 200px;
+  text-align: center;
 }
 input#number.form-control-plaintext{
   background-color: white;
@@ -84,6 +98,20 @@ button {
       text-align: center;
       width: 300px;
     }
+    input#state.form-control-plaintext{
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    input#city.form-control-plaintext{
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+      width: 300px;
+      text-align: center;
+    }
     input#number.form-control-plaintext{
       background-color: white;
       border-radius: 12px;
@@ -134,11 +162,25 @@ button {
     }
     input#name.form-control-plaintext{
       text-align: center;
-      width: %;
+      width:300px;
     }
     input#email.form-control-plaintext{
       text-align: center;
       width: 300px;
+    }
+    input#state.form-control-plaintext{
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    input#city.form-control-plaintext{
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+      width: 300px;
+      text-align: center;
     }
     input#number.form-control-plaintext{
       background-color: white;

@@ -9,7 +9,7 @@ module.exports = (req, res) => {
 
   if (errors.isEmpty()) {
     const imageAvatar = req.file
-    const { name, email, password, number,role, name_role} = req.body;
+    const { name, email, password, number,role, name_role, state} = req.body;
     db.User.create({
       name: name?.trim(),
       email: email?.trim().toLowerCase(),
@@ -17,7 +17,8 @@ module.exports = (req, res) => {
       avatar: imageAvatar ? imageAvatar.filename : "avatarDefault.webp",
       roleId: +role,
       name_role: name_role ? name_role.trim() : 'Regular', 
-      number: number ? number : ''
+      number: number ? number : '',
+      state: state?.trim(),
     })
     .then(() => res.redirect('/'))
     .catch(error => {

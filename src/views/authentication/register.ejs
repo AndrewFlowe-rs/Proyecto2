@@ -65,14 +65,20 @@
                         </div>
 
                     </div>
-                     <!-- Campo ciudad -->
+                     <!-- Campo provincia -->
                     <div>
-                        <input type="text" placeholder="ciudad" id="direction" name="city" value="<%= locals.old && locals.old.city ? locals.old.city : '' %>">
-                        <p class=" text-danger err-c"></p>
-                            <div class="error-msg <%=locals.errors && locals.errors.city ? 'visible' : 'hidden' %>">
-                                <%= locals.errors?.city?.msg %>
+                        <label for="state">Selecciona tu provincia</label>
+                        <select name="state" id="state">
+                            <% provinces.forEach(province => { %>
+                           <option> <%= province.nombre %></option>
+                            <% }) %>
+                        </select>
+                         <p class=" text-danger err-c"></p>
+                       <div class="error-msg <%=locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
+                                <%= locals.errors?.state?.msg %>
                       </div>
                     </div>
+                    <!-- Campo imagen -->
                     <div class="new-image">
                         <label class="label-titulo" for="image">Ingresa una imagen</label>
                         <br>

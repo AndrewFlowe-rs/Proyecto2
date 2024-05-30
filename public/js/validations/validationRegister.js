@@ -4,7 +4,8 @@ let campoEmail = document.getElementById("email");
 let password = document.getElementById("password");
 let number = document.getElementById("num");
 let ciudad = document.getElementById("direction");
-let avatar = document.getElementById("image")
+let avatar = document.getElementById("image");
+let state = document.getElementById("state");
 
 window.addEventListener("load", () => {
   nombre.addEventListener("blur", function () {
@@ -101,26 +102,23 @@ window.addEventListener("load", () => {
     });
 
   });
-
-  ciudad.addEventListener("blur", function () {
-    let value = this.value.trim;
-    let existerr = true;
-    let errciudad = document.querySelector(".err-c");
-    switch (existerr) { 
-      case value.length === 0:
-        errciudad.innerHTML = "La ciudad es requerida";
-        break;
-        case value.length < 5 || value.length > 10:
-          errciudad.innerHTML = "El texto debe tener entre 5 y 10 caracteres";
-          break;
-      default:
-        errciudad.innerHTML = null;
-        existerr = false;
-        break;
+  state.addEventListener("blur", function () {
+    let errState = document.querySelector(".err-c");
+    if (this.value === "") {
+      errState.innerHTML = "Debes seleccionar una provincia";
+      this.classList.add("is-invalid");
+      existerr = true;
+    } else {
+      errState.innerHTML = "";
+      this.classList.remove("is-invalid");
+      this.classList.add("is-valid");
+      existerr = false;
     }
 
-    ciudad.addEventListener("focus", function () {
-      errciudad.innerHTML = "";
+    this.addEventListener("focus", function () {
+      errState.innerHTML = "";
+      this.classList.remove("is-invalid");
+      this.classList.remove("is-valid");
     });
   });
   avatar.addEventListener("change", function () {

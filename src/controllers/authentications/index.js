@@ -3,5 +3,6 @@ module.exports = {
     register: require('./register.controller'),
     loginProcess: require('./loginProcess.controller'),
     processRegister : require ('./processRegister.controller'),
-    logout: require('./logout.controller')
+    logout: require('./logout.controller'),
+    province: require('./province.controller')
 }
