@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #dfceb6;
 }
 
 
@@ -147,7 +148,8 @@ margin-left: 98%;
         /* flex-wrap: wrap; */
         box-shadow: 0px 0px 8px black;
         opacity: 0.8;
-        width: 80%;
+        width: 40vw;
+        height: auto;
     }
     .form-new .new-contentx{
     width: fit-content;
@@ -160,7 +162,7 @@ margin-left: 98%;
     }
     .form-new div input{
         border-radius: 6px;
-        width: 80%;
+        width: 100%;
         padding: 4px;
         background-color: var(--gris);
     }

@@ -121,19 +121,20 @@ button {
     font-family: var(--comic);
     display: flex;
     align-items: center;
+    /* color: #dfceb6; */
     }
     p.title-profile{
      
     }
     form.form-profile{
     /* border-radius: 300px; */
-    width: 50%;
+    width: max-content;
     align-content: center;
     align-self: center;
     }
     input#name.form-control-plaintext{
       text-align: center;
-      width: 300px;
+      width: %;
     }
     input#email.form-control-plaintext{
       text-align: center;
