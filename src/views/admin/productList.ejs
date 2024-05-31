@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<%-include("../partials/head")%>
-
-    <body>
-        <%-include("../partials/dashboard")%>
-        <%- include('../partials/burguer') %>
-
-
-            <main class="main-list">
-                <% if (isAdmin) { %>
-                <a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
-                <% } else if (isRegular) { %>
-                    <a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
-                    <% } %>
-                <h1>Lista de productos</h1>
-                <table class="table">
-                    <% products.forEach(p=> { %>
-                        <tr>
-                            <th scope="row"><%=p.id%></th>
-                            <!-- <td><img class="img-product" src="../../../images/<%= p.imagenes %>" alt=""></td> -->
-                            <td><%= p.name %></td>
-                            <td>$<%=toThousand(p.price)%></td>
-                            <td><%= p.description %></td>
-
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <a href="/detalle/<%= p.id %>" class="btn btn-info d-inline-block">Info</a>
-                                    <% if (isAdmin) { %>
-                                        <a href="/admin/edit/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
-                                      <a href="/admin/eliminar-producto/<%= p.id%>"
-                                        class="btn btn-danger d-inline-block">Eliminar</a>
-                                        <% } %>
-                                     
-                                 
-                                </div>
-
-                            </td>
-                            <% }) %>
-
-
-                </table>
-
-            </main>
-
-
-    </body>
+<%- include("../partials/head") %>
+<body class="list">
+    <%- include("../partials/dashboard") %>
+    <main class="main-list container">
+        <h1 class="mt-4">Lista de productos</h1>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tbody>
+                    <% products.forEach((p, index) => { %>
+                    <tr>
+                        <th scope="row"><%= index + 1 %></th>
+                        <td><%= p.name %></td>
+                        <td>$<%= toThousand(p.price) %></td>
+                        <td><%= p.description %></td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="/detalle/<%= p.id %>" class="btn btn-info">Info</a>
+                                <% if (isAdmin) { %>
+                                <a href="/admin/edit/<%= p.id %>" class="btn btn-warning">Editar</a>
+                                <a href="/admin/eliminar-producto/<%= p.id %>" class="btn btn-tomato-opacity-80">Eliminar</a>
+                                <% } %>
+                            </div>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

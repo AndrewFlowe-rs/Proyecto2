@@ -20,7 +20,12 @@ app.use(express.static("../public/design"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
-app.use(session({secret:'palabra secreta'}));
+app.use(session({
+    secret: 'palabra secreta',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false } 
+}));
 app.use(cookieParser());
 
 
