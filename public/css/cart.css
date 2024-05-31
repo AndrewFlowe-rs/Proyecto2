@@ -22,6 +22,7 @@
     }
         span.carousel-control-next-icon{
         color: red;
+        width: -webkit-fill-available;
     }
 div.carousel-item.active{
     /* margin: 10px; */
@@ -403,7 +404,7 @@ i.fa-solid.fa-cart-shopping{
     }
 
     main div.contenedor-img {
-        /* width: 79px; */
+        width: fit-content;
     }
 
     main div.contenedor-img img {
@@ -1042,7 +1043,8 @@ i.fa-solid.fa-cart-shopping{
         font-size: 20px;
     }
     li.list-inline-item{
-        margin-left: 10px;
+    letter-spacing: -2px;
+    margin-left: 19px;
     }
     
 
@@ -1194,28 +1196,18 @@ margin: 0;
 }
 
     main p.caption {
-
-background-color: var(--registro-bar);
-
-/* color: #364f5e; */
-
-height: 25px;
-
-/* text-align: center; */
-
-padding-top: 5px;
-
-font-family: var(--comic);
-
-font-weight: bold;
-
-color: var(--blanco);
-
-letter-spacing: 11px;
-
-padding-top: 2px;
-
-width: 100%;
+background-color: var(--registro-bar);
+/* color: #364f5e; */
+height: 25px;
+/* text-align: center; */
+padding-top: 5px;
+font-family: var(--comic);
+font-weight: bold;
+color: var(--blanco);
+letter-spacing: 11px;
+padding-top: 2px;
+width: 100%;
+display: none;
 }
 
     /* TÍTULO DOS */
@@ -1984,17 +1976,25 @@ i.fa-solid.fa-cart-shopping{
 /* DESKTOP */
 @media (min-width:768px) {
     main.main-cart {
-    /* display: flex; */
+    display: flex;
     /* height: 123vh; */
     min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 5% 5% 5%;
+    justify-content: flex-start;
+    text-align: center;
     }
     button.carousel-control-prev{
         /* color: red; */
         background-color: red;
         width: 16px;
+        margin-left: 1%;
+        height: 70px;
     }
         span.carousel-control-prev-icon{
         color: red;
+        /* margin-right: 4%; */
     }
     button.carousel-control-next{
         /* color: red; */
@@ -2002,25 +2002,35 @@ i.fa-solid.fa-cart-shopping{
         width: 16px;
         position: absolute;
         left: 80%;
+        height: 70px;
     }
         span.carousel-control-next-icon{
         color: red;
         width: 1;
     }
     div.carousel-item.active{
-        margin: 22px;
         display: flex;
         /* align-content: center; */
         font-size: 20px;
-        width: 60%;
         /* align-items: center; */
         /* justify-content: center; */
+        /* margin-left: 10%; */
+        margin-bottom: 35px;
+        width: -webkit-fill-available;
     }
     li.list-inline-item{
         /* margin-left: 10px; */
         /* background-color: tomato; */
-        /* opacity: 0.5; */
+        opacity: 0.9;
         cursor: pointer;
+        letter-spacing: 0;
+        margin-top: 30px;
+        font-size: 25px;
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: center;
+        width: 14vw;
+        border-radius: 20px;
     }
     
 
@@ -2118,60 +2128,48 @@ color: var(--blanco);
 
 font-family: 'Comic Neue';
 }
-main div.titles-category{}
+main div.titles-category{
+    /* display: flex; */
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+}
 
 
     main h2 {
-
-        background-color: var(--rojo);
-
-        height: 54px;
-
-        position: relative;
-
-        /* left: 30px; */
-
-        text-align: center;
-
-        /* padding-top: 0px; */
-
-        font-family: var(--damion);
-
-        font-size: 50px;
-
-        font-weight: lighter;
-
-        color: var(--blanco);
-
-        /* align-items: stretch; */
-
-        letter-spacing: 18px;
-
-        padding-bottom: 10px;
-    }
+background-color: #dfceb6;
+/* height: 54px; */
+/* text-align: center; */
+/* padding-top: 0px; */
+font-family: var(--damion);
+font-size: 50px;
+/* font-weight: lighter; */
+color: #198754;
+/* align-items: stretch; */
+/* letter-spacing: 18px; */
+/* padding-bottom: 10px; */
+/* display: none; */
+border-radius: 20px;
+opacity: 0.8;
+width: auto;
+right: 93%;
+border: none;
+bottom: 20px;
+}
 
     main p.caption {
-
-        background-color: var(--registro-bar);
-
-        /* color: #364f5e; */
-
-        height: 30px;
-
-        text-align: center;
-
-        padding-top: 6px;
-
-        font-family: var(--comic);
-
-        font-weight: bold;
-
-        color: var(--blanco);
-
-        letter-spacing: 11px;
-
-        font-size: 21px;
-    }
+background-color: var(--registro-bar);
+/* color: #364f5e; */
+height: 30px;
+text-align: center;
+padding-top: 6px;
+font-family: var(--comic);
+font-weight: bold;
+color: var(--blanco);
+letter-spacing: 11px;
+font-size: 21px;
+display: none;
+}
 
     /* TÍTULO DOS */
     main h2.second-h2 {
