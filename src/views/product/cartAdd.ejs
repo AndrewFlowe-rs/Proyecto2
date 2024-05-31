@@ -17,35 +17,35 @@
     <main class="cart-shop"> 
      
       <form action="/agregar" method="POST">
-      <div class="container-cart">
-         <section>
-            <div class="container-a"  data-aos="flip-right">
-               
-                <div class="img-container">
-               <img src="/design/imgProducts/<%= p.image %>" alt="">
-            </div>
-            <div class="descrip-container">
-               <%= p.description %>
-            </div>
-            <div class="container-b-a-p">
-               <div class="price">
-               <%= toThousand(p.price) %>
-            </div>
-            <div class="buttoms">
-              <button class="less"><i class="fa-solid fa-minus"></i></button>
-               <span class="">1</span>
-                <button class="less"><i class="fa-solid fa-plus"></i></button>
+         <div class="article"  data-aos="flip-left">
+        
+            <article class="articulo-producto" >
+                
+                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" >
 
-            </div> <div class="confirm">
-                  <div class="confirm-b">
-                     <a href="">Confirmar</a>
-               </div>
-         </div>
-      </div>
-           
-            
-         </section>
-</div>
+                <p><%= p.name %></p>
+                
+
+                <p class="ingredientes"><%= p.description %></p>
+                <p class="ingredientes">Categoría:</p>
+                <p class="ingredientes"><%=p.categoryName%></p>
+                <hr>
+                <P class="subtotal">Subtotal</P>
+                <hr>
+                <p class="total"><%= toThousand(p.price) %></p>
+                
+                <div class="confirmacion">
+
+                    <button class="botonno" type="button">Cancelar
+                    </button>
+
+                    <a href="/carrito/agregar/<%= p.id %>" class="botonok" type="button">Agregar
+                   
+
+                </div>
+            </article>
+
+        </div>
     
    
   </form>
@@ -61,6 +61,8 @@
  </script>
    <!-- Footer -->
 <%- include('../partials/footer') %>
+<script src="../../../js/butDetail.js"></script> 
+
 
 </body>
 

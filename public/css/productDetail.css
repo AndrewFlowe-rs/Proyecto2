@@ -221,6 +221,11 @@ a.botonok{
         padding-top: 33px;
         /* padding-bottom: 95px; */
         min-height: 100vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        flex-direction: column;
     }
 
     .main-product .caja {
@@ -243,6 +248,7 @@ a.botonok{
         padding: 0% 10% 10%;
         justify-content: center;
         align-items: center;
+        width: auto;
     }
 
     .main-product .article .articulo-producto img {
