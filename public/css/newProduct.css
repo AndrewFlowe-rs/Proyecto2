@@ -182,8 +182,9 @@ margin-left: 98%;
     }
      .conteiner-x-edit i{
      color: black;
-     position: relative;
-     left: 47%;
+     position: fixed;
+     left: 81%;
+     top: 176px;
      }
     /*titulo*/
     .form-new .titulo {

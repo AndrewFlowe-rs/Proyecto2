@@ -80,7 +80,11 @@ button.less{
 
 
 
-    main.cart-shop{}
+    main.cart-shop{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
     div.container-cart{width: 100%;}
     section{
     min-height: 55vh;

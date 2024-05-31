@@ -1,30 +1,40 @@
 .main-forme {
-    background-color: var(--gris);
+    background-color: #dfceb6;
     padding: 12%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .main-forme form {}
 
 .main-forme .form-edit {
-    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--gri);
-    position: relative;
+    /* position: relative; */
     border-radius: 10px;
     box-shadow: 0px 0px 8px black;
+    justify-content: flex-start;
+    height: max-content;
+    width: auto;
 }
 
 .form-edit div {
     text-align: center;
     margin: 9px;
     /* border-bottom: var(--grisBoton) solid; */
+    width: 100%;
 }
 .form-edit div input{
     border-radius: 6px;
     padding: 4px;
     background-color: var(--gris);
+    width: 90%;
 }
 .form-edit .conteiner-x-edit{
     right: 0px;
@@ -32,8 +42,16 @@
     position: absolute;
     top: 0px;
 }
- .conteiner-x-edit i{
- color: black;}
+ i.fa-solid.fa-xmark{
+ color: #000;
+ /* position: relative; */
+ /* top: 125px; */
+ /* left: 118px; */
+ /* display: flex; */
+ flex-direction: row;
+ /* display: block; */
+ /* display: flex; */
+ }
 /*titulo*/
 .form-edit .titulo {
     margin: 8px;
@@ -149,10 +167,11 @@
         position: absolute;
         top: 0px;
     }
-     .conteiner-x-edit i{
+    i.fa-solid.fa-xmark{
      color: black;
-     position: relative;
-     left: 47%;
+     /* position: relative; */
+     left: 60px;
+     top: 180px;
      }
     /*titulo*/
     .form-edit .titulo {
@@ -179,8 +198,8 @@
     /*category*/
 
     .form-edit .edit-category {
-    width: 32%;
-    position: absolute;
+    width: auto;
+    /* position: absolute; */
     bottom: 15%;
     right: 48%;
 }
