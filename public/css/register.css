@@ -66,6 +66,11 @@ width: max-content;
 .main-register .form-register div {
     /* font-family: var(--comic); */
 }
+div.button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .main-register .form-register .form-register div h4 {
         color: #dfceb6;
@@ -150,12 +155,13 @@ width: 199px;
 
 .container-butons button {
         background-color: var(--verde);
-        border-radius: 35px;
+        border-radius: 0.25rem;
         /* border: dashed; */
-        padding: 5px 10px;
+        padding: 8px 10px;
         display: block;
         margin-top: 13px;
-
+        width: -webkit-fill-available;
+        color: black;
     }
 
 .main-register .c-register {
@@ -226,6 +232,7 @@ font-family: var(--comic);
 height: auto;
 
 }
+div.button{}
 
     .conteiner-t-r {
         /* padding-bottom: 0px; */
@@ -252,18 +259,12 @@ height: auto;
     }
 
     .main-register .form-register div {
-
-margin: 10px;
-
-padding-bottom: 13px;
-
-display: flex;
-
-flex-wrap: wrap;
-
-justify-content: space-evenly;
-
-flex-direction: column;
+margin: 10px;
+padding-bottom: 13px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: stretch;
 }
     .main-register .conteiner-form .archivos {
 
@@ -336,12 +337,13 @@ input#avatar{
 
     .container-butons button {
         background-color: var(--verde);
-        border-radius: 35px;
+        border-radius: 0.25rem;
         /* border: dashed; */
-        padding: 5px 10px;
+        padding: 7px 0px;
         display: block;
         margin-top: 13px;
-
+        color: black;
+        width: 147px;
     }
 
     .main-register .c-register {}
