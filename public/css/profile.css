@@ -13,6 +13,12 @@ form.form-profile{
     background-color: #364f5e;
     /* padding: 200px; */
     height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 input#name.form-control-plaintext{
     background-color: white;
@@ -150,6 +156,8 @@ button {
     display: flex;
     align-items: center;
     /* color: #dfceb6; */
+    flex-direction: column;
+    align-content: center;
     }
     p.title-profile{
      
@@ -159,6 +167,10 @@ button {
     width: max-content;
     align-content: center;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
     input#name.form-control-plaintext{
       text-align: center;
