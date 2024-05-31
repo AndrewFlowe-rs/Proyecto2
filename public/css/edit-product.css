@@ -153,12 +153,12 @@
     .form-edit div {
         text-align: center;
         margin: 9px;
-        width: 60%;
+        width: 50%;
         /* border-bottom: var(--grisBoton) solid; */
     }
     .form-edit div input{
         border-radius: 6px;
-        width: 102%;
+        width: 100%;
         padding: 4px;
         background-color: var(--gris);
     }
