@@ -5,33 +5,60 @@
     <%- include('../partials/burguer') %>
 
 <body>
-  <main class="main-delete">
-       <div class="card-p-5">
-        <p class="card-body">
-          Estas seguro de <br>eliminar el producto: <%= p.name%>
-        </p>
-        <div class="image-delete">
-          <img src="/design/imgProducts/<%= p.image %>" %>
+  <main class="main-forme">
+
+    <form class="form-edit" method="POST" action="/admin/edit/<%= p.id %>?_method=PUT" enctype="multipart/form-data" id="editProductForm">
+       
+            <a href="/"><i class="fa-solid fa-xmark"></i></a>
+      
+        <div>
+            <h1 class="titulo">Editar producto</h1>
         </div>
-        <div class="container-b">
-          <div class="descrip-delete">
+        <div class="edit-title">
+            <input type="text" id="title" name="name" placeholder="Editar nombre" value="<%= p.name %>">
+            <p class="text-danger msg-err" id="titleError"></p>
+        </div>
+        <div class="edit-price">
+            <input type="text" id="price" name="price" placeholder="Editar precio" value="<%= p.price %>">
+            <p class="text-danger msg-err" id="priceError"></p>
+        </div>
+        <div class="edit-description">
+            <input type="text" id="description" name="description" placeholder="Editar descripción" value="<%= p.description %>">
+            <p class="text-danger msg-err" id="descriptionError"></p>
+        </div>
+        <div class="edit-category">
+            <label for="category">Categoría actual</label>
+            <select name="categoryName" id="category">
+                <option value="Sin TACC"><%= p.categoryName %></option>
+                <option value="Empanadas">Empanadas</option>
+                <option value="Fainá">Fainá</option>
+                <option value="Calzones">Calzones</option>
+                <option value="Clásicas">Clásicas</option>
+                <option value="Pizza del mes">Pizza del mes</option>
+                <option value="peperoni">Promo del mes</option>
+                <option value="Promo del mes">Combos</option>
+                <option value="Individuales">Individuales</option>
+                <option value="Bebidas">Bebidas</option>
+            </select>
+            <p class="text-danger msg-err" id="categoryError"></p>
+        </div>
+
+        <div>
+            <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
+        </div>
+        <div class="new-image">
+            <label class="label-titulo" for="image"></label>
             <br>
-          <%= p.description %>
+            <input type="file" id="image" name="image">
+            <p class="text-danger msg-err" id="imageError"></p>
         </div>
-        <div class="price-delete">
-         <%=p.price  %> 
-        </div>
-        
-        <div class="category-delete">
-          <%= p.categoryName %>
-        </div>
-        <form action="/admin/eliminar-producto/<%=p.id%>?_method=DELETE" method="POST">
+
+      <form action="/admin/eliminar-producto/<%=p.id%>?_method=DELETE" method="POST">
             <button type="submit" class="btn btn-danger">Eliminar</button>
             <a href="/admin" class="btn btn-dark">Cancelar</a>
           </form></div>
-        
-      </div> 
-  </main>
+
+</main>
   <%-include("../partials/footer")%>
 
 </body>
