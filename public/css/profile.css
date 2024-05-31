@@ -19,6 +19,7 @@ form.form-profile{
     align-content: center;
     justify-content: center;
     align-items: center;
+    width: -webkit-fill-available;
 }
 input#name.form-control-plaintext{
     background-color: white;
@@ -53,10 +54,12 @@ input#number.form-control-plaintext{
   width: 200px;
   text-align: center;
 }
-div.user-img{}
+div.user-img{
+    width: fit-content;
+}
 img.user-im{
-    
     border-radius: 312px;
+    width: 200px;
 }
 .but-form{}
 

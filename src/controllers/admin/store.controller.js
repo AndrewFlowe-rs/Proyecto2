@@ -2,6 +2,11 @@ const db = require('../../database/models')
 
 
 module.exports = (req,res) => {
+    const userLogin = res.locals.userLogin;
+
+    if (!userLogin) {
+        return res.redirect('aut/login'); 
+    }
     const {name, price, description, category} = req.body
     const image = req.file
     // const products = loadData('products');

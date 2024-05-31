@@ -34,7 +34,7 @@ div.image-delete{
 img{
     /* padding: 3px; */
     border-radius: 25px;
-    width: 92%;
+    width: auto;
     margin: 10px;
     /* text-align: center; */
     align-items: center;
@@ -61,8 +61,8 @@ div.category-delete{
 form{
     display: flex;
     height: 200;
-    flex-direction: row;
-    /* background-color: #586870; */
+    flex-direction: column;
+    background-color: #586870;
     border-radius: 10px;
     /* height: 45vh; */
     opacity: 0.8;
@@ -156,7 +156,7 @@ p.card-body{
 div.image-delete{
     width: 40%;
 }
-img{/* border-radius: 80px; *//* margin: 20px; *//* width: max-content; */}
+img{/* border-radius: 80px; *//* margin: 20px; */width: -webkit-fill-available;}
 div.container-b{
     /* display: flex; */
 }
@@ -170,7 +170,7 @@ div.price-delete{
 div.category-delete{
     font-size: 30px;
 }
-form{display: flex;justify-content: center;align-items: center;}
+form{display: flex;justify-content: center;align-items: center;width: 100vw;}
 button.btn.btn-danger{
     font-size: 28px;
     height: 50px;

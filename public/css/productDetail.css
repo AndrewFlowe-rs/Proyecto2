@@ -49,18 +49,21 @@
 
     .confirmacion {
         display: flex;
-        align-items: stretch;
         /* font-family: var(--comic); */
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
     }
 
     .confirmacion .botonno {
         font-family: var(--comic);
         border-radius: 35px;
-        padding: 4px 5px;
+        padding: 11px;
         border: none;
         background-color: var(--rojo);
-        width: 166px;
+        width: auto;
         /* display: none; */
+        flex: 1;
     }
 
 a.cart-b{
@@ -80,13 +83,15 @@ a.cart-b{
 
     .confirmacion .botonok {
 font-family: var(--comic);
-margin: 0 0px 5px 85px;
+/* margin: 0 0px 5px 85px; */
 border-radius: 35px;
-padding: 7px 6px;
+padding: 11px;
 border: none;
 background-color: var(--verde);
 font-weight: 336px;
-width: 166px;
+width: auto;
+flex: 1;
+text-align: center;
 }
 a.botonok{
     /* font-family: var(--comic); */

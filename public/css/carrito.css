@@ -1,7 +1,14 @@
 main.cart-shop{
     /* min-width: 100vh; */
-    /* display: flex; */
+    display: flex;
     min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    width: fit-content;
+    align-self: center;
+    padding: 2%;
 }
 div.container-cart{/* border: black 10px; *//* display: flex; */align-content: center;/* justify-content: center; *//* align-items: center; *//* background-color: #89a798; *//* border-radius: 50px; */}
 section{
@@ -82,8 +89,9 @@ button.less{
 
     main.cart-shop{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
     div.container-cart{width: 100%;}
     section{
@@ -150,7 +158,14 @@ button.less{
 
 
 
-    main.cart-shop{}
+    main.cart-shop{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: auto;
+}
     div.container-cart{}
     section{
     min-height: 85vh;

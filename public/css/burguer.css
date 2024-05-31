@@ -50,7 +50,7 @@
 }
 
 .nav-menu.active {
-    max-height: 300px;  /* Altura suficiente para mostrar todos los elementos */
+    max-height: 380px;  /* Altura suficiente para mostrar todos los elementos */
     width: fit-content;
     background-color: #a60d0d;
     font-family: var(--comic);

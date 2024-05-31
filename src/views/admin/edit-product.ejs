@@ -8,7 +8,7 @@
 
     <main class="main-forme">
 
-        <form class="form-edit" method="POST" action="/admin/edit/<%= p.id %>?_method=PUT" enctype="multipart/form-data" id="editProductForm">
+        <form class="form-edit" method="POST" action="/admin/edit/<%= product.id %>?_method=PUT" enctype="multipart/form-data" id="editProductForm">
            
                 <a href="/"><i class="fa-solid fa-xmark"></i></a>
           
@@ -16,21 +16,21 @@
                 <h1 class="titulo">Editar producto</h1>
             </div>
             <div class="edit-title">
-                <input type="text" id="title" name="name" placeholder="Editar nombre" value="<%= p.name %>">
+                <input type="text" id="title" name="name" placeholder="Editar nombre" value="<%= product.name %>">
                 <p class="text-danger msg-err" id="titleError"></p>
             </div>
             <div class="edit-price">
-                <input type="text" id="price" name="price" placeholder="Editar precio" value="<%= p.price %>">
+                <input type="text" id="price" name="price" placeholder="Editar precio" value="<%= product.price %>">
                 <p class="text-danger msg-err" id="priceError"></p>
             </div>
             <div class="edit-description">
-                <input type="text" id="description" name="description" placeholder="Editar descripción" value="<%= p.description %>">
+                <input type="text" id="description" name="description" placeholder="Editar descripción" value="<%= product.description %>">
                 <p class="text-danger msg-err" id="descriptionError"></p>
             </div>
             <div class="edit-category">
                 <label for="category">Categoría actual</label>
                 <select name="categoryName" id="category">
-                    <option value="Sin TACC"><%= p.categoryName %></option>
+                    <option value="Sin TACC"><%= product.categoryName %></option>
                     <option value="Empanadas">Empanadas</option>
                     <option value="Fainá">Fainá</option>
                     <option value="Calzones">Calzones</option>
@@ -45,7 +45,7 @@
             </div>
     
             <div>
-                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
+                <img src="/design/imgProducts/<%= product.image %>" alt="Imagen de pizza">
             </div>
             <div class="new-image">
                 <label class="label-titulo" for="image"></label>

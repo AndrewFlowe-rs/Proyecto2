@@ -5,7 +5,7 @@ module.exports = (req, res) => {
     const userLogin = res.locals.userLogin;
 
     if (!userLogin) {
-        return res.redirect('/perfil'); 
+        return res.redirect('aut/login'); 
     }
 
    
