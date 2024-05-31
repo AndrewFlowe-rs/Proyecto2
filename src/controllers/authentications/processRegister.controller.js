@@ -20,7 +20,7 @@ module.exports = (req, res) => {
       number: number ? number : '',
       state: state?.trim(),
     })
-    .then(() => res.redirect('/'))
+    .then(() => res.redirect('/perfil'))
     .catch(error => {
       console.error(error);
       res.status(500).send("Error al crear el usuario");

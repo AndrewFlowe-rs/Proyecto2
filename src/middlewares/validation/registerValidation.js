@@ -20,9 +20,9 @@ const path = require('path');
         .isLength({ min: 10, max: 16 }).withMessage('El número no debe tener menos de 10 dígitos')
         .notEmpty().withMessage('El telefono es requerido').bail(),
 
-    check('city')
-        .isLength({ min: 8, max: 16 }).withMessage('El texto debe tener entre 3 y 16 caracteres')
-        .notEmpty().withMessage('La Ciudad es requerido').bail(),
+    check('state')
+        .isLength({ min: 5}).withMessage('El texto debe tener como mínimo 5 caracteres')
+        .notEmpty().withMessage('Este campo es requerido').bail(),
 
     check('avatar')
         .custom((value, { req }) => {

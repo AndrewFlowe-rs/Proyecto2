@@ -25,9 +25,8 @@ const formato = ["image/jpeg", "image/jpg" ,"image/png", "image/webp"]
     }
   })
   
-  const upload = multer({ storage })
-  const uploadUser = multer({ storageUser })
-
+  const upload = multer({ storage: storage });
+  const uploadUser = multer({ storage: storageUser });
   module.exports = {
     upload,
     uploadUser
