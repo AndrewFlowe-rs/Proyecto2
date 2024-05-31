@@ -34,8 +34,8 @@ div.image-delete{
 img{
     /* padding: 3px; */
     border-radius: 25px;
-    width: auto;
-    margin: 10px;
+    width: inherit;
+    margin: 0px;
     /* text-align: center; */
     align-items: center;
 }

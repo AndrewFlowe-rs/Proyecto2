@@ -14,7 +14,7 @@ module.exports = (req, res) => {
                 return res.status(404).send('Producto no encontrado');
             }
 
-            res.render('admin/edit-product', { product });
+            res.render('admin/deleteProduct', { product });
         })
         .catch(error => {
             console.error('Error al obtener el producto:', error);

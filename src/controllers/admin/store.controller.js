@@ -1,5 +1,5 @@
 const db = require('../../database/models')
-
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = (req,res) => {
     const userLogin = res.locals.userLogin;
@@ -21,5 +21,11 @@ module.exports = (req,res) => {
 
    })
 
-   .then((p=>{return res.redirect('/admin')}))
+   .then(p => {
+    return res.render('product/productDetail', { p ,toThousand});
+})
+.catch(error => {
+    console.error("Error al crear el producto:", error);
+    res.status(500).send("Error al crear el producto");
+});
     }

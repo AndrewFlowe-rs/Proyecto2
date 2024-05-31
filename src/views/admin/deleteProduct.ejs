@@ -7,12 +7,12 @@
 <body>
   <main class="main-forme">
 
-    <form class="form-edit" method="POST" action="/admin/edit/<%= product.id %>?_method=PUT" enctype="multipart/form-data" id="editProductForm">
+    <form class="form-edit" method="POST" action="/admin/eliminar-producto/<%= product.id %>?_method=DELETE" enctype="multipart/form-data" id="editProductForm">
        
             <a href="/"><i class="fa-solid fa-xmark"></i></a>
       
         <div>
-            <h1 class="titulo">Editar producto</h1>
+            <h1 class="titulo">Eliminar producto</h1>
         </div>
         <div class="edit-title">
             <input type="text" id="title" name="name" placeholder="Editar nombre" value="<%= product.name %>">
@@ -55,8 +55,9 @@
 
       <form action="/admin/eliminar-producto/<%=product.id%>?_method=DELETE" method="POST">
         <div class="button">
+            
+            <button class="btn btn-warning-opacity-80" type="submit" id="button" name="boton">Eliminar</button>
             <a href="/admin" class="btn btn-tomato-opacity-80">Cancelar</a>
-            <button class="btn btn-warning-opacity-80" type="submit" id="button" name="boton">Guardar cambios</button>
         </div>
           </form></div>
 
