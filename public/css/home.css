@@ -1,5 +1,12 @@
 main.main-home{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    flex-wrap: nowrap;
 }
 a{
     text-decoration: none;
@@ -103,9 +110,15 @@ h5.card-title{
     width: 100%;
 }
 .d-block{
-    width: 94%;
+    width: 100vw;
     /* align-self: center; */
-    /* display: flex; */
+    display: flex;
+    margin: 10px 0px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 
@@ -181,8 +194,8 @@ main.mainhome{}
         width: 75%;
     }
     .d-block{
-    width: 90%;
-    margin-left: 35px;
+    width: 100%;
+    margin-left: 0;
 }
 
 
@@ -308,9 +321,12 @@ height: 18vh;
 
 @media (min-width: 768px) {
 main.main-home{
-    /* display: flex !important; */
-    /* flex-direction: column-reverse; */
-    min-height: 160vh;
+    display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
     .div-categorias {
         width: 25%;
@@ -358,9 +374,9 @@ p.card-text{}
     }
     .d-block{
     height: 50vh;
-    width: 90vw;
+    width: 100vw;
     position: relative;
-    left: 2%;
+    left: 32%;
 }
 h1.home{
     /* color: #020304; */
@@ -448,8 +464,15 @@ h1.home{
     .pizza-provo img {}
 
     .div-padre {
-        /* display: flex; */
+        display: flex;
         /* height: 71vh; */
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        align-self: center;
+        justify-content: center;
     }
 div.card.aos-init.aos-animate{
     height: 100%;
@@ -472,7 +495,7 @@ flex-direction: row-reverse;
         font-family: var(--corporant);
         display: flex;
         justify-content: center;
-        /* color: var(--bs-danger); */
+        color: #7c8380;
         font-family: var(--comic);
         /* width: max-content; */
         flex-direction: column;
@@ -488,7 +511,7 @@ flex-direction: row-reverse;
     }
 
     .carousel{
-        width: 100%;
+        width: 100vw;
     }
 
     .pizza-roquefort{
