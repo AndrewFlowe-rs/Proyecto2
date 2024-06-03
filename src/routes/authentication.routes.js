@@ -3,7 +3,7 @@ const router = express.Router();
 const authController = require('../controllers/authentications');
 // const {loginValidation} = require('../controllers/authentications')
 const loginDatesValidation = require('../middlewares/validation/loginValidation');
-const { loginProcess, login, province} = require('../controllers/authentications');
+const { loginProcess, login, } = require('../controllers/authentications');
 const validaciones = require('../middlewares/validation/registerValidation')
 const { upload, uploadUser } = require("../middlewares/validations/upload.files");
 
@@ -12,7 +12,7 @@ const { upload, uploadUser } = require("../middlewares/validations/upload.files"
 
 router.get('/login', login);
 router.post('/login', loginDatesValidation, loginProcess );
-router.get('/registro', province);
+router.get('/registro', authController.register);
 router.post('/registro', uploadUser.single('avatar'),validaciones, authController.processRegister);
 router.get('/recuperar-contraseña', )
 
