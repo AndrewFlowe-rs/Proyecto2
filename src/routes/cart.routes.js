@@ -1,28 +1,11 @@
 const express = require('express');
-const {cart, add, pro} = require('../controllers/cart');
+const { cart, add } = require('../controllers/cart');
 const router = express.Router();
-// const { cart, cartView } = require('../controllers/cart');
 
+// Ruta para renderizar la vista del carrito
+router.get('/agregar/:id', cart);
 
-// desde app viene /carrito
-router.get('/agregar/:id', add)
-router.get('/', cart)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Ruta para agregar un producto al carrito
+router.post('/agregar/:id', add);
 
 module.exports = router;

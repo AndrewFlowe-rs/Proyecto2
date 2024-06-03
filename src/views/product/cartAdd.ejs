@@ -1,70 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!-- Head -->
+    <%- include('../partials/head') %>
 
-<!-- Head -->
-<%- include('../partials/head') %>
-  
-
-<body>
-
-
-   <!-- Header -->
-<%- include('../partials/header') %>
-<%- include('../partials/burguer') %>
-
-
-
-    <main class="cart-shop"> 
-     
-      <form action="/agregar" method="POST">
-         <div class="article"  data-aos="flip-left">
-        
-            <article class="articulo-producto" >
-                
-                <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza" >
-
-                <p><%= p.name %></p>
-                
-
-                <p class="ingredientes"><%= p.description %></p>
-                <p class="ingredientes">Categoría:</p>
-                <p class="ingredientes"><%=p.categoryName%></p>
-                <hr>
-                <P class="subtotal">Subtotal</P>
-                <p>Unidad:</p>
-                <hr>
-                <p class="total"><%= toThousand(p.price) %></p>
-                
-                <div class="confirmacion">
-
-                    <button class="botonno" type="button">Cancelar
-                    </button>
-
-                    <a href="/carrito/agregar/<%= p.id %>" class="botonok" type="button"><i class="fa-regular fa-square-plus"></i>
-                   
-
-                </div>
-            </article>
-
-        </div>
-    
-   
-  </form>
-   
-
-     
-         </main>
-       
+    <!-- Header -->
+   <%- include('../partials/header') %>
+    <%- include('../partials/burguer') %>
+    <main class="main-product">
+      <div class="article" data-aos="flip-left">
+          <article class="articulo-producto">
+              <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
+              <h3><%= p.name %></h3>
+              <p class="ingredientes"><%= p.description %></p>
+              <p class="ingredientes">Categoría: <%=p.categoryName%></p>
+              <p class="subtotal">Unidad:</p>
+              <hr>
+              
+              <p class="quantity">0</p>
+              <p class="total">Total:</p>
+              <hr>
+              <p class="totale"><%= toThousand(p.price) %></p>
+              <div class="quantity-controls">
+                  <button class="decrement-quantity">-</button>
+                  <button class="increment-quantity">+</button>
+              </div>
+              <br>
+              <form action="" method="post">
+                  <div class="confirmacion">
+                      <button class="botonno" type="button">Cancelar</button>
+                      <button href="/carrito/agregar/<%= p.id %>" class="botonok" type="submit">Confirmar compra</button>
+                  </div>
+              </form>
+          </article>
+      </div>
+  </main>
     <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-   AOS.init();
- </script>
-   <!-- Footer -->
-<%- include('../partials/footer') %>
-<script src="../../../js/butDetail.js"></script> 
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+    <script src="../../../js/butDetail.js"></script> 
+    <script src="../../../js/addToCart.js"></script> 
 
-
-</body>
-
+         
+   </body>
 </html>

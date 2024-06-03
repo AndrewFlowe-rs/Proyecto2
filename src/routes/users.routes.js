@@ -5,11 +5,13 @@ const validProfile = require('../middlewares/validation/validProfile')
 const {  sesion } = require('../controllers/users')
 const {loginProcess, logout} = require('../controllers/authentications')
 const recordarme = require('../middlewares/validations/checkCookie')
+const Session = require('../middlewares/validations/checkSession')
+
 
 router.use(recordarme)
 router.post('/', loginValidation, loginProcess);
-router.get('/',validProfile , sesion)
-router.get('/cerrar',validProfile ,logout)
+router.get('/',[validProfile, Session] , sesion)
+router.get('/cerrar',[validProfile, Session] ,logout)
 
 
 

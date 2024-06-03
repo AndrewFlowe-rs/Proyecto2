@@ -2272,9 +2272,10 @@ main div.titles-category{
 
     /* PRIMER DIV*/
     div.first-div.aos-init.aos-animate{
-    height: 425px;
+    height: 440px;
     display: flex;
     flex-direction: column;
+    width: 421px;
 }
 
     main div.first-div {
@@ -2459,7 +2460,7 @@ i.fa-solid.fa-cart-shopping{
     }
 
     main div.contenedor-img img {
-        width: 360px;
+        width: 423px;
         /* border-radius: 22px; */
         height: 250px;
         /* margin-left: 0px; */

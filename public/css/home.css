@@ -168,6 +168,7 @@ main div.first-div-home{
     
     p.card-text{
     color: var(--bs-black);
+    display: none;
 }
     div.contenedor-descrip-home{
     /* width: 82px; */
@@ -346,9 +347,13 @@ div.card{
 }
 div.card-body{
     margin: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
-p.card-text{}
+p.card-text{
+    display: none;
+}
     .pizzasinferior {
         display: flex;
         flex-wrap: wrap;
@@ -358,7 +363,8 @@ p.card-text{}
     }
     img.card-img-top{
     height: 25vh;
-    /* width: 440px; */
+    width: 20v;
+    width: 20vw;
 }
     .pizzasinferior img{
     width: 265px;
@@ -378,7 +384,8 @@ p.card-text{}
     position: relative;
     left: 0%;
     padding: 0% 3% 0% 3%;
-    border-radius: 35px;
+    /* border: solid #c0ffe2 15px; */
+    /* border-radius: 100px; */
 }
 h1.home{
     /* color: #020304; */
@@ -446,12 +453,17 @@ h1.home{
     }
     div.container-product{
     display: flex;
-    width: 98%;
+    /* width: max-content; */
     /* position: relative; */
     top: 571px;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: stretch;
     justify-content: center;
+    /* position: relative; */
+    /* left: 1%; */
+    /* top: 20%; */
+    margin: 0;
 }
 
     .pizzasinferior  {
@@ -478,6 +490,7 @@ h1.home{
     }
 div.card.aos-init.aos-animate{
     height: 100%;
+    width: min-content;
 }
     main div.contenedor-img-home{
     height: 102px;

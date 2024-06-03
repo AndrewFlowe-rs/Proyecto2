@@ -7,7 +7,7 @@ module.exports = (req,res) => {
     if (!userLogin) {
         return res.redirect('aut/login'); 
     }
-    const {name, price, description, category} = req.body
+    const {name, price, description, categoryName,category} = req.body
     const image = req.file
     // const products = loadData('products');
  
@@ -15,7 +15,7 @@ module.exports = (req,res) => {
     name:name.trim(),
     price:+price,
     description:description.trim(),
-    categoryName: category.trim(),
+    categoryName: categoryName.trim(),
     categoryId: +category,
     image: image ? image.filename : ''
 

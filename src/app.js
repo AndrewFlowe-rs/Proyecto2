@@ -21,10 +21,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(session({
-    secret: 'palabra secreta',
-    resave: false,
+    secret: 'your-secret-key',
+    resave: true,
     saveUninitialized: true,
-    cookie: { secure: false } 
+    cookie: {
+        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+        httpOnly: true,
+        secure: false 
+    }
 }));
 app.use(cookieParser());
 
