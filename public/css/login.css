@@ -17,13 +17,16 @@
         display: flex;
         background-color: var(--gri);
         border-radius: 18px;
+        align-items: center;
+        flex-direction: column;
         }
         .main-login form input{
         border: solid;
         border-radius: 18px;
         padding: 6px 2px;
         margin-top: 13px;
-        /* border: none; */
+        border: none;
+        width: auto;
     }
     .main-login form button {
         margin: 18px auto;
