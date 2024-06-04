@@ -94,9 +94,9 @@ height: 58px;
             color: azure;
         }
         .main-login {
-        background-image: url("../design/imgProducts/publicity.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("../design/imgProducts/5.jpg");
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
         min-height: 100vh;
         /* min-width: 100vh; */
     }
@@ -188,8 +188,10 @@ height: 58px;
     .main-login form{
       margin-left: 70%;
       height: 50%;
+      font-size: 25px;
 }
         .main-login form input{
+        font-size: 25px;
         }
     .main-login form button {
     }

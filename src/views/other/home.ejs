@@ -8,15 +8,15 @@
 
 
     <!-- Header -->
-    <%- include('../partials/header') %>
+  
     <%- include('../partials/burguer') %>
-
       <main class="main-home">
-          <div class="div-padre">
-
+<%- include('../partials/header') %>
+  
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active"> 
+                 
                   <img src="/design/imgProducts/publicity.jpg"   class="d-block w-10" alt="...">
                 </div>
                 <div class="carousel-item">
@@ -32,8 +32,24 @@
                   <img src="/design/imgProducts/4.jpg"   class="d-block w-10" alt="...">
                 </div>
               </div>
-           
+              </div>
+           <h3 class="titlehome">#Amantes de <br>
+            la pizza</h3>
+
+ <h3 class="youtubetitle">Visitá nuestro canal de Youtube</h3>
+            <div class="youtube"> 
              
+             
+              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/6Z-R9C_EjyE?si=QY-UjhqqNzOhDiY_"
+               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/xDSXxw47mwo?si=ip1SqJzGvpjzYvF4" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Jsyyt-guQFw?si=hq7AnSOGIF8-Kz9P" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
               <div class="bannerhome"> 
                 <ul>
@@ -49,7 +65,10 @@
                   <li><a href="/productos/categoria/bebidas">Bebidas</a></li>
                 </ul>
               </div>
-           <div class="container-product">        
+     
+            <p class="promo">Promo del mes</p>     
+
+           <div class="container-product">   
               <% products.forEach(p => { %>
                 <% if (p.categoryName === 'Promo del mes') { %>
             
@@ -80,7 +99,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
           integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
           crossorigin="anonymous"></script>
-           <!-- AOS -->
+         
+  <!-- AOS -->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();

@@ -2,11 +2,11 @@ main.main-home{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 0%;
     flex-wrap: nowrap;
+    align-content: center;
 }
 a{
     text-decoration: none;
@@ -45,7 +45,16 @@ div.container-product{
     flex-direction: column;
     background-color: var(--background-reg);
     align-items: center;
-    margin: 15px;
+    margin: 0px;
+    /* background-image: url('../design/imgProducts/5.jpg'); */
+    width: 100%;
+}
+.promo{
+    font-family: fantasy;
+    font-size: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
 }
 
 h1{
@@ -93,13 +102,16 @@ a.btn.btn-outline-danger{}
 }
 div.card-body{
     background-color: var(--background-reg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 h5.card-title{
     color: var(--bs-black);
-    font-size: 145%;
+    font-size: 20px;
 }
 
 .pizza-provo {
@@ -112,16 +124,43 @@ h5.card-title{
     width: 100%;
 }
 .d-block{
-    width: 90vw;
+    width: 100vw;
     /* align-self: center; */
     display: flex;
-    margin: 0px 0px 10px 10px;
+    margin: 0;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
     padding: 0%;
+    border-radius: 0;
+    width: inherit;
+}
+.titlehome{
+    display: none;
+}
+.youtube{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    /* width: 130px; */
+    /* position: relative; */
+    align-items: center;
+    width: auto;
+    /* align-self: center; */
+}
+.youtube-video{
+    width: auto;
+    /* text-align: center; */
+}
+
+.youtubetitle{
+    font-size: 20px;
+    background-color: white;
+    font-family: fantasy;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -130,11 +169,13 @@ h5.card-title{
 }
 
 img.card-img-top {
-    width: 80%;
-    border-radius: 31px;
-    height: 100%;
+    width: 100vw;
+    border-radius: 0;
+    height: 22vh;
+    padding: 9px;
 }
-div.card.aos-init.aos-animate{}
+div.card.aos-init.aos-animate{
+}
 
 
 div.contenedor-descrip-home{}
@@ -200,13 +241,45 @@ main.mainhome{}
     .d-block{
     width: 100%;
     margin-left: 0;
+    height: 35vh;
+    opacity: 0.9;
+}
+.titlehome{
+    display: flex;
+    position: relative;
+    bottom: 305px;
+    font-family: 'Frijole';
+    color: white;
+    filter: drop-shadow(73px 79px 141px black);
+    font-size: 35px;
+    width: auto;
 }
 
 
+.youtube{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 587px;
+}
+.youtube-video{
+    width: 60vw;
+    margin: 10px;
+}
 
     .pizzas-detalle {
         width: 75%;
     }
+    .youtubetitle{
+    width: auto;
+    position: relative;
+    bottom: 83px;
+    left: 0px;  1; 0;
+    font-size: 30px;
+    height: 75px;
+}
+
     .bannerhome {
         
 position: absolute;
@@ -230,10 +303,22 @@ left: 311%;
         color: black;
         text-decoration: none;
     }
-    div.container-product{/* width: 4%; */display: flex;align-items: stretch;}
+    div.container-product{/* width: 4%; */display: flex;align-items: stretch;margin-top: 300%;}
+    .promo{
+    font-size: 30px;
+    position: absolute;
+    top: 143%;
+    height: 47px;
+    margin: 0;
+}
+
 .product-container{}
-div.card.aos-init.aos-animate{}
-div.card-body{}
+div.card.aos-init.aos-animate{
+    border-radius: 0;
+}
+div.card-body{
+    padding: 0;
+}
     .pizzasinferior  {
         font-family: var(--poppins);
         /* width: 100%; */
@@ -332,6 +417,7 @@ main.main-home{
     align-items: center;
     flex-wrap: nowrap;
     background-image: url();
+    padding: 0px;
 }
     .div-categorias {
         width: 25%;
@@ -350,10 +436,11 @@ div.card{
     width: 30rem;
 }
 div.card-body{
-    margin: 10%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
 }
 
 p.card-text{
@@ -367,16 +454,19 @@ p.card-text{
         right: 150px;
     }
     img.card-img-top{
-    height: 25vh;
+    height: 400px;
     width: 20v;
-    width: 20vw;
+    width: 500px;
 }
     .pizzasinferior img{
     width: 265px;
 }
     div.descripcion-producto{}
     a.btn.btn-outline-danger{
-    font-size: 18px;
+    font-size: 16px;
+    width: auto;
+    background-color: #ff000073;
+    color: black;
 }
 
 
@@ -386,14 +476,25 @@ p.card-text{
         width: 25%;
     }
     .d-block{
-    height: 60vh;
-    width: 90vw;
+    opacity: 0.8;
+    height: 70vh;
+    width: 100vw;
     position: relative;
-    left: 3%;
-    padding: 0% 3% 0% 3%;
+    left: 0%;
     /* border: solid #c0ffe2 15px; */
-    /* border-radius: 100px; */
+    border-radius: 0;
+    /* filter: blur(2px); */
 }
+.titlehome{
+    position: absolute;
+    top: 46%;
+    font-family: var(--frijole);
+    left: 6%;
+    font-size: 600%;
+    color: white;
+    filter: drop-shadow(8px 13px 26px black);
+}
+
 h1.home{
     /* color: #020304; */
     display: block;
@@ -411,15 +512,15 @@ h1.home{
     position: relative;
     left: -16px;
     /* right: 270px; */
-    /* top: 20px; */
+    top: 20px;
     display: flex;
     /* display: block; */
-    /* background-image: url("../design/imgProducts/bannerCategory.avif"); */
-    background-size: 60vw;
+    background-image: url("../design/imgProducts/4.jpg");
     flex-direction: row-reverse;
     justify-content: center;
     width: 100%;
     /* font-family: var(--comic); */
+    margin-bottom: 80px;
  }
 .bannerhome ul{
     /* margin-bottom: 70px; */
@@ -427,7 +528,7 @@ h1.home{
     background-color: #a60d0d;
     align-items: stretch;
     padding: 10px;
-    width: 30vh;
+    width: 50vh;
     flex-direction: column;
     /* font-family: var(--comic); */
     opacity: 0.8;
@@ -464,14 +565,31 @@ h1.home{
     /* position: relative; */
     top: 571px;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
     /* position: relative; */
     /* left: 1%; */
     /* top: 20%; */
     margin: 0;
+    background-image: url('../design/imgProducts/5.jpg');
+    width: 100%;
+    /* margin-bottom: 10%; */
+    background-size: contain;
+    overflow: hidden;
 }
+.promo{
+    color: #eee;
+    font-size: 48px;
+    font-family: 'Frijole';
+    position: relative;
+    bottom: 0px;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+}
+
 
     .pizzasinferior  {
         /* width: 33%; */
@@ -496,8 +614,11 @@ h1.home{
         justify-content: center;
     }
 div.card.aos-init.aos-animate{
-    height: 100%;
-    width: min-content;
+    height: 70%;
+    width: auto;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
 }
     main div.contenedor-img-home{
     height: 102px;
@@ -513,15 +634,24 @@ flex-direction: row-reverse;
 }
 
     .bannerhome ul li a{
-        font-size: 38px;
-        font-family: var(--corporant);
-        display: flex;
-        justify-content: center;
-        color: #7c8380;
-        font-family: var(--comic);
-        /* width: max-content; */
-        flex-direction: column;
-        align-items: center;
+        
+font-size: 38px;
+        
+font-family: var(--corporant);
+        
+display: flex;
+        
+justify-content: center;
+        
+color: #eee;
+        
+font-family: var(--comic);
+        
+/* width: max-content; */
+        
+flex-direction: column;
+        
+align-items: center;
     }
 
     .div-categorias h1{
@@ -534,7 +664,40 @@ flex-direction: row-reverse;
 
     .carousel{
         width: 100vw;
+        position: relative;
+        left: 7%;
     }
+    .youtube{
+    position: relative;
+    top: -35px;
+    background-color: #0d6efd fil;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* filter: blur(1px); */
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+}
+.youtube-video{
+    width: 30%;
+}
+
+.youtubetitle{
+    position: relative;
+    /* display: block; */
+    bottom: 35px;
+    left: 0%;
+    font-size: 48px;
+    background-color: #000;
+    font-family: 'Frijole';
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 100px;
+}
 
     .pizza-roquefort{
     margin-bottom: 50px;

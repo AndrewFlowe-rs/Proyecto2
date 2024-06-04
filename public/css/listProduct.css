@@ -92,5 +92,6 @@ body.list {
 @media (min-width: 1200px) {
     .main-list {
         max-width: 960px; /* Cambia el ancho máximo para ajustar */
+        font-size: 25px;
     }
 }

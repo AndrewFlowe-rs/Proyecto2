@@ -162,33 +162,37 @@ button {
     /* color: #dfceb6; */
     flex-direction: column;
     align-content: center;
+    background-image: url('../design/imgProducts/5.jpg');
     }
     p.title-profile{
-     
+     background-color: #dfceb6;
+     font-size: 25px;
+     font-family: fantasy;
+     width: 100%;
     }
     form.form-profile{
     /* border-radius: 300px; */
-    width: max-content;
     align-content: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
     }
     input#name.form-control-plaintext{
       text-align: center;
-      width:300px;
+      width: 400px;
     }
     input#email.form-control-plaintext{
       text-align: center;
-      width: 300px;
+      width: 400px;
     }
     input#state.form-control-plaintext{
       background-color: white;
       border-radius: 12px;
       margin: 20px;
-      width: 300px;
+      width: 400px;
       text-align: center;
     }
     input#city.form-control-plaintext{
@@ -202,11 +206,11 @@ button {
       background-color: white;
       border-radius: 12px;
       margin: 20px;
-      width: 300px;
+      width: 400px;
   }
     div.user-img{}
     img.user-im{
-    width: 200px;
+    width: 500px;
     }
     .but-form{
     /* width: 160px; */

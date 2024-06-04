@@ -1993,10 +1993,13 @@ i.fa-solid.fa-cart-shopping{
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
-    padding: 0% 5% 5% 5%;
-    justify-content: flex-start;
+    padding: 0% 5% 5% 1%;
+    justify-content: center;
     text-align: center;
-    background-image: url('../design/imgProducts/fondo11.png');
+    background-image: url('../design/imgProducts/5.jpg');
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: center;
     }
     button.carousel-control-prev{
         /* color: red; */
@@ -2032,19 +2035,21 @@ i.fa-solid.fa-cart-shopping{
         width: -webkit-fill-available;
     }
     li.list-inline-item{
-        /* margin-left: 10px; */
+        margin-left: 69px;
         /* background-color: tomato; */
         /* opacity: 0.9; */
         cursor: pointer;
         letter-spacing: 0;
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 25px;
         /* display: flex; */
         flex-direction: row;
         justify-content: center;
-        width: 14vw;
-        border-radius: 20px;
+        /* width: 14vw; */
+        /* border-radius: 20px; */
         background-color: wheat;
+        position: relative;
+        left: 7%;
     }
     
 
@@ -2300,6 +2305,8 @@ display: none;
     display: flex;
     flex-wrap: wrap;
     /* height: 100vh; */
+    position: relative;
+    left: 5%;
 }
 
     main div.contenedor-primero {
@@ -2320,8 +2327,10 @@ display: none;
     height: 440px;
     display: flex;
     flex-direction: column;
-    width: 421px;
-    background-color: #364f5e;
+    width: 454px;
+    background-color: #dfceb600;
+    margin: 20px;
+    border-radius: 0;
 }
 
     main div.first-div {
@@ -2350,15 +2359,12 @@ border-radius: 20px;
     main div.contenedor-descrip {}
 
     main div.first-div p.name-pizza {
-
-        padding-bottom: 10px;
-
-        font-size: 15px;
-
-        font-family: var(--comic);
-
-        font-weight: bold;
-    }
+padding-bottom: 10px;
+font-size: 30px;
+font-family: var(--com);
+font-weight: bold;
+/* background-color: #198754; */
+}
     main div.container-butoms{
     display: flex;
     justify-content: space-between;
@@ -2409,8 +2415,13 @@ i.fa-solid.fa-cart-shopping{
     .btn.btn-danger{
     /* position: relative; */
     /* bottom: 24px; */
-    background-color: #f8f9fa;
+    background-color: #a60d0d82;
     color: black;
+    font-size: 25px;
+    height: 42px;
+    font-family: var(--corporant);
+    opacity: 1;
+    width: 180px;
 }
 
     /* SEGUNDO DIV */
@@ -2508,10 +2519,11 @@ i.fa-solid.fa-cart-shopping{
     }
 
     main div.contenedor-img img {
-        width: 423px;
+        width: 460px;
         /* border-radius: 22px; */
-        height: 250px;
+        height: 270px;
         /* margin-left: 0px; */
+        border-radius: 0;
     }
 
     main div.contenedor-descrip {
@@ -2520,7 +2532,8 @@ i.fa-solid.fa-cart-shopping{
     top: 66px;
     /* right: 7px; */
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    background-color: aliceblue;
 }
 
     main div.third-div p.name-pizza {

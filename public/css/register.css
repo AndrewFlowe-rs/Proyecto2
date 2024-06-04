@@ -15,32 +15,19 @@ background-image: url('../design/imgProducts/fondo2.png');
 
 
 .main-register .form-register {
-
-justify-content: center;
-
-align-items: center;
-
-flex-direction: column;
-
-border: solid 5px #a60d0d;
-
-border-radius: 10px;
-
-/* border-right: inset; */
-
-background-color: #a60d0d;
-
-margin: 0 auto;
-
-padding: 0%;
-
-/* position: absolute; */
-
-/* width: 335%; */
-
-height: auto;
-
-width: max-content;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: solid 5px #364f5e;
+border-radius: 10px;
+/* border-right: inset; */
+background-color: #364f5e;
+margin: 0 auto;
+padding: 0%;
+/* position: absolute; */
+/* width: 335%; */
+height: auto;
+width: max-content;
 }
 
 .conteiner-t-r {
@@ -78,6 +65,7 @@ div.button{
     }
 select#state{
     width: 100%;
+    font-size: 20px;
 }
 
 .error-msg {
@@ -188,20 +176,13 @@ width: 199px;
 
 @media (min-width: 361px) {
     .main-register {
-
-display: flex;
-
-padding: 2% 5% 5% 5%;
-
-justify-content: center;
-
-align-items: flex-start;
-
-background-color: #dfceb6;
-
-min-height: 100vh;
-
-background-image: url('../design/imgProducts/fondo11.png');
+display: flex;
+padding: 2% 5% 5% 5%;
+justify-content: center;
+align-items: flex-start;
+background-color: #dfceb6;
+min-height: 100vh;
+background-image: url('../design/imgProducts/5.jpg');
 }
 
 
@@ -260,18 +241,12 @@ div.button{}
     }
 
     .main-register .form-register div {
-
-margin: 10px;
-
-padding-bottom: 13px;
-
-display: flex;
-
-flex-wrap: wrap;
-
-flex-direction: column;
-
-align-items: stretch;
+margin: 10px;
+padding-bottom: 13px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: stretch;
 }
     .main-register .conteiner-form .archivos {
 
@@ -307,18 +282,13 @@ margin-left: 52px;
 
 
     .main-register .form-register input {
-
-border-radius: 10px;
-
-border: none;
-
-padding: 10px;
-
-/* display: flex; */
-
-width: 100%;
-
-font-size: 30px;
+border-radius: 10px;
+border: none;
+padding: 10px;
+/* display: flex; */
+width: 100%;
+font-size: 30px;
+flex-direction: row;
 }
 input#avatar{
     /* display: flex; */

@@ -20,7 +20,7 @@ div.cart-logo{
 i.fa-solid.fa-cart-shopping{
      transition: 300ms;
      color: var(--bs-form-valid-color);
-     font-size: 25px;
+     font-size: 41px;
      margin: 10px;
      }
 i.fa-solid.fa-cart-shopping:hover {
@@ -32,7 +32,9 @@ i.fa-solid.fa-cart-shopping:hover {
 }
 
 .headerPrincipal img {
-    width: 30%;
+    width: 37%;
+    /* position: relative; */
+    left: 0%;
 }
 
 .headerPrincipal div.conteiner {
@@ -73,9 +75,14 @@ div.div{}
         position: relative;
     }
 
+    .headerPrincipal img {}
     .headerPrincipal .cajaHeader {
-        padding: 10px 0px;
+        /* padding: 10px 0px; */
         /* font-family: var(--colorproducto); */
+        display: flex;
+        flex-direction: column;
+        /* height: auto; */
+        /* width: 100%; */
     }
     div.cart-logo{}
     i.fa-solid.fa-cart-shopping{ 
@@ -104,8 +111,12 @@ div.div{}
         flex-direction: row;
         list-style: none;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         font-family: var(--comic);
+        width: 100%;
+        align-content: center;
+        align-items: center;
+        margin: 0;
     }
 
     .headerPrincipal .opcionPrincipal ul li {
@@ -139,8 +150,20 @@ div.div{}
     .headerPrincipal {
         background-color: var(--rojo);
         font-family: var(--comic);
+        display: flex;
+        height: 25vh;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        /* border-bottom-left-radius: 100px; */
+        /* border-bottom-right-radius: 100px; */
     }
 
+    .headerPrincipal img {
+    position: relative;
+    left: 33%;
+    width: 35%;
+}
     .headerPrincipal div.conteiner {
         display: flex;
         flex-direction: row-reverse;
@@ -164,22 +187,29 @@ div.div{}
     .headerPrincipal nav.opcionPrincipal {
         display: flex;
         position: relative;
-        right: 8%;
+        /* right: 8%; */
         font-family: var(--comic);
+        bottom: 29%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #0000003b;
     }
 
     .headerPrincipal .opcionPrincipal ul li {
-        padding: 5px;
-        margin-left: 21px;
+        /* padding: 5%; */
+        /* margin-left: 10%; */
         border: none;
         font-family: var(--comic);
+        flex: 1;
+        margin: 5%;
     }
 
     .headerPrincipal .opcionPrincipal ul li a {
         text-decoration: none;
         cursor: pointer;
-        font-size: 35px;
-        font-family: var(--comic);
+        font-size: 200%;
+        font-family: sans-serif;
     }
     .headerPrincipal .opcionPrincipal ul li a:hover {
       

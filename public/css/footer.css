@@ -102,6 +102,7 @@ div.container-copy{
     /* clear: both; */
     min-height: 29vh;
     flex-direction: column;
+    margin-top: 50px;
 }
   .footer .conteiner-phone {
     display: none;
@@ -136,6 +137,7 @@ div.container-copy{
        .direction-f {
     margin: 10px;
     margin-top: 28px;
+    font-size: 35px;
 }
 
        .conteiner-location {}
@@ -157,7 +159,7 @@ div.container-copy{
     /* margin: 0px; */
 }
 
-       .Redes {/* display: inline-flex; */color: wheat;/* margin-bottom: 18px; *//* text-align: center; *//* top: 150%; *//* border-bottom: solid wheat; */margin: 0px;flex-direction: column;}
+       .Redes {/* display: inline-flex; */color: wheat;/* margin-bottom: 18px; *//* text-align: center; *//* top: 150%; *//* border-bottom: solid wheat; */margin: 0px;flex-direction: column;font-size: 35px;}
 
        .conteiner-iconos {
     display: inline-flex;
@@ -170,6 +172,7 @@ div.sobre-n{
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 195px;
 }
 h2.sobre-nos{}
 
@@ -188,6 +191,7 @@ h2.sobre-nos{}
     border-bottom: solid wheat;
     /* width: 79%; */
     margin: 10px;
+    font-size: 40px;
 }
  .sobre-n p {
 
@@ -215,8 +219,15 @@ p.text{
         background: var(--rojo);
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        min-height: 27vh;
+        justify-content: center;
+        font-size: 25px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        position: relative;
+        /* top: 0px; */
+        align-items: center;
+        align-content: center;
+        margin: 0;
     }
 
     .footer .info-footer {}
@@ -244,7 +255,7 @@ p.text{
     /* left: -90%; */
     /* margin: 0; */
     /* top: 12px; */
-    margin-top: 10px;
+    /* margin-top: 52px; */
 }
     .conteiner-location {
 
@@ -254,16 +265,21 @@ p.text{
 
 
    h3 {
- 
+ /* font-family: var(--fahkwang); */
+ font-size: 29px;
+ /* text-align: center; */
+ /* margin-bottom: 25px; */
 }
 
    h2 {}
 
     .Redes {
+    font-size: 40px;
     }
     .conteiner-iconos{
     /* position: relative; */
     left: 39%;
+    margin-bottom: 45px;
     }
     h2.sobre-nos{
 }
@@ -281,9 +297,11 @@ p.text{
 
 .footer .sobre-n {
     display: flex;
-    /* position: relative; */
-    right: 12%;
+    position: relative;
+    /* right: 12%; */
     align-items: center;
+    flex-direction: column;
+    top: 10px;
 }
 div.container-copy{
     /* position: relative; */

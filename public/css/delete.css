@@ -61,7 +61,7 @@ form{
     display: flex;
     height: 200;
     flex-direction: column;
-    background-color: #dfceb6;
+    background-color: #364f5e;
     border-radius: 10px;
     /* height: 45vh; */
     opacity: 0.9;
@@ -155,7 +155,7 @@ p.card-body{
 div.image-delete{
     width: 40%;
 }
-img{/* border-radius: 80px; *//* margin: 20px; */width: 70%;}
+img{/* border-radius: 80px; *//* margin-bottom: 39px; */width: 60%;}
 div.container-b{
     /* display: flex; */
 }

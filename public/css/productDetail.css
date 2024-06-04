@@ -298,10 +298,12 @@ a.botonok{
         color: var(--azul);
     }
     a.cart-b{
-    font-size: 17px;
+    font-size: 25px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    font-family: fantasy;
+    white-space: aliceblue;
 }
 
     .confirmacion {
@@ -317,6 +319,7 @@ a.botonok{
         width: 200px;
         margin: 20px;
         font-family: var(--colorproducto);
+        font-size: 20px;
     }
 
 
@@ -329,11 +332,12 @@ a.botonok{
     .confirmacion .botonok {
         font-family: var(--comic);
         border-radius: 35px;
-        padding: 15px 8px;
+        padding: 11px 8px;
         border: none;
         background-color: var(--verde);
         width: 200px;
         margin: 20px;
+        font-size: 20px;
     }
     a.botonok{}
 

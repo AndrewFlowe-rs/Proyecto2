@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #dfceb6;
+    background-image: url('../design/imgProducts/5.jpg');
 }
 
 
@@ -148,9 +149,10 @@ margin-left: 98%;
         position: relative;
         /* flex-wrap: wrap; */
         box-shadow: 0px 0px 8px black;
-        opacity: 0.8;
-        width: 40vw;
+        opacity: 1.8;
+        width: auto;
         height: auto;
+        font-size: 25px;
     }
     .form-new .new-contentx{
     width: fit-content;
