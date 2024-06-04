@@ -249,7 +249,7 @@ main.mainhome{}
     position: relative;
     bottom: 305px;
     font-family: 'Frijole';
-    color: white;
+    color: rgb(255,255,255);
     filter: drop-shadow(73px 79px 141px black);
     font-size: 35px;
     width: auto;
@@ -663,7 +663,7 @@ align-items: center;
     }
 
     .carousel{
-        width: 100vw;
+        width: 125vw;
         position: relative;
         left: 0%;
     }
