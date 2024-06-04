@@ -2005,7 +2005,7 @@ i.fa-solid.fa-cart-shopping{
         /* color: red; */
         background-color: red;
         width: 16px;
-        margin-left: 1%;
+        margin-left: 10%;
         height: 70px;
     }
         span.carousel-control-prev-icon{
@@ -2030,9 +2030,8 @@ i.fa-solid.fa-cart-shopping{
         font-size: 20px;
         /* align-items: center; */
         /* justify-content: center; */
-        /* margin-left: 10%; */
+        margin-left: 10%;
         margin-bottom: 35px;
-        width: -webkit-fill-available;
     }
     li.list-inline-item{
         margin-left: 69px;
