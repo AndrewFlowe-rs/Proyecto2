@@ -12,6 +12,7 @@ a{
     text-decoration: none;
     color: var(--negro);
     cursor: pointer;
+    font-size: 128%;
 }
 a:hover{
     color: green;
@@ -98,6 +99,7 @@ div.card-body{
 
 h5.card-title{
     color: var(--bs-black);
+    font-size: 145%;
 }
 
 .pizza-provo {
@@ -329,6 +331,7 @@ main.main-home{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    background-image: url();
 }
     .div-categorias {
         width: 25%;
@@ -350,6 +353,7 @@ div.card-body{
     margin: 10%;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 p.card-text{
@@ -371,7 +375,9 @@ p.card-text{
     width: 265px;
 }
     div.descripcion-producto{}
-    a.btn.btn-outline-danger{}
+    a.btn.btn-outline-danger{
+    font-size: 18px;
+}
 
 
     .mainhome .pizzasbaner {
@@ -507,7 +513,7 @@ flex-direction: row-reverse;
 }
 
     .bannerhome ul li a{
-        font-size: 32px;
+        font-size: 38px;
         font-family: var(--corporant);
         display: flex;
         justify-content: center;

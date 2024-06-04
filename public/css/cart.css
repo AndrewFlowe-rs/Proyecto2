@@ -1196,18 +1196,30 @@ margin: 0;
 }
 
     main p.caption {
-background-color: var(--registro-bar);
-/* color: #364f5e; */
-height: 25px;
-/* text-align: center; */
-padding-top: 5px;
-font-family: var(--comic);
-font-weight: bold;
-color: var(--blanco);
-letter-spacing: 11px;
-padding-top: 2px;
-width: 100%;
-display: none;
+
+background-color: var(--registro-bar);
+
+/* color: #364f5e; */
+
+height: 25px;
+
+/* text-align: center; */
+
+padding-top: 5px;
+
+font-family: var(--comic);
+
+font-weight: bold;
+
+color: var(--blanco);
+
+letter-spacing: 11px;
+
+padding-top: 2px;
+
+width: 100%;
+
+display: none;
 }
 
     /* TÍTULO DOS */
@@ -1984,6 +1996,7 @@ i.fa-solid.fa-cart-shopping{
     padding: 0% 5% 5% 5%;
     justify-content: flex-start;
     text-align: center;
+    background-image: url('../design/imgProducts/fondo11.png');
     }
     button.carousel-control-prev{
         /* color: red; */
@@ -2021,7 +2034,7 @@ i.fa-solid.fa-cart-shopping{
     li.list-inline-item{
         /* margin-left: 10px; */
         /* background-color: tomato; */
-        opacity: 0.9;
+        /* opacity: 0.9; */
         cursor: pointer;
         letter-spacing: 0;
         margin-top: 30px;
@@ -2031,6 +2044,7 @@ i.fa-solid.fa-cart-shopping{
         justify-content: center;
         width: 14vw;
         border-radius: 20px;
+        background-color: wheat;
     }
     
 
@@ -2137,39 +2151,70 @@ main div.titles-category{
 
 
     main h2 {
-background-color: #dfceb6;
-/* height: 54px; */
-/* text-align: center; */
-/* padding-top: 0px; */
-font-family: var(--damion);
-font-size: 50px;
-/* font-weight: lighter; */
-color: #198754;
-/* align-items: stretch; */
-/* letter-spacing: 18px; */
-/* padding-bottom: 10px; */
-/* display: none; */
-border-radius: 20px;
-opacity: 0.8;
-width: auto;
-right: 93%;
-border: none;
-bottom: 20px;
-}
+
+background-color: #dfceb6;
+
+/* height: 54px; */
+
+/* text-align: center; */
+
+/* padding-top: 0px; */
+
+font-family: var(--damion);
+
+font-size: 50px;
+
+/* font-weight: lighter; */
+
+color: #198754;
+
+/* align-items: stretch; */
+
+/* letter-spacing: 18px; */
+
+/* padding-bottom: 10px; */
+
+/* display: none; */
+
+border-radius: 20px;
+
+opacity: 0.8;
+
+width: auto;
+
+right: 93%;
+
+border: none;
+
+bottom: 20px;
+
+}
 
     main p.caption {
-background-color: var(--registro-bar);
-/* color: #364f5e; */
-height: 30px;
-text-align: center;
-padding-top: 6px;
-font-family: var(--comic);
-font-weight: bold;
-color: var(--blanco);
-letter-spacing: 11px;
-font-size: 21px;
-display: none;
-}
+
+background-color: var(--registro-bar);
+
+/* color: #364f5e; */
+
+height: 30px;
+
+text-align: center;
+
+padding-top: 6px;
+
+font-family: var(--comic);
+
+font-weight: bold;
+
+color: var(--blanco);
+
+letter-spacing: 11px;
+
+font-size: 21px;
+
+display: none;
+
+}
 
     /* TÍTULO DOS */
     main h2.second-h2 {
@@ -2276,6 +2321,7 @@ main div.titles-category{
     display: flex;
     flex-direction: column;
     width: 421px;
+    background-color: #364f5e;
 }
 
     main div.first-div {
@@ -2363,6 +2409,8 @@ i.fa-solid.fa-cart-shopping{
     .btn.btn-danger{
     /* position: relative; */
     /* bottom: 24px; */
+    background-color: #f8f9fa;
+    color: black;
 }
 
     /* SEGUNDO DIV */

@@ -1,5 +1,6 @@
 .main-product {
   padding: 20px;
+  background-image: url('../design/imgProducts/fondo9.jpg');
 }
 
 .article {
@@ -25,7 +26,7 @@
 
 .quantity-controls button {
   padding: 5px 10px;
-  background-color: #ddd;
+  background-color: #dc3545;
   border: none;
   cursor: pointer;
 }

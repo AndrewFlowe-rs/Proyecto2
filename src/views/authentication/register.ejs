@@ -65,19 +65,24 @@
                         </div>
 
                     </div>
-                     <!-- Campo provincia -->
-                    <div>
-                        <label for="state">Selecciona tu provincia</label>
-                        <select name="state" id="state">
-                            <% provinces.forEach(province => { %>
-                           <option> <%= province.nombre %></option>
-                            <% }) %>
-                        </select>
-                         <p class=" text-danger err-c"></p>
-                       <div class="error-msg <%=locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
-                                <%= locals.errors?.state?.msg %>
-                      </div>
-                    </div>
+                 <!-- Campo provincia -->
+<div>
+    <label for="state">Selecciona tu provincia</label>
+    <select name="state" id="state">
+      <% if (provinces && provinces.length > 0) { %>
+        <% provinces.forEach(province => { %>
+          <option value="<%= province.id %>"><%= province.nombre %></option>
+        <% }) %>
+      <% } else { %>
+        <option value="">No hay provincias disponibles</option>
+      <% } %>
+    </select>
+    <p class="text-danger err-c"></p>
+    <div class="error-msg <%= locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
+      <%= locals.errors?.state?.msg %>
+    </div>
+  </div>
+  
                     <!-- Campo imagen -->
                     <div class="new-image">
                         <label class="label-titulo" for="image">Ingresa una imagen</label>

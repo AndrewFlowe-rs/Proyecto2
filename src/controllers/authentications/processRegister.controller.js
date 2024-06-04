@@ -1,21 +1,8 @@
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const db = require('../../database/models');
+const { fetchProvinces } = require('../../utils/provinces');
 
-// Función para obtener las provincias
-const fetchProvinces = async () => {
-  try {
-    const fetch = (await import('node-fetch')).default;
-    const response = await fetch('https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre');
-    const data = await response.json();
-    return data.provincias;
-  } catch (error) {
-    console.error('Error fetching provinces:', error);
-    throw new Error('Error fetching provinces');
-  }
-};
-
-// Controlador de registro
 module.exports = async (req, res) => {
   const errors = validationResult(req);
   const old = req.body;
@@ -44,9 +31,9 @@ module.exports = async (req, res) => {
   try {
     const provinces = await fetchProvinces();
     res.render('authentication/register', {
-      old: old,
+      old,
       errors: errors.mapped(),
-      provinces: provinces
+      provinces
     });
   } catch (error) {
     res.status(500).send('Internal Server Error');
