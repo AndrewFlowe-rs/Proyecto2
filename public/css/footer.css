@@ -50,6 +50,7 @@
        .conteiner-iconos{
        display: none;
        }
+       img.social-media{}
        div.sobre-n{
     display: flex;
     flex-direction: column;
@@ -168,6 +169,8 @@ div.container-copy{
     align-items: center;
     flex-direction: column;
 }
+img.social-media{}
+
 div.sobre-n{
     display: flex;
     align-items: center;
@@ -265,10 +268,14 @@ p.text{
 
 
    h3 {
- /* font-family: var(--fahkwang); */
- font-size: 29px;
- /* text-align: center; */
- /* margin-bottom: 25px; */
+ 
+/* font-family: var(--fahkwang); */
+ 
+font-size: 29px;
+ 
+/* text-align: center; */
+ 
+/* margin-bottom: 25px; */
 }
 
    h2 {}
@@ -281,6 +288,10 @@ p.text{
     left: 39%;
     margin-bottom: 45px;
     }
+    img.social-media{
+    width: 80px;
+}
+
     h2.sobre-nos{
 }
 
