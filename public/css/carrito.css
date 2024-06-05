@@ -228,7 +228,7 @@ div.descrip-carrito{}
     display: flex;
     height: fit-content;
     position: relative;
-    left: 0%;
+    left: 40%;
     /* top: 192px; */
     /* text-align: center; */
   }
@@ -256,7 +256,7 @@ div.descrip-carrito{}
       display: flex;
       position: relative;
       /* top: 360px; */
-      left: -1%;
+      left: 25%;
   }
   .total {
     font-weight: bold;
