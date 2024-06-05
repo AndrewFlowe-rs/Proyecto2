@@ -663,7 +663,7 @@ align-items: center;
     }
 
     .carousel{
-        width: 125vw;
+        width: 100vw;
         position: relative;
         left: 0%;
     }
