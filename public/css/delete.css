@@ -94,8 +94,7 @@ div.image-delete{
     align-items: stretch;
     flex-direction: column;
 }
-img{
-}
+img{/* width: 300px; */}
 div.container-b{
     display: flex;
     flex-wrap: wrap;

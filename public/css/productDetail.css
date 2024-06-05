@@ -317,7 +317,7 @@ a.botonok{
         padding: 14px 6px;
         border: none;
         background-color: var(--rojo);
-        /* width: 100%; */
+        width: 100%;
         margin: 20px;
         font-family: var(--colorproducto);
         font-size: 20px;

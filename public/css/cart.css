@@ -1996,7 +1996,7 @@ i.fa-solid.fa-cart-shopping{
     background-image: url('../design/imgProducts/5.jpg');
     align-self: center;
     font-size: 28px;
-    flex-direction: column;
+    justify-content: flex-start;
     }
     button.carousel-control-prev{
         /* color: red; */
