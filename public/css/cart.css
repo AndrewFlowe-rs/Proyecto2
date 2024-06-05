@@ -1988,18 +1988,17 @@ i.fa-solid.fa-cart-shopping{
 /* DESKTOP */
 @media (min-width:768px) {
     main.main-cart {
-    display: flex;
+    /* display: flex; */
     /* height: 123vh; */
     min-height: 100vh;
-    flex-direction: column;
     align-items: center;
     padding: 0% 5% 5% 1%;
-    justify-content: center;
     text-align: center;
     background-image: url('../design/imgProducts/5.jpg');
-    flex-wrap: wrap;
-    align-content: center;
     align-self: center;
+    font-size: 28px;
+    align-content: center;
+    justify-content: center;
     }
     button.carousel-control-prev{
         /* color: red; */

@@ -1,41 +1,62 @@
-.main-product {
+.main-cart {
   padding: 20px;
   background-image: url('../design/imgProducts/5.jpg');
 }
-
-.article {
-  background-color: #f9f9f9;
+.article-cart {
+  background-color: #dfceb6;
   border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 20px;
+  /* display: flex; */
+  width: min-content;
+  align-items: center;
+}
+article.articulo-producto-cart{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+div.descrip-carrito{}
+.articulo-producto-cart img {
+  /* max-width: 100%; */
+  width: 800px;
 }
 
-.articulo-producto img {
-  max-width: 100%;
-}
-
-.articulo-producto h3 {
-  font-size: 1.2rem;
+.articulo-producto-cart h3 {
+  font-size: 35px;
   margin-top: 10px;
 }
 
 .quantity-controls {
   display: flex;
   align-items: center;
+  height: fit-content;
+  position: relative;
+  left: 23%;
+  top: 125px;
 }
 
 .quantity-controls button {
-  padding: 5px 10px;
-  background-color: #dc3545;
+  padding: 0;
+  background-color: #198754;
   border: none;
   cursor: pointer;
+  font-size: 30px;
+  color: black;
 }
 
 .quantity {
   margin: 0 10px;
   font-weight: bold;
 }
-
+.main-cart form{
+    background-color: #f0f8ff00;
+    width: 50%;
+    /* display: flex; */
+    align-content: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 .total {
   font-weight: bold;
 }
@@ -43,6 +64,7 @@
 .confirmacion {
   text-align: center;
   margin-top: 20px;
+  width: 80%;
 }
 
 .botonno, .botonok {

@@ -231,6 +231,7 @@ a.botonok{
         align-content: center;
         justify-content: flex-start;
         flex-direction: column;
+        background-image: url('../design/imgProducts/5.jpg');
     }
 
     .main-product .caja {
@@ -244,12 +245,12 @@ a.botonok{
     .main-product .article {}
 
     .main-product .article .articulo-producto {
-        background-color: var(--cajaproduct);
+        background-color: #364f5e;
         /* height: 98vh; */
         display: flex;
         flex-direction: column;
         /* background-size: contain; */
-        opacity: 0.8;
+        /* opacity: 0.8; */
         padding: 0% 10% 10%;
         justify-content: center;
         align-items: center;

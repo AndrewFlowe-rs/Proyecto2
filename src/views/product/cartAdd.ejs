@@ -6,29 +6,33 @@
     <!-- Header -->
    <%- include('../partials/header') %>
     <%- include('../partials/burguer') %>
-    <main class="main-product">
-      <div class="article" data-aos="flip-left">
-          <article class="articulo-producto">
+    <main class="main-cart">
+      <div class="article-cart" data-aos="flip-left">
+          <article class="articulo-producto-cart">
               <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
-              <h3><%= p.name %></h3>
+              <div class=""><h3><%= p.name %></h3>
               <p class="ingredientes"><%= p.description %></p>
+              <br>
               <p class="ingredientes">Categoría: <%=p.categoryName%></p>
-              <p class="subtotal">Unidad:</p>
+             
               <hr>
-              
-              <p class="quantity">0</p>
+              <p class="totale"><%= toThousand(p.price) %></p> <p class="subtotal">Unidad:</p>
+              <hr>  <p class="quantity">0</p>
               <p class="total">Total:</p>
-              <hr>
-              <p class="totale"><%= toThousand(p.price) %></p>
+              </div>
+
               <div class="quantity-controls">
                   <button class="decrement-quantity">-</button>
                   <button class="increment-quantity">+</button>
+                  
               </div>
+            
+              
               <br>
               <form action="" method="post">
                   <div class="confirmacion">
                       <button class="botonno" type="button">Cancelar</button>
-                      <button href="/carrito/agregar/<%= p.id %>" class="botonok" type="submit">Confirmar compra</button>
+                      <button href="/carrito/agregar/<%= p.id %>" class="botonok" type="submit">Confirmar</button>
                   </div>
               </form>
           </article>
