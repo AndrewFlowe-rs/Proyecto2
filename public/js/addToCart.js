@@ -1,9 +1,9 @@
 const decrementBtn = document.querySelector('.decrement-quantity');
 const incrementBtn = document.querySelector('.increment-quantity');
 const quantityDisplay = document.querySelector('.quantity');
-const totalDisplay = document.querySelector('.total');
-const price = '<%= p.price %>';
-console.log(price)
+const totalDisplay = document.querySelector('.total span')
+const price = parseFloat('<%= p.price %>');
+
 
 let quantity = 1; // Cantidad inicial
 
@@ -31,3 +31,4 @@ function updateQuantityAndTotal() {
 function toThousand(price) {
     return price.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
 }
+updateQuantityAndTotal();
