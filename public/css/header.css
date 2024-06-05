@@ -81,7 +81,7 @@ div.div{}
         /* font-family: var(--colorproducto); */
         display: flex;
         flex-direction: column;
-        /* height: auto; */
+        height: auto;
         /* width: 100%; */
     }
     div.cart-logo{}
