@@ -3,7 +3,7 @@
         color: azure;
     }
     .main-login {
-        background-image: url("../design/imgProducts/publicity.jpg");
+        background-image: url("../design/imgProducts/5.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         padding: 5%;
@@ -12,10 +12,17 @@
         align-items: center;
         flex-direction: column;
     }
+    div.image-login{
+    /* display: none; */
+}
+    div.image-login img{display: none;}
+    .pizza-login{
+    display: none;
+}
     .main-login form{
         /* border: solid; */
         display: flex;
-        background-color: var(--gri);
+        background-color: #364f5e00;
         border-radius: 18px;
         align-items: center;
         flex-direction: column;
@@ -100,26 +107,38 @@ height: 58px;
         min-height: 100vh;
         /* min-width: 100vh; */
     }
+    div.image-login{
+    display: none;
+}
+    div.image-login img{}
+    .pizza-login{
+    display: none;
+}
+
     .main-login form{
         align-items: center;
         /* border: solid; */
         display: flex;
         flex-direction: column;
-        background-color: var(--gri);
-        border-radius: 18px;
+        background-color: #364f5e03;
+        border-radius: 8px;
         /* margin-left: 47%; */
         display: flex;
-        width: 470px;
+        /* width: 470px; */
         margin-left: 26px;
         margin: 0;
         font-family: var(--comic);
+        /* height: 6vh; */
+        justify-content: flex-start;
+        /* margin-bottom: 28px; */
         }
         .main-login form input{
         border: solid;
-        border-radius: 18px;
+        border-radius: 5px;
         padding: 6px 2px;
         margin-top: 13px;
         border: solid .3px;
+        width: 50%;
     }
     .main-login form button {
         margin: 18px auto;
@@ -180,19 +199,63 @@ height: 58px;
     @media  (min-width: 768px){
 
 
-        .main-login a { 
+        .main-login a {
+        font-size: 20px;
         }
         .main-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
     }
+    div.image-login{
+    display: flex;
+    flex: 1;
+    text-align: unset;
+    /* align-self: center; */
+    /* text-align: center; */
+}
+    div.image-login img{
+    width: 120%;
+    position: relative;
+    right: 20%;
+    height: 100vh;
+    padding: 0;
+    border-radius: 0;
+}
+.pizza-login{
+    position: absolute;
+    top: 39%;
+    font-family: var(--frijole);
+    left: 14%;
+    font-size: 70px;
+    color: white;
+    filter: drop-shadow(8px 13px 26px black);
+    display: block;
+    /* align-self: center; */
+    font-weight: normal;
+    width: min-content;
+}
+
     .main-login form{
-      margin-left: 55%;
+      /* margin-left: 55%; */
       height: 50%;
-      font-size: 25px;
+      font-size: 30px;
+      height: 100vh;
+      width: ;
+      border-radius: 0;
+      background-color: #364f5e;
+      flex: 1;
+      opacity: 1;
 }
         .main-login form input{
         font-size: 25px;
+        text-align: center;
+        width: auto;
         }
     .main-login form button {
+    font-size: 25px;
+    border-radius: 0;
     }
         .main-login form label{}
     
@@ -208,9 +271,13 @@ height: 58px;
     }    
     .main-login .conteiner-red li img{
     
+width: 50px;
+    
+height: 50px;
     }
     .main-login .conteiner-red li a{
      
+font-size: 24px;
     }
     .conteiner-red .google-login{}
     .conteiner-red .face-login{}

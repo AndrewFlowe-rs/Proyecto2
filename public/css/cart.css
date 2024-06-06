@@ -2006,7 +2006,6 @@ i.fa-solid.fa-cart-shopping{
 @media (min-width:768px) {
     main.main-cart {
     display: flex;
-    height: 123vh;
     min-height: 100vh;
     padding: 0% 5% 5% 1%;
     text-align: center;

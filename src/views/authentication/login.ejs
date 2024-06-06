@@ -9,59 +9,70 @@
 
                 <!-- Header -->
                 <%- include('../partials/header') %>
-                <%- include('../partials/burguer') %>
+                        <%- include('../partials/burguer') %>
 
 
-                        <main class="main-login">
+                                <main class="main-login">
 
-                                <!--LOGIN-->
+                                        <div class="image-login">
+                                                <img src="/design/imgProducts/5.jpg" alt="">
+                                                <p class="pizza-login">¡Tentate con nuestras pizzas!</p>
+                                        </div>
 
-                                <form class="form-login" action="/aut/login" method="post">
+                                        <!--LOGIN-->
 
-                                        <input type="email" id="login" placeholder="Email" name="email" class="is-invalid"
-                                                value="<%= locals.email? email : "" %>">
+                                        <form class="form-login" action="/aut/login" method="post">
+                                                <input type="email" id="login" placeholder="Email" name="email"
+                                                        class="is-invalid" value="<%= locals.email? email : "" %>">
                                                 <p class="text-danger error-alert">
                                                         <%= locals.errors?.email?.msg%>
                                                 </p>
                                                 <p class="text-danger alert-email"></p>
 
-                                                <input type="password" id="passwordL" placeholder="contraseña" name="password" class="is-valid" value="">
+                                                <input type="password" id="passwordL" placeholder="contraseña"
+                                                        name="password" class="is-valid" value="">
 
                                                 <p class="text-danger error-password">
                                                         <%= locals.errors?.password?.msg%>
                                                 </p>
                                                 <p class=" text-danger alert-password"></p>
 
-                                        <button type="submit">Ingresar</button>
-                                        <a href="">¿Olvidaste tu contraseña?</a>
+                                                <button type="submit">Ingresar</button>
+                                                <a href="">¿Olvidaste tu contraseña?</a>
 
-                                        <ol class="conteiner-red">
+                                                <ol class="conteiner-red">
 
-                                                <li class="google-login"><img src="/design/iconsLogin/klipartz.png"
-                                                                alt=""><a href="http://www.google.com">Continuar con
-                                                                Google</a></li>
-                                                <li class="face-login"><img src="/design/icons/face.png" alt=""><a
-                                                                href="http://www.facebook.com">Continuar
-                                                                Facebook</a>
-                                                </li>
-                                                <li class="insta-login"> <img src="/design/icons/insta.png" alt=""><a
-                                                                href="http://www.instagram.com">Continuar con
-                                                                Instagram</a></li>
-                                                <li class="whats-login"> <img src="/design/icons/what.png" alt=""><a
-                                                                href="http://www.instagram.com">Continuar con
-                                                                Whatsapp</a></li>
+                                                        <li class="google-login"><img
+                                                                        src="/design/iconsLogin/klipartz.png" alt=""><a
+                                                                        href="http://www.google.com">Continuar con
+                                                                        Google</a></li>
+                                                        <li class="face-login"><img src="/design/icons/face.png"
+                                                                        alt=""><a
+                                                                        href="http://www.facebook.com">Continuar
+                                                                        Facebook</a>
+                                                        </li>
+                                                        <li class="insta-login"> <img src="/design/icons/insta.png"
+                                                                        alt=""><a
+                                                                        href="http://www.instagram.com">Continuar con
+                                                                        Instagram</a></li>
+                                                        <li class="whats-login"> <img src="/design/icons/what.png"
+                                                                        alt=""><a
+                                                                        href="http://www.instagram.com">Continuar con
+                                                                        Whatsapp</a></li>
 
-                                        </ol>
-                                </form>
+                                                </ol>
+                                        </form>
 
 
 
 
-                        </main>
+
+                                </main>
 
 
-                        <!-- Footer -->
-                        <%- include('../partials/footer') %>
-                        <script src="../../../js/validations/validationLogin.js"></script> 
+                                <!-- Footer -->
+                                <%- include('../partials/footer') %>
+                                        <script src="../../../js/validations/validationLogin.js"></script>
         </body>
+
 </html>
