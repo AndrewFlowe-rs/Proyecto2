@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "db:reset": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all"
+    "db:reset": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
+    "client-dev" : "cd dashboard && npm run dev "
   },
   "author": "",
   "license": "ISC",
