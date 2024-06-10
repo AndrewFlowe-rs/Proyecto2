@@ -128,3 +128,9 @@ Procrastinación en las actividades.
 
 
 
+
+------------------------------------------------------------------------------------------------------------------
+# Retrospectiva:
+
+No tengo mucho que decir, creo que ya he dicho todo en los sprints anteriores, lamentablemente esas cosas de las que he hablado no han mejorado. Somos un grupo de cuatro, y sólo somos dos miembros que estamos intentando sacar el proyecto adelante, ya que falta muy poco para culminar la cursada.
+

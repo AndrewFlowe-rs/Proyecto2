@@ -50,7 +50,7 @@ i.fa-solid.fa-cart-shopping:hover {
     display: none;
     width: 68px;
 }
-
+.search-bar{display: none;}
 .headerPrincipal .burger-menu i {
     font-size: 40px;
     margin-left: 30px;
@@ -100,6 +100,8 @@ div.div{}
     .headerPrincipal h5 {
         display: none;
     }
+    .search-bar{}
+
 
     .headerPrincipal .burger-menu {
         /* display: none; */
@@ -178,6 +180,12 @@ div.div{}
         width: 68px;
         font-family: var(--comic);
     }
+    .search-bar{display: flex;
+        position: absolute;
+        top: 90%;
+        align-items: center;
+justify-content: flex-end;}
+.search-bar input{width: 500px;}
 
     .headerPrincipal .burger-menu i {
         display: none;
