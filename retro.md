@@ -134,3 +134,40 @@ Procrastinación en las actividades.
 
 No tengo mucho que decir, creo que ya he dicho todo en los sprints anteriores, lamentablemente esas cosas de las que he hablado no han mejorado. Somos un grupo de cuatro, y sólo somos dos miembros que estamos intentando sacar el proyecto adelante, ya que falta muy poco para culminar la cursada.
 
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+# Retrospectiva
+
+
+- Comenzar a hacer:
+
+Comunicarnos de forma fluída entre todos. Iniciar las retrospectivas al principio del sprint y no al final.
+
+
+
+- Hacer más: 
+
+Tomar la iniciativa en las tareas, motivarnos.
+
+
+
+- Continuar haciendo:
+
+Pedir ayuda a otros miembros del grupo, cuando crea que no se pueda con la tarea asignada, ha funcionado bien.
+
+
+- Hacer menos:
+
+No darle importancia al tablero de trabajo, así nace la desorganización.
+
+
+- Dejar de hacer: 
+
+
+Procrastinación en las actividades.
+
+
+- Replantear el final del curso
+

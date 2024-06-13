@@ -1,0 +1,53 @@
+[
+{
+    "id":1,
+    "name":"Calzones",
+}
+
+  
+{
+    "id":2,
+    "name":"Fainá",
+}
+
+{
+    "id":3,
+    "name":"Empanadas",
+}
+
+{
+    "id":4,
+    "name":"Sin TACC",
+}
+
+  
+{
+    "id":5,
+    "name":"Clasicas",
+}
+
+{
+    "id":6,
+    "name":"Pizzas del Mes",
+}
+
+{
+    "id":7,
+    "name":"Promo del Mes",
+}
+
+{
+    "id":8,
+    "name":"Combos",
+}
+
+{
+    "id":8,
+    "name":"Individuales",
+}
+
+{
+    "id":9,
+    "name":"Bebidas",
+}
+]
