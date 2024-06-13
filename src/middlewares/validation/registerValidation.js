@@ -21,26 +21,20 @@ const path = require('path');
         .notEmpty().withMessage('El telefono es requerido').bail(),
 
     check('state')
-        .isLength({ min: 5}).withMessage('El texto debe tener como mínimo 5 caracteres')
-        .notEmpty().withMessage('Este campo es requerido').bail(),
+    .isLength({ min: 5 }).withMessage('El nombre debe tener al menos 5 caracteres').notEmpty().withMessage('Este campo es requerido').bail(),
 
     check('avatar')
-        .custom((value, { req }) => {
-            const reqFile = req.file;
-        
-            const extensionesAceptadas = ['.jpg', '.jpeg', '.png', '.webp'];
-            if (!reqFile) {
-                req.file = {
-                    originalname: 'defaultImg.webp' 
-                };
-            } else {
-                let extension = path.extname(reqFile.originalname);
-                if (!extensionesAceptadas.includes(extension)) {
-                    throw new Error('Las extensiones permitidas son .jpg, .png y .jpeg');
-                }
-            }
-            return true;
-        })
+    .custom((value, { req }) => {
+        if (!req.file) {
+          throw new Error('Debes subir una imagen');
+        }
+        const extensionesAceptadas = ['.jpg', '.jpeg', '.png', '.webp'];
+        const extension = path.extname(req.file.originalname).toLowerCase();
+        if (!extensionesAceptadas.includes(extension)) {
+          throw new Error('Las extensiones permitidas son .jpg, .png, .webp y .jpeg');
+        }
+        return true;
+      })
         
 ];
 

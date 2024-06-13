@@ -1,161 +1,157 @@
-let form = document.querySelector(".form-register");
-let nombre = document.getElementById("nombre");
-let campoEmail = document.getElementById("email");
-let password = document.getElementById("password");
-let number = document.getElementById("num");
-let ciudad = document.getElementById("direction");
-let avatar = document.getElementById("image");
-let state = document.getElementById("state");
-let btnBack = document.querySelector('.btn.btn-tomato-opacity-80');
+document.addEventListener("load", function () {
+    const form = document.querySelector(".form-register");
+    const nombre = document.getElementById("nombre");
+    const campoEmail = document.getElementById("email");
+    const password = document.getElementById("password");
+    const number = document.getElementById("num");
+    const state = document.getElementById("state");
+    const avatar = document.querySelector("name");
+    const imageError = document.getElementById("imageError");
+    let existError = false;
 
-window.addEventListener("load", () => {
-    let existerr = false;
+    function showError(element, message) {
+        const errorElement = element.nextElementSibling;
+        errorElement.textContent = message;
+        errorElement.classList.add("text-danger");
+        existError = true;
+    }
 
-    nombre.addEventListener("blur", function () {
-        let value = this.value.trim();
-        let errName = document.querySelector(".msg-err");
-        
-        if (value.length === 0) {
-            errName.innerHTML = "el nombre es requerido";
-            this.classList.add("is-invalid");
-            existerr = true;
-        } else if (value.length <= 3 || value.length >= 16) {
-            errName.innerHTML = "el nombre debe tener entre 3 y 16 caracteres";
-            this.classList.add("is-invalid");
-            existerr = true;
-        } else {
-            errName.innerHTML = "";
-            this.classList.remove("is-invalid");
-            this.classList.add("is-valid");
-            existerr = false;
+    function clearError(element) {
+        const errorElement = element.nextElementSibling;
+        errorElement.textContent = "";
+        existError = false;
+    }
+
+    function validateForm(event) {
+        existError = false;
+
+        if (nombre.value.trim().length === 0 ||
+            nombre.value.trim().length <= 3 || nombre.value.trim().length >= 16 ||
+            !campoEmail.value.trim().match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/) ||
+            password.value.trim().length === 0 ||
+            !password.value.trim().match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/) ||
+            number.value.trim().length === 0 ||
+            number.value.trim().length < 10 ||
+            state.value === "" ||
+            !isValidFileType(avatar.files[0])) { 
+            existError = true;
         }
 
-        nombre.addEventListener("focus", function () {
-            errName.innerHTML = "";
-            this.classList.remove("is-invalid");
-            this.classList.remove("is-valid");
-        });
-    });
-
-    campoEmail.addEventListener("blur", function () {
-        let errNamer = document.querySelector(".msge-err");
-        const email = campoEmail.value.trim();
-        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        
-        if (!emailRegex.test(email)) {
-            errNamer.innerHTML = "El mail no es válido";
-            existerr = true;
-        } else {
-            errNamer.innerHTML = "";
-            existerr = false;
+        if (existError) {
+            event.preventDefault(); 
         }
+    }
 
-        campoEmail.addEventListener("focus", function () {
-            errNamer.innerHTML = "";
-        });
-    });
-
-    password.addEventListener("blur", function () {
-        let value = this.value.trim();
-        let errpasword = document.querySelector(".err-p");
-        let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
-
-        if (value.length === 0) {
-            errpasword.innerHTML = "La contraseña es requerida";
-            existerr = true;
-        } else if (!regex.test(value)) {
-            errpasword.innerHTML = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número";
-            existerr = true;
-        } else {
-            errpasword.innerHTML = "";
-            existerr = false;
-        }
-
-        password.addEventListener("focus", function () {
-            errpasword.innerHTML = "";
-        });
-    });
-
-    number.addEventListener("blur", function () {
-        let value = this.value.trim();
-        let errnumber = document.querySelector(".err-n");
-
-        if (value.length === 0) {
-            errnumber.innerHTML = "El número es requerido";
-            existerr = true;
-        } else if (value.length < 10) {
-            errnumber.innerHTML = "El número debe tener al menos 10 dígitos";
-            existerr = true;
-        } else {
-            errnumber.innerHTML = "";
-            existerr = false;
-        }
-
-        number.addEventListener("focus", function () {
-            errnumber.innerHTML = "";
-        });
-    });
-
-    state.addEventListener("blur", function () {
-        let errState = document.querySelector(".err-c");
-
-        if (this.value === "") {
-            errState.innerHTML = "Debes seleccionar una provincia";
-            this.classList.add("is-invalid");
-            existerr = true;
-        } else {
-            errState.innerHTML = "";
-            this.classList.remove("is-invalid");
-            this.classList.add("is-valid");
-            existerr = false;
-        }
-
-        this.addEventListener("focus", function () {
-            errState.innerHTML = "";
-            this.classList.remove("is-invalid");
-            this.classList.remove("is-valid");
-        });
-    });
-
-    avatar.addEventListener("change", function () {
-        let errImage = document.getElementById("imageError");
-        const file = this.files[0];
-
+    function isValidFileType(file) {
         if (!file) {
-            errImage.innerHTML = "Debes seleccionar una imagen";
-            existerr = true;
-            return;
+            return false;
         }
 
         const allowedTypes = ["image/jpeg", "image/png", "image/jpg", "image/webp"];
-        if (!allowedTypes.includes(file.type)) {
-            errImage.innerHTML = "Solo se permiten archivos: JPG, PNG, WEBP y JPEG";
-            existerr = true;
-            return;
-        }
+        const fileType = file.type.toLowerCase();
+        return allowedTypes.includes(fileType);
+    }
 
-        const maxSize = 5 * 1024 * 1024;
-        if (file.size > maxSize) {
-            errImage.innerHTML = "La imagen es demasiado grande. El tamaño máximo es de 5MB";
-            existerr = true;
-            return;
-        }
+    nombre.addEventListener("blur", function () {
+        const value = this.value.trim();
 
-        errImage.innerHTML = "";
-        existerr = false;
+        if (value.length === 0) {
+            showError(this, "El nombre es requerido");
+        } else if (value.length <= 3 || value.length >= 16) {
+            showError(this, "El nombre debe tener entre 3 y 16 caracteres");
+        } else {
+            clearError(this);
+        }
     });
 
-    // Botón para volver atrás
-    btnBack.addEventListener('click', function() {
+    campoEmail.addEventListener("blur", function () {
+        const value = this.value.trim();
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        if (!emailRegex.test(value)) {
+            showError(this, "El correo electrónico no es válido");
+        } else {
+            clearError(this);
+        }
+    });
+
+    password.addEventListener("blur", function () {
+        const value = this.value.trim();
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+        if (value.length === 0) {
+            showError(this, "La contraseña es requerida");
+        } else if (!regex.test(value)) {
+            showError(this, "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una minúscula y un número");
+        } else {
+            clearError(this);
+        }
+    });
+
+    number.addEventListener("blur", function () {
+        const value = this.value.trim();
+
+        if (value.length === 0) {
+            showError(this, "El número es requerido");
+        } else if (value.length < 10) {
+            showError(this, "El número debe tener al menos 10 dígitos");
+        } else {
+            clearError(this);
+        }
+    });
+
+    state.addEventListener("change", function () {
+        if (this.value === "") {
+            showError(this, "Debes seleccionar una provincia");
+        } else {
+            clearError(this);
+        }
+    });
+
+    function showError(message) {
+        imageError.textContent = message;
+        imageError.classList.add("text-danger");
+    }
+
+    function clearError() {
+        imageError.textContent = "";
+        imageError.classList.remove("text-danger");
+    }
+
+    function isValidFileType(file) {
+        const allowedTypes = ["image/jpeg", "image/png", "image/jpg", "image/webp"];
+        return allowedTypes.includes(file.type);
+    }
+
+    function isValidFileSize(file) {
+        const maxSize = 5 * 1024 * 1024; 
+        return file.size <= maxSize;
+    }
+
+    avatar.addEventListener("change", function () {
+        const file = this.files[0];
+
+        if (!file) {
+            showError("Debes seleccionar una imagen");
+            return;
+        }
+
+        if (!isValidFileType(file)) {
+            showError("Solo se permiten archivos JPG, PNG, JPEG y WEBP");
+            return;
+        }
+
+        if (!isValidFileSize(file)) {
+            showError("La imagen es demasiado grande. El tamaño máximo es de 5MB");
+            return;
+        }
+
+        clearError();
+    });
+
+
+    document.querySelector('.btn.btn-tomato-opacity-80').addEventListener('click', function() {
         history.back();
     });
-
-    // Formulario
-    form.addEventListener("submit", function (event) {
-        if (existerr) {
-            event.preventDefault();
-        } else {
-            this.submit();
-        }
-    });
+    form.addEventListener("submit", validateForm);
 });

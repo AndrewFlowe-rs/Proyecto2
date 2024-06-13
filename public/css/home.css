@@ -487,7 +487,7 @@ p.card-text{
 }
 .titlehome{
     position: absolute;
-    top: 46%;
+    top: 52%;
     font-family: var(--frijole);
     left: 6%;
     font-size: 600%;
@@ -666,6 +666,7 @@ align-items: center;
         width: 100vw;
         position: relative;
         left: 0%;
+        top: -22px;
     }
     .youtube{
     position: relative;

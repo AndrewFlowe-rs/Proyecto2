@@ -179,6 +179,8 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    opacity: 1
+    ;
     }
     input#name.form-control-plaintext{
       text-align: center;

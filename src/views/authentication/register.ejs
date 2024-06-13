@@ -69,18 +69,36 @@
 <div>
     <label for="state">Selecciona tu provincia</label>
     <select name="state" id="state">
-      <% if (provinces && provinces.length > 0) { %>
-        <% provinces.forEach(province => { %>
-          <option value="<%= province.id %>"><%= province.nombre %></option>
-        <% }) %>
-      <% } else { %>
-        <option value="">No hay provincias disponibles</option>
-      <% } %>
-    </select>
+        <option value="Buenos Aires">Buenos Aires</option>
+        <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+        <option value="Catamarca">Catamarca</option>
+        <option value="Chaco">Chaco</option>
+        <option value="Chubut">Chubut</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Corrientes">Corrientes</option>
+        <option value="Entre Ríos">Entre Ríos</option>
+        <option value="Formosa">Formosa</option>
+        <option value="Jujuy">Jujuy</option>
+        <option value="La Pampa">La Pampa</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Mendoza">Mendoza</option>
+        <option value="Misiones">Misiones</option>
+        <option value="Neuquén">Neuquén</option>
+        <option value="Río Negro">Río Negro</option>
+        <option value="Salta">Salta</option>
+        <option value="San Juan">San Juan</option>
+        <option value="San Luis">San Luis</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Santa Fe">Santa Fe</option>
+        <option value="Santiago del Estero">Santiago del Estero</option>
+        <option value="Tierra del Fuego">Tierra del Fuego</option>
+        <option value="Tucumán">Tucumán</option>
+    </select>    
     <p class="text-danger err-c"></p>
-    <div class="error-msg <%= locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
-      <%= locals.errors?.state?.msg %>
-    </div>
+    <div class="error-msg <%=locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
+
+        <%= locals.errors?.state?.msg %>
+</div>
   </div>
   
                     <!-- Campo imagen -->
@@ -88,7 +106,10 @@
                         <label class="label-titulo" for="image">Ingresa una imagen</label>
                         <br>
                         <input type="file" id="image" name="avatar">
-                        <p class="text-danger" id="imageError"></p>
+                        <div class="error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>">
+
+                            <%= locals.errors?.avatar?.msg %>
+                    </div>
                     </div>
                    
 
@@ -99,7 +120,7 @@
                     <div class="button">
                        
                        <button type="submit">Crear Cuenta</button>
-                        <a class="btn btn-tomato-opacity-80">Cancelar</a>
+                        <a class="btn btn-tomato-opacity-80" >Cancelar</a>
                     </div>
                 </div>
                 <div class="c-register">
@@ -111,12 +132,12 @@
 
         </main>
 
-
             <!-- Footer -->
             <%- include('../partials/footer') %>
-             <script src="../../../js/validations/validationRegister.js"></script>
+            
              
- 
+  <script src="../../../js/validations/validationRegister.js"></script>
+
 
         </body>
 </html>

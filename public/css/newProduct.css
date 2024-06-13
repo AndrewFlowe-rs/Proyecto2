@@ -154,9 +154,7 @@ margin-left: 98%;
         height: auto;
         font-size: 25px;
     }
-    .form-new .new-contentx{
-    width: fit-content;
-}
+    .form-new .new-contentx{width: auto;/* text-align: center; *//* display: flex; *//* align-items: stretch; *//* justify-content: space-between; *//* align-content: space-around; */}
     .form-new div {
         text-align: center;
         margin: 9px;
@@ -169,6 +167,11 @@ margin-left: 98%;
         padding: 4px;
         background-color: var(--gris);
     }
+    i.fa-solid.fa-xmark{
+    position: absolute;
+    top: 7px;
+    left: 392px;
+}
 .input-error {
     border: 2px solid red;
 }

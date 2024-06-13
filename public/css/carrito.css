@@ -134,7 +134,7 @@ div.descrip-carrito{}
   display: flex;
   height: fit-content;
   position: relative;
-  left: 1%;
+  left: 34%;
   /* top: 192px; */
   /* text-align: center; */
 }
@@ -158,7 +158,7 @@ div.descrip-carrito{}
 }
 .main-cart form{
     background-color: #f0f8ff00;
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     position: relative;
     /* top: 210px; */
@@ -209,7 +209,7 @@ div.descrip-carrito{}
   }
   article.articulo-producto-cart{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: nowrap;
       width: min-content;
   }

@@ -13,7 +13,7 @@ const { upload, uploadUser } = require("../middlewares/validations/upload.files"
 router.get('/login', login);
 router.post('/login', loginDatesValidation, loginProcess );
 router.get('/registro', authController.register);
-router.post('/registro', uploadUser.single('avatar'),validaciones, authController.processRegister);
+router.post('/registro',[ uploadUser.single('avatar') ,validaciones], authController.processRegister);
 router.get('/recuperar-contraseña', )
 
 
