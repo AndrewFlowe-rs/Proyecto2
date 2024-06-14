@@ -1,5 +1,5 @@
 import React from "react";
-import imagenFondo from "../assets/images/mandalorian.jpg";
+import imagenFondo from "../../assets/images/mandalorian.jpg";
 import { ContentData } from "./ContentData";
 function ContentRowTop({ data }) {
   return (
@@ -19,15 +19,6 @@ function ContentRowTop({ data }) {
           {data
             .filter(({ show }) => show)
             .map((el, i) => {
-              {
-                /* <ContentData
-                key={i}
-                title={el.title}
-                color={el.color}
-                digit={el.digit}
-                icon={el.icon}
-              /> */
-              }
               return <ContentData key={i} {...el} />;
             })}
         </div>

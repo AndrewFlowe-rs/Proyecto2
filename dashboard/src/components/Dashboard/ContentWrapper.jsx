@@ -1,7 +1,7 @@
 import React from "react";
 import TopBar from "./TopBar";
 import ContentRowTop from "./ContentRowTop";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import { TableRow } from "./TableRow";
 import { TableHead } from "./TableHead";
 function ContentWrapper() {
@@ -56,23 +56,7 @@ function ContentWrapper() {
         <div id="content">
           <TopBar />
 
-          <ContentRowTop data={metrics} />
- 
-					<div className="border p-1 m-3">
-
-          <table class="table table-bordered m-4">
-            <TableHead items={dataTableHead} />
-
-            <tbody>
-              {movies.map((movie,i) => (
-               /*  <TableRow key={i} title={movie.title} duration={movie.duration} rating={movie.rating} genre={movie.genre} awards={movie.awards}/> */
-							 <TableRow key={i} {...movie}/>
-              ))}
-            </tbody>
-
-						<TableHead items={dataTableHead} />
-          </table>
-							 </div>
+   
 
           <Footer />
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import SideBar from './SideBar';
-import ContentWrapper from './ContentWrapper';
+import SideBar from './Dashboard/SideBar';
+import ContentWrapper from './Dashboard/ContentWrapper';
 function App() {
   return (
     <React.Fragment>

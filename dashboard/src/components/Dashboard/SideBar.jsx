@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../../assets/images/logo-DH.png';
 
 function SideBar(){
     return(
@@ -34,7 +34,7 @@ function SideBar(){
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="/">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <span>Productos</span>
                     </a>
                 </li>
 
@@ -42,14 +42,14 @@ function SideBar(){
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
+                        <span>Usuarios</span></a>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></a>
+                        <span>Ordenes</span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}
