@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import SideBar from '../components/Dashboard/SideBar'
 import ContentWrapper from '../components/Dashboard/ContentWrapper'
 
-const root = props => {
+const Root = props => {
   return (
     <React.Fragment>
     <div id="wrapper">
@@ -16,4 +16,4 @@ const root = props => {
 
 root.propTypes = {}
 
-export default root
+export default Root

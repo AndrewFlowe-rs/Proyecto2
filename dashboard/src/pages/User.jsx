@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const usuarios = props => {
   return (
-    <div>usuarios</div>
+    <div> Todes los usuarios</div>
   )
 }
 

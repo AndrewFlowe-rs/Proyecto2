@@ -4,6 +4,7 @@ import ContentRowTop from "./ContentRowTop";
 import Footer from "../Footer";
 import { TableRow } from "./TableRow";
 import { TableHead } from "./TableHead";
+import { Outlet } from "react-router-dom";
 function ContentWrapper() {
   const metrics = [
     {
@@ -56,7 +57,7 @@ function ContentWrapper() {
         <div id="content">
           <TopBar />
 
-   
+          <Outlet />
 
           <Footer />
         </div>

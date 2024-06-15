@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../assets/images/logo.jpg';
+import { Link } from 'react-router-dom';
 
 function SideBar(){
     return(
@@ -33,10 +34,10 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <a className="nav-link collapsed" href="/">
+                    <Link className="nav-link collapsed" to="/productos">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Productos</span>
-                    </a>
+                    </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
