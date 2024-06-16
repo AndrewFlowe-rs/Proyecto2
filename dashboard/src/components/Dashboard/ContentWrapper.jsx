@@ -1,9 +1,8 @@
 import React from "react";
 import TopBar from "./TopBar";
-import ContentRowTop from "./ContentRowTop";
+
 import Footer from "../Footer";
-import { TableRow } from "./TableRow";
-import { TableHead } from "./TableHead";
+
 import { Outlet } from "react-router-dom";
 function ContentWrapper() {
   const metrics = [
@@ -30,24 +29,9 @@ function ContentWrapper() {
     },
   ];
 
-  const movies = [
-    {
-      title: "Billy Elliot",
-      duration: 123,
-      rating: 5,
-      genre: ["Drama", "Comedia"],
-      awards: 2,
-    },
-    {
-      title: "Alicia en el país de las maravillas",
-      duration: 142,
-      rating: 4.8,
-      genre: ["Drama", "Acción", "Comedia"],
-      awards: 3,
-    },
-  ];
+  
 
-  const dataTableHead = ["Titulo", "Duración", "Rating", "Género", "Premios"];
+ 
 
   return (
     <React.Fragment>

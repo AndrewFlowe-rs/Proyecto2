@@ -1,12 +1,50 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
+import { TableHead } from "../components/Dashboard/TableHead";
+import { TableRow } from "../components/Dashboard/TableRow";
 
-const Product = props => {
+const Product = () => {
+  
+const movies = [
+  {
+    title: "Billy Elliot",
+    duration: 123,
+    rating: 5,
+    genre: ["Drama", "Comedia"],
+    awards: 2,
+  },
+  {
+    title: "Alicia en el país de las maravillas",
+    duration: 142,
+    rating: 4.8,
+    genre: ["Drama", "Acción", "Comedia"],
+    awards: 3,
+  },
+];
+const dataTableHead = ["Titulo", "Duración", "Rating", "Género", "Premios"];
+
   return (
-    <h1> Todos Los Productos</h1>
-  )
-}
+    <>
+      <h1> Todos Los Productos</h1>
 
-Product.propTypes = {}
+      <div className="border p-1 m-3">
+        <table className="table table-bordered m-4">
+          <TableHead items={dataTableHead} />
 
-export default Product
+          <tbody>
+            {movies.map((movie, i) => (
+              /*  <TableRow key={i} title={movie.title} duration={movie.duration} rating={movie.rating} genre={movie.genre} awards={movie.awards}/> */
+              <TableRow key={i} {...movie} />
+            ))}
+          </tbody>
+
+          <TableHead items={dataTableHead} />
+        </table>
+      </div>
+    </>
+  );
+};
+
+Product.propTypes = {};
+
+export default Product;
