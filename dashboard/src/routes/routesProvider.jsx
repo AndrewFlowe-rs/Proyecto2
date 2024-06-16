@@ -10,6 +10,9 @@ const router = createBrowserRouter([
       path : "/productos" ,
       element :  < Product />
     }],
+    
+  
   },
+  
 ]);
 export const ProviderRouter = () => <RouterProvider router={router} />;

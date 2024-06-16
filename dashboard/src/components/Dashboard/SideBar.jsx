@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function SideBar(){
     return(
-        <React.Fragment>
+        <div >
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar" >
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -42,16 +42,16 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/usuarios">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Usuarios</span></a>
+                        <span>Usuarios</span></Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/ordenes">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Ordenes</span></a>
+                        <span>Ordenes</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -59,7 +59,7 @@ function SideBar(){
             </ul>
             {/*<!-- End of Sidebar -->*/}
             
-        </React.Fragment>
+        </div>
     )
 }
 export default SideBar;
