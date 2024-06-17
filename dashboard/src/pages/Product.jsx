@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TableHead } from "../components/Dashboard/TableHead";
-import { TableRow } from "../components/Dashboard/TableRow";
+import { TableHead } from "../components/Products/TableHead";
+import { TableRow } from "../components/Products/TableRow";
 
 const Product = () => {
   
 const movies = [
   {
+    id:1,
     title: "Billy Elliot",
     duration: 123,
     rating: 5,
@@ -14,6 +15,7 @@ const movies = [
     awards: 2,
   },
   {
+    id:2,
     title: "Alicia en el país de las maravillas",
     duration: 142,
     rating: 4.8,

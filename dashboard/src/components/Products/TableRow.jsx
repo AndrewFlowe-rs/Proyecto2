@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export const TableRow = ({ title, duration, rating, genre, awards }) => {
+export const TableRow = ({ id,title, duration, rating, genre, awards }) => {
   return (
     <tr>
+      <td><Link to={`/productos/${id}`}>{id}</Link></td>
       <td>{title}</td>
       <td>{duration}</td>
       <td>{rating}</td>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Orders = props => {
   return (
-    <div>Todas Las Ordenes</div>
+    <h1>Todas Las Ordenes</h1>
   )
 }
 

@@ -32,9 +32,9 @@ ContentData.propTypes = {
   icon: PropTypes.string, 
 }
 
-ContentData.defaultProps = {
-  title: "Titulo no definido",
-  color: "dark",
-  digit: 0,
-  icon: "question"
-}
+// ContentData.defaultProps = {
+//   title: "Titulo no definido",
+//   color: "dark",
+//   digit: 0,
+//   icon: "question"
+// }
