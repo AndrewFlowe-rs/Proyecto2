@@ -46,7 +46,7 @@ const prodRoutes = require('./routes/product.routes');
 const userRoutes = require('./routes/users.routes')
 // ROUTES APIs
 const apiProducts = require('./routes/api/productRoutes.api')
-
+const apiUsers = require('./routes/api/userRoutes.api')
 
 // ROUTERS
 app.use('/', otherRoutes);
@@ -58,6 +58,7 @@ app.use ('/admin',adminRoutes);
 app.use('/perfil', userRoutes)
 // Apis R.
 app.use('/api/products', apiProducts)
+app.use('/api/user', apiUsers)
 
 
 
@@ -68,7 +69,6 @@ app.use('/api/products', apiProducts)
 // // ROUTEOS API
 
 // app.use('api/products', prodRoutesApi)
-// app.use('/api/user', userRoutesApi)
 
 
 

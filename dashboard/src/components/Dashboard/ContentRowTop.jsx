@@ -1,5 +1,5 @@
 import React from "react";
-import imagenFondo from "../../assets/images/mandalorian.jpg";
+import imagenFondo from "../../assets/images/image-1717283445526-.jpg";
 import { ContentData } from "./ContentData";
 function ContentRowTop({ data }) {
   return (
@@ -7,7 +7,7 @@ function ContentRowTop({ data }) {
       {/*<!-- Content Row Top -->*/}
       <div className="container-fluid">
         <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-          <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+          <h1 className="h3 mb-0 text-gray-800"> Dashboard</h1>
         </div>
 
         {/*<!-- Content Row Movies-->*/}
@@ -31,7 +31,7 @@ function ContentRowTop({ data }) {
             <div className="card shadow mb-4">
               <div className="card-header py-3">
                 <h5 className="m-0 font-weight-bold text-gray-800">
-                  Last movie in Data Base
+                  Ultimo producto Agregado
                 </h5>
               </div>
               <div className="card-body">
@@ -40,7 +40,7 @@ function ContentRowTop({ data }) {
                     className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                     style={{ width: 40 + "rem" }}
                     src={imagenFondo}
-                    alt=" Star Wars - Mandalorian "
+                    alt=" Ultimo producto agregado"
                   />
                 </div>
                 <p>
@@ -57,7 +57,7 @@ function ContentRowTop({ data }) {
                   rel="nofollow"
                   href="/"
                 >
-                  View movie detail
+                  Ver detalle de Producto
                 </a>
               </div>
             </div>
@@ -69,7 +69,7 @@ function ContentRowTop({ data }) {
             <div className="card shadow mb-4">
               <div className="card-header py-3">
                 <h5 className="m-0 font-weight-bold text-gray-800">
-                  Genres in Data Base
+                 Categorias
                 </h5>
               </div>
               <div className="card-body">
