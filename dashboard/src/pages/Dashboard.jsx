@@ -4,21 +4,21 @@ import ContentRowTop from '../components/Dashboard/ContentRowTop'
 const metrics = [
   {
     show: true,
-    title: "Movies in Data Base",
+    title: "Productos",
     color: "primary",
     digit: 21,
     icon: "film",
   },
   {
     show: true,
-    title: "Total awards",
+    title: " Usuarios",
     color: "success",
     digit: 79,
     icon: "award",
   },
   {
     show: true,
-    title: "Actors quantity",
+    title: "Ordenes ",
     color: "warning",
     digit: 49,
     icon: "user",
