@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import ContentRowTop from '../components/Dashboard/ContentRowTop'
 const metrics = [
@@ -25,9 +25,11 @@ const metrics = [
   },
 ];
 
-const Dashboard = props => {
+
+const Dashboard =() => {
+ 
   return (
-<ContentRowTop data={metrics} />
+<ContentRowTop />
   )
 }
 

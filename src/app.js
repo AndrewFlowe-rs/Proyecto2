@@ -7,14 +7,15 @@ const session = require('express-session')
 const cookieParser = require('cookie-parser');
 const checkSession = require("./middlewares/validations/checkSession");
 const checkCookie = require('./middlewares/validations/checkCookie');
+const cors = require('cors');
 
 // CONFIG
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'))
 
-
 // MIDDLEWARE
+app.use(cors());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static("../public/design"));
 app.use(express.json());
@@ -44,8 +45,7 @@ const authRoutes = require('./routes/authentication.routes');
 const cartRoutes = require('./routes/cart.routes');
 const prodRoutes = require('./routes/product.routes');
 const userRoutes = require('./routes/users.routes')
-// ROUTES APIs
-const apiProducts = require('./routes/api/productRoutes.api')
+
 
 
 // ROUTERS
@@ -56,19 +56,17 @@ app.use('/detalle', prodRoutes);
  app.use('/carrito', cartRoutes);
 app.use ('/admin',adminRoutes);
 app.use('/perfil', userRoutes)
+
 // Apis R.
-app.use('/api/products', apiProducts)
-
-
-
-
-// const prodRoutesApi = require('./routes/api/productRoutes.api');
-// const userRoutesApi = require('./routes/api/userRoutes.api')
-
+const otherApis = require('./routes/api/other.api')
+const userRoutesApi = require('./routes/api/userRoutes.api')
+const apiProducts = require('./routes/api/productRoutes.api')
+const apiCategory = require('./routes/api/categorias.api')
 // // ROUTEOS API
-
-// app.use('api/products', prodRoutesApi)
-// app.use('/api/user', userRoutesApi)
+app.use('/api', otherApis)
+app.use('/api/user', userRoutesApi)
+app.use('/api/products', apiProducts)
+app.use('/api/categorias', apiCategory)
 
 
 

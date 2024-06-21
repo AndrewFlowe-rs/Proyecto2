@@ -27,7 +27,9 @@ module.exports = (sequelize, DataTypes) => {
     roleId: DataTypes.INTEGER,
     name_role: DataTypes.STRING,
     avatar: DataTypes.STRING,
-    state: DataTypes.STRING
+    state: DataTypes.STRING,
+    resetPasswordToken: DataTypes.STRING,
+    resetPasswordExpires:  DataTypes.DATE,
    
   }, {
     sequelize,

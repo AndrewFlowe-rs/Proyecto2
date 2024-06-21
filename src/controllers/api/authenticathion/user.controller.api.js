@@ -26,7 +26,7 @@ module.exports = {
     },
     detail: (req, res) => {
         db.User.findByPk(req.params.id, {
-            attributes: ['id', 'name', 'email', 'profileImageUrl'] // Datos que se van a mostrar. 
+            attributes: ['id', 'name', 'email', 'avatar'] // Datos que se van a mostrar. 
         })
         .then((user) => {
             res.status(200).json(user);

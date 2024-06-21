@@ -19,10 +19,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Categoty.init({
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    total_products: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'Category',
+    modelName: 'Categoty',
     timestamps:false
   });
   return Categoty;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<%- include('../partials/head') %>
+
+       
+<body class="body-rec">
+      <!-- Header -->
+        <%- include('../partials/header') %>
+        <%- include('../partials/burguer') %>
+    <main class="main-rec">
+   
+
+
+    <form class="form-rec" action="/aut/recuperar-contrasenia" method="POST">
+        <hr>
+        <label for="email">Correo electrónico:</label>
+        <hr>
+        <input type="email" id="email" name="email" required>
+        <hr>
+        <button class="but-rec" type="submit">Enviar</button>
+    </form>
+<hr>         
+    </main>
+  <!-- Footer -->
+       <%- include('../partials/footer') %>
+       
+</body>
+</html>

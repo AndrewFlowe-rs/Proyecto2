@@ -44,6 +44,14 @@ module.exports = {
       avatar: {
         type: Sequelize.STRING
       },
+      resetPasswordToken: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      resetPasswordExpires: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
     });
   },
   async down(queryInterface, Sequelize) {

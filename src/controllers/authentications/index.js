@@ -4,4 +4,6 @@ module.exports = {
     loginProcess: require('./loginProcess.controller'),
     processRegister : require ('./processRegister.controller'),
     logout: require('./logout.controller'),
+    recuperar: require('./recuperar.controller'),
+   
 }

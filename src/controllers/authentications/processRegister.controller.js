@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
       number: number ? number : '',
       state: state?.trim(),
     });
-
+    console.log('Usuario creado exitosamente');
     return res.redirect('/perfil');
   } catch (error) {
     console.error('Error creating user:', error);

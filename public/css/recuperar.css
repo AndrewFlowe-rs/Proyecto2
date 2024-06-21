@@ -1,0 +1,101 @@
+body.body-rec{
+    /* min-height: 100vh; */
+}
+main.main-rec{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-rec{
+    height: 500px;
+    background-color: #dee2e6;
+    width: 300px;
+    border-radius: 0;
+    border: solid white;
+    font-family: auto;
+    font-size: 20px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+main.main-rec input#email{
+    /* margin: 30px; */
+    height: 51px;
+}
+main.main-rec label{
+    font-family: auto;
+    font-size: 24px;
+}
+.but-rec{
+    border-radius: 0;
+    background-color: #0d6efd;
+    width: 246px;
+    height: 51px;
+    
+    font-size: 20px;
+}
+@media(min-width: 361px){
+    body.body-rec{
+        /* min-height: 100vh; */
+    }
+    main.main-rec{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .form-rec{
+        height: 500px;
+        font-size: 25px;
+        border: solid #f8f9fa;
+        border-radius: 0;
+    }
+    main.main-rec input#email{
+        /* margin: 30px; */
+        width: 246px;
+    }
+    main.main-rec label{}
+    .but-rec{
+    background-color: #0d6efd;
+    border-radius: 0;
+    /* border: solid #495057a6; */
+}
+}
+@media(min-width: 769px){
+    body.body-rec{
+        /* min-height: 100vh; */
+    }
+    main.main-rec{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+        background-image: url('../design/imgProducts/5.jpg');
+    }
+    .form-rec{
+        height: 500px;
+        font-size: 40px;
+        width: 70%;
+        background-color: #ddd;
+        border: solid white;
+        border-radius: 0;
+        /* display: flex; */
+        /* flex-direction: row; */
+    }
+    main.main-rec input#email{
+        /* margin: 30px; */
+        width: 300px;
+        height: 60px;
+    }
+    main.main-rec label{
+    font-family: auto;
+    font-size: 30px;
+}
+.but-rec{
+    width: 300px;
+    height: 60px;
+}
+}

@@ -1,52 +1,83 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { TableHead } from "../components/Products/TableHead";
-import { TableRow } from "../components/Products/TableRow";
+import React, { useState, useEffect } from "react";
+import { DataGrid } from '@mui/x-data-grid';
 
 const Product = () => {
-  
-const movies = [
-  {
-    id:1,
-    title: "Billy Elliot",
-    duration: 123,
-    rating: 5,
-    genre: ["Drama", "Comedia"],
-    awards: 2,
-  },
-  {
-    id:2,
-    title: "Alicia en el país de las maravillas",
-    duration: 142,
-    rating: 4.8,
-    genre: ["Drama", "Acción", "Comedia"],
-    awards: 3,
-  },
-];
-const dataTableHead = ["Titulo", "Duración", "Rating", "Género", "Premios"];
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const endpoint = 'http://localhost:3031/api/products';
+
+    const getProducts = async () => {
+      try {
+        const response = await fetch(endpoint);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const result = await response.json();
+        
+        setProducts(result);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getProducts();
+  }, []);
+
+  const columns = [
+    { field: 'id', headerName: 'ID', width: 150 },
+    { field: 'name', headerName: 'NOMBRE', width: 150 },
+    { field: 'price', headerName: 'PRECIO', width: 150, type: 'number' },
+    { field: 'description', headerName: 'DESCRIPCIÓN', width: 300 },
+    {
+      field: 'image',
+      headerName: 'IMAGEN',
+      width: 150,
+      renderCell: (params) => (
+        <img
+          src={`http://localhost:3031/api/products/image/${params.value}`}
+          alt={params.row.name}
+          style={{ width: '70%', height: 'auto' }}
+        />
+      ),
+    },
+  ];
+
+  const rows = products.map(product => ({
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    description: product.description,
+    image: product.image,
+  }));
 
   return (
     <>
-      <h1> Todos Los Productos</h1>
-
-      <div className="border p-1 m-3">
-        <table className="table table-bordered m-4">
-          <TableHead items={dataTableHead} />
-
-          <tbody>
-            {movies.map((movie, i) => (
-              /*  <TableRow key={i} title={movie.title} duration={movie.duration} rating={movie.rating} genre={movie.genre} awards={movie.awards}/> */
-              <TableRow key={i} {...movie} />
-            ))}
-          </tbody>
-
-          <TableHead items={dataTableHead} />
-        </table>
-      </div>
+      <h1>Todos Los Productos</h1>
+      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+      {loading ? (
+        <p>Cargando...</p>
+      ) : (
+        <div style={{ height: 1000, width: '100%' }}>
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            initialState={{
+              pagination: {
+                paginationModel: { page: 0, pageSize: 5 }
+              }
+            }}
+            pageSizeOptions={[5, 10]}
+            checkboxSelection
+          />
+        </div>
+      )}
     </>
   );
 };
-
-Product.propTypes = {};
 
 export default Product;
