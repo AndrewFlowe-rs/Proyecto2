@@ -2009,12 +2009,13 @@ i.fa-solid.fa-cart-shopping{
     min-height: 100vh;
     padding: 0% 5% 5% 1%;
     text-align: center;
-    background-image: url('../design/imgProducts/5.jpg');
+    background-image: url('../design/ImagenesHD/deliciosa-pizza-interior.jpg');
     align-self: center;
     font-size: 28px;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    background-size: cover;
     }
     .main-cart .carousel{
     width: 70%;

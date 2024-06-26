@@ -82,16 +82,26 @@ a.cart-b{
 
 
     .confirmacion .botonok {
-font-family: var(--comic);
-/* margin: 0 0px 5px 85px; */
-border-radius: 35px;
-padding: 11px;
-border: none;
-background-color: var(--verde);
-font-weight: 336px;
-width: auto;
-flex: 1;
-text-align: center;
+
+font-family: var(--comic);
+
+/* margin: 0 0px 5px 85px; */
+
+border-radius: 35px;
+
+padding: 11px;
+
+border: none;
+
+background-color: var(--verde);
+
+font-weight: 336px;
+
+width: auto;
+
+flex: 1;
+
+text-align: center;
 }
 a.botonok{
     /* font-family: var(--comic); */
