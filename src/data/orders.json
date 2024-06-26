@@ -1,23 +1,34 @@
 [
     {
       "id": 1,
-      "status": "Completed",
-      "user_id":1,
-      "total": 23,
-      "products": [ 
+      "state": "pending",
+      "total": 7934,
+      "user": "aldananunez663@gmail.com",
+      "products": [
         {
-            "id": 1,
-            "name":"Pizza Pepperoni",
-            "quantity":5,
-
+          "name": "Pizza Pepperoni",
+          "quantity": 2
         },
-       
         {
-            "id": 2,
-            "name":"Pizza Hawaiana",
-            "quantity":8,
-
+          "name": "Pizza Diavola",
+          "quantity": 2
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "state": "completed",
+      "total": 11110,
+      "user": "andres@gmail.com",
+      "products": [
+        {
+          "name": "Pizza Vegetariana",
+          "quantity": 1
+        },
+        {
+          "name": "Pizza Caprese",
+          "quantity": 1
+        }
+      ]
     }
-    ]
+  ]

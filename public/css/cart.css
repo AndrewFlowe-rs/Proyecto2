@@ -2009,12 +2009,14 @@ i.fa-solid.fa-cart-shopping{
     min-height: 100vh;
     padding: 0% 5% 5% 1%;
     text-align: center;
-    background-image: url('../design/imgProducts/5.jpg');
+    background-image: url('../design/imgProducts/1.avif');
     align-self: center;
     font-size: 28px;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     }
     .main-cart .carousel{
     width: 70%;
@@ -2557,6 +2559,8 @@ i.fa-solid.fa-cart-shopping{
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
     main div.third-div p.name-pizza {

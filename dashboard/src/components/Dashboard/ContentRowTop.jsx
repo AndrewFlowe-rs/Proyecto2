@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import imagenFondo from "../../assets/images/mandalorian.jpg";
 import { ContentData } from "./ContentData";
 import Alert from '../reusable/Alert'
 import CategoryItem from "./CategoryItem";

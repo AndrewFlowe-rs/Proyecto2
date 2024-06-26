@@ -45,11 +45,11 @@ module.exports = {
         type: Sequelize.STRING
       },
       resetPasswordToken: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       resetPasswordExpires: {
-        type: DataTypes.DATE,
+        type: Sequelize.DATE,
         allowNull: true,
       },
     });

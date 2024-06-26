@@ -12,10 +12,7 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      categoryName: {
-        allowNull: false,
-        type: Sequelize.STRING
-      }
+     
     });
   },
   async down(queryInterface, Sequelize) {
