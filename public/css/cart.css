@@ -2016,6 +2016,7 @@ i.fa-solid.fa-cart-shopping{
     align-items: center;
     align-content: center;
     background-size: cover;
+    background-attachment: fixed;
     }
     .main-cart .carousel{
     width: 70%;
