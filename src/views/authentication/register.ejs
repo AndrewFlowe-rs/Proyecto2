@@ -23,7 +23,7 @@
                 <div class="conteiner-form">
                     <div> <!-- Campo nombre -->
                         <input class="name" type="text" placeholder="Nombre" id="nombre" name="name" value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
-                        <p class=" text-danger msg-err"></p>
+                        <p class=" text-danger errname"></p>
                         <div class="error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.name?.msg %>
                         </div>
@@ -35,7 +35,7 @@
                     <div>
                          <!-- Campo email -->
                           <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.email : '' %>">
-                          <p class=" text-danger msge-err"></p>
+                          <p class=" text-danger erremail"></p>
 
                           <div class="error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>">
 
@@ -48,7 +48,7 @@
                              <!-- Campo contraseña -->
                     <div>
                         <input type="password" placeholder="contraseña" id="password" name="password"  value="<%= locals.old && locals.old.password ? locals.old.password : '' %>">
-                        <p class=" text-danger err-p"></p>
+                        <p class=" text-danger errpassword"></p>
 
                         <div class="error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>">
                             <%= locals.errors?.password?.msg %>
@@ -58,7 +58,7 @@
                               <!-- Campo número-teléfono -->
                     <div>
                         <input type="number" placeholder="Numero de Tel." id="num" name="number" value="<%= locals.old && locals.old.number ? locals.old.number : '' %>">
-                        <p class=" text-danger err-n"></p>
+                        <p class=" text-danger errnum"></p>
                             <div class="error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>">
 
                                 <%= locals.errors?.number?.msg %>
@@ -94,11 +94,12 @@
         <option value="Tierra del Fuego">Tierra del Fuego</option>
         <option value="Tucumán">Tucumán</option>
     </select>    
-    <p class="text-danger err-c"></p>
+    <p class="text-danger errstate"></p>
     <div class="error-msg <%=locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
 
         <%= locals.errors?.state?.msg %>
 </div>
+
   </div>
   
                     <!-- Campo imagen -->
@@ -110,6 +111,7 @@
 
                             <%= locals.errors?.avatar?.msg %>
                     </div>
+                    <p class="errimg"></p>
                     </div>
                    
 
