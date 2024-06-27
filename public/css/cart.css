@@ -2325,6 +2325,8 @@ display: none;
     /* height: 100vh; */
     position: relative;
     left: 5%;
+    background-position: fixed;
+    background-attachment: fixed;
 }
 
     main div.contenedor-primero {
