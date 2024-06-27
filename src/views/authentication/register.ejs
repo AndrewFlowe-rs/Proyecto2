@@ -58,7 +58,7 @@
                               <!-- Campo número-teléfono -->
                     <div>
                         <input type="number" placeholder="Numero de Tel." id="num" name="number" value="<%= locals.old && locals.old.number ? locals.old.number : '' %>">
-                        <p class=" text-danger err-num"></p>
+                        <p class=" text-danger errnum"></p>
                             <div class="error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>">
 
                                 <%= locals.errors?.number?.msg %>

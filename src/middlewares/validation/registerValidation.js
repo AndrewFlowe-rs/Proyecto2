@@ -17,7 +17,7 @@ const path = require('path');
         .isStrongPassword({ minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 0 }).withMessage('La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número').bail(),
 
     check('number')
-        .isLength({ min: 10, max: 16 }).withMessage('El número no debe tener menos de 10 dígitos')
+        .isLength({ min: 10, max: 16 }).withMessage('El número  debe tener almenos  10 dígitos')
         .notEmpty().withMessage('El telefono es requerido').bail(),
 
     check('state')

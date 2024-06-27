@@ -62,4 +62,20 @@ window.addEventListener("load", function () {
   password.addEventListener("focus", function () {
     errpassword.innerHTML = null;
   });
+
+  number.addEventListener("blur", function () {
+    let value = this.value.trim();
+    if (value.length === 0) {
+      errnumber.innerHTML = "El numero es requerido";
+    } else if (value.length < 8) {  
+      errnumber.innerHTML += "El numero debe tener al menos 10 digitos";
+    } else {
+      errnumber.innerHTML = null;
+    } 
+  });
+
+  number.addEventListener("focus", function () {
+    errnumber.innerHTML = null;
+  });
+  
 });
