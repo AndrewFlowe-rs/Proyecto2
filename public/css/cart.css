@@ -2326,6 +2326,8 @@ display: none;
     /* height: 100vh; */
     position: relative;
     left: 5%;
+    background-position: fixed;
+    background-attachment: fixed;
 }
 
     main div.contenedor-primero {
@@ -2559,6 +2561,8 @@ i.fa-solid.fa-cart-shopping{
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
     main div.third-div p.name-pizza {

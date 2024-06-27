@@ -4,7 +4,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = (req,res)=> {
     // const products = loadData()
- db.Product.findAll()
+ db.Product.findAll({limit:6})
  .then((products)=>{
     
     res.render('product/products', { 

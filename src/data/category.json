@@ -1,53 +1,53 @@
 [
 {
     "id":1,
-    "name":"Calzones",
-}
+    "name":"Calzones"
+},
 
   
 {
     "id":2,
-    "name":"Fainá",
-}
+    "name":"Fainá"
+},
 
 {
     "id":3,
-    "name":"Empanadas",
-}
+    "name":"Empanadas"
+},
 
 {
     "id":4,
-    "name":"Sin TACC",
-}
+    "name":"Sin TACC"
+},
 
   
 {
     "id":5,
-    "name":"Clasicas",
-}
+    "name":"Clasicas"
+},
 
 {
     "id":6,
-    "name":"Pizzas del Mes",
-}
+    "name":"Pizzas del Mes"
+},
 
 {
     "id":7,
-    "name":"Promo del Mes",
-}
+    "name":"Promo del Mes"
+},
 
 {
     "id":8,
-    "name":"Combos",
-}
+    "name":"Combos"
+},
 
 {
     "id":8,
-    "name":"Individuales",
-}
+    "name":"Individuales"
+},
 
 {
     "id":9,
-    "name":"Bebidas",
+    "name":"Bebidas"
 }
 ]

@@ -9,8 +9,15 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
       });
       // Asociación con OrderItem
-      Product.hasMany(models.OrderItem, { foreignKey: 'productId' });
+      Product.belongsToMany(models.Order, {
+        through: "orderproducts",
+        foreignKey: "productId",
+        otherKey: "orderId",
+        as: "orders"
+      })
+
     }
+    
   }
   Product.init({
     name: DataTypes.STRING,
@@ -18,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     image: DataTypes.STRING,
     categoryName: DataTypes.STRING,
+    available: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Product',
