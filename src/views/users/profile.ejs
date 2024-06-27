@@ -10,7 +10,8 @@
     <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
     
     <form class="form-profile" action="/perfil/<%= user.id %>" method="POST" enctype="multipart/form-data">
-      <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="">
+      <div class="text-center">
+        <img src="/design/users/<%=user.avatar %>" class="rounded" alt="...">
       </div>
       <div class="">
         <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
