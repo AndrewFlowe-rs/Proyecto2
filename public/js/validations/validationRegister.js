@@ -53,9 +53,13 @@ window.addEventListener("load", function () {
     if (value.length === 0) {
       errpassword.innerHTML = "La contraseña es requerida";
     } else if (value.length < 8) {
-      errpassword.innerHTML = "La contraseña debe tener al menos 6 caracteres";
+      errpassword.innerHTML = "La contraseña debe tener al menos 8 caracteres";
     } else {
       errpassword.innerHTML = null;
     }
+  });
+
+  password.addEventListener("focus", function () {
+    errpassword.innerHTML = null;
   });
 });
