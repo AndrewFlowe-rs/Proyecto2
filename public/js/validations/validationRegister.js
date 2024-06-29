@@ -18,8 +18,8 @@ window.addEventListener("load", function () {
   nombre.addEventListener("blur", function () {
     if (nombre.value.trim().length === 0) {
       errnombre.innerHTML += "El nombre es requerido";
-    } else if (nombre.value.length < 3 || nombre.value.length > 10) {
-      errnombre.innerHTML += "El nombre solo debe tener entre 3 y 10 caracteres";
+    } else if (nombre.value.length < 3 || nombre.value.length > 15) {
+      errnombre.innerHTML += "El nombre solo debe tener entre 3 y 15 caracteres";
     }
     else {
       errnombre.innerHTML = null;

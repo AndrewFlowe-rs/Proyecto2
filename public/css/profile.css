@@ -54,6 +54,16 @@ input#number.form-control-plaintext{
   width: 200px;
   text-align: center;
 }
+a.but-out{
+    background-color: #9e4e59;
+    width: 145px;
+    border-radius: 8px;
+    height: 44px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 div.user-img{
     width: fit-content;
 }
@@ -64,7 +74,7 @@ img.user-im{
 .but-form{}
 
 .but-out{
-    display: none;
+    /* display: none; */
 }
 button {
     background-color: #dc354594; /* Rojo */
@@ -79,7 +89,7 @@ button {
     cursor: pointer;
     border-radius: 12px;
     width: fit-content;
-    /* display: none; */
+    display: none;
   }
   
   button:hover {
@@ -128,6 +138,21 @@ button {
       margin: 20px;
       width: 300px;
   }
+  .but-out{}
+  a.but-out{
+    background-color: #9e4e59;
+    width: 145px;
+    border-radius: 8px;
+    height: 44px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
     div.user-img{}
     img.user-im{
     width: 200px;
@@ -210,6 +235,21 @@ button {
       margin: 20px;
       width: 400px;
   }
+
+  button{} 
+  a.but-out{
+    background-color: #97404f;
+    color: white;
+    border-radius: 10px;
+    height: 44px;
+    font-size: 18px;
+    width: 160px;
+}
+a.but-out:hover{
+  background-color: green;
+  filter: blur(0.5px);
+
+} .but-out{}
     div.user-img{}
     img.user-im{
     width: 500px;
@@ -225,10 +265,16 @@ button {
     .but-out{
     width: 160px;
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
     button {
        width: 160px;
+       display: flex;
+       justify-content: center;
       }
       
       button:hover {

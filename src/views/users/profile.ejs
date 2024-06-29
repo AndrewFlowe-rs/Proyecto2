@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<%- include('../partials/head',{title: 'Perfil de usuario' }) %>
+<%- include('../partials/head',{title: `Perfil de ${user.name}` }) %>
 <body>
   <%- include('../partials/header') %>
   <%- include('../partials/burguer') %>
@@ -10,8 +10,7 @@
     <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
     
     <form class="form-profile" action="/perfil/<%= user.id %>" method="POST" enctype="multipart/form-data">
-      <div class="text-center">
-        <img src="/design/users/<%=user.avatar %>" class="rounded" alt="...">
+        <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="">
       </div>
       <div class="">
         <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
@@ -38,7 +37,7 @@
         </div>
       </div>
       <button class="but-out">Cerrar Sesión</button> 
-      <a href="/perfil/editar/<%= user.id %>"class="but-edit">Editar</a> 
+      <a href="/perfil/editar/<%= user.id %>" class="but-out" >Editar</a> 
 
     </form>
     

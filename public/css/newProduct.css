@@ -171,6 +171,7 @@ margin-left: 98%;
     position: absolute;
     top: 7px;
     left: 392px;
+    display: none;
 }
 .input-error {
     border: 2px solid red;

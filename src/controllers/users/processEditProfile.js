@@ -34,7 +34,7 @@ module.exports = async (req,res) => {
             }
         }
 
-        res.redirect(`/perfil/${id}`);   
+        res.redirect('/perfil');   
     }  catch (error) {
         console.error('Error al actualizar los datos del usuario:', error);
         res.status(500).send('Error interno del servidor al actualizar el perfil del usuario');

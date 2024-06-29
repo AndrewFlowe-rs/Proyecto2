@@ -67,7 +67,10 @@ app.use('/api', otherApis)
 app.use('/api/user', userRoutesApi)
 app.use('/api/products', apiProducts)
 app.use('/api/categorias', apiCategory)
-
+app.use((req,res, next) => {
+    res.status(404).render("other/error")
+  })
+  
 
 
 

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const logoutButton = document.querySelector('.but-out');
+  const logoutButton = document.querySelector('.btn.btn-warning');
 
   if (logoutButton) {
     logoutButton.addEventListener('click', function() {

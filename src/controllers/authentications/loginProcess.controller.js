@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
                         role: user.name_role,
                         avatar: user.avatar
                     };
-                    return res.redirect("/perfil");
+                    return res.redirect(`/perfil`);
                 } else {
                     return res.render("authentication/login", {
                         errors: { password: { msg: "Contraseña incorrecta" } },
