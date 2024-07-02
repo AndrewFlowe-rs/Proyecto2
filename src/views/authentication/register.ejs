@@ -1,145 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- Head -->
+  <%- include('../partials/head',{title: 'Registro'}) %>
 
-<!-- Head -->
-<%- include('../partials/head',{title: 'Registro'}) %>
+  <body>
+    <!-- Header -->
+    <%- include('../partials/header') %> <%- include('../partials/burguer') %>
 
-    <body>
+    <main class="main-register">
+      <form
+        class="form-register"
+        action="/aut/registro"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="conteiner-x">
+          <a href="/"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="conteiner-t-r">
+          <h4>CREA TU CUENTA</h4>
+        </div>
+        <div class="conteiner-form">
+          <div>
+            <!-- Campo nombre -->
+            <input
+              class="name"
+              type="text"
+              placeholder="Nombre"
+              id="nombre"
+              name="name"
+              value="<%= locals.old && locals.old.name ? locals.old.name : '' %>"
+            />
+            <!-- <p class=" text-danger errname"></p> -->
+            <div
+              class="errname error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>"
+            >
+              <%= locals.errors?.name?.msg %>
+            </div>
+          </div>
 
+          <div>
+            <!-- Campo email -->
+            <input
+              type="text"
+              placeholder="Email"
+              id="email"
+              name="email"
+              value="<%= locals.old && locals.old.email ? locals.old.email : '' %>"
+            />
+            <!-- <p class=" text-danger erremail"></p> -->
 
-        <!-- Header -->
-        <%- include('../partials/header') %>
-        <%- include('../partials/burguer') %>
+            <div
+              class="erremail error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>"
+            >
+              <%= locals.errors?.email?.msg %>
+            </div>
+          </div>
 
-            <main class="main-register">
+          <!-- Campo contraseña -->
+          <div>
+            <input
+              type="password"
+              placeholder="contraseña"
+              id="password"
+              name="password"
+              value="<%= locals.old && locals.old.password ? locals.old.password : '' %>"
+            />
+            <!-- <p class="text-danger errpassword"></p> -->
 
-                <form class="form-register" action="/aut/registro" method="POST" enctype="multipart/form-data">
-                <div class="conteiner-x">
-                    <a href="/"><i class="fa-solid fa-xmark"></i></a>
-                </div>
-                <div class="conteiner-t-r">
-                    <h4>CREA TU CUENTA</h4>
-                </div>
-                <div class="conteiner-form">
-                    <div> <!-- Campo nombre -->
-                        <input class="name" type="text" placeholder="Nombre" id="nombre" name="name" value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
-                        <p class=" text-danger errname"></p>
-                        <div class="error-msg <%= locals.errors && locals.errors.name ? 'visible' : 'hidden' %>">
-                            <%= locals.errors?.name?.msg %>
-                        </div>
-                       
+            <div
+              class=" errpassword error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>"
+            >
+              <%= locals.errors?.password?.msg %>
+            </div>
+          </div>
+          <!-- Campo número-teléfono -->
+          <div>
+            <input
+              type="number"
+              placeholder="Numero de Tel."
+              id="num"
+              name="number"
+              value="<%= locals.old && locals.old.number ? locals.old.number : '' %>"
+            />
+            <!-- <p class="text-danger errnum"></p> -->
+            <div
+              class="errnum error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>"
+            >
+              <%= locals.errors?.number?.msg %>
+            </div>
+          </div>
+          <!-- Campo provincia -->
+          <div>
+            <label for="state">Selecciona tu provincia</label>
+            <select name="state" id="state">
+              <option value="">--</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Ciudad Autónoma de Buenos Aires">
+                Ciudad Autónoma de Buenos Aires
+              </option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Ríos">Entre Ríos</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquén">Neuquén</option>
+              <option value="Río Negro">Río Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santiago del Estero">Santiago del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucumán">Tucumán</option>
+            </select>
+            <!-- <p class="text-danger errstate"></p> -->
+            <div
+              class=" errstate error-msg <%=locals.errors && locals.errors.state ? 'visible' : 'hidden' %>"
+            >
+              <%= locals.errors?.state?.msg %>
+            </div>
+          </div>
 
+          <!-- Campo imagen -->
+          <div class="new-image">
+            <label class="label-titulo" for="image">Ingresa una imagen</label>
+            <br />
+            <input type="file" id="image" name="avatar" />
+            <div
+              class=" errimg error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>"
+            >
+              <%= locals.errors?.avatar?.msg %>
+            </div>
+            <!-- <p class="errimg"></p> -->
+          </div>
+        </div>
 
-                    </div>
+        <div class="container-butons">
+          <div class="button">
+            <button type="submit">Crear Cuenta</button>
+            <a class="btn btn-tomato-opacity-80">Cancelar</a>
+          </div>
+        </div>
+        <div class="c-register">
+          <h3>¿ya tienes una cuenta?/</h3>
+          <a href="/aut/login">Ingresa</a>
+        </div>
+      </form>
+    </main>
 
-                    <div>
-                         <!-- Campo email -->
-                          <input type="text" placeholder="Email" id="email" name="email" value="<%= locals.old && locals.old.email ? locals.old.email : '' %>">
-                          <p class=" text-danger erremail"></p>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
 
-                          <div class="error-msg <%= locals.errors && locals.errors.email ? 'visible' : 'hidden' %>">
-
-                            <%= locals.errors?.email?.msg %>
-                        </div>
-
-
-                    </div>
-
-                             <!-- Campo contraseña -->
-                    <div>
-                        <input type="password" placeholder="contraseña" id="password" name="password"  value="<%= locals.old && locals.old.password ? locals.old.password : '' %>">
-                        <p class=" text-danger errpassword"></p>
-
-                        <div class="error-msg <%=locals.errors && locals.errors.password ? 'visible' : 'hidden' %>">
-                            <%= locals.errors?.password?.msg %>
-                        </div>
-
-                    </div>
-                              <!-- Campo número-teléfono -->
-                    <div>
-                        <input type="number" placeholder="Numero de Tel." id="num" name="number" value="<%= locals.old && locals.old.number ? locals.old.number : '' %>">
-                        <p class=" text-danger errnum"></p>
-                            <div class="error-msg <%=locals.errors && locals.errors.number ? 'visible' : 'hidden' %>">
-
-                                <%= locals.errors?.number?.msg %>
-                        </div>
-
-                    </div>
-                 <!-- Campo provincia -->
-<div>
-    <label for="state">Selecciona tu provincia</label>
-    <select name="state" id="state">
-        <option value="Buenos Aires">Buenos Aires</option>
-        <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
-        <option value="Catamarca">Catamarca</option>
-        <option value="Chaco">Chaco</option>
-        <option value="Chubut">Chubut</option>
-        <option value="Córdoba">Córdoba</option>
-        <option value="Corrientes">Corrientes</option>
-        <option value="Entre Ríos">Entre Ríos</option>
-        <option value="Formosa">Formosa</option>
-        <option value="Jujuy">Jujuy</option>
-        <option value="La Pampa">La Pampa</option>
-        <option value="La Rioja">La Rioja</option>
-        <option value="Mendoza">Mendoza</option>
-        <option value="Misiones">Misiones</option>
-        <option value="Neuquén">Neuquén</option>
-        <option value="Río Negro">Río Negro</option>
-        <option value="Salta">Salta</option>
-        <option value="San Juan">San Juan</option>
-        <option value="San Luis">San Luis</option>
-        <option value="Santa Cruz">Santa Cruz</option>
-        <option value="Santa Fe">Santa Fe</option>
-        <option value="Santiago del Estero">Santiago del Estero</option>
-        <option value="Tierra del Fuego">Tierra del Fuego</option>
-        <option value="Tucumán">Tucumán</option>
-    </select>    
-    <p class="text-danger errstate"></p>
-    <div class="error-msg <%=locals.errors && locals.errors.state ? 'visible' : 'hidden' %>">
-
-        <%= locals.errors?.state?.msg %>
-</div>
-
-  </div>
-  
-                    <!-- Campo imagen -->
-                    <div class="new-image">
-                        <label class="label-titulo" for="image">Ingresa una imagen</label>
-                        <br>
-                        <input type="file" id="image" name="avatar">
-                        <div class="error-msg <%=locals.errors && locals.errors.avatar ? 'visible' : 'hidden' %>">
-
-                            <%= locals.errors?.avatar?.msg %>
-                    </div>
-                    <p class="errimg"></p>
-                    </div>
-                   
-
-                </div>
-
-
-                <div class="container-butons">
-                    <div class="button">
-                       
-                       <button type="submit">Crear Cuenta</button>
-                        <a class="btn btn-tomato-opacity-80" >Cancelar</a>
-                    </div>
-                </div>
-                <div class="c-register">
-                    <h3>¿ya tienes una cuenta?/</h3><a href="/aut/login">Ingresa</a>
-                </div>
-            </form>
-
-
-
-        </main>
-
-            <!-- Footer -->
-            <%- include('../partials/footer') %>
-            
-             
-  <script src="../../../js/validations/validationRegister.js"></script>
-
-
-        </body>
+    <script src="../../../js/validations/validationRegister.js"></script>
+  </body>
 </html>

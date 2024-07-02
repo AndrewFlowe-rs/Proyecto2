@@ -14,6 +14,7 @@ window.addEventListener("load", function () {
   let erravatar = document.querySelector(".errimg");
   let existError = true;
 //alert("hola");
+//errstate.innerHTML = "1";
 //errnombre.innerHTML += "ola soy un err";
   nombre.addEventListener("blur", function () {
     if (nombre.value.trim().length === 0) {
@@ -23,7 +24,7 @@ window.addEventListener("load", function () {
     }
     else {
       errnombre.innerHTML = null;
-
+       existError = false;
     }
   });
 
@@ -41,6 +42,7 @@ window.addEventListener("load", function () {
       erremail.innerHTML = "El email no es válido";
     } else {
       erremail.innerHTML = null;
+       existError = false;
     }
   });
 
@@ -56,6 +58,7 @@ window.addEventListener("load", function () {
       errpassword.innerHTML = "La contraseña debe tener al menos 8 caracteres";
     } else {
       errpassword.innerHTML = null;
+       existError = false;
     }
   });
 
@@ -71,11 +74,50 @@ window.addEventListener("load", function () {
       errnumber.innerHTML += "El numero debe tener al menos 10 digitos";
     } else {
       errnumber.innerHTML = null;
+       existError = false;
     } 
   });
 
   number.addEventListener("focus", function () {
     errnumber.innerHTML = null;
   });
+
+  state.addEventListener("blur", function () {
+    let value = this.value;
+   // console.log(value);
+    if (value === "") {
+      errstate.innerHTML = "Ninguna provincia seleccionada";
+    } else {
+      errstate.innerHTML = null;
+       existError = false;
+    }
+  });
+
+  state.addEventListener("focus", function () {
+    errstate.innerHTML = null;
+  });
+
+  avatar.addEventListener("blur", function () {
+    let value = this.value;
+    if (value === "") {
+      erravatar.innerHTML = "Debes subir una imagen";
+    } else {
+      erravatar.innerHTML = null;
+       existError = false;
+    } 
+  });
+
+  avatar.addEventListener("focus", function () {
+    erravatar.innerHTML = null;
+  });
+
+  // form.addEventListener("submit", function (e) {
+  //   e.preventDefault();
+  //   if (!existError) {
+  //     form.submit();
+  //   } else {
+  //     existError = true;
+  //   } 
+ // });
   
 });

@@ -246,6 +246,9 @@ justify-content: flex-end;}
    div.div{
     margin-left: 9%;
 }
-
+.headerPrincipal .opcionPrincipal ul li :hover {
+    color: var(--blanco);
+    text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.998);
+}
 
 }

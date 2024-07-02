@@ -14,14 +14,14 @@ const path = require('path');
 
     check('password')
         .notEmpty().withMessage('La contraseña es requerida')
-        .isStrongPassword({ minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 0 }).withMessage('La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número').bail(),
+        .isStrongPassword({ minLength: 8, }).withMessage('La contraseña debe tener al menos 8 caracteres, ').bail(),
 
     check('number')
         .isLength({ min: 10, max: 16 }).withMessage('El número  debe tener almenos  10 dígitos')
         .notEmpty().withMessage('El telefono es requerido').bail(),
 
     check('state')
-    .isLength({ min: 5 }).withMessage('El nombre debe tener al menos 5 caracteres').notEmpty().withMessage('Este campo es requerido').bail(),
+    .isLength({ min: 5 }).withMessage('La provincia es requerida').notEmpty().withMessage('Este campo es requerido').bail(),
 
     check('avatar')
     .custom((value, { req }) => {
