@@ -14,7 +14,7 @@ const path = require('path');
 
     check('password')
         .notEmpty().withMessage('La contraseña es requerida')
-        .isStrongPassword({ minLength: 8, }).withMessage('La contraseña debe tener al menos 8 caracteres, ').bail(),
+        .isLength({ min: 8, }).withMessage('La contraseña debe tener al menos 8 caracteres, ').bail(),
 
     check('number')
         .isLength({ min: 10, max: 16 }).withMessage('El número  debe tener almenos  10 dígitos')
