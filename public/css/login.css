@@ -225,9 +225,9 @@ height: 58px;
 }
 .pizza-login{
     position: absolute;
-    top: 39%;
+    top: 55%;
     font-family: var(--frijole);
-    left: 14%;
+    left: 6%;
     font-size: 70px;
     color: white;
     filter: drop-shadow(8px 13px 26px black);

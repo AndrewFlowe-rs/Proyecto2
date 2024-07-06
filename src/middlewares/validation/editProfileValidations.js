@@ -7,11 +7,11 @@ const path = require('path');
     .isAlphanumeric('es-ES',{ignore:" "}).withMessage('Los caracteres especiales no están permitidos').bail()
     .isLength({ min: 3, max: 26 }).withMessage('El nombre debe tener entre 3 y 26 caracteres'),
 
-    check('user')
+    check('name')
         .notEmpty().withMessage('El nombre de usuario es obligatorio').bail()
         .isLength({ min: 3, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres'),
 
-    check('phone')
+    check('number')
         .optional({nullable:true, checkFalsy: true})
         .isNumeric().withMessage('debes colocar un número de teléfono').bail()
         .isLength({ min: 6, max: 14 }).withMessage('El telefono de debe tener entre 6 y 14 números'),
@@ -21,23 +21,11 @@ const path = require('path');
         .isEmail().withMessage('Debes colocar un email valido').bail()
         .normalizeEmail().bail(),
 
-    check('province')
-        .optional({nullable:true, checkFalsy: true})
-        .isAlpha('es-ES',{ignore:" "}).withMessage('Los caracteres especiales y números no están permitidos'),
-    
-    check('city')
+    check('state')
         .optional({nullable:true, checkFalsy: true})
         .isAlpha('es-ES',{ignore:" "}).withMessage('Los caracteres especiales y números no están permitidos'),
 
-    check('street')
-        .optional({nullable:true, checkFalsy: true}).bail()
-        .isAlphanumeric('es-ES',{ignore:" "}).withMessage('Los caracteres especiales no están permitidos'),
-
-    check('num')
-        .optional({nullable:true, checkFalsy: true}).bail()
-        .isNumeric().withMessage('debes colocar el número de tu localidad'),
-
-    body('imageProfile')
+    body('avatar')
     .custom((value, { req }) => {
         const file = req.file;
         if(!file){
@@ -45,7 +33,7 @@ const path = require('path');
                 return true
             }
         } else {
-        const acceptExtensions = ['.jpg', '.png', '.jpeg'];
+        const acceptExtensions = ['.jpg', '.png', '.jpeg', '.webp'];
         const fileExtension = path.extname(file.originalname);
         if (!acceptExtensions.includes(fileExtension)) {
             throw new Error(`Las extensiones de imagen permitidas son: ${acceptExtensions.join(", ")}`);

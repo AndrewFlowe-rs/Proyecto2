@@ -7,10 +7,10 @@
 
   <main class="main-profile">
     
-    <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
+    <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil </p>
     
     <form class="form-profile" action="/perfil/<%= user.id %>" method="POST" enctype="multipart/form-data">
-        <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="">
+        <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="" id="avatar">
       </div>
       <div class="">
         <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="">
-        <label for="email" class="col-sm-2 col-form-label">Provincia:</label>
+        <label for="state" class="col-sm-2 col-form-label">Provincia:</label>
         <div class="col-sm-10">
           <input type="text" readonly class="form-control-plaintext" id="state" value="<%= user.state %>">
         </div>
@@ -36,8 +36,8 @@
           <input type="text" readonly class="form-control-plaintext" id="number" value="<%= user.number %>">
         </div>
       </div>
-      <button class="but-out">Cerrar Sesión</button> 
-      <a href="/perfil/editar/<%= user.id %>" class="but-out" >Editar</a> 
+      <button class="logout-but">Cerrar Sesión</button> 
+      
 
     </form>
     
@@ -45,7 +45,7 @@
       
   </main>
   <%- include('../partials/footer') %>
-  <script src="../../../js/buttonLogout.js"></script> 
+  <script src="../../../js/logoutButBurguer.js"></script> 
 
 </body>
 </html>

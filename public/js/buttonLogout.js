@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const logoutButton = document.querySelector('.btn.btn-warning');
+  const logoutButton = document.querySelector('.but-out');
 
   if (logoutButton) {
     logoutButton.addEventListener('click', function() {
-      fetch('/perfil/cerrar', {
+      fetch('/perfil', {
         method: 'GET',
         credentials: 'include' 
       }).then(response => {

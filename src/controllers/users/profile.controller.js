@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
       return res.status(404).render('other/error');
     }
 
-    res.render('users/profile', { user: userLogin });
+    res.render('users/profile', { user });
   } catch (error) {
     console.error(error);
     res.status(500).send('Error interno del servidor');

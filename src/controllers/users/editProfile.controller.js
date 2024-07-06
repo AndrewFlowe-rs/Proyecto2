@@ -1,7 +1,7 @@
 const db = require('../../database/models')
 module.exports = (req,res) => {
     if (!req.session.userLogin) {
-        return res.redirect('/aut/login');
+        return res.redirect('aut/login');
     }
     const userId = req.params.id;
 db.User.findByPk(userId)

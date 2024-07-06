@@ -7,12 +7,12 @@ module.exports = async (req,res) => {
     if(!userLogin){
         return res.redirect('aut/login')
     }
-    const {id} = req.params;
+    const {id} = req.params
     const {name, email, number, state, password} = req.body;
     const avatar = req.file;
 
     try{
-        const user = await db.User.findByPk(id);
+       const user = await db.User.findByPk(id);
         const avatarFirst = avatar;
         await db.User.update(
             {
@@ -20,11 +20,13 @@ module.exports = async (req,res) => {
                 email: email ? email.trim() : email,
                 number: number ? number : number,
                 state: state ? state.trim() : state,
-                password: password ? password : password
+                avatar: avatar ? avatar.filename : user.avatar,
+                // password: password ? password : password
             },
-            {
-                where: {id},
-            }
+           { where: 
+                  {id}
+            },
+           
         );
         if (avatar && avatarFirst) {
             const pathBefore = path.join(__dirname, `../../../public/design/users/${avatarFirst}`);
@@ -35,6 +37,7 @@ module.exports = async (req,res) => {
         }
 
         res.redirect('/perfil');   
+        console.log('Perfil de usuario actualizado exitosamente')
     }  catch (error) {
         console.error('Error al actualizar los datos del usuario:', error);
         res.status(500).send('Error interno del servidor al actualizar el perfil del usuario');

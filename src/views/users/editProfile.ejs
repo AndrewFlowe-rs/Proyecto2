@@ -10,30 +10,48 @@
     <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil</p>
     
     <form class="form-profile" action="/perfil/editar/<%=user.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-      <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="">
+      <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="" id="avatar">
       </div>
+      <div class="new-image">
+        <label class="label-titulo" for="avatar"></label>
+        <br>
+        <input type="file" id="avatar" name="avatar">
+        <p class="text-danger msg-err" id="imageError"></p>
+    </div>
+    <div id="imagenPreview"></div>
+
       <div class="">
         <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
         <div class="col-sm-10">
-          <input type="text"  id="name" value="<%= user.name %>">
+          <input type="text"  id="name" value="<%= user.name %>"> <div>          <p class="text-danger msg-err" id="nameError"></p>
+</div>
+
         </div>
       </div>
       <div class="">
         <label for="email" class="col-sm-2 col-form-label">Email:</label>
         <div class="col-sm-10">
           <input type="text"  id="email" value="<%= user.email %>">
+         <div><p class="text-danger msg-err" id="emailError"></p></div> 
+
         </div>
       </div>
       <div class="">
-        <label for="email" class="col-sm-2 col-form-label">Provincia:</label>
+        <label for="state" class="col-sm-2 col-form-label">Provincia:</label>
         <div class="col-sm-10">
           <input type="text"  id="state" value="<%= user.state %>">
+          <div>          <p class="text-danger msg-err" id="stateError"></p>
+</div>
+
         </div>
       </div>
       <div class="">
         <label for="number" class="col-sm-2 col-form-label">Número:</label>
         <div class="col-sm-10">
           <input type="text"  id="number" value="<%= user.number %>">
+          <div>          <p class="text-danger msg-err" id="numberError"></p>
+</div>
+
         </div>
       </div>
       <button class="but-out">Cerrar Sesión</button> 
@@ -44,7 +62,11 @@
       
   </main>
   <%- include('../partials/footer') %>
-  <script src="../../../js/buttonLogout.js"></script> 
+<script src="../../../js/buttonLogout.js"></script> 
+<script src="../../../js/validations/profileEdit.js"></script> 
+
+  <!-- <script src="../../../js/imageChange.js"></script>  -->
+
 
 </body>
 </html>

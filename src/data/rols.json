@@ -1,10 +1,10 @@
 [
     {
       "id": 1,
-      "name": "REGULAR"
+      "name": "Regular"
     },
     {
       "id": 2,
-      "name": "ADMIN"
+      "name": "Admin"
     }
   ]
