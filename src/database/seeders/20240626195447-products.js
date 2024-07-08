@@ -1,7 +1,9 @@
 'use strict';
-const jsondb = require("../../data/products.json") //traje el Json de Product
+const jsondb = require("../../data/products.json"); //traje el Json de Product
+const category = require("../models/category");
 const proMaped = jsondb.map(p => {
   return {
+    id:p.id,
     name: p.name,
     price: p.price,
     description: p.description,
