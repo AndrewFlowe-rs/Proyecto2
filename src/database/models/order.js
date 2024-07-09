@@ -16,7 +16,15 @@ module.exports = (sequelize, DataTypes) => {
   Order.init({
     total: DataTypes.DECIMAL,
     userId: DataTypes.INTEGER,
-    state: DataTypes.STRING
+    state:{
+      type:DataTypes.STRING,
+      validate:{
+        isIn:{
+          args: ['completed', 'pending', 'canceled'],
+          msg:'Los valores válidos son: completed, pending, canceled'
+        }
+      }
+    }
   }, {
     sequelize,
     modelName: 'Order',

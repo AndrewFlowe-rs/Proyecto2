@@ -7,7 +7,7 @@ module.exports = (req,res) => {
     if (!userLogin) {
         return res.redirect('aut/login'); 
     }
-    const {name, price, description, categoryName,category} = req.body
+    const {name, price, description, categoryName} = req.body
     const image = req.file
     // const products = loadData('products');
  
@@ -16,13 +16,13 @@ module.exports = (req,res) => {
     price:+price,
     description:description.trim(),
     categoryName: categoryName.trim(),
-    categoryId: +category,
     image: image ? image.filename : ''
 
    })
-
    .then(p => {
-    return res.render('product/productDetail', { p ,toThousand});
+    console.log('producto guardado en la db');
+return res.render('product/productDetail', { p ,toThousand});
+    
 })
 .catch(error => {
     console.error("Error al crear el producto:", error);

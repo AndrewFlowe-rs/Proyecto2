@@ -1,3 +1,4 @@
+const { log } = require('console');
 const db = require('../../database/models');
 const fs = require('fs');
 const path = require('path');
@@ -35,8 +36,8 @@ module.exports = async (req, res) => {
                 fs.unlinkSync(pathBefore);
             }
         }
-
         res.redirect(`/detalle/${id}`);      
+console.log('Producto guardado en la db');
 
     } catch (error) {
         console.error('Error al actualizar el producto:', error);
