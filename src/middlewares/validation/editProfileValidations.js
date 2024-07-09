@@ -7,10 +7,6 @@ const path = require('path');
     .isAlphanumeric('es-ES',{ignore:" "}).withMessage('Los caracteres especiales no están permitidos').bail()
     .isLength({ min: 3, max: 26 }).withMessage('El nombre debe tener entre 3 y 26 caracteres'),
 
-    check('name')
-        .notEmpty().withMessage('El nombre de usuario es obligatorio').bail()
-        .isLength({ min: 3, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres'),
-
     check('number')
         .optional({nullable:true, checkFalsy: true})
         .isNumeric().withMessage('debes colocar un número de teléfono').bail()

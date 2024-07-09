@@ -13,7 +13,6 @@ const validacionesEditProfile = require('../middlewares/validation/editProfileVa
 router.use(recordarme)
 router.post('/login', loginValidation, loginProcess);
 router.get('/',[validProfile, Session] , sesion)
-router.post('/logout', logout)
 
 router.get('/editar/:id', edit);
 router.put('/editar/:id',[validacionesEditProfile,uploadUser.single('avatar')], update);

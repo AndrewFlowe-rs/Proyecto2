@@ -6,7 +6,7 @@ const loginDatesValidation = require('../middlewares/validation/loginValidation'
 const { loginProcess, login, } = require('../controllers/authentications');
 const validaciones = require('../middlewares/validation/registerValidation')
 const { upload, uploadUser } = require("../middlewares/validations/upload.files");
-const { forgotPassword, resetPassword } = require('../controllers/authentications/recuperarpassword.controller');
+const { forgotPassword, resetPassword} = require('../controllers/authentications/recuperarpassword.controller');
 
 // Desde app llega /aut
 
@@ -18,6 +18,8 @@ router.post('/registro',[ uploadUser.single('avatar') ,validaciones], authContro
 router.get('/recuperar-contrasenia', authController.recuperar )
 router.post('/recuperar-contrasenia', forgotPassword);
 router.post('/recuperar-contrasenia/:token', resetPassword);
+router.post('/logout', authController.logout)
+
 
 
 

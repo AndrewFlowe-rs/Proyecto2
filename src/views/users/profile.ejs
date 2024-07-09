@@ -9,7 +9,7 @@
     
     <p class="title-profile">Hola <br><%= user.name %>, este es tu perfil </p>
     
-    <form class="form-profile" action="/perfil/<%= user.id %>" method="POST" enctype="multipart/form-data">
+    <form class="form-profile" action="/perfil" method="GET" enctype="multipart/form-data">
         <div class="user-img"> <img class="user-im" src="/design/users/<%=user.avatar %>" alt="" id="avatar">
       </div>
       <div class="">
@@ -36,16 +36,20 @@
           <input type="text" readonly class="form-control-plaintext" id="number" value="<%= user.number %>">
         </div>
       </div>
-      <button class="logout-but">Cerrar Sesión</button> 
+
       
 
     </form>
+    <form id="logoutForm" action="/logout" method="POST">
+      <button class="btn btn-sm btn-dark btn-dark-custom" type="submit">Cerrar sesión</button>
+  </form>
+  
     
-      
+  <script src="../../../js/logoutButBurguer.js"></script> 
       
   </main>
   <%- include('../partials/footer') %>
-  <script src="../../../js/logoutButBurguer.js"></script> 
+
 
 </body>
 </html>
