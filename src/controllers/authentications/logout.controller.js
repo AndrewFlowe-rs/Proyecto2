@@ -1,8 +1,9 @@
 module.exports = (req, res) => {
-    req.session.destroy();
-    console.log("Sesión destruida. Redirigiendo...");
 
-
-    res.redirect("/aut/login")
-  };
   
+  if (req.session.userLogin) {
+      req.session.destroy();
+      res.redirect("/aut/login");
+  }
+  console.log('Sesión destruida, redirigiendo...')
+}

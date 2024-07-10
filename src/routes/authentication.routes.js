@@ -16,9 +16,9 @@ router.post('/login', loginDatesValidation, loginProcess );
 router.get('/registro', authController.register);
 router.post('/registro',[ uploadUser.single('avatar') ,validaciones], authController.processRegister);
 router.get('/recuperar-contrasenia', authController.recuperar )
-router.post('/recuperar-contrasenia', forgotPassword);
-router.post('/recuperar-contrasenia/:token', resetPassword);
-router.post('/logout', authController.logout)
+// router.post('/recuperar-contrasenia', forgotPassword);
+// router.post('/recuperar-contrasenia/:token', resetPassword);
+router.get('/logout', authController.logout)
 
 
 
