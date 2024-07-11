@@ -296,6 +296,7 @@ left: 311%;
     .bannerhome ul {
         font-family: var(--poppins);
         list-style: none;
+        margin: 0;
     }
 
     .bannerhome ul li a {
@@ -521,6 +522,7 @@ h1.home{
     width: 100%;
     /* font-family: var(--comic); */
     margin-bottom: 80px;
+    background-size: cover;
  }
 .bannerhome ul{
     /* margin-bottom: 70px; */
