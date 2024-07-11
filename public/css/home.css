@@ -511,7 +511,7 @@ h1.home{
 .bannerhome{
     /* display: block; */
     position: relative;
-    left: -16px;
+    left: 0px;
     /* right: 270px; */
     top: 20px;
     display: flex;
