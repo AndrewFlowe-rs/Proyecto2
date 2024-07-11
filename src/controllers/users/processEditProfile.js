@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
 
         const updatedUser = await db.User.findByPk(id);
 
-        console.log('Updated User:', updatedUser.toJSON());
+        // console.log('Updated User:', updatedUser.toJSON());
 
         if (avatar && avatar.filename !== user.avatar) {
             const pathBefore = path.join(__dirname, `../../../public/design/users/${user.avatar}`);
@@ -38,8 +38,8 @@ module.exports = async (req, res) => {
                 fs.unlinkSync(pathBefore);
             }
         }
-         await updatedFields.save()
-         console.log(updatedFields)
+         await updatedUser.save()
+         console.log(updatedUser)
         res.redirect('/perfil');
         console.log('Perfil de usuario actualizado exitosamente');
     } catch (error) {
