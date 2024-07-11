@@ -27,5 +27,15 @@
       "name_role": "Admin",
       "avatar": "avatar-1719336475680.PNG",
       "number": "1132597893"
+   },
+   {
+      "id": 4,
+      "name": "Alejandra",
+      "email": "ale@gmail.com",
+      "password": "$2a$12$4w5hWsq6/8gX5oISBxIPXuiLG/x2tAH7/CkEv4AJfcmaOIT6BE/ZK",
+      "name_role": "Regular",
+      "avatar": "avatar-1719336475680.PNG",
+      "number": "3885656545"
    }
+
 ]
