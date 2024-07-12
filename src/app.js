@@ -11,7 +11,7 @@ const checkSession = require("./middlewares/validations/checkSession");
 const checkCookie = require('./middlewares/validations/checkCookie');
 const cors = require('cors');
 const passport = require("passport")
-
+const { configServiceLogInGoogle } = require("./service/google.service");
 
 // CONFIG
 
@@ -37,7 +37,7 @@ app.use(session({
 }));
 app.use(cookieParser());
 
-
+configServiceLogInGoogle();
 
 app.use(passport.initialize())
 app.use(passport.session())
@@ -45,6 +45,7 @@ app.use(passport.session())
 
 app.use(checkCookie);
 app.use(checkSession);
+
 
 
 // ROUTES

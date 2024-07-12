@@ -13,9 +13,9 @@ const strategy = new Strategy({
 }, (accessToken, refreshToken, profile, done) => {
   done(null, profile)
 })
-const configServiceLoginInGoogle = () => passport.use(strategy)
+const  configServiceLogInGoogle= () => passport.use(strategy)
 module.exports = {
-    configServiceLoginInGoogle
+  configServiceLogInGoogle
 }
 
 
