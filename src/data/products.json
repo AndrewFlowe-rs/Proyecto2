@@ -1,11 +1,11 @@
 [
    {
       "id": 1,
-      "name": "Pizza Pepperoni",
+      "name": "Pizza Muzzarella",
       "price": 14.99,
-      "description": "Generosamente cubierta con pepperoni (salami picante) y queso fundido.",
+      "description": "Pizza Clasica Muzarella.",
       "category": "Clásicas",
-      "image": "image2.jpg"
+      "image": "muzza.jpg"
    },
    {
       "id": 2,
@@ -61,7 +61,7 @@
       "price": 13.99,
       "description": "Tomate fresco, mozzarella, albahaca y aceite de oliva.",
       "category": "Pizza del mes",
-      "image": "caprese.jpeg"
+      "image": "caprese.jpg"
    },
    {
       "id": 9,
@@ -69,7 +69,7 @@
       "price": 10.99,
       "description": "Sencilla con salsa de tomate, ajo, orégano y aceite de oliva.",
       "category": "Pizza del mes",
-      "image": "marinara.jpeg"
+      "image": "marinara.jpg"
    },
    {
       "id": 10,
@@ -85,7 +85,7 @@
       "price": 5000,
       "description": "Pizza con tomate y albahaca",
       "category": "Individuales",
-      "image": "xqwJySBdj_930x525__1.jpg"
+      "image": "napo.jpg"
    },
    {
       "id": 12,
@@ -141,7 +141,7 @@
       "price": 10000,
       "description": "Canastas con aceitunas, morrón, queso sardo.",
       "category": "Empanadas",
-      "image": "CANA-008-380x2851.jpg"
+      "image": "canastas.jpg"
    },
    {
       "id": 19,
@@ -149,7 +149,7 @@
       "price": 12999,
       "description": "Trigo sarraceno, queso Cremón, aceite de oliva, y salami vegano.",
       "category": "Sin TACC",
-      "image": "pizza-sin-tacc-para-celiacos-1024x683.webp"
+      "image": "Sintacc.jpg"
    },
    {
       "id": 20,
@@ -173,7 +173,7 @@
       "price": 4500,
       "description": "Pizza romana con champiñones y Coca-Zero 200ml o a elección.",
       "category": "Combos",
-      "image": "combo.webp"
+      "image": "combo.jpg"
    },
    {
       "id": 23,
@@ -189,7 +189,7 @@
       "price": 1500,
       "description": "Gaseosa Manaos de 2,25L. Todos los gustos.",
       "category": "Bebidas",
-      "image": "manaos.webp"
+      "image": "manaos.jpg"
    },
    {
       "id": 25,
@@ -197,7 +197,7 @@
       "price": 12500,
       "description": "Empanadas de carne cortada a cuchilla.",
       "category": "Empanadas",
-      "image": "image-1714577773381-.jpg"
+      "image": "carne.jpeg"
    },
    {
       "id": 26,
@@ -205,7 +205,7 @@
       "price": 5000,
       "description": "Pizza individual italiana, albahaca y tomates triturados.",
       "category": "Individuales",
-      "image": "image-1714929002872-.avif"
+      "image": "pizzaitalia.jpg"
    },
    {
       "id": 27,
@@ -221,7 +221,7 @@
       "price": 4500,
       "description": "Fugazzeta, cebolla caramelizada.",
       "category": "Pizza del mes",
-      "image": "image-1714930091750-.webp"
+      "image": "fuga.jpg"
    },
    {
       "id": 29,
@@ -229,7 +229,7 @@
       "price": 4500,
       "description": "Fugazzeta, cebolla caramelizada, mozzarella Barraza.",
       "category": "Pizza del mes",
-      "image": "image-1714930180619-.jpg"
+      "image": "rellena.jpg"
    },
    {
       "id": 30,
