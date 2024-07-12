@@ -5,5 +5,5 @@ module.exports = {
     processRegister : require ('./processRegister.controller'),
     logout: require('./logout.controller'),
     recuperar: require('./recuperar.controller'),
-   
+    configServiceLogInGoogle : require('./configServiceLogInGoogle.controller')
 }

@@ -7,10 +7,12 @@ const { loginProcess, login, } = require('../controllers/authentications');
 const validaciones = require('../middlewares/validation/registerValidation')
 const { upload, uploadUser } = require("../middlewares/validations/upload.files");
 const { forgotPassword, resetPassword} = require('../controllers/authentications/recuperarpassword.controller');
+const { configServiceLogInGoogle } = require('../controllers/authentications/configServiceLogInGoogle.controller');
 
 // Desde app llega /aut
 
 const passport = require('passport');
+const configServiceLogInGoogleController = require('../controllers/authentications/configServiceLogInGoogle.controller');
 
 
 router.get('/login', login);
@@ -22,9 +24,16 @@ router.get('/recuperar-contrasenia', authController.recuperar )
 // router.post('/recuperar-contrasenia/:token', resetPassword);
 router.get('/logout', authController.logout)
 
-
+passport.serializeUser((user, done) => done(null, user));
+passport.deserializeUser((user, done) => done(null, user));
 //LOGIN GOOGLE
-router.get('/iniciar/google', passport.authenticate('google'));
+router.get('/login/google', passport.authenticate('google'));
 
+
+ router.get(
+    "/google/callback",
+     passport.authenticate("google", { failureRedirect: "/aut/login" }),
+     configServiceLogInGoogleController
+   );
 
 module.exports = router;
