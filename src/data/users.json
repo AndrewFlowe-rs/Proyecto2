@@ -23,7 +23,7 @@
       "id": 3,
       "name": "Andrés Arnaldo",
       "email": "andres@gmail.com",
-      "password": "$2a$12$r0bjz54/kXOw5kkRrO/RruvAE3B6oydmd4pgtssJedLU.Xm7qPEBa$2a$12$ryLf46.lX2TLa4B77nxa0uHBMRT4looB4Dv48/wmmgcpy2FLt5V5G",
+      "password": "$2a$12$4w5hWsq6/8gX5oISBxIPXuiLG/x2tAH7/CkEv4AJfcmaOIT6BE/ZK",
       "name_role": "Admin",
       "avatar": "avatar-1719336475680.PNG",
       "number": "1132597893"
@@ -32,7 +32,7 @@
       "id": 4,
       "name": "Alejandra",
       "email": "ale@gmail.com",
-      "password": "$2a$12$4w5hWsq6/8gX5oISBxIPXuiLG/x2tAH7/CkEv4AJfcmaOIT6BE/ZK",
+      "password": "$2a$12$4w5hWsq6/8gX5oISBxIPXuiLG/x2tAH7/CkEv4AJfcmaOIT6BE/ZK", 
       "name_role": "Regular",
       "avatar": "avatar-1719336475680.PNG",
       "number": "3885656545"

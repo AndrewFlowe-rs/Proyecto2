@@ -10,6 +10,8 @@ const { forgotPassword, resetPassword} = require('../controllers/authentications
 
 // Desde app llega /aut
 
+const passport = require('passport');
+
 
 router.get('/login', login);
 router.post('/login', loginDatesValidation, loginProcess );
@@ -21,6 +23,8 @@ router.get('/recuperar-contrasenia', authController.recuperar )
 router.get('/logout', authController.logout)
 
 
+//LOGIN GOOGLE
+router.get('/iniciar/google', passport.authenticate('google'));
 
 
 module.exports = router;

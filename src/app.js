@@ -1,5 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
+
 const path = require("path");
 const port = 3031;
 const methodOverride =  require('method-override');
@@ -8,6 +10,8 @@ const cookieParser = require('cookie-parser');
 const checkSession = require("./middlewares/validations/checkSession");
 const checkCookie = require('./middlewares/validations/checkCookie');
 const cors = require('cors');
+const passport = require("passport")
+
 
 // CONFIG
 
@@ -35,8 +39,13 @@ app.use(cookieParser());
 
 
 
+app.use(passport.initialize())
+app.use(passport.session())
+
+
 app.use(checkCookie);
 app.use(checkSession);
+
 
 // ROUTES
 const adminRoutes = require('./routes/admin.routes')
