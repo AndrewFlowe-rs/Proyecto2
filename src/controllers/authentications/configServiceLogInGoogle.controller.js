@@ -27,7 +27,7 @@ module.exports = async (req , res) =>{
     name: user.name,
     email: user.email,
     avatar: user.avatar,
-    role: "Regular" // user.role.name,
+    name_role: "Regular" // user.role.name,
   }
   res.cookie("userLogin", req.session.userLogin, { maxAge: 6000 * 30 });
 

@@ -22,7 +22,7 @@ router.post('/registro',[ uploadUser.single('avatar') ,validaciones], authContro
 router.get('/recuperar-contrasenia', authController.recuperar )
 // router.post('/recuperar-contrasenia', forgotPassword);
 // router.post('/recuperar-contrasenia/:token', resetPassword);
-router.get('/logout', authController.logout)
+router.get('/logout', authController.logout, )
 
 passport.serializeUser((user, done) => done(null, user));
 passport.deserializeUser((user, done) => done(null, user));
