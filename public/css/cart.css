@@ -1060,8 +1060,9 @@ i.fa-solid.fa-cart-shopping{
     li.list-inline-item{
     letter-spacing: 0px;
     /* margin-left: 20px; */
-    background-color: wheat;
-    margin: 4px;
+    /* background-color: wheat; */
+    /* margin: 4px; */
+    opacity: 2;
     }
     
 
@@ -2057,7 +2058,7 @@ i.fa-solid.fa-cart-shopping{
     li.list-inline-item{
         margin-left: 0%;
         /* background-color: tomato; */
-        /* opacity: 0.9; */
+        opacity: 0.9;
         cursor: pointer;
         letter-spacing: 0;
         margin-top: 20px;
@@ -2067,9 +2068,11 @@ i.fa-solid.fa-cart-shopping{
         justify-content: center;
         width: auto;
         /* border-radius: 20px; */
-        background-color: wheat;
+        /* background-color: wheat; */
         position: relative;
         left: 2%;
+        opacity: 2;
+        background-color: rgba(255, 255, 255, 0.5);
     }
     
 
@@ -2560,9 +2563,10 @@ i.fa-solid.fa-cart-shopping{
     /* right: 7px; */
     flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
     main div.third-div p.name-pizza {
