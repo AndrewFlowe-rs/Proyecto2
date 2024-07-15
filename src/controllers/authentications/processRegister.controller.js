@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
       state: state?.trim(),
     });
     console.log('Usuario creado exitosamente');
-    return res.redirect(`/perfil`);
+    return res.redirect('/perfil');
   } catch (error) {
     console.error('Error creating user:', error);
     return res.status(500).send("Error al crear el usuario");
