@@ -1,7 +1,5 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Order extends Model {
     /**
@@ -11,23 +9,42 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Order.belongsToMany(models.Product, {
+        through: "orderproducts",
+        foreignKey: "orderId",
+        otherKey: "productId",
+        as: "products",
+      });
+
+      Order.belongsTo(models.User, {
+        foreignKey: "userId",
+        as: "user",
+      });
     }
   }
-  Order.init({
-    total: DataTypes.DECIMAL,
-    userId: DataTypes.INTEGER,
-    state:{
-      type:DataTypes.STRING,
-      validate:{
-        isIn:{
-          args: ['completed', 'pending', 'canceled'],
-          msg:'Los valores válidos son: completed, pending, canceled'
-        }
-      }
+  Order.init(
+    {
+      total: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0,
+      },
+      userId: DataTypes.INTEGER,
+      state: {
+        type: DataTypes.STRING,
+        validate: {
+          isIn: {
+            args: [["completed", "pending", "canceled"]],
+            msg: "Los valores validos de estado son 'completed', 'pending' o 'canceled'",
+          },
+        },
+        defaultValue: "pending"
+      },
+    },
+    {
+      sequelize,
+      modelName: "Order",
+      paranoid: true,
     }
-  }, {
-    sequelize,
-    modelName: 'Order',
-  });
+  );
   return Order;
 };

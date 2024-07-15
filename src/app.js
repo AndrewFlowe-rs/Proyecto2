@@ -72,10 +72,12 @@ const otherApis = require('./routes/api/other.api')
 const userRoutesApi = require('./routes/api/userRoutes.api')
 const apiProducts = require('./routes/api/productRoutes.api')
 const apiCategory = require('./routes/api/categorias.api')
+const apiCart = require('./routes/api/cartRoutes.api')
 // // ROUTEOS API
 app.use('/api', otherApis)
 app.use('/api/user', userRoutesApi)
 app.use('/api/products', apiProducts)
+app.use('/api/cart', apiCart)
 app.use('/api/categorias', apiCategory)
 app.use((req,res, next) => {
     res.status(404).render("other/error")

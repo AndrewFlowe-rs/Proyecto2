@@ -1,52 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
-    <!-- Head -->
-    <%- include('../partials/head',{title: 'Carrito'}) %>
+<html lang="en">
 
-    <!-- Header -->
-   <%- include('../partials/header') %>
-    <%- include('../partials/burguer') %>
-    <main class="main-cart">
-      <div class="article-cart" data-aos="flip-left">
-          <article class="articulo-producto-cart">
-              <img src="/design/imgProducts/<%= p.image %>" alt="Imagen de pizza">
-              <div class=""><h3><%= p.name %></h3>
-              <p class="ingredientes"><%= p.description %></p>
-              <br>
-              <p class="ingredientes">Categoría: <%=p.categoryName%></p>
-             
-              <hr>
-              <p class="totale"><%= toThousand(p.price) %></p> <p class="subtotal">Unidad:</p>
-              <hr>  <p class="quantity">1</p>
-              <p class="total">Total: <span class="total">0</span></
+<%- include('../partials/head', {title: 'Carrito'}) %>
+ 
+
+  <body class="">
+    <!-- encabezado -->
+    <%- include('../partials/header') %>
+
+      <!-- principal -->
+      <main class="main-cart">
+
+        <div class="row position-relative my-5">
+
+          <div id="card-container" class="col-8">
+
+            <!-- ... CARDS ... -->
+
+          </div>
+
+          <div class="card col-4 my-5 position-sticky" style="height:fit-content;top:50px">
+            <div class="card-body my-2 d-flex flex-column gap-2">
+              <button class="btn w-100 btn-danger" id="clear-cart">Vaciar Carrito</button>
+              <button class="btn w-100 btn-success" id="btn-buy">Comprar</button>
+              <a href="/productos" class="btn w-100 btn-dark">Seguir mirando</a>
+              <div class="text-end fs-3">
+                <span>
+                  Total:
+                </span>
+                <output id="show-total">
+                  0
+                </output>
               </div>
+            </div>
+          </div>
 
-              <div class="quantity-controls">
-                  <button class="decrement-quantity">-</button>
-                  <button class="increment-quantity">+</button>
-                  
-              </div>
-            
-              
-              <br>
-              <form action="" method="post">
-                  <div class="confirmacion">
-                      <button class="botonno" type="button">Cancelar</button>
-                      <button href="/carrito/agregar/<%= p.id %>" class="botonok" type="submit">Confirmar</button>
-                  </div>
-              </form>
-          </article>
-      </div>
-  </main>
-    <!-- AOS -->
-   
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-    <!-- Footer -->
-    <%- include('../partials/footer') %>
-    <script src="../../../js/butDetail.js"></script> 
-    <script src="../../../js/addToCart.js"></script> 
+        </div>
+      </main>
 
-         
-   </body>
+
+      <%- include('../partials/footer') %>
+
+
+
+  </body>
+
 </html>

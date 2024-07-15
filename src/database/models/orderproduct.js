@@ -11,12 +11,17 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+
+
     }
   }
   OrderProduct.init({
-    orderId: DataTypes.INTEGER,
-    productId: DataTypes.INTEGER,
-    quantity: DataTypes.INTEGER
+    orderId: DataTypes.INTEGER, 
+    productId: DataTypes.INTEGER, 
+    quantity: {
+      type:DataTypes.INTEGER,
+      defaultValue: 1
+    }
   }, {
     sequelize,
     modelName: 'OrderProduct',
