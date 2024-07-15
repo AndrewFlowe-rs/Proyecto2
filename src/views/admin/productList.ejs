@@ -2,8 +2,17 @@
 <html lang="en">
 <%- include("../partials/head",{title: 'Lista de productos de Administrador'}) %>
 <body class="list">
-    <!-- <%- include("../partials/dashboard") %> -->
+    <%- include("../partials/burguer") %> 
+          <%- include("../partials/header") %>
+
     <main class="main-list container">
+      
+          </div>
+          <div class="mx-auto p-2" style="width: 200px;">
+            <a href="/admin/crear-producto" class="btn btn-danger" >Crear producto</a>          </div>
+
+      
+
         <h1 class="mt-4">Lista de productos</h1>
         <div class="table-responsive">
             <table class="table table-striped">
@@ -29,5 +38,6 @@
             </table>
         </div>
     </main>
+
 </body>
 </html>

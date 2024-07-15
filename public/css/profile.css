@@ -112,17 +112,17 @@ button {
     }
     input#name.form-control-plaintext{
       text-align: center;
-      width: 300px;
+      width: 250px;
     }
     input#email.form-control-plaintext{
       text-align: center;
-      width: 300px;
+      width: 250px;
     }
     input#state.form-control-plaintext{
       background-color: white;
       border-radius: 12px;
       margin: 20px;
-      width: 300px;
+      width: 250px;
       text-align: center;
     }
     input#city.form-control-plaintext{
@@ -136,7 +136,7 @@ button {
       background-color: white;
       border-radius: 12px;
       margin: 20px;
-      width: 300px;
+      width: 250px;
   }
   .but-out{}
   a.but-out{
