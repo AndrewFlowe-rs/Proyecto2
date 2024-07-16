@@ -11,11 +11,11 @@
    },
    {
       "id": 2,
-      "name": "Emiliano Pollera",
-      "email": "emilianopollerudo@gmail.com",
+      "name": "Emiliano Barrios",
+      "email": "emilianobarrios@gmail.com",
       "password": "$2a$12$X8gFoo9rCi.Lb/.iDP0H/eDa/ldtUX4hKKeuwvZYvljnd4asEVCwa",
       "number": "1132597893",
-      "name_role": "Regular",
+      "name_role": "Admin",
       "avatar": "avatar-1719336430682.PNG"
      
    },

@@ -255,7 +255,7 @@ a.botonok{
     .main-product .article {}
 
     .main-product .article .articulo-producto {
-        background-color: #080808b1;
+        background-color: #0808089c;
         /* height: 98vh; */
         display: flex;
         flex-direction: column;
@@ -265,7 +265,6 @@ a.botonok{
         justify-content: center;
         align-items: center;
         width: auto;
-        
     }
 
     .main-product .article .articulo-producto img {
@@ -319,6 +318,7 @@ a.botonok{
     align-items: center;
     font-family: fantasy;
     white-space: aliceblue;
+    color: cadetblue;
 }
 
     .confirmacion {

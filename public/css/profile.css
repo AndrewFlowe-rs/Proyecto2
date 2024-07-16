@@ -194,6 +194,7 @@ button {
      font-size: 25px;
      font-family: fantasy;
      width: 100%;
+     background-color: #41434d9c;
     }
     form.form-profile{
     /* border-radius: 300px; */
@@ -204,8 +205,8 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    opacity: 1
-    ;
+    opacity: 1;
+    background-color: #646473b3;
     }
     input#name.form-control-plaintext{
       text-align: center;
