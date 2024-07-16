@@ -47,12 +47,12 @@ function SideBar(){
                         <span>Usuarios</span></Link>
                 </li>
 
-                {/*<!-- Nav Item - Tables -->*/}
+                {/* <!-- Nav Item - Tables -->
                 <li className="nav-item">
                     <Link className="nav-link" to="/ordenes">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Ordenes</span></Link>
-                </li>
+                </li> */}
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>

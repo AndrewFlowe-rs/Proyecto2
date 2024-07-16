@@ -17,7 +17,7 @@ const metrics = [
     icon: "award",
   },
   {
-    show: true,
+    show: false,
     title: "Ordenes ",
     color: "warning",
     digit: 49,
