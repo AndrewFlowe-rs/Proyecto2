@@ -25,22 +25,22 @@ app.use(express.static("../public/design"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
+app.use(cookieParser());
 app.use(session({
     secret: 'your-secret-key',
     resave: true,
     saveUninitialized: true,
-    cookie: {
-        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-        httpOnly: true,
-        secure: false 
-    }
+    // cookie: {
+    //     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    //     httpOnly: true,
+    //     secure: false 
+    // }
 }));
-app.use(cookieParser());
-
-configServiceLogInGoogle();
 
 app.use(passport.initialize())
 app.use(passport.session())
+configServiceLogInGoogle();
+
 
 
 app.use(checkCookie);

@@ -54,7 +54,7 @@
 *{
     font-family: var(--Frijole);
     margin: 0;
-    color: var(--negro);
+    color: #dee2e6;
     box-sizing: border-box;
     padding: 0;
 }

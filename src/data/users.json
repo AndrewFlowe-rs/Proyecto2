@@ -6,7 +6,8 @@
       "password": "$2a$12$tC.TeE.joipZPks66q0sSu84hR9qC6SJp0pZatanwW2bgMzJ8yuP2",
       "number": "1132597893",
       "name_role": "Admin",
-      "avatar": "avatar-1719336057414.jpg"
+      "avatar": "avatar-1719336057414.jpg",
+      "state": "Buenos Aires"
       
    },
    {
@@ -26,7 +27,9 @@
       "password": "$2a$12$4w5hWsq6/8gX5oISBxIPXuiLG/x2tAH7/CkEv4AJfcmaOIT6BE/ZK",
       "name_role": "Admin",
       "avatar": "avatar-1719336475680.PNG",
-      "number": "1132597893"
+      "number": "1132597893",
+      "state": "Jujuy"
+
    },
    {
       "id": 4,
@@ -35,7 +38,9 @@
       "password": "$2a$12$4w5hWsq6/8gX5oISBxIPXuiLG/x2tAH7/CkEv4AJfcmaOIT6BE/ZK", 
       "name_role": "Regular",
       "avatar": "avatar-1719336475680.PNG",
-      "number": "3885656545"
+      "number": "3885656545",
+      "state": "Buenos Aires"
+
    }
 
 ]

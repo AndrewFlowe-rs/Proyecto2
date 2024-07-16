@@ -11,6 +11,7 @@ const usersDBMapped = usersJSON.map(u => {
     email: u.email,
     password: u.password,
     avatar: u.avatar,
+    state: u.state,
     roleId: role ? role.role_id : null, 
     name_role: u.name_role,
     createdAt: new Date(),

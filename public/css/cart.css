@@ -2394,7 +2394,7 @@ font-weight: bold;
 
 /* background-color: #198754; */
 
-color: #000;
+color: black;
 }
     main div.container-butoms{
     display: flex;
@@ -2447,12 +2447,13 @@ i.fa-solid.fa-cart-shopping{
     /* position: relative; */
     /* bottom: 24px; */
     background-color: #a60d0d82;
-    color: #fff;
+    color: #dee2e6;
     font-size: 25px;
     height: 42px;
     font-family: var(--corporant);
     opacity: 1;
     width: 180px;
+    font-family: var(--comic);
 }
 
     /* SEGUNDO DIV */

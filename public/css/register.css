@@ -210,32 +210,19 @@ background-size: cover;
 
 
     .main-register .form-register {
-
-align-items: center;
-
-flex-direction: column;
-
-display: flex;
-
-border: solid 5px #6c757d;
-
-border-radius: 10px;
-
-/* border-right: inset; */
-
-background-color: #364f5e;
-
-margin: 0 auto;
-
-padding: 10px;
-
-position: relative;
-
-width: max-content;
-
-font-family: var(--comic);
-
-height: auto;
+align-items: center;
+flex-direction: column;
+display: flex;
+border: solid 5px #6c757d;
+border-radius: 10px;
+/* border-right: inset; */
+background-color: #000000;
+margin: 0 auto;
+padding: 10px;
+position: relative;
+width: max-content;
+font-family: var(--comic);
+height: auto;
 }
 div.button{}
 
@@ -264,18 +251,12 @@ div.button{}
     }
 
     .main-register .form-register div {
-
-margin: 10px;
-
-padding-bottom: 13px;
-
-display: flex;
-
-flex-wrap: wrap;
-
-flex-direction: column;
-
-align-items: stretch;
+margin: 10px;
+padding-bottom: 21px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: stretch;
 }
     .main-register .conteiner-form .archivos {
 

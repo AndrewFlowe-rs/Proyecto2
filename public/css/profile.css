@@ -10,7 +10,7 @@ p.title-profile{
     font-family: var(--comic);
 }
 form.form-profile{
-    background-color: #364f5e;
+    background-color: #000000d4;
     /* padding: 200px; */
     height: max-content;
     display: flex;
@@ -190,7 +190,7 @@ button {
     background-image: url('../design/imgProducts/5.jpg');
     }
     p.title-profile{
-     background-color: #dfceb6;
+     background-color: #000;
      font-size: 25px;
      font-family: fantasy;
      width: 100%;
