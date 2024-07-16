@@ -153,9 +153,11 @@ button {
     justify-content: center;
 }
 
-    div.user-img{}
+    div.user-img{
+}
     img.user-im{
     width: 200px;
+    border-radius: 100%;
     }
     .but-form{
     /* width: 160px; */
@@ -207,6 +209,7 @@ button {
     font-size: 25px;
     opacity: 1;
     background-color: #000000e0;
+    width: auto;
     }
     input#name.form-control-plaintext{
       text-align: center;
@@ -253,7 +256,9 @@ a.but-out:hover{
 } .but-out{}
     div.user-img{}
     img.user-im{
-    width: 500px;
+    width: 300px;
+    border-radius: 100%;
+    height: 300px;
     }
     .but-form{
     /* width: 160px; */
