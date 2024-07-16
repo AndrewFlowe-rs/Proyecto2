@@ -38,9 +38,9 @@
                     <button class="botonno" type="button">Cancelar
                     </button>
 
-                    <a href="/carrito" class="botonok" type="button">Agregar al carrito
+                    <button class="botonok" onclick="addProductCart('<%= p.id %>')" type="button">Agregar al carrito</button>  
                    
-
+                   
                 </div>
             </article>
 
@@ -58,6 +58,12 @@
    <!-- Footer -->
    <%- include('../partials/footer') %>
    <script src="../../../js/butDetail.js"></script> 
+   <script src="../../../js/addToCart.js"></script> 
+   <script src="../../../public/js/library"></script>
+   <script src="../../../js/carrito.js"></script> 
+ 
+
+
 
 
    

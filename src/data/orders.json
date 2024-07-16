@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "state": "completed",
+      "state": "pending",
       "total": 11110,
       "user": "andres@gmail.com",
       "products": [

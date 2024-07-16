@@ -13,7 +13,7 @@
 
         <div class="row position-relative my-5">
 
-          <div id="card-container" class="col-8">
+          <div id="container-shop" class="col-8">
 
             <!-- ... CARDS ... -->
 
@@ -21,9 +21,9 @@
 
           <div class="card col-4 my-5 position-sticky" style="height:fit-content;top:50px">
             <div class="card-body my-2 d-flex flex-column gap-2">
-              <button class="btn w-100 btn-danger" id="clear-cart">Vaciar Carrito</button>
+              <button class="btn w-100 btn-secondary" id="clear-cart">Vaciar Carrito</button>
               <button class="btn w-100 btn-success" id="btn-buy">Comprar</button>
-              <a href="/productos" class="btn w-100 btn-dark">Seguir mirando</a>
+              <a href="/productos" class="btn w-100 btn-warning">Seguir mirando</a>
               <div class="text-end fs-3">
                 <span>
                   Total:
@@ -41,7 +41,7 @@
 
       <%- include('../partials/footer') %>
 
-
+<script src="../../../public/js/carrito.js"></script>
 
   </body>
 
